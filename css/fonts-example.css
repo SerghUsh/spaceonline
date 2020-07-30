@@ -8,7 +8,7 @@
 		url("fonts/ObjectSans/BoldWeb/ObjectSans-Bold.woff2") format("woff2"),
 		url("fonts/ObjectSans/BoldWeb/ObjectSans-Bold.ttf") format("truetype");
 	font-style: normal;
-	font-weight: 700; 
+	font-weight: 700; /* bold */
 }
 @font-face {
 	font-family: "ObjectSans"; 
@@ -20,7 +20,7 @@
 		url("fonts/ObjectSans/Medium/ObjectSans-Medium.woff2") format("woff2"),
 		url("fonts/ObjectSans/Medium/ObjectSans-Medium.ttf") format("truetype");
 	font-style: normal;
-	font-weight: 500; 
+	font-weight: 500; /* mediume */
 }
 @font-face {
 	font-family: "ObjectSans"; 
@@ -32,7 +32,7 @@
 		url("fonts/ObjectSans/RegularWeb/ObjectSans-Regular.woff2") format("woff2"),
 		url("fonts/ObjectSans/RegularWeb/ObjectSans-Regular.ttf") format("truetype");
 	font-style: normal;
-	font-weight: 400; 
+	font-weight: 400; /* normal */
 }
 @font-face {
 	font-family: "ObjectSans"; 
@@ -43,6 +43,12 @@
 		url("fonts/ObjectSans/Light/ObjectSans-Light.woff") format("woff"),
 		url("fonts/ObjectSans/Light/ObjectSans-Light.woff2") format("woff2"),
 		url("fonts/ObjectSans/Light/ObjectSans-Light.ttf") format("truetype");
+	font-style: normal; 
+	font-weight: 300; /* light */
+}
+
+body {
+	font-family: ObjectSans;
 	font-style: normal; 
 	font-weight: 300;
 }
