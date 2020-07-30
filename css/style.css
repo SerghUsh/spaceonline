@@ -183,12 +183,12 @@ button:active {
 	height: 636px;
 	background: linear-gradient(270deg, #FFFFFF 8.11%, rgba(255, 255, 255, 0) 30.43%), 
 	url(../img/bg_About_us.png) no-repeat;
-	/*position: relative;*/
+	position: relative;
 }
-/*.bg_about-us::after {
+.bg_about-us::after {
 	position: absolute;
-	left: -45px;*/
-
+	left: -45px;
+}
 .discription {
 	width: 805px;
 	height: 307px;
