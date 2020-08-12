@@ -22,11 +22,11 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 3000,
 		slidesToShow: 1,
-		centerMode: false,
-		variableWidth: false,
+		/*centerMode: false,
+		variableWidth: false,*/
 
 		arrows:false,
-		dots: false
+		dots: false 
 	});
 
 	sliderID = 'choise_your_practises';
@@ -83,4 +83,10 @@ $(document).ready(function(){
 		appendDots: $('#' + sliderID + ' .slider_manage_block .dots')
 	});
 
+});
+
+$(document).ready(function() {
+	$('.header__burger').click(function(event) {
+		$('.header__burger,.header__menu').toggleClass('active');
+	});
 });
