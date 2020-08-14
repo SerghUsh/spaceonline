@@ -46,15 +46,16 @@
 }
 .form-group button {
     width: 100%;
+}
+.form-group .btn-submit {
     margin-top: 13px;
 }
-.form-group button + p {
+.form-group p {
     font-family: Proxima Nova, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
-    margin: 17px 0 0;
     color: #000;
     text-align: center;
 }

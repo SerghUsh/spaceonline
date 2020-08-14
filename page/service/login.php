@@ -28,8 +28,10 @@
             </div>
 
             <div class="form-group">
-                <button class="btn-form-grey" type="submit">Войти</button>
+                <button class="btn-submit btn-form-grey" type="submit">Войти</button>
+            </div>
 
+            <div class="form-group">
                 <p class="align-left">
                     Впервый на Space Online?
                     <a class="link-black" href="<?php href('service', 'registration') ?>">Регистрация</a>

@@ -67,8 +67,10 @@
             </div>
 
             <div class="form-group">
-                <button class="btn-form-green" type="submit">Регистрация</button>
+                <button class="btn-submit btn-form-green" type="submit">Регистрация</button>
+            </div>
 
+            <div class="form-group">
                 <p>Уже есть учетная запись? <a class="link-black" href="<?php href('service', 'login') ?>">Войти</a></p>
             </div>
         </form>
