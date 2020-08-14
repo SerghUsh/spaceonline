@@ -18,18 +18,20 @@
 body {
 	padding-top: 80px;
 }
+
+
 .container {
 	max-width: 1920px;
 	margin: 0 auto;
 	font-family: 'ProximaNova';
 }
 
-.practise__bg {
+.title-top {
     background: #FAFAFA;
     height: 278px;
     text-align: center;
 }
-.practise__bg h1 {
+.title-top h1 {
     font-family: 'Montserrat', sans-serif;    
     font-weight: bold;
     font-size: 52px;
@@ -40,7 +42,7 @@ body {
     padding-top: 85px;
     padding-bottom: 10px;
 }
-.practise__bg p {
+.title-top p {
     font-family: 'Montserrat', sans-serif; 
     font-weight: 600;
     font-size: 21px;
@@ -53,19 +55,24 @@ body {
 
 /* Find your practise */
 
-#find_your_practise {
+.wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     margin-top: 80px;
-    margin-left: 145px;
+    width: 1630px;
+    margin: 0 auto;
+    /*margin-left: 145px;
+    margin-right: 145px;*/
+
 }
-.find_your_practise__item {
+.wrapper__item {
     margin-right: 92px;
-     margin-bottom: 68px;
+    margin-bottom: 68px;
     width: 481px;
     height: 100%;
+    overflow: hidden;
 }
-.find_your_practise__item h2 {
+.wrapper__item h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 22px;
@@ -74,14 +81,14 @@ body {
     text-transform: uppercase;
     color: #000000; 
 }
-.find_your_practise__item p {
+.wrapper__item p {
     margin-top: 1rem;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #323232;
 }
-.find_your_practise__item a {
+.wrapper__item a {
     position: relative;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -92,6 +99,6 @@ body {
     color: #000000;
     left: 64px;
 }
-.find_your_practise__item a:hover {
+.wrapper__item a:hover {
     text-shadow: 0px 1px 1px black;
 }
