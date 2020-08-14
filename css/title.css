@@ -13,6 +13,7 @@
 .title-block h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 52px;
+    line-height: 60px;
     letter-spacing: 7px;
 }
 .title-block.title-big h1 {
@@ -21,13 +22,41 @@
 .title-block.title-small h1 {
     font-size: 32px;
 }
+.title-block p {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 3px;
+    max-width: 1130px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
 @media (max-width: 1199px) {
     .title-block h1 {
         font-size: 28px;
+        line-height: 38px;
+        letter-spacing: 3px;
+    }
+    .title-block p {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 2px;
     }
 }
 @media (max-width: 767px) {
+    .title-block {
+        height: 181px;
+    }
     .title-block h1 {
         font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+    .title-block p {
+        font-size: 10px;
+        line-height: 18px;
     }
 }

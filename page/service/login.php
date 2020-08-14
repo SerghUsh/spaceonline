@@ -53,23 +53,6 @@
         padding: 0 10px;
     }
 
-    .float-left {
-        float: left !important;
-    }
-    .float-right {
-        float: right !important;
-    }
-
-    .align-left {
-        text-align: left !important;
-    }
-    .align-center {
-        text-align: center !important;
-    }
-    .align-right {
-        text-align: right !important;
-    }
-
     @media (max-width: 1199px) {
 
     }

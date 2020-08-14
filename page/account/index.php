@@ -7,6 +7,13 @@
 <body>
 <?php put('header') ?>
 
+<div class="title-block">
+    <div>
+        <h1>Личный кабинет</h1>
+        <p>Главная</p>
+    </div>
+</div>
+
 <!-- here must be your html -->
 
 <?php put('footer') ?>

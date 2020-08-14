@@ -7,6 +7,12 @@
 <body>
 <?php put('header') ?>
 
+<div class="title-block">
+    <div>
+        <h1>НАЗВАНИЕ групПового занятия</h1>
+    </div>
+</div>
+
 <!-- here must be your html -->
 
 <?php put('footer') ?>
