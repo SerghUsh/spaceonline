@@ -8,7 +8,9 @@
 <div class="container">
     <?php put('header') ?>
 
-    <!-- hear must be your html -->
+	<main>
+    	<!-- hear must be your html -->
+	</main>
 
     <?php put('footer') ?>
 </div>

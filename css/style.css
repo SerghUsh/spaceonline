@@ -41,7 +41,7 @@ header > div {
 	align-items: center;
 }
 .logo img {
-    margin: 11px 5px 0 25px;
+    margin: 10px 5px 0 76px;
 }
 .header_list {
 	list-style:  none;
@@ -64,7 +64,7 @@ header > div {
 }
 .header_list li a:hover {
     text-decoration: underline;
-    color: #54593a;
+    color: #000;
     transition: .3s;
 }
 .header_list li a:active {
@@ -200,8 +200,10 @@ header > div {
 	url(../img/bg_About_us.png) no-repeat;
 	background-position: left top;
 }
+.about_us .discription {
+	padding-left: 973px;
+}
 .about_us .discription img {
-	margin-left: 973px;
     margin-top: 82px;
 }
 .about_us .discription p.proximanova {
@@ -209,9 +211,8 @@ header > div {
     line-height: 37px;
     color: #000000;
     margin-top: 22px;
-    margin-left: 972px;
     margin-bottom: 36px;
-    width: 42%;
+    width: 93%;
 }
 .about_us .discription p.montserrat {
 	font-family: 'Montserrat', sans-serif;
@@ -220,8 +221,7 @@ header > div {
 	line-height: 37px;
 	letter-spacing: 1px;
 	color: #000000;
-	margin-left: 971px;
-	width: 41%;
+	width: 91%;
 }
 
 /* "Choise your practises" */
@@ -254,8 +254,8 @@ header > div {
     left: 40.5rem; 
 }
 .title_practises p {
-	width: 66%;
-	margin-top: 15px;
+	width: 60%;
+	margin-top: 14px;
 	font-weight: normal;
 	font-size: 22px;
 	line-height: 38px;
@@ -339,16 +339,6 @@ header > div {
 	margin-left: 3rem;
 	cursor: pointer;
 }
-.choise_your_practises__button_left:hover,
-.choise_your_practises__button_right:hover {
-	background: #000;
-}
-/*.choise_your_practises__button_left:hover {
-	background: url(../img/arr_prew_white.png) no-repeat; 
-}
-.choise_your_practises__button_right:hover {
-	background: url(../img/arr_next_white.png) no-repeat;
-}*/
 .choise_your_practises__button_left {
 	background: url('../img/practises__arr_prew.png') no-repeat;
 	background-position: center;
@@ -359,6 +349,14 @@ header > div {
 	margin-left: 2.5rem;
 }
 
+.choise_your_practises__button_right:hover {
+	background: url(../img/arr_next_hover.png) no-repeat;
+	background-position: center;
+}
+.choise_your_practises__button_left:hover {
+	background: url(../img/arr_prew_hover.png) no-repeat;
+	background-position: center;
+}
 
 .slider_manage_block .dots .slick-dots {
 	margin-left: 1.7rem;
@@ -391,9 +389,8 @@ header > div {
 
 /* Title "Start_now"*/
 .title__start_now {
-	width: 88.8%;  
     margin-top: 69px;
-    margin-bottom: 60px;        
+    margin-bottom: 57px;        
     overflow: hidden;
     text-align: right;
 }
@@ -406,24 +403,26 @@ header > div {
 	line-height: 50px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
+	margin-right: 143px;
+}
+.title__start_now p {
+	margin-top: 1.1rem;
+	margin-right: 272px;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 38px;
+	color: #323232;	
 }
 .title__start_now  span:before {
-    width: 985px;
+    width: 984px;
     content: '';
     position: absolute;
     border: 1px solid #000000;
     top: 44%;
-    right: 645px;
+    right: 646px;
 }
-}
-.title__start_now p {
-	margin-top: 1.1rem;
-	margin-right: 8.1rem;
-	font-weight: normal;
-	font-size: 22px;
-	line-height: 37px;
-	color: #323232;
-}
+
+
 
 /* Main Start Now*/
 #start_now {
@@ -438,7 +437,7 @@ header > div {
 }
 #start_now .slider__item {
 	width: 433px;
-    margin-top: 19px;
+    margin-top: 21px;
 }
 #start_now .slider__item h2 {
 	font-family: 'Montserrat', sans-serif;
@@ -478,7 +477,8 @@ header > div {
 	margin: 133px 91px 0 3px;
 }
 #start_now .slider .flex-item .next_slide:hover {
-	background: #000;
+	background: url(../img/arr_next_hover.png) no-repeat;
+	background-position: center;
 }
 #start_now .slider__item a.registration {
 	font-weight: bold;
@@ -576,7 +576,7 @@ header > div {
 	line-height: 50px;
 	letter-spacing: 1px;
 	color: rgba(0, 0, 0, 0.8);
-	margin-top: -16px;
+	margin-top: -14px;
 	margin-left: 25px;
 	padding: 0;
 	position: relative;
@@ -622,7 +622,7 @@ header > div {
 /* Title from organizer */
 
 .title__from_organizers {
-    margin-top: 79px;
+    margin-top: 78px;
     margin-bottom: 57px;
     overflow: hidden;
     text-align: center;
@@ -666,21 +666,17 @@ header > div {
 	url(../img/bg_from_organizers.png) no-repeat;
 	background-position: right top;
 }
-.from_organizers__item .organizers_discription {
-	width: 48%;
-	margin-top: 84px;
-}
 .from_organizers__item .organizers_discription p {
-	font-weight: normal;
 	font-size: 22px;
 	line-height: 37px;
 	color: #000000;
-	
-    width: 98%;
+	padding-top: 132px;
+    width: 46%;
 }
 .from_organizers__item .organizers_discription .space p {
 	margin-bottom: 51px;
-    margin-top: 15px;
+    padding-top: 17px;
+    width: 42%;
 }
 .write a {
     border: 2px solid #000000;
@@ -732,28 +728,45 @@ footer {
 
 /* Social Buttons */
 #footer .social_buttons {
-	display: block;
-	margin-top: 95px;
-	margin-left: 85px;
+	margin-top: 56px;
+    margin-left: -10px;
 }
 #footer .social_buttons__link {
 	margin-top: 51px;
 
 }
 #footer .social_buttons__link a {
-	margin-right: 5px;
+	margin-right: 4px;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
 }
-#footer .social_buttons__link a img:hover {
-  background: rgba(0,0,0,0.5);
-  border-radius: 50% 
+#footer .social_buttons__link a.instagram {
+	background: url(../img/inst.png) no-repeat;
+}
+#footer .social_buttons__link a.instagram:hover {
+	background: url(../img/inst_hover.png) no-repeat;
 }
 
+#footer .social_buttons__link a.facebook {
+	background: url(../img/fb.png) no-repeat;
+}
+#footer .social_buttons__link a.facebook:hover {
+	background: url(../img/fb_hover.png) no-repeat;
+}
+
+#footer .social_buttons__link a.youtube {
+	background: url(../img/ytb.png) no-repeat;
+}
+#footer .social_buttons__link a.youtube:hover {
+	background: url(../img/ytb_hover.png) no-repeat;
+}
 
 /* Footer List */
 
 #footer .footer_list {
-	margin-top: 91px;
-
+	margin-top: 53px;
+    margin-left: -23px;
 }
 #footer h3 {
 	font-weight: bold;
@@ -778,15 +791,15 @@ footer {
 }
 #footer .footer_list li a:hover {
     text-decoration: underline;
-    color: #54593a;
+    color: #000;
     transition: .3s;
 }
 
 /* Footer Contacts */
 
 #footer .footer_contacts {
-	margin-top: 91px;
-	margin-left: 65px;
+	margin-top: 52px;
+    margin-left: 60px;
 }
 #footer .footer_contacts ul {
 	list-style:  none;
@@ -827,5 +840,5 @@ footer {
 	font-size: 18px;
 	line-height: 44px;
 	color: #000000;	
-	margin-top: 71px;
+	margin-top: 70px;
 }
