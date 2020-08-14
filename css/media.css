@@ -24,6 +24,9 @@
 
 }
 @media (max-width: 1199px) and (min-width: 768px) {
+	.container {
+			max-width: 768px;
+		}
 	.logo img {
 		width: 95%;
     	margin: 14px 2.8rem 0 -30px;
@@ -135,11 +138,55 @@
 
 }
 @media (max-width: 767px) and (min-width: 320px) {
-	body {
-		background: blue;
-	}
+	.container {
+			max-width: 320px;
+		}
 }
 
+
+	<div class="row_wrapper">
+		<div class="row">
+			<div class="col">test</div>
+			<div class="col">test</div>
+			<div class="col">test</div>
+			<div class="col">test</div>
+			<div class="col">test</div>
+			<div class="col">test</div>
+		</div>
+	</div>
+
+<style>
+	.row_wrapper {
+		padding: 20px 95px;
+	}
+	.row {
+	}
+	.row:before {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	.row:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	.col {
+		width: calc(100% / 3);
+		float: left;
+		border: 1px solid #ccc;
+	}
+	@media (max-width: 1199px) and (min-width: 768px) {
+		.col {
+			width: calc(100% / 2);
+		}
+	}
+	@media (max-width: 767px) and (min-width: 320px) {
+		.col {
+			width: 100%;
+		}
+	}
+</style>
 
 
 

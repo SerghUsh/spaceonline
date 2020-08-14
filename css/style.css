@@ -41,7 +41,7 @@ header > div {
 	align-items: center;
 }
 .logo img {
-    margin: 10px 5px 0 76px;
+    margin: 10px 124px 0 95px;
 }
 .header_list {
 	list-style:  none;
@@ -161,13 +161,13 @@ header > div {
 }
 
 /* Раздел 'О Нас' */
-.title__about_us {
+.title-center {
 	text-align: center;  
     margin: 0 auto;
     margin-bottom: 66px;        
     overflow: hidden;
 }
-.title__about_us span {
+.title-center span {
     position: relative;
     font-weight: bold;
 	font-size: 42px;
@@ -176,7 +176,7 @@ header > div {
 	text-transform: uppercase;
 	color: #000000;
 }
-.title__about_us span:before {
+.title-center span:before {
     width: 684px;
     content: '';
     position: absolute;
@@ -184,7 +184,7 @@ header > div {
     top: 47%;
     right: 200px;                  
 }
-.title__about_us  span:after {
+.title-center  span:after {
     display: block;
     width: 697px;
     content: '';
@@ -193,35 +193,36 @@ header > div {
     top:47%;
     left: 189px; 
 }
-.about_us__item  {
+/* Главный блок 'О нас' */
+.about_us__wrapper {
 	width: 100%;
 	height: 636px;
 	background: linear-gradient(270deg, #FFFFFF 8.11%, rgba(255, 255, 255, 0) 30.43%), 
 	url(../img/bg_About_us.png) no-repeat;
 	background-position: left top;
 }
-.about_us .discription {
-	padding-left: 973px;
+.about_us__wrapper .discription {
+	padding-left: 50.6%;
 }
-.about_us .discription img {
+.about_us__wrapper .discription img {
     margin-top: 82px;
 }
-.about_us .discription p.proximanova {
+.about_us__wrapper .discription p.font-proximanova {
 	font-size: 22px;
     line-height: 37px;
     color: #000000;
     margin-top: 22px;
     margin-bottom: 36px;
-    width: 93%;
+    width: 85%;
 }
-.about_us .discription p.montserrat {
+.about_us__wrapper .discription p.font-montserrat {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 37px;
 	letter-spacing: 1px;
 	color: #000000;
-	width: 91%;
+	width: 76%;
 }
 
 /* "Choise your practises" */
@@ -230,12 +231,12 @@ header > div {
 	margin-left: 145px;
 }
 /* Title "Choice Your practises"*/
-.title_practises {
+.title-left {
     margin-top: 70px;
     margin-bottom: 60px;        
     overflow: hidden;
 }
-.title_practises span {
+.title-left span {
     position: relative;
 	font-weight: bold;
 	font-size: 42px;
@@ -244,7 +245,7 @@ header > div {
 	text-transform: uppercase;
 	color: #000000;
 }
-.title_practises  span:after {
+.title-left  span:after {
     display: block;
     width: 980px;
     content: '';
@@ -253,7 +254,7 @@ header > div {
     top:46%;
     left: 40.5rem; 
 }
-.title_practises p {
+.title-left p {
 	width: 60%;
 	margin-top: 14px;
 	font-weight: normal;
@@ -261,6 +262,8 @@ header > div {
 	line-height: 38px;
 	color: #323232;
 }
+
+/* Главный блок "Выбери свою практику" */
 #choise_your_practises .slider__item {
 	width: 481px;
 	margin-right: 95px; 
@@ -388,14 +391,14 @@ header > div {
 /* Блок Start Now */
 
 /* Title "Start_now"*/
-.title__start_now {
+.title-right {
     margin-top: 69px;
     margin-bottom: 57px;        
     overflow: hidden;
     text-align: right;
 }
 
-.title__start_now span {
+.title-right span {
     position: relative;
     font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
@@ -405,7 +408,7 @@ header > div {
 	text-transform: uppercase;
 	margin-right: 143px;
 }
-.title__start_now p {
+.title-right p {
 	margin-top: 1.1rem;
 	margin-right: 272px;
 	font-weight: normal;
@@ -413,7 +416,7 @@ header > div {
 	line-height: 38px;
 	color: #323232;	
 }
-.title__start_now  span:before {
+.title-right  span:before {
     width: 984px;
     content: '';
     position: absolute;
@@ -422,9 +425,7 @@ header > div {
     right: 646px;
 }
 
-
-
-/* Main Start Now*/
+/* Гланый блок Start Now*/
 #start_now {
 	margin-left: 143px;
 }
@@ -495,13 +496,13 @@ header > div {
 }
 /* Title future events */
 
-.title__future_events {
+.title__left {
     width: 95%;  
     margin-top: 156px;
     margin-bottom: 59px;        
     overflow: hidden;
 }
-.title__future_events span {
+.title__left span {
     position: relative;
     font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
@@ -510,7 +511,7 @@ header > div {
 	letter-spacing: 3px;
 	text-transform: uppercase;
 }
-.title__future_events span:after {
+.title__left span:after {
     width: 963px;
     content: '';
     position: absolute;
@@ -518,7 +519,7 @@ header > div {
     top: 50%;
     left: 35.3rem;
 }
-.title__future_events p {
+.title__left p {
 	width: 66%;
 	margin-top: 1.1rem;
 	font-weight: normal;
@@ -618,17 +619,18 @@ header > div {
 
 #from_organizers {
 	margin-left: 9.2rem;
+	margin-bottom: 80px;
 }
 /* Title from organizer */
 
-.title__from_organizers {
+.title__center {
     margin-top: 78px;
     margin-bottom: 57px;
     overflow: hidden;
     text-align: center;
 }
 
-.title__from_organizers span {
+.title__center span {
     position: relative;
     font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
@@ -639,7 +641,7 @@ header > div {
 	color: #000000;
 	margin-left: -140px;
 }
-.title__from_organizers  span:before {
+.title__center span:before {
     width: 448px;
     content: '';
     position: absolute;
@@ -647,7 +649,7 @@ header > div {
     top: 47%;
     right: 686px;
 }
-.title__from_organizers  span:after {
+.title__center span:after {
     width: 448px;
     content: '';
     position: absolute;
@@ -659,26 +661,26 @@ header > div {
 
 /* Главный блок From_organizers */
 
-.from_organizers__item {
+.main_block__item {
 	width: 100%;
 	height: 595px;
 	background: linear-gradient(89.9deg, #FFFFFF 4.16%, rgba(255, 255, 255, 0) 52.07%), 
 	url(../img/bg_from_organizers.png) no-repeat;
 	background-position: right top;
 }
-.from_organizers__item .organizers_discription p {
+.main_block__item .discription_text p {
 	font-size: 22px;
 	line-height: 37px;
 	color: #000000;
 	padding-top: 132px;
     width: 46%;
 }
-.from_organizers__item .organizers_discription .space p {
+.main_block__item .discription_text .space p {
 	margin-bottom: 51px;
     padding-top: 17px;
     width: 42%;
 }
-.write a {
+a.write {
     border: 2px solid #000000;
     box-sizing: border-box;
     border-radius: 5px;
@@ -694,19 +696,18 @@ header > div {
     cursor: pointer;
     color: #000000;
 }
-.write a:hover {
+a.write:hover {
 	text-decoration: none;
 	background: #222222;
 	color: #FFFFFF;
 }
-.write a:active {
+a.write:active {
 	border: 1px solid #445162;
 }
 
 /* Footer */
 
 footer {
-	margin-top: 80px;
 	background: #FAFAFA;
 }
 
