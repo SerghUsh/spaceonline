@@ -5,15 +5,11 @@
     <?php put('head') ?>
 </head>
 <body>
-<div class="container">
-    <?php put('header') ?>
+<?php put('header') ?>
 
-	<main>
-    	<!-- hear must be your html -->
-	</main>
+<!-- here must be your html -->
 
-    <?php put('footer') ?>
-</div>
+<?php put('footer') ?>
 
 <?php put('scripts') ?>
 </body>
