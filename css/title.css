@@ -1,0 +1,33 @@
+.title-block {
+    display: table;
+    width: 100%;
+    height: 278px; /* работает также как min-height, то есть будет растягиваться пока не поместится всё содержимое */
+    text-align: center;
+    text-transform: uppercase;
+    background: #FAFAFA;
+}
+.title-block div { /* для IE8+ */
+    display: table-cell;
+    vertical-align: middle;
+}
+.title-block h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52px;
+    letter-spacing: 7px;
+}
+.title-block.title-big h1 {
+    font-size: 140px;
+}
+.title-block.title-small h1 {
+    font-size: 32px;
+}
+@media (max-width: 1199px) {
+    .title-block h1 {
+        font-size: 28px;
+    }
+}
+@media (max-width: 767px) {
+    .title-block h1 {
+        font-size: 16px;
+    }
+}

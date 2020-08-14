@@ -8,7 +8,9 @@
 <?php put('header') ?>
 
 <div class="title-block title-big">
-    <h1>404</h1>
+    <div>
+        <h1>404</h1>
+    </div>
 </div>
 
 <main class="error-content">
@@ -23,16 +25,6 @@
 </main>
 
 <style>
-    .title-block {
-        text-align: center;
-        padding: 50px 10px;
-        background: #FAFAFA;
-    }
-    .title-big h1 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 140px;
-        letter-spacing: 7px;
-    }
     .error-content {
         padding-bottom: 127px;
     }
@@ -72,17 +64,11 @@
         color: #FFFFFF;
     }
     @media (max-width: 1199px) {
-        .title-big h1 {
-            font-size: 120px;
-        }
         .error-text {
             font-size: 40px;
         }
     }
     @media (max-width: 767px) {
-        .title-big h1 {
-            font-size: 100px;
-        }
         .error-text {
             font-size: 30px;
         }
