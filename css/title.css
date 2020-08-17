@@ -41,16 +41,7 @@
 }
 
 .title-block .subtitle-short {
-    font-family: Montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 21px;
-    line-height: 37px;
-    text-align: center;
-    letter-spacing: 3px;
-    max-width: 1130px;
-    padding: 0 10px;
-    margin: 0 auto;
+    max-width: 731px;
 }
 
 @media (max-width: 1199px) {
