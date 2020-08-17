@@ -42,27 +42,6 @@
     </div>
 </main>
 
-<style>
-    #login-content {
-        padding: 60px 0 80px;
-    }
-    #login-content form {
-        max-width: 535px;
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 10px;
-    }
-
-    @media (max-width: 1199px) {
-        #login-content {
-            padding: 42px 0 90px;
-        }
-    }
-    @media (max-width: 767px) {
-
-    }
-</style>
-
 <?php put('footer') ?>
 
 <?php put('scripts') ?>

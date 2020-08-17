@@ -1,0 +1,226 @@
+/* Error page */
+.error-content {
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+
+.error-block {
+    max-width: 660px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.error-text {
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 59px;
+}
+
+.btn-white {
+    display: inline-block;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1.6px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 55px 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #000000;
+    transition: all linear .1s;
+}
+
+.btn-white:hover {
+    text-decoration: none;
+    background: #222222;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1199px) {
+    .error-content {
+        padding-top: 57px;
+        padding-bottom: 64px;
+    }
+
+    .error-block {
+        max-width: 400px;
+    }
+
+    .error-text {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 29px;
+    }
+
+    .btn-white {
+        font-size: 12px;
+        line-height: 21px;
+        letter-spacing: 1.6px;
+        width: 278px;
+        height: 35px;
+        padding: 5px 0 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .error-content {
+        padding-top: 30px;
+        padding-bottom: 64px;
+    }
+
+    .error-block {
+        max-width: 308px;
+    }
+
+    .error-text {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 17px;
+        padding: 0 15px;
+    }
+
+    .btn-white {
+        font-size: 10px;
+        line-height: 21px;
+        letter-spacing: 1.6px;
+        width: 100%;
+        height: 30px;
+        padding: 3px 0 0;
+        border: 1px solid #000000;
+        border-radius: 3px;
+    }
+}
+
+/* Login page */
+#login-content {
+    padding: 60px 0 80px;
+}
+
+#login-content form {
+    max-width: 535px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+@media (max-width: 1199px) {
+    #login-content {
+        padding: 42px 0 90px;
+    }
+}
+
+/* Password page */
+#password-content {
+    padding: 60px 0 80px;
+}
+
+#password-content form {
+    max-width: 535px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Registration page */
+#registration-content {
+    padding: 60px 0 80px;
+}
+
+#registration-content form {
+    max-width: 535px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.timezone-block:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.timezone-block:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.timezone-block div {
+    float: left;
+    width: 307px;
+}
+
+.timezone-block button {
+    float: right;
+    width: 189px;
+}
+
+.checkbox-wrapper {
+    text-align: left;
+    margin: 22px 0 2px;
+}
+
+.action-block {
+    margin-top: 16px;
+}
+
+@media (max-width: 1199px) {
+    #registration-content {
+        padding: 41px 0 60px;
+    }
+
+    .checkbox-wrapper {
+        text-align: left;
+        margin: 16px 0 3px;
+    }
+
+    .action-block {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    #registration-content {
+        padding: 18px 0 32px;
+    }
+
+    #registration-content form {
+        max-width: 300px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .timezone-block div {
+        width: 100%;
+    }
+
+    .timezone-block {
+        text-align: center;
+    }
+
+    .timezone-block div {
+        text-align: left;
+    }
+
+    .timezone-block button {
+        width: 123px;
+        height: 29px;
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 20px;
+        float: none;
+        padding-top: 3px;
+    }
+
+    .checkbox-wrapper {
+        margin: -3px 0 4px;
+    }
+}

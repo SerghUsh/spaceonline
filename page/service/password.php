@@ -32,24 +32,6 @@
     </div>
 </main>
 
-<style>
-    #password-content {
-        padding: 60px 0 80px;
-    }
-    #password-content form {
-        max-width: 535px;
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 10px;
-    }
-    @media (max-width: 1199px) {
-
-    }
-    @media (max-width: 767px) {
-
-    }
-</style>
-
 <?php put('footer') ?>
 
 <?php put('scripts') ?>
