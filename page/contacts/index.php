@@ -13,7 +13,20 @@
     </div>
 </div>
 
-<!-- here must be your html -->
+<main id="contacts-content">
+    <div class="container">
+        <div class="error-block">
+            <p class="error-text">
+                Извините данной страницы не существует
+            </p>
+            <a class="btn-white" href="<?php href('home') ?>">Перейти на главную</a>
+        </div>
+    </div>
+</main>
+
+<style>
+
+</style>
 
 <?php put('footer') ?>
 

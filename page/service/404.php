@@ -13,7 +13,7 @@
     </div>
 </div>
 
-<main class="error-content">
+<main id="error-content">
     <div class="container">
         <div class="error-block">
             <p class="error-text">
