@@ -36,6 +36,7 @@ footer {
     display: inline-block;
     width: 32px;
     height: 32px;
+    transition: all linear .1s;
 }
 
 #footer .social_buttons__link a.instagram {
@@ -152,4 +153,18 @@ footer {
     line-height: 44px;
     color: #000000;
     margin-top: 70px;
+}
+
+/* Media Style Footer */
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
 }

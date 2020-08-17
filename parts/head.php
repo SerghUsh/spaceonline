@@ -24,9 +24,6 @@
 <link rel="stylesheet" href="/css/service.css">
 <link rel="stylesheet" href="/css/specialist.css">
 
-<!-- Media -->
-<link rel="stylesheet" href="/css/media.css">
-
 <!-- Other styles -->
 <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css"/>

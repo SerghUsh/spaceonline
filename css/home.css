@@ -49,6 +49,8 @@
     line-height: 24px;
     text-align: center;
     letter-spacing: 1.6px;
+    transition: all linear .1s;
+    text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
     color: #000000;
@@ -210,6 +212,7 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
+    transition: all linear .1s;
     text-decoration-line: underline;
     text-transform: uppercase;
     color: #000000;
@@ -231,12 +234,12 @@
     border: 2px solid #000000;
     box-sizing: border-box;
     border-radius: 5px;
-
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 1.6px;
+    transition: all linear .1s;
     text-align: center;
     text-decoration: none;
     padding: 0.9rem 0;
@@ -267,6 +270,7 @@
     border: 1px solid #000000;
     margin-left: 3rem;
     cursor: pointer;
+    transition: all linear .1s;
 }
 
 .choise_your_practises__button_left {
@@ -307,6 +311,7 @@
     border-radius: 50%;
     width: 15px;
     height: 15px;
+    transition: all linear .1s;
 }
 
 .dots .slick-dots li.slick-active button {
@@ -561,6 +566,7 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
+    transition: all linear .1s;
     text-decoration-line: underline;
     text-transform: uppercase;
     color: #000000;
@@ -655,6 +661,7 @@ a.write {
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 1.6px;
+    transition: all linear .1s;
     text-decoration: none;
     text-align: center;
     padding: 13px 28px 11px 30px;
@@ -671,4 +678,168 @@ a.write:hover {
 
 a.write:active {
     border: 1px solid #445162;
+}
+
+@media (max-width: 1685px) {
+    .about_us .discription {
+        margin-top: 33px;
+    }
+
+    .about_us .discription p.proximanova,
+    .about_us .discription p.montserrat {
+        font-size: 22px;
+        line-height: 34px;
+    }
+}
+
+/* Media Style*/
+
+
+@media (max-width: 1685px) {
+    .about_us .discription {
+        margin-top: 33px;
+    }
+    .about_us .discription p.proximanova,
+    .about_us .discription p.montserrat {
+        font-size: 22px;
+        line-height: 34px;
+    }
+}
+
+@media (max-width: 1412px) {
+    .about_us .discription p.proximanova,
+    .about_us .discription p.montserrat {
+        font-size: 21px;
+        line-height: 31px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    #personal_gid {
+        margin-bottom: 40px;
+    }
+    #personal_gid .info h1 {
+        font-size: 26px;
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+
+    #personal_gid .info p {
+        font-size: 16px;
+    }
+
+    #personal_gid .info a {
+        width: 280px;
+        height: 36px;
+        font-size: 12px;
+        margin-top: 17px;
+        padding: 7px 10px 10px 10px;
+        text-decoration: none;
+    }
+
+    .title-center {
+        margin-left: -10px;
+        margin-bottom: 20px;
+    }
+
+    .title-center span {
+        font-size: 22px;
+    }
+
+    .title-center span:before {
+        right: 109px;
+    }
+
+    .title-center span:after {
+        width: 284px;
+        top: 47%;
+        left: 105px;
+    }
+    .about_us__wrapper {
+        width: 100%;
+        height: 386px;
+        background: linear-gradient(270deg, #FFFFFF 19.31%, rgba(255, 255, 255, 0) 38.01%), 
+        url(../img/bg_medium_about_us.png) no-repeat;
+        background-position: left top;
+    }
+    .about_us__wrapper .discription {
+        padding-left: 38.4%;
+    }
+    .about_us__wrapper .discription img {
+        margin-top: 25px;
+        width: 41%;
+    }
+    .about_us__wrapper .discription p.font-proximanova {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 12px;
+        margin-bottom: 13px;
+        width: 87%;
+    }
+    .about_us__wrapper .discription p.font-montserrat {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        width: 81%;
+    }
+    #choise_your_practises {
+        margin-top: 21px;
+        margin-left: 40px;
+    }
+    .title-left {
+        margin-top: 0;
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+    .title-left span {
+        font-size: 22px;
+        line-height: 50px;
+        letter-spacing: 3px;
+    }
+    .title-left span:after {
+        width: 319px;
+        top: 40%;
+        left: 367px;
+    }
+    .title-left p {
+        width: 95%;
+        margin-top: -3px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #choise_your_practises .slider__item {
+        margin-right: -126px;
+        width: 280px;
+    }
+    .slider__item img {
+        width: 67%;
+    }
+    #choise_your_practises .slider__item h2 {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 2px;
+        margin-top: 11px;
+    }
+    #choise_your_practises .slider__item p {
+        margin-top: 1rem;
+        font-size: 14px;
+        line-height: 20px;
+        width: 67%;
+    }
+    #choise_your_practises .slider__item a {
+        font-size: 10px;
+        line-height: 16px;
+        left: 64px;
+    }
+
+}
+
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .container {
+        max-width: 320px;
+    }
 }
