@@ -1,0 +1,83 @@
+header {
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    margin: 10px 124px 0 95px;
+}
+
+.header_list {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.header_list li {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+    margin-top: 14px;
+    margin-right: 48px;
+}
+
+.header_list li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header_list li a:hover {
+    text-decoration: underline;
+    color: #000;
+    transition: .3s;
+}
+
+.header_list li a:active {
+    color: black;
+}
+
+.account {
+
+}
+
+.account_list {
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 13px;
+}
+
+.account_list li {
+    position: relative;
+}
+
+.account_list li a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.account_list li::before {
+    content: url(../img/registration.png);
+    position: absolute;
+    left: -33px;
+    text-align: center;
+}

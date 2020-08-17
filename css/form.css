@@ -1,9 +1,11 @@
 ::-webkit-input-placeholder { /* Edge */
     color: #939393;
 }
+
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #939393;
 }
+
 ::placeholder {
     color: #939393;
 }
@@ -12,6 +14,7 @@
     text-align: left;
     margin-bottom: 17px;
 }
+
 .form-group label {
     font-family: Proxima Nova, sans-serif;
     font-style: normal;
@@ -21,6 +24,7 @@
     margin-bottom: 5px;
     display: inline-block;
 }
+
 .form-group .error-message {
     font-family: Proxima Nova, sans-serif;
     font-style: normal;
@@ -31,6 +35,7 @@
     color: #AE0404;
     float: right;
 }
+
 .form-group input {
     font-family: Proxima Nova, sans-serif;
     font-style: normal;
@@ -44,12 +49,15 @@
     box-sizing: border-box;
     border-radius: 5px;
 }
+
 .form-group button {
     width: 100%;
 }
+
 .form-group .btn-submit {
     margin-top: 13px;
 }
+
 .form-group p {
     font-family: Proxima Nova, sans-serif;
     font-style: normal;
@@ -59,11 +67,13 @@
     color: #000;
     text-align: center;
 }
+
 .form-group p a {
     color: #000;
     font-weight: bold;
     text-decoration: underline;
 }
+
 .btn-form-green {
     display: inline-block;
     font-family: Proxima Nova, sans-serif;
@@ -80,6 +90,7 @@
     transition: all linear .1s;
     background: #83C465;
 }
+
 .btn-form-green:hover {
     text-decoration: none;
     background: #222222;
@@ -102,11 +113,13 @@
     transition: all linear .1s;
     background: #BFBFBF;
 }
+
 .btn-form-grey:hover {
     text-decoration: none;
     background: #222222;
     color: #FFFFFF;
 }
+
 .btn-form-white {
     font-family: Proxima Nova, sans-serif;
     font-style: normal;
@@ -120,14 +133,17 @@
     color: #000000;
     transition: all linear .1s;
 }
+
 .btn-form-white:hover {
     text-decoration: none;
     background: #222222;
     color: #FFFFFF;
 }
+
 input[type="checkbox"] {
     display: none;
 }
+
 input[type="checkbox"] + i {
     display: inline-block;
     width: 17px;
@@ -138,6 +154,7 @@ input[type="checkbox"] + i {
     vertical-align: middle;
     position: relative;
 }
+
 input[type="checkbox"]:checked ~ i:before {
     content: '';
     background: url('/css/imgs/checkbox-arrow.svg') no-repeat 1px 3px;
@@ -148,6 +165,7 @@ input[type="checkbox"]:checked ~ i:before {
     width: 100%;
     height: 100%;
 }
+
 input[type="checkbox"] ~ span {
     font-family: Proxima Nova, sans-serif;
     font-style: normal;
@@ -159,6 +177,7 @@ input[type="checkbox"] ~ span {
 @media (max-width: 1199px) {
 
 }
+
 @media (max-width: 767px) {
 
 }

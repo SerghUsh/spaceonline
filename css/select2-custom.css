@@ -6,19 +6,23 @@
     font-size: 22px;
     line-height: 48px;
 }
+
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #000;
     line-height: 48px;
 }
+
 .select2-container .select2-selection--single .select2-selection__rendered {
     padding-left: 25px;
     padding-right: 45px;
 }
+
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     height: 100%;
     top: 0;
     width: 40px;
 }
+
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
     border-color: #000 transparent transparent transparent;
     border-width: 8px 8px 0 8px;
@@ -30,10 +34,12 @@
     top: 50%;
     width: 0;
 }
+
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
     border-color: transparent transparent #000 transparent;
     border-width: 0 8px 8px 8px;
 }
+
 .select2-results__option--selectable {
     cursor: pointer;
     color: #000000;

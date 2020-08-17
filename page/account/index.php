@@ -10,7 +10,7 @@
 <div class="title-block">
     <div>
         <h1>Личный кабинет</h1>
-        <p>Главная</p>
+        <p class="subtitle">Главная</p>
     </div>
 </div>
 

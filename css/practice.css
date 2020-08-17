@@ -1,43 +1,11 @@
-@font-face {
-    font-family: 'ProximaNova';
-    src: url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ProximaNova';
-    src: url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-body {
-	padding-top: 80px;
-}
-
-
-.container {
-	max-width: 1920px;
-	margin: 0 auto;
-	font-family: 'ProximaNova';
-}
-
 /* Find your practise */
-
 .wrapper {
     display: flex;
     flex-flow: row wrap;
-    margin-top: 80px;
     width: 1630px;
     margin: 0 auto;
-    /*margin-left: 145px;
-    margin-right: 145px;*/
-
 }
+
 .wrapper__item {
     margin-right: 92px;
     margin-bottom: 68px;
@@ -45,6 +13,7 @@ body {
     height: 100%;
     overflow: hidden;
 }
+
 .wrapper__item h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -52,8 +21,9 @@ body {
     line-height: 50px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #000000; 
+    color: #000000;
 }
+
 .wrapper__item p {
     margin-top: 1rem;
     font-weight: normal;
@@ -61,6 +31,7 @@ body {
     line-height: 24px;
     color: #323232;
 }
+
 .wrapper__item a {
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -72,6 +43,7 @@ body {
     color: #000000;
     left: 64px;
 }
+
 .wrapper__item a:hover {
-    text-shadow: 0px 1px 1px black;
+    text-shadow: 0 1px 1px black;
 }

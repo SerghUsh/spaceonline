@@ -10,7 +10,7 @@
 <div class="title-block">
     <div>
         <h1>Практики</h1>
-        <p>Найди себе практику по душе</p>
+        <p class="subtitle">Найди себе практику по душе</p>
     </div>
 </div>
 

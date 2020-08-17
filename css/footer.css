@@ -1,0 +1,155 @@
+footer {
+    background: #FAFAFA;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_menu .half_first {
+    width: 47%;
+}
+
+.footer_menu .half_second {
+    width: 48%;
+}
+
+.footer__item {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Social Buttons */
+#footer .social_buttons {
+    margin-top: 56px;
+    margin-left: -10px;
+}
+
+#footer .social_buttons__link {
+    margin-top: 51px;
+
+}
+
+#footer .social_buttons__link a {
+    margin-right: 4px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+#footer .social_buttons__link a.instagram {
+    background: url(../img/inst.png) no-repeat;
+}
+
+#footer .social_buttons__link a.instagram:hover {
+    background: url(../img/inst_hover.png) no-repeat;
+}
+
+#footer .social_buttons__link a.facebook {
+    background: url(../img/fb.png) no-repeat;
+}
+
+#footer .social_buttons__link a.facebook:hover {
+    background: url(../img/fb_hover.png) no-repeat;
+}
+
+#footer .social_buttons__link a.youtube {
+    background: url(../img/ytb.png) no-repeat;
+}
+
+#footer .social_buttons__link a.youtube:hover {
+    background: url(../img/ytb_hover.png) no-repeat;
+}
+
+/* Footer List */
+
+#footer .footer_list {
+    margin-top: 53px;
+    margin-left: -23px;
+}
+
+#footer h3 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 44px;
+    color: #000000;
+}
+
+#footer .footer_list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#footer .footer_list li {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 37px;
+    color: #000000;
+}
+
+#footer .footer_list li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#footer .footer_list li a:hover {
+    text-decoration: underline;
+    color: #000;
+    transition: .3s;
+}
+
+/* Footer Contacts */
+
+#footer .footer_contacts {
+    margin-top: 52px;
+    margin-left: 60px;
+}
+
+#footer .footer_contacts ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 46px;
+}
+
+#footer .footer_contacts li {
+    position: relative;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    color: #000000;
+}
+
+#footer .footer_contacts li::before {
+    position: absolute;
+    left: -42px;
+    text-align: center;
+    line-height: 43px;
+}
+
+.footer_contacts li.mail::before {
+    content: url(../img/mail.png);
+}
+
+.footer_contacts li.phone::before {
+    content: url(../img/phone.png);
+}
+
+#footer .footer_contacts li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#footer .footer_contacts li a:hover {
+    text-decoration: none;
+    transition: .3s;
+}
+
+#footer p.copyright {
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 44px;
+    color: #000000;
+    margin-top: 70px;
+}

@@ -10,7 +10,7 @@
 <div class="title-block">
     <div>
         <h1>События</h1>
-        <p>ВСЕ БЛИЖАЙШИЕ СОБЫТИЯ ОТ SPACE ONLINE</p>
+        <p class="subtitle">Все ближайшие события от space online</p>
     </div>
 </div>
 
