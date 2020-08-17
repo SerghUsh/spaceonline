@@ -51,6 +51,12 @@
         letter-spacing: 3px;
     }
 
+    .title-block.title-big h1 {
+        font-size: 80px;
+        line-height: 38px;
+        letter-spacing: 3px;
+    }
+
     .title-block p {
         font-size: 16px;
         line-height: 26px;
@@ -65,6 +71,12 @@
 
     .title-block h1 {
         font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+
+    .title-block.title-big h1 {
+        font-size: 32px;
         line-height: 24px;
         letter-spacing: 1px;
     }

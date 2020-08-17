@@ -26,6 +26,7 @@
 
 <style>
     .error-content {
+        padding-top: 82px;
         padding-bottom: 127px;
     }
     .error-block {
@@ -39,7 +40,7 @@
         font-weight: 300;
         font-size: 50px;
         line-height: 60px;
-        margin: 85px 0 58px;
+        margin-bottom: 59px;
     }
     .btn-white {
         display: inline-block;
@@ -64,13 +65,50 @@
         color: #FFFFFF;
     }
     @media (max-width: 1199px) {
+        .error-content {
+            padding-top: 57px;
+            padding-bottom: 64px;
+        }
+        .error-block {
+            max-width: 400px;
+        }
         .error-text {
-            font-size: 40px;
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 29px;
+        }
+        .btn-white {
+            font-size: 12px;
+            line-height: 21px;
+            letter-spacing: 1.6px;
+            width: 278px;
+            height: 35px;
+            padding: 5px 0 0;
         }
     }
     @media (max-width: 767px) {
+        .error-content {
+            padding-top: 30px;
+            padding-bottom: 64px;
+        }
+        .error-block {
+            max-width: 308px;
+        }
         .error-text {
-            font-size: 30px;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 17px;
+            padding: 0 15px;
+        }
+        .btn-white {
+            font-size: 10px;
+            line-height: 21px;
+            letter-spacing: 1.6px;
+            width: 100%;
+            height: 30px;
+            padding: 3px 0 0;
+            border: 1px solid #000000;
+            border-radius: 3px;
         }
     }
 </style>
