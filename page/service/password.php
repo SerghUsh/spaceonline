@@ -23,10 +23,10 @@
 
             <div class="form-group">
                 <button class="btn-submit btn-form-green" type="submit">Отправить</button>
-            </div>
 
-            <div class="form-group">
-                <p>Вернутся назад на страницу <a class="link-black" href="<?php href('service', 'login') ?>">Входа</a></p>
+                <div class="action-block">
+                    <p>Вернутся назад на страницу <a class="link-black" href="<?php href('service', 'login') ?>">Входа</a></p>
+                </div>
             </div>
         </form>
     </div>
@@ -34,7 +34,7 @@
 
 <style>
     #password-content {
-        padding: 60px 0 85px;
+        padding: 60px 0 80px;
     }
     #password-content form {
         max-width: 535px;

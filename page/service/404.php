@@ -26,8 +26,8 @@
 
 <style>
     .error-content {
-        padding-top: 82px;
-        padding-bottom: 127px;
+        padding-top: 80px;
+        padding-bottom: 130px;
     }
     .error-block {
         max-width: 660px;

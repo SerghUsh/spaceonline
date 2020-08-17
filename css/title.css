@@ -69,7 +69,8 @@
         height: 181px;
     }
 
-    .title-block h1 {
+    .title-block h1,
+    .title-block.title-small h1 {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 1px;

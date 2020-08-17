@@ -29,14 +29,14 @@
 
             <div class="form-group">
                 <button class="btn-submit btn-form-grey" type="submit">Войти</button>
-            </div>
 
-            <div class="form-group">
-                <p class="align-left">
-                    Впервый на Space Online?
-                    <a class="link-black" href="<?php href('service', 'registration') ?>">Регистрация</a>
-                    <a class="link-black float-right" href="<?php href('service', 'password') ?>">Забыли пароль?</a>
-                </p>
+                <div class="action-block">
+                    <p>
+                        Впервый на Space Online?
+                        <a class="link-black" href="<?php href('service', 'registration') ?>">Регистрация</a>
+                        <a class="link-black" href="<?php href('service', 'password') ?>">Забыли пароль?</a>
+                    </p>
+                </div>
             </div>
         </form>
     </div>
@@ -44,7 +44,7 @@
 
 <style>
     #login-content {
-        padding: 66px 0 90px;
+        padding: 60px 0 80px;
     }
     #login-content form {
         max-width: 535px;
@@ -54,7 +54,9 @@
     }
 
     @media (max-width: 1199px) {
-
+        #login-content {
+            padding: 42px 0 90px;
+        }
     }
     @media (max-width: 767px) {
 

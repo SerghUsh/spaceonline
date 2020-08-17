@@ -79,7 +79,7 @@
 
 <style>
     #registration-content {
-        padding: 67px 0 99px;
+        padding: 60px 0 80px;
     }
     #registration-content form {
         max-width: 535px;

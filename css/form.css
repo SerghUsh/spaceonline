@@ -173,7 +173,12 @@ input[type="checkbox"] ~ span {
     font-size: 18px;
     line-height: 22px;
 }
-
+.action-block {
+    margin-top: 16px;
+}
+.form-group p a:last-child {
+    margin-left: 18px;
+}
 @media (max-width: 1199px) {
     .form-group:not(:last-child) {
         margin-bottom: 16px;
@@ -197,6 +202,12 @@ input[type="checkbox"] ~ span {
         line-height: 20px;
     }
 
+    .btn-form-grey {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 6px 0 7px;
+    }
+
     .btn-form-white {
         font-size: 16px;
         line-height: 20px;
@@ -206,7 +217,7 @@ input[type="checkbox"] ~ span {
     .btn-form-green {
         font-size: 16px;
         line-height: 20px;
-        padding: 9px 15px 6px;
+        padding: 6px 0 7px;
     }
 
     input[type="checkbox"] ~ span {
@@ -219,8 +230,12 @@ input[type="checkbox"] ~ span {
         line-height: 20px;
     }
 
-    .form-group p a {
+    .form-group p a:last-child {
         margin-left: 33px;
+    }
+
+    .action-block {
+        margin-top: 8px;
     }
 }
 
@@ -243,6 +258,12 @@ input[type="checkbox"] ~ span {
         font-size: 14px;
     }
 
+    .btn-form-grey {
+        height: 30px;
+        font-size: 14px;
+        padding: 5px 5px 6px;
+    }
+
     .btn-form-white {
         height: 30px;
         font-size: 14px;
@@ -261,9 +282,6 @@ input[type="checkbox"] ~ span {
 
     .form-group p {
         font-size: 14px;
-    }
-
-    .form-group p a {
-        /*margin-left: 33px;*/
+        line-height: 30px;
     }
 }
