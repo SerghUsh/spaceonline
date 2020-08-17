@@ -19,9 +19,9 @@
     font-family: Proxima Nova, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
-    line-height: 26px;
-    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 3px;
     display: inline-block;
 }
 
@@ -151,7 +151,7 @@ input[type="checkbox"] + i {
     background: #D9D9D9;
     border-radius: 5px;
     margin-right: 5px;
-    vertical-align: middle;
+    vertical-align: -2px;
     position: relative;
 }
 
@@ -175,9 +175,95 @@ input[type="checkbox"] ~ span {
 }
 
 @media (max-width: 1199px) {
+    .form-group:not(:last-child) {
+        margin-bottom: 16px;
+    }
 
+    .form-group label {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .form-group input {
+        font-size: 16px;
+        line-height: 20px;
+        height: 35px;
+    }
+
+    .form-group .error-message {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .btn-form-white {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 6px 0 7px;
+    }
+
+    .btn-form-green {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 9px 15px 6px;
+    }
+
+    input[type="checkbox"] ~ span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .form-group p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .form-group p a {
+        margin-left: 33px;
+    }
 }
 
 @media (max-width: 767px) {
+    .form-group:not(:last-child) {
+        margin-bottom: 14px;
+    }
 
+    .form-group label {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .form-group input {
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .form-group .error-message {
+        font-size: 14px;
+    }
+
+    .btn-form-white {
+        height: 30px;
+        font-size: 14px;
+        padding: 5px 5px 6px;
+    }
+
+    .btn-form-green {
+        height: 30px;
+        font-size: 14px;
+        padding: 5px 5px 6px;
+    }
+
+    input[type="checkbox"] ~ span {
+        font-size: 14px;
+    }
+
+    .form-group p {
+        font-size: 14px;
+    }
+
+    .form-group p a {
+        /*margin-left: 33px;*/
+    }
 }
