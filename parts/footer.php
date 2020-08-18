@@ -6,7 +6,7 @@
                 <div class="footer__item">
                     <div class="social_buttons">
                         <div>
-                            <img src="/img/footer_logo.png" alt="image">
+                            <img src="/img/logo_SpOn.png" alt="image">
                         </div>
                         <div class="social_buttons__link">
                             <a href="https://www.instagram.com/" target="blank" class="instagram"></a>
@@ -32,7 +32,7 @@
 
             <div class="half_second">
                 <div class="footer_contacts">
-                    <h3>Контакты</h3>
+                    <h3 class="contacts">Контакты</h3>
                     <ul>
                         <li class="mail"><a href="mailto:SpaceOnline@mail.ru">SpaceOnline@gmail.com</a></li>
                         <li class="phone"><a href="tel:+380766443274">+38 (076) 644 32 74</a></li>

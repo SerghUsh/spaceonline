@@ -36,7 +36,7 @@
 
         <div class="about_us__wrapper">
             <div class="discription">
-                <div><img src="/img/logo_SpOn.svg"></div>
+                <div><img src="/img/logo_SpOn.png"></div>
                 
                     <p class="font-proximanova">SPACE Online – это уникальное пространство, первая и единственная
                         масштабная русскоязычная платформа, которая позволит людям во всем мире найти лучших мастеров во всех направлениях работы с телом, духом и душой на Пути поиска Себя! У нас можно получить консультацию практически
@@ -59,7 +59,7 @@
         <div class="choise_your_practises__list">
             <div class="slider">
                 <div class="slider__item">
-                    <img src="/img/astrology.png" alt="image">
+                    <img src="/img/astrology.png" class="pract" alt="image">
                     <h2>Астрология</h2>
                     <p>
                         Улучши свое душевное равновесие. С лучшим специалистом
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="slider__item">
-                    <img src="/img/psychology.png" alt="image">
+                    <img src="/img/psychology.png" class="pract" alt="image">
                     <h2>Психология</h2>
                     <p>
                         Улучши свое душевное равновесие. С лучшим специалистом
@@ -81,7 +81,7 @@
                 </div>
 
                 <div class="slider__item">
-                    <img src="/img/coaching.png" alt="image">
+                    <img src="/img/coaching.png" class="pract" alt="image">
                     <h2>Коучинг</h2>
                     <p>
                         Улучши свое душевное равновесие. С лучшим специалистом
@@ -92,7 +92,7 @@
                 </div>
 
                 <div class="slider__item">
-                    <img src="/img/astrology.png" alt="image">
+                    <img src="/img/astrology.png" class="pract" alt="image">
                     <h2>Астрология</h2>
                     <p>
                         Улучши свое душевное равновесие. С лучшим специалистом
@@ -103,7 +103,7 @@
                 </div>
 
                 <div class="slider__item">
-                    <img src="/img/psychology.png" alt="image">
+                    <img src="/img/psychology.png" class="pract" alt="image">
                     <h2>Психология</h2>
                     <p>
                         Улучши свое душевное равновесие. С лучшим специалистом
@@ -114,7 +114,7 @@
                 </div>
 
                 <div class="slider__item">
-                    <img src="/img/coaching.png" alt="image">
+                    <img src="/img/coaching.png" class="pract" alt="image">
                     <h2>Коучинг</h2>
                     <p>
                         Улучши свое душевное равновесие. С лучшим специалистом
@@ -142,7 +142,7 @@
         <div class="slider">
             <div class="flex-item">
                 <div class="slider__item">
-                    <img src="/img/1.png" alt="image">
+                    <img src="/img/1.png" class="number" alt="image">
                     <h2>Выбор категории</h2>
                     <p>
                     Выбери категорию, которая тебе
@@ -158,7 +158,7 @@
 
             <div class="flex-item">
                 <div class="slider__item">
-                    <img src="/img/2.png" alt="image">
+                    <img src="/img/2.png" class="number" alt="image">
                     <h2>Выбор специалиста</h2>
                     <p>
                     В каждой категории представлены
@@ -173,8 +173,8 @@
 
             <div class="flex-item">
                 <div class="slider__item">
-                    <img src="/img/3.png" alt="image">
-                    <h2>Запись на консультацию</h2>
+                    <img src="/img/3.png" class="number" alt="image">
+                    <h2 class="height">Запись на консультацию</h2>
                     <p>
                     Выберите свободную дату и время
                     в графике специалиста который
@@ -188,7 +188,7 @@
 
             <div class="flex-item">
                 <div class="slider__item">
-                    <img src="/img/4.png" alt="image">
+                    <img src="/img/4.png" class="number" alt="image">
                     <h2>Регистрация</h2>
                     <p>
                     Зарегистрируй свой личный аккаунт
@@ -203,7 +203,7 @@
 
             <div class="flex-item">
                 <div class="slider__item">
-                    <img src="/img/5.png" alt="image">
+                    <img src="/img/5.png" class="number" alt="image">
                     <h2>Оплата</h2>
                     <p>
                     Быстрый способ оплаты который
@@ -217,7 +217,7 @@
             </div>
 
             <div class="slider__item">
-                <img src="/img/6.png" alt="image">
+                <img src="/img/6.png" class="number" alt="image">
                 <h2>Консультация</h2>
                 <p>
                     Подключитесь в нужную дату и время
@@ -232,7 +232,7 @@
         <div class="title__left">
             <span>Будущие события</span>
             <p>
-                Участвуй в лучших событиях от наших специалистов
+                Испытайте свой дух. Раслабь свой разум. Успокойся. Наша команда специалистов мирового класса даст вам возможность расти и достигать всех ваших целе в личностном и карьерном и оздоровлении.
             </p>
         </div>
 
@@ -249,11 +249,11 @@
                                     
                     <h2>Название мероприятия</h2>
                     <p class="duration">Длительность: 1 час 20 минут</p>
-                    <p>
+                    <p class="state">
                         Улучши свое душевное равновесие. С лучшим специалисто
                         Екатериной. Всего за полтора часа, ты сможешь погрузиться
                         внутрь себя и найти в себе гармонию.
-                        <a href="">Узнать больше</a>
+                        <a href="" class="small">Узнать больше</a>
                     </p>
                 </div>
 
@@ -267,11 +267,11 @@
                     </div>
                     <h2>Название мероприятия</h2>
                     <p class="duration">Длительность: 1 час 20 минут</p>
-                    <p>
+                    <p class="state">
                         Улучши свое душевное равновесие. С лучшим специалистом
                         Екатериной. Всего за полтора часа, ты сможешь погрузиться
                         внутрь себя и найти в себе гармонию.
-                        <a href="">Узнать больше</a>
+                        <a href="" class="small">Узнать больше</a>
                     </p>
                 </div>
 
@@ -285,11 +285,11 @@
                     </div>
                     <h2>Название мероприятия</h2>
                     <p class="duration">Длительность: 1 час 20 минут</p>
-                    <p>
+                    <p class="state">
                         Улучши свое душевное равновесие. С лучшим специалистом
                         Екатериной. Всего за полтора часа, ты сможешь погрузиться
                         внутрь себя и найти в себе гармонию.
-                        <a href="">Узнать больше</a>
+                        <a href="" class="small">Узнать больше</a>
                     </p>
                 </div>
 
@@ -303,11 +303,11 @@
                     </div>
                     <h2>Название мероприятия</h2>
                     <p class="duration">Длительность: 1 час 20 минут</p>
-                    <p>
+                    <p class="state">
                         Улучши свое душевное равновесие. С лучшим специалистом
                         Екатериной. Всего за полтора часа, ты сможешь погрузиться
                         внутрь себя и найти в себе гармонию.
-                        <a href="">Узнать больше</a>
+                        <a href="" class="small">Узнать больше</a>
                     </p>
                 </div>
 
@@ -321,11 +321,11 @@
                     </div>
                     <h2>Название мероприятия</h2>
                     <p class="duration">Длительность: 1 час 20 минут</p>
-                    <p>
+                    <p class="state">
                         Улучши свое душевное равновесие. С лучшим специалистом
                         Екатериной. Всего за полтора часа, ты сможешь погрузиться
                         внутрь себя и найти в себе гармонию.
-                        <a href="">Узнать больше</a>
+                        <a href="" class="small">Узнать больше</a>
                     </p>
                 </div>
 
@@ -339,11 +339,11 @@
                     </div>
                     <h2>Название мероприятия</h2>
                     <p class="duration">Длительность: 1 час 20 минут</p>
-                    <p>
+                    <p class="state">
                         Улучши свое душевное равновесие. С лучшим специалистом
                         Екатериной. Всего за полтора часа, ты сможешь погрузиться
                         внутрь себя и найти в себе гармонию.
-                        <a href="">Узнать больше</a>
+                        <a href="" class="small">Узнать больше</a>
                     </p>
                 </div>
             </div>
@@ -374,6 +374,7 @@
                     <p>Если ты тоже помогаешь людям увеличить их внутреннее пространство, то становись частью нашей команды.
                     </p>
                 </div>
+                
                 <a href="#" class="write">Запишись прямо сейчас</a>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <?php include_once(__DIR__ . '/bootstrap.php'); ?>
 <header>
     <div class="container">
-        <div class="logo"><img src="/img/logo_SpOn.svg" alt="logo">
+        <div class="logo"><img src="/img/logo_SpOn.png" alt="logo">
         </div>
 
         <nav class="header__menu">
