@@ -1,0 +1,577 @@
+#specialist-list-content {
+    padding: 66px 0;
+}
+
+#specialist-list-content .specialist-filter-block {
+    font-family: Montserrat, sans-serif;
+}
+
+#specialist-list-content .specialist-filter-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 3px;
+    color: #333333;
+    margin-right: 54px;
+    vertical-align: text-bottom;
+}
+
+#specialist-list-content .specialist-filter-wrapper {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+#specialist-list-content .specialist-filter-group {
+    display: inline-block;
+}
+
+#specialist-list-content .specialist-filter-group:not(:last-child) {
+    margin-right: 60px;
+}
+
+#specialist-list-content .specialist-filter-block label {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    margin-right: 18px;
+}
+
+#specialist-list-content .specialist-filter-block select {
+    background: 0;
+    border-radius: 0;
+    border: none;
+    border: 0;
+    outline: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #333333;
+}
+
+.range-wrapper {
+    width: 255px;
+    display: inline-block;
+    position: relative;
+    vertical-align: super;
+}
+
+.range-slider {
+    margin: 0 40px 0 20px;
+}
+
+.range-slider:before {
+    content: '';
+    display: block;
+    border-radius: 5px;
+    background: #000;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    z-index: -1;
+    width: 9px;
+    height: 9px;
+}
+
+.range-slider:after {
+    content: '';
+    display: block;
+    border-radius: 5px;
+    background: #000;
+    position: absolute;
+    top: 14px;
+    right: 40px;
+    z-index: -1;
+    width: 9px;
+    height: 9px;
+}
+
+.box-minmax {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 37px;
+    letter-spacing: 3px;
+    width: 100%;
+    color: black;
+}
+
+.box-minmax span:first-child {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 25px;
+    text-align: center;
+    line-height: 1;
+}
+
+.box-minmax span:last-child {
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 40px;
+    text-align: center;
+    line-height: 1;
+}
+
+.rs-range {
+    width: 100%;
+    -webkit-appearance: none;
+}
+
+.rs-range:focus {
+    outline: none;
+}
+
+.rs-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    box-shadow: none;
+    background: black;
+    border-radius: 0;
+    border: 0 solid #000;
+}
+
+.rs-range::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    box-shadow: none;
+    background: black;
+    border-radius: 0;
+    border: 0 solid #000;
+}
+
+.rs-range::-webkit-slider-thumb {
+    border: 0 solid black;
+    height: 9px;
+    width: 9px;
+    border-radius: 9px;
+    background: #000;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3px;
+}
+
+.rs-range::-moz-range-thumb {
+    border: 0 solid black;
+    height: 9px;
+    width: 9px;
+    border-radius: 9px;
+    background: #000;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3px;
+}
+
+.rs-range::-moz-focus-outer {
+    border: 0;
+}
+
+.rs-label {
+    position: relative;
+    transform-origin: center center;
+    display: block;
+    width: 60px;
+    background: transparent;
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: -30px;
+    left: attr(value);
+    font-size: 14px;
+    margin-bottom: -5px;
+    line-height: 12px;
+    margin-top: -2px;
+}
+
+.rs-label::after {
+    content: attr(data-after);
+}
+
+#specialist-list-content .specialist-list-block {
+    margin-top: 59px;
+}
+
+
+#specialist-list-content .specialist-tile:hover {
+    background: #fff;
+    box-shadow: 0 0 30px 0px rgb(0, 0, 0, .25);
+}
+
+.specialist-tile {
+    text-align: center;
+    background: #FAFAFA;
+    border-radius: 10px;
+    margin: 0 auto 82px;
+}
+
+.specialist-tile .specialist-info {
+    padding: 20px 46px 0;
+}
+
+.specialist-tile .specialist-info {
+    padding: 28px 46px 9px;
+}
+
+.specialist-tile .specialist-image-block {
+    width: 190px;
+    height: 190px;
+    position: relative;
+    margin: 0 auto 18px;
+}
+
+.specialist-tile .specialist-image-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0 0 30px 0px rgb(0, 0, 0, .25);
+    overflow: hidden;
+}
+
+.specialist-tile .specialist-image-wrapper img {
+    width: 100%;
+}
+
+.specialist-tile .specialist-image-wrapper:after {
+    content: '';
+    position: absolute;
+    top: calc(13px / 2);
+    left: calc(13px / 2);
+    width: 177px;
+    height: 177px;
+    z-index: 1;
+    border-radius: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.specialist-tile .specialist-image-block .circle {
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    z-index: 2;
+    background: #83C565;
+    border-radius: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+}
+
+.specialist-tile .specialist-image-block .circle:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.specialist-tile .specialist-name {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.specialist-tile .specialist-type {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.specialist-tile .specialist-type {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.specialist-tile .specialist-description {
+    border-top: 1px solid #D5D5D5;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 7px;
+    min-height: 108px;
+}
+
+.specialist-tile .specialist-experience {
+    font-size: 16px;
+    line-height: 34px;
+    color: #7C7C7C;
+    margin-bottom: 1px;
+    display: inline-block;
+}
+
+.specialist-tile .specialist-experience:before {
+    content: '';
+    background: url("/css/imgs/specialist-experience.svg"), no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: -5px;
+}
+
+.specialist-tile .specialist-direction {
+    border-top: 1px solid #D5D5D5;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    padding-top: 8px;
+}
+
+.specialist-tile .specialist-calendar {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.specialist-tile .specialist-calendar a {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.specialist-tile .specialist-calendar a:before {
+    content: '';
+    display: inline-block;
+    background: url("/css/imgs/specialist-arrow.svg") no-repeat;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+@media (max-width: 1199px) {
+    #specialist-list-content {
+        padding: 36px 0;
+    }
+
+    #specialist-list-content .specialist-filter-title {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #specialist-list-content .specialist-filter-group {
+    }
+
+    #specialist-list-content .specialist-filter-group:not(:last-child) {
+        margin-right: 43px;
+    }
+
+    #specialist-list-content .specialist-filter-block label {
+        font-size: 16px;
+        margin-right: 9px;
+    }
+
+    #specialist-list-content .specialist-filter-block select {
+        font-size: 16px;
+    }
+
+    .range-wrapper {
+        width: 205px;
+    }
+
+    .box-minmax {
+        font-size: 12px;
+    }
+
+    #specialist-list-content .specialist-list-block {
+        margin-top: 30px;
+    }
+
+    .specialist-tile {
+        margin: 0 auto 39px;
+    }
+
+    .specialist-tile .specialist-info {
+        padding: 21px 21px 2px;
+    }
+
+    .specialist-tile .specialist-image-block {
+        width: 149px;
+        height: 149px;
+        margin: 0 auto 14px;
+    }
+
+    .specialist-tile .specialist-image-block .circle {
+        top: 24px;
+        right: 3px;
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+    }
+
+    .specialist-tile .specialist-image-wrapper:after {
+        top: calc(11px / 2);
+        left: calc(11px / 2);
+        width: 138px;
+        height: 138px;
+    }
+
+    .specialist-tile .specialist-name {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 4px;
+    }
+
+    .specialist-tile .specialist-type {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 9px;
+    }
+
+    .specialist-tile .specialist-description {
+        font-size: 12px;
+        line-height: 18px;
+        padding-top: 6px;
+        min-height: 80px;
+    }
+
+    .specialist-tile .specialist-experience {
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 6px;
+    }
+
+    .specialist-tile .specialist-experience:before {
+        background-size: 14px;
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        vertical-align: -5px;
+    }
+
+    .specialist-tile .specialist-direction {
+        padding-top: 6px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .specialist-tile .specialist-calendar {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 15px 36px 15px 15px;
+    }
+
+    .specialist-tile .specialist-calendar a {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .specialist-tile .specialist-calendar a:before {
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    #specialist-list-content {
+        padding: 15px 0;
+    }
+
+    #specialist-list-content .specialist-filter-title {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 2px;
+    }
+
+    #specialist-list-content .specialist-filter-block label {
+        margin-right: 9px;
+        font-size: 12px;
+        line-height: 32px;
+        letter-spacing: 1px;
+    }
+
+    #specialist-list-content .specialist-filter-block select {
+        font-size: 12px;
+        margin-left: -3px;
+    }
+
+    .range-wrapper {
+        vertical-align: 2px;
+    }
+
+    .specialist-tile {
+        margin: 0 auto 31px;
+    }
+
+    .specialist-tile .specialist-info {
+        padding: 13px 20px 8px;
+    }
+
+    .specialist-tile .specialist-image-block {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 10px;
+    }
+
+    .specialist-tile .specialist-image-wrapper:after {
+        top: calc(7px / 2);
+        left: calc(7px / 2);
+        width: 93px;
+        height: 93px;
+    }
+
+    .specialist-tile .specialist-image-block .circle {
+        top: 15px;
+        right: 3px;
+        width: 13px;
+        height: 13px;
+        padding: 1px;
+    }
+
+    .specialist-tile .specialist-name {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .specialist-tile .specialist-type {
+        font-size: 12px;
+        margin-bottom: 9px;
+    }
+
+    .specialist-tile .specialist-description {
+        padding-top: 13px;
+    }
+
+    .specialist-tile .specialist-experience {
+        font-size: 12px;
+        line-height: 34px;
+        margin-bottom: 0;
+    }
+
+    .specialist-tile .specialist-direction {
+        padding-top: 11px;
+    }
+
+    .specialist-tile .specialist-calendar {
+        padding: 9px 16px 9px 15px;
+    }
+
+    .specialist-tile .specialist-calendar a {
+        line-height: 21px;
+    }
+
+    .specialist-tile .specialist-calendar a:before {
+        background-size: 21px;
+        width: 21px;
+        height: 21px;
+        margin-right: 12px;
+    }
+}
