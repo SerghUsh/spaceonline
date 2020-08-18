@@ -207,6 +207,7 @@
     background: #FAFAFA;
     border-radius: 10px;
     margin: 0 auto 82px;
+    transition: all linear .1s;
 }
 
 .specialist-tile .specialist-info {
