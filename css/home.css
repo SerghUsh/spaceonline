@@ -389,7 +389,7 @@
 
 #start_now .slider .flex-item {
     display: flex;
-
+    outline: none;
 }
 
 #start_now .slider__item {
