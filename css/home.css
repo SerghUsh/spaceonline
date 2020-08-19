@@ -107,14 +107,11 @@
 /* Главный блок 'О нас' */
 .about_us__wrapper {
     width: 100%;
-    height: 636px;
+    height: auto;
+    padding-left: 50.5%;
     background: linear-gradient(270deg, #FFFFFF 8.11%, rgba(255, 255, 255, 0) 30.43%),
     url(../img/bg_About_us.png) no-repeat;
     background-position: left top;
-}
-
-.about_us__wrapper .discription {
-    padding-left: 50.5%;
 }
 
 .about_us__wrapper .discription img {
@@ -138,6 +135,7 @@
     letter-spacing: 1px;
     color: #000000;
     width: 76%;
+    padding-bottom: 70px;
 }
 
 /* "Choise your practises" */
@@ -199,6 +197,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #000000;
+    margin-top: 3px;
 }
 
 #choise_your_practises .slider__item p {
@@ -232,7 +231,7 @@
 }
 .slider-manage-block {
     display: flex;
-    margin-top: 4.1rem;
+    margin-top: 64px;
 }
 
 .slider-manage-block a {
@@ -275,7 +274,7 @@
     height: 50px;
     border-radius: 50%;
     border: 1px solid #000000;
-    margin-left: 3rem;
+    margin-left: 46px;
     cursor: pointer;
     transition: all linear .1s;
 }
@@ -429,11 +428,11 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid #000000;
     background: url('../img/start_now__arrow_next.png') no-repeat;
     background-position: center;
+    background-size: 100%;
     cursor: pointer;
-    margin: 133px 91px 0 3px;
+    margin: 136px 91px 0 3px;
 }
 
 #start_now .slider .flex-item .next_slide:hover {
@@ -460,7 +459,7 @@
 .title__left {
     width: 95%;
     margin-top: 156px;
-    margin-bottom: 59px;
+    margin-bottom: 23px;
     overflow: hidden;
 }
 
@@ -475,7 +474,7 @@
 }
 
 .title__left span:after {
-    width: 963px;
+    width: 1063px;
     content: '';
     position: absolute;
     border: 1px solid #000000;
@@ -551,7 +550,7 @@
     line-height: 50px;
     letter-spacing: 1px;
     color: rgba(0, 0, 0, 0.8);
-    margin-top: -14px;
+    margin-top: -16px;
     margin-left: 25px;
     padding: 0;
     position: relative;
@@ -607,7 +606,7 @@
 /* Title from organizer */
 
 .title__center {
-    margin-top: 78px;
+    margin-top: 79px;
     margin-bottom: 57px;
     overflow: hidden;
     text-align: center;
@@ -622,7 +621,7 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #000000;
-    margin-left: -140px;
+    margin-left: -144px;
 }
 
 .title__center span:before {
@@ -786,12 +785,10 @@ a.write:active {
     .about_us__wrapper {
         width: 100%;
         height: 386px;
+        padding-left: 38.4%;
         background: linear-gradient(270deg, #FFFFFF 19.31%, rgba(255, 255, 255, 0) 38.01%), 
         url(../img/bg_medium_about_us.png) no-repeat;
         background-position: left top;
-    }
-    .about_us__wrapper .discription {
-        padding-left: 38.4%;
     }
     .about_us__wrapper .discription img {
         margin-top: 22px;
@@ -868,13 +865,13 @@ a.write:active {
         letter-spacing: 1.6px;
         padding: 10px 0;
     }
-    .choise_your_practises__button_left, 
-    .choise_your_practises__button_right {
+    .slider-button-prev, 
+    .slider-button-next {
         width: 42px;
         height: 42px;
         margin-left: 35px;
     }
-    .choise_your_practises__button_right {
+    .slider-button-next {
         margin-left: 25px;
     }
     .slider-manage-block .dots .slick-dots {
@@ -1094,7 +1091,7 @@ a.write:active {
     }
     .title-center {
         margin-left: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 13px;
     }
     .title-center span {
         font-size: 12px;
@@ -1112,14 +1109,12 @@ a.write:active {
     }
     .about_us__wrapper {
         width: 100%;
-        height: 145px;
+        height: 570px;
+        padding: 161px 20px 25px;
         background: url(../img/bg_about_us__Small.png) no-repeat;
     }
-    .about_us__wrapper .discription {
-        padding-left: 20px;
-    }
     .about_us__wrapper .discription img {
-        margin-top: 153px;
+        margin-top: 53px;
         width: 51%;
     }
     .about_us__wrapper .discription p.font-proximanova {
@@ -1139,7 +1134,7 @@ a.write:active {
     }
 
     #choise_your_practises {
-        margin-top: 377px;
+        margin-top: 0px;
         margin-left: 20px;
     }
     .title-left {
@@ -1171,7 +1166,7 @@ a.write:active {
     }
         #choise_your_practises .slider__item h2 {
         font-size: 12px;
-        margin-top: 10px;
+        margin-top: 9px;
     }
     #choise_your_practises .slider__item p {
         min-height: 70px;
@@ -1186,7 +1181,7 @@ a.write:active {
         left: 100px;
     }
     .slider-manage-block {
-        margin-top: -9px;
+        margin-top: -10px;
     }
     .slider-manage-block a {
         width: 132px;
@@ -1196,39 +1191,40 @@ a.write:active {
         letter-spacing: 1px;
         padding: 4px 0;
     }
-    .choise_your_practises__button_left, 
-    .choise_your_practises__button_right {
+    .slider-button-prev, 
+    .slider-button-next {
         width: 25px;
         height: 25px;
         margin-left: 10px;
     }
-    .choise_your_practises__button_right {
+    .slider-button-next {
         background: url(../img/practises__arr_next__Small.png) no-repeat;
         background-position: center;
     }
-    .choise_your_practises__button_left {
+    .slider-button-prev {
         background: url(../img/practises__arr_prew__Small.png) no-repeat;
         background-position: center;
     }
-    .choise_your_practises__button_right:hover {
+    .slider-button-next:hover {
         background: url(../img/arr_next_hover__Small.png) no-repeat;
         background-position: center;
     }
 
-    .choise_your_practises__button_left:hover {
+    .slider-button-prev:hover {
         background: url(../img/arr_prew_hover__Small.png) no-repeat;
         background-position: center;
     }
     .slider-manage-block .dots .slick-dots {
-        margin-left: 14px;
-        margin-top: 0px;
+        margin-left: 13px;
+        margin-top: -3px;
     }
     .slider-manage-block .dots .slick-dots li {
-        margin-left: -9px;
+        margin-left: -8px;
     }
     .dots .slick-dots li button {
         width: 6px;
         height: 6px;
+        padding: 0px;    
     }
 
     #start_now {
