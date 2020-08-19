@@ -126,7 +126,7 @@
             </div>
         </div>
 
-        <div class="slider_manage_block">
+        <div class="slider-manage-block">
             <a href="#">к списку практик</a>
             <div class="arrows"></div>
             <div class="dots"></div>
@@ -151,7 +151,7 @@
                     </p>
                 </div>
                 <div class="next_slide" >
-                    <a href="#" type="button"></a>
+                    <a href="#"></a>
                 </div>
             </div>
             
@@ -167,7 +167,7 @@
                     </p>
                 </div>
                 <div class="next_slide" >
-                    <a href="#" type="button"></a>
+                    <a href="#"></a>
                 </div>
             </div>
 
@@ -182,7 +182,7 @@
                     </p>
                 </div>
                 <div class="next_slide hid" >
-                    <a href="#" type="button"></a>
+                    <a href="#"></a>
                 </div>
             </div>
 
@@ -197,7 +197,7 @@
                     <a href="#" class="registration">Регистрация</a>
                 </div>
                 <div class="next_slide" >
-                    <a href="#" type="button"></a>
+                    <a href="#"></a>
                 </div>
             </div>
 
@@ -212,7 +212,7 @@
                     </p>
                 </div>
                 <div class="next_slide" >
-                    <a href="#" type="button"></a>
+                    <a href="#"></a>
                 </div>
             </div>
 
@@ -349,7 +349,7 @@
             </div>
         </div>
 
-        <div class="slider_manage_block">
+        <div class="slider-manage-block">
             <a href="#">к списку событий</a>
             <div class="arrows"></div>
             <div class="dots"></div>

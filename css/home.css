@@ -227,13 +227,15 @@
 #choise_your_practises .slider__item a:hover {
     text-shadow: 0px 1px 1px black;
 }
-
-.slider_manage_block {
+.slider__item {
+    outline: none;
+}
+.slider-manage-block {
     display: flex;
     margin-top: 4.1rem;
 }
 
-.slider_manage_block a {
+.slider-manage-block a {
     width: 374.29px;
     height: 50px;
     border: 2px solid #000000;
@@ -253,22 +255,22 @@
     color: #000000;
 }
 
-.slider_manage_block a:hover {
+.slider-manage-block a:hover {
     text-decoration: none;
     background: #222222;
     color: #FFFFFF;
 }
 
-.slider_manage_block a:active {
+.slider-manage-block a:active {
     border: 1px solid #445162;
 }
 
-.slider_manage_block .arrows {
+.slider-manage-block .arrows {
     display: flex;
 }
 
-.choise_your_practises__button_left,
-.choise_your_practises__button_right {
+.slider-button-prev,
+.slider-button-next {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -278,28 +280,32 @@
     transition: all linear .1s;
 }
 
-.choise_your_practises__button_left {
+.slider-button-prev {
     background: url('../img/practises__arr_prew.png') no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 
-.choise_your_practises__button_right {
+.slider-button-next {
     background: url('../img/practises__arr_next.png') no-repeat;
     background-position: center;
+    background-size: 100%;
     margin-left: 2.5rem;
 }
 
-.choise_your_practises__button_right:hover {
-    background: url(../img/arr_next_hover.png) no-repeat;
+.slider-button-next:hover {
+    background: url('../img/arr_next_hover.png') no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 
-.choise_your_practises__button_left:hover {
-    background: url(../img/arr_prew_hover.png) no-repeat;
+.slider-button-prev:hover {
+    background: url('../img/arr_prew_hover.png') no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 
-.slider_manage_block .dots .slick-dots {
+.slider-manage-block .dots .slick-dots {
     margin-left: 1.7rem;
     margin-top: 0.7rem;
     position: static;
@@ -582,11 +588,11 @@
     left: 78px;
 }
 
-#future_events .slider__item a.event:hover {
+#future_events .slider__item a.small:hover {
     text-shadow: 0px 1px 1px black;
 }
 
-#future_events .slider_manage_block {
+#future_events .slider-manage-block {
     display: flex;
     margin-top: 60px;
 }
@@ -689,41 +695,50 @@ a.write:active {
     border: 1px solid #445162;
 }
 
-@media (max-width: 1685px) {
-    .about_us .discription {
-        margin-top: 33px;
-    }
-
-    .about_us .discription p.proximanova,
-    .about_us .discription p.montserrat {
-        font-size: 22px;
-        line-height: 34px;
-    }
-}
-
 /* Media Style*/
 
 
-@media (max-width: 1685px) {
-    .about_us .discription {
-        margin-top: 33px;
+@media (max-width: 1724px) {
+    .about_us__wrapper .discription img {
+        margin-top: 45px;
     }
-    .about_us .discription p.proximanova,
-    .about_us .discription p.montserrat {
-        font-size: 22px;
-        line-height: 34px;
-    }
-}
-
-@media (max-width: 1412px) {
-    .about_us .discription p.proximanova,
-    .about_us .discription p.montserrat {
+    .about_us__wrapper .discription p.font-proximanova {
         font-size: 21px;
-        line-height: 31px;
+        line-height: 33px;
+        margin-top: 15px;
+        margin-bottom: 26px;
+        width: 92%;
+    }
+    .about_us__wrapper .discription p.font-montserrat {
+        font-size: 22px;
+        line-height: 33px;
+        width: 90%;
+    }
+    .main_block__item .discription_text p {
+        padding-top: 102px;
+        width: 62%;
+    }
+}
+    
+@media (max-width: 1410px) {
+    .about_us__wrapper .discription p.font-proximanova {
+        font-size: 21px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        width: 95%;
+    }
+    .about_us__wrapper .discription p.font-montserrat {
+        font-size: 21px;
+        line-height: 30px;
+        width: 95%;
+    }
+    .main_block__item .discription_text p {
+        padding-top: 72px;
+        width: 62%;
     }
 }
 
-@media (max-width: 1199px) and (min-width: 768px) {
+@media (max-width: 1199px) {
     .container {
         max-width: 768px;
     }
@@ -760,10 +775,11 @@ a.write:active {
 
     .title-center span:before {
         right: 109px;
+        width: 272px;
     }
 
     .title-center span:after {
-        width: 284px;
+        width: 286px;
         top: 47%;
         left: 105px;
     }
@@ -841,10 +857,10 @@ a.write:active {
         line-height: 16px;
         left: 64px;
     }
-    .slider_manage_block {
+    .slider-manage-block {
         margin-top: 28px;
     }
-    .slider_manage_block a {
+    .slider-manage-block a {
         width: 320px;
         height: 42px;
         font-size: 14px;
@@ -861,11 +877,11 @@ a.write:active {
     .choise_your_practises__button_right {
         margin-left: 25px;
     }
-    .slider_manage_block .dots .slick-dots {
+    .slider-manage-block .dots .slick-dots {
         margin-left: 18px;
         margin-top: 5px;
     }
-    .slider_manage_block .dots .slick-dots li {
+    .slider-manage-block .dots .slick-dots li {
         margin-left: -3px;
     }
     .dots .slick-dots li button {
@@ -994,7 +1010,7 @@ a.write:active {
         font-size: 10px;
         line-height: 16px;
     }
-    #future_events .slider_manage_block {
+    #future_events .slider-manage-block {
         margin-top: 30px;
     }
     
@@ -1046,8 +1062,205 @@ a.write:active {
 }
 
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) {
+    body {
+        padding-top: 55px;
+    }
     .container {
         max-width: 320px;
+    }
+    #personal_gid {
+        margin-bottom: 10px;
+    }
+    #personal_gid .info h1 {
+        font-size: 16px;
+        margin-bottom: -3px;
+        margin-top: 7px;
+    }
+    #personal_gid .info p {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        width: 95%;
+    }
+    #personal_gid .info a {
+        width: 193px;
+        height: 24px;
+        margin-top: 12px;
+        padding: 6px 10px 10px 10px;
+        font-size: 8px;
+        line-height: 12px;
+        letter-spacing: 1px;
+    }
+    .title-center {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .title-center span {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+    }
+    .title-center span:before {
+        right: 55px;
+        width: 103px;
+    }
+    .title-center span:after {
+        width: 103px;
+        top: 47%;
+        left: 57px;
+    }
+    .about_us__wrapper {
+        width: 100%;
+        height: 145px;
+        background: url(../img/bg_about_us__Small.png) no-repeat;
+    }
+    .about_us__wrapper .discription {
+        padding-left: 20px;
+    }
+    .about_us__wrapper .discription img {
+        margin-top: 153px;
+        width: 51%;
+    }
+    .about_us__wrapper .discription p.font-proximanova {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 12px;
+        margin-bottom: 13px;
+        width: 100%;
+        min-height: 234px;
+    }
+    .about_us__wrapper .discription p.font-montserrat {
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        width: 100%;
+        min-height: 55px;
+    }
+
+    #choise_your_practises {
+        margin-top: 377px;
+        margin-left: 20px;
+    }
+    .title-left {
+        margin-bottom: 19px;
+    }
+    .title-left span {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+    }
+    .title-left span:after {
+        width: 87px;
+        top: 40%;
+        left: 190px;
+    }
+    .title-left p {
+        width: 95%;
+        min-height: 90px;
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #choise_your_practises .slider__item {
+        height: 303px;
+        margin-right: 35px;
+    }
+    #choise_your_practises .slider__item img.pract {
+        width: 88%;
+    }
+        #choise_your_practises .slider__item h2 {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    #choise_your_practises .slider__item p {
+        min-height: 70px;
+        width: 87%;
+        margin-top: 13px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #choise_your_practises .slider__item a {
+        font-size: 9px;
+        line-height: 16px;
+        left: 100px;
+    }
+    .slider-manage-block {
+        margin-top: -9px;
+    }
+    .slider-manage-block a {
+        width: 132px;
+        height: 25px;
+        font-size: 8px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        padding: 4px 0;
+    }
+    .choise_your_practises__button_left, 
+    .choise_your_practises__button_right {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+    .choise_your_practises__button_right {
+        background: url(../img/practises__arr_next__Small.png) no-repeat;
+        background-position: center;
+    }
+    .choise_your_practises__button_left {
+        background: url(../img/practises__arr_prew__Small.png) no-repeat;
+        background-position: center;
+    }
+    .choise_your_practises__button_right:hover {
+        background: url(../img/arr_next_hover__Small.png) no-repeat;
+        background-position: center;
+    }
+
+    .choise_your_practises__button_left:hover {
+        background: url(../img/arr_prew_hover__Small.png) no-repeat;
+        background-position: center;
+    }
+    .slider-manage-block .dots .slick-dots {
+        margin-left: 14px;
+        margin-top: 0px;
+    }
+    .slider-manage-block .dots .slick-dots li {
+        margin-left: -9px;
+    }
+    .dots .slick-dots li button {
+        width: 6px;
+        height: 6px;
+    }
+
+    #start_now {
+        margin-left: 20px;
+    }
+
+    .title-right {
+        margin-top: 35px;
+        margin-bottom: 27px;
+    }
+    .title-right span {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0;
+        margin-right: 21px;
+    }
+    .title-right span:before {
+        width: 105px;
+        top: 46%;
+        right: 171px;
+    }
+    .title-right p {
+        margin: 10px 0 0 125px;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: left;
+        width: 52%;
+    }
+
+    #start_now .slider__item {
+        width: 265px;
+        height: 224px;
+        margin-top: 0px;
     }
 }

@@ -14,8 +14,15 @@
 // });
 
 $(document).ready(function(){
+	/* header menu */
+	$('.header__burger').click(function(event) {
+		$('.header__burger,.header__menu').toggleClass('active');
+	});
+
+	/* main page */
 	var sliderID;
 
+	/* top slider */
 	sliderID = 'personal_gid';
 	$('#' + sliderID + ' .slider').slick({
 		infinite: true,
@@ -38,12 +45,12 @@ $(document).ready(function(){
 		variableWidth: true,
 
 		arrows:true,
-		appendArrows: $('#' + sliderID + ' .slider_manage_block .arrows'),
-		prevArrow: '<div class="choise_your_practises__button_left"></div>',
-		nextArrow: '<div class="choise_your_practises__button_right"></div>',
+		appendArrows: $('#' + sliderID + ' .slider-manage-block .arrows'),
+		prevArrow: '<div class="slider-button-prev"></div>',
+		nextArrow: '<div class="slider-button-next"></div>',
 
 		dots: true,	
-		appendDots: $('#' + sliderID + ' .slider_manage_block .dots')
+		appendDots: $('#' + sliderID + ' .slider-manage-block .dots')
 	});
 
 	sliderID = 'start_now';
@@ -75,18 +82,39 @@ $(document).ready(function(){
 		variableWidth: true,
 
 		arrows:true,
-		appendArrows: $('#' + sliderID + ' .slider_manage_block .arrows'),
-		prevArrow: '<div class="choise_your_practises__button_left"></div>',
-		nextArrow: '<div class="choise_your_practises__button_right"></div>',
+		appendArrows: $('#' + sliderID + ' .slider-manage-block .arrows'),
+		prevArrow: '<div class="slider-button-prev"></div>',
+		nextArrow: '<div class="slider-button-next"></div>',
 
 		dots: true,	
-		appendDots: $('#' + sliderID + ' .slider_manage_block .dots')
+		appendDots: $('#' + sliderID + ' .slider-manage-block .dots')
 	});
 
-});
+	/* specialist page */
+	$('.tab-block .tab-buttons > span').on('click', function (e) {
+		var tabId = $(e.target).data('tab');
+		if (tabId) {
+			$(e.target).closest('.tab-block').find('.tab-buttons .active').removeClass('active');
+			$(e.target).addClass('active');
+			$(e.target).closest('.tab-block').find('.tab-containers .active').removeClass('active');
+			$(e.target).closest('.tab-block').find('.tab-containers ' + tabId).addClass('active');
+		}
+	});
 
-$(document).ready(function() {
-	$('.header__burger').click(function(event) {
-		$('.header__burger,.header__menu').toggleClass('active');
+	sliderID = 'achievement-slider';
+	$('#' + sliderID + ' .slider').slick({
+		infinite: false,
+		speed: 300,
+		slidesToShow: 1,
+		centerMode: false,
+		variableWidth: false,
+
+		arrows:true,
+		appendArrows: $('#' + sliderID + ' .slider-manage-block .arrows'),
+		prevArrow: '<div class="slider-button-prev"></div>',
+		nextArrow: '<div class="slider-button-next"></div>',
+
+		dots: true,
+		appendDots: $('#' + sliderID + ' .slider-manage-block .dots')
 	});
 });
