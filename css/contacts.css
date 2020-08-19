@@ -170,6 +170,7 @@
     background: #222222;
     color: #FFFFFF;
 }
+
 @media (max-width: 1199px) {
     #contacts-content .contacts-block {
         width: 688px;

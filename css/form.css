@@ -173,12 +173,15 @@ input[type="checkbox"] ~ span {
     font-size: 18px;
     line-height: 22px;
 }
+
 .action-block {
     margin-top: 16px;
 }
+
 .form-group p a:last-child {
     margin-left: 18px;
 }
+
 @media (max-width: 1199px) {
     .form-group:not(:last-child) {
         margin-bottom: 16px;

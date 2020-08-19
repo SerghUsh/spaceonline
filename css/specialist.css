@@ -211,33 +211,29 @@
 }
 
 .specialist-tile .specialist-info {
-    padding: 20px 46px 0;
-}
-
-.specialist-tile .specialist-info {
     padding: 28px 46px 9px;
 }
 
-.specialist-tile .specialist-image-block {
+.specialist-image-block {
     width: 190px;
     height: 190px;
     position: relative;
     margin: 0 auto 18px;
 }
 
-.specialist-tile .specialist-image-wrapper {
+.specialist-image-block .specialist-image-wrapper {
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    box-shadow: 0 0 30px 0px rgb(0, 0, 0, .25);
+    box-shadow: 0 0 30px 0 rgb(0, 0, 0, .25);
     overflow: hidden;
 }
 
-.specialist-tile .specialist-image-wrapper img {
+.specialist-image-block .specialist-image-wrapper img {
     width: 100%;
 }
 
-.specialist-tile .specialist-image-wrapper:after {
+.specialist-image-block .specialist-image-wrapper:after {
     content: '';
     position: absolute;
     top: calc(13px / 2);
@@ -251,7 +247,7 @@
     box-sizing: border-box;
 }
 
-.specialist-tile .specialist-image-block .circle {
+.specialist-image-block .circle {
     position: absolute;
     top: 30px;
     right: 5px;
@@ -265,7 +261,7 @@
     padding: 4px;
 }
 
-.specialist-tile .specialist-image-block .circle:before {
+.specialist-image-block .circle:before {
     content: '';
     display: block;
     width: 100%;
@@ -357,6 +353,273 @@
     margin-right: 20px;
 }
 
+/* Page specialist */
+#specialist-content {
+    padding-bottom: 92px;
+}
+
+.specialist-header {
+    background: #FAFAFA;
+    padding: 54px 0 37px;
+}
+
+.specialist-header-row {
+    width: 1214px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 10px;
+}
+
+.specialist-image-column {
+    float: left;
+    width: 190px;
+}
+
+.specialist-info-column {
+    float: left;
+    width: calc(100% - 190px);
+    padding-left: 99px;
+}
+
+.specialist-type-experience {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 37px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.specialist-type-experience .type {
+
+}
+
+.specialist-type-experience .dot {
+    font-size: 36px;
+    line-height: 21px;
+    vertical-align: text-top;
+}
+
+.specialist-type-experience .experience {
+    display: inline-block;
+    margin-left: 6px;
+    letter-spacing: 2px;
+}
+
+#specialist-content .specialist-name {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 46px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-left: -4px;
+    margin-bottom: 23px;
+}
+
+#specialist-content .specialist-link {
+    position: absolute;
+    top: 5px;
+    right: 51px;
+    z-index: 1;
+}
+
+#specialist-content .specialist-link a {
+    display: inline-block;
+    width: 33px;
+    height: 30px;
+    margin: 0 2px;
+    vertical-align: top;
+    background-position: center center;
+}
+
+#specialist-content .specialist-link a.heart {
+    background: url('/css/imgs/specialist-heart-link.svg') no-repeat center center;
+    background-size: auto 100%;
+}
+
+#specialist-content .specialist-link a.instagram {
+    background: url('/css/imgs/specialist-instagram-link.svg') no-repeat center center;
+    background-size: auto 100%;
+}
+
+#specialist-content .specialist-link a.facebook {
+    background: url('/css/imgs/specialist-facebook-link.svg') no-repeat center center;
+    background-size: auto 100%;
+}
+
+#specialist-content .specialist-link a.copy {
+    background: url('/css/imgs/specialist-copy-link.svg') no-repeat center center;
+    background-size: auto 100%;
+}
+
+#specialist-content .specialist-description {
+    font-size: 16px;
+    line-height: 20px;
+    width: 610px;
+    margin-bottom: 10px;
+}
+
+#specialist-content .specialist-direction {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#specialist-content .specialist-container {
+    max-width: 1630px;
+    margin: 0 auto;
+}
+
+#specialist-content .tab-buttons {
+    text-align: center;
+    padding: 22px 0;
+    border-bottom: 2px solid #FAFAFA;
+}
+
+#specialist-content .tab-buttons span {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 55px;
+    cursor: pointer;
+}
+
+#specialist-content .tab-buttons span:after {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: -3px;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: all linear 0.2s;
+}
+
+#specialist-content .tab-buttons span:hover:after {
+    width: 100%;
+}
+
+#specialist-content .tab-buttons span.active {
+    font-weight: bold;
+}
+
+#specialist-content .tab-containers > *:not(.active) {
+    display: none;
+}
+
+.tab {
+    padding: 22px 5px 0;
+}
+
+.tab-calendar .description {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 33px;
+}
+
+.tab-achievement {
+    padding: 39px 5px 0;
+}
+
+.achievement-slider {
+    padding-left: calc((100% - 1178px) / 2);
+    padding-right: calc((100% - 1178px) / 2);
+    margin: 0 auto;
+    position: relative;
+}
+
+.achievement-slider .slider__item {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.achievement-slider .slider__item img {
+    width: calc(100% - 30px);
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    margin: 0 auto 28px;
+}
+
+.achievement-slider .slider__item h2 {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 16px;
+    font-weight: normal;
+}
+
+.achievement-slider .slider__item p {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 34px;
+}
+
+.achievement-slider .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.achievement-slider .slider-manage-block {
+    margin: 0;
+}
+
+.achievement-slider .slider-manage-block .slider-button-prev,
+.achievement-slider .slider-manage-block .slider-button-next {
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+}
+
+.achievement-slider .slider-manage-block .slider-button-prev {
+    left: 121px;
+}
+
+.achievement-slider .slider-manage-block .slider-button-next {
+    right: 121px;
+}
+
+.achievement-slider .slider-manage-block .dots {
+    text-align: center;
+    width: 100%;
+}
+
+.achievement-slider .slider-manage-block .dots > * {
+    display: inline-block;
+    margin: 0;
+}
+
+.tab-info {
+    font-size: 24px;
+    line-height: 34px;
+    padding: 44px 10px 0;
+}
+
+.tab-info h4 {
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.tab-info h5 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-top: 38px;
+}
+
+.tab-info p:not(:first-of-type) {
+    margin-top: 8px;
+}
+
+@media (max-width: 1550px) {
+    #specialist-content .tab-buttons span {
+        margin: 0 20px;
+    }
+}
+
 @media (max-width: 1199px) {
     #specialist-list-content {
         padding: 36px 0;
@@ -403,13 +666,13 @@
         padding: 21px 21px 2px;
     }
 
-    .specialist-tile .specialist-image-block {
+    .specialist-image-block {
         width: 149px;
         height: 149px;
         margin: 0 auto 14px;
     }
 
-    .specialist-tile .specialist-image-block .circle {
+    .specialist-image-block .circle {
         top: 24px;
         right: 3px;
         width: 20px;
@@ -417,7 +680,7 @@
         padding: 3px;
     }
 
-    .specialist-tile .specialist-image-wrapper:after {
+    .specialist-image-block .specialist-image-wrapper:after {
         top: calc(11px / 2);
         left: calc(11px / 2);
         width: 138px;
@@ -479,6 +742,166 @@
         height: 30px;
         margin-right: 20px;
     }
+
+    #specialist-content {
+        padding-bottom: 42px;
+    }
+
+    .specialist-header {
+        padding: 45px 0 54px;
+    }
+
+    .specialist-header-row {
+        width: auto;
+    }
+
+    .specialist-image-column {
+        width: 209px;
+    }
+
+    .specialist-info-column {
+        float: left;
+        width: calc(100% - 209px);
+        padding-left: 13px;
+    }
+
+    .specialist-type-experience {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+
+    .specialist-type-experience .dot {
+        font-size: 26px;
+        line-height: 16px;
+    }
+
+    .specialist-type-experience .experience {
+        margin-left: 2px;
+    }
+
+    #specialist-content .specialist-name {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 4px;
+        margin-left: -1px;
+        margin-bottom: 8px;
+    }
+
+    #specialist-content .specialist-link {
+        position: absolute;
+        top: 1px;
+        right: 155px;
+        z-index: 1;
+    }
+
+    #specialist-content .specialist-link a.heart,
+    #specialist-content .specialist-link a.instagram,
+    #specialist-content .specialist-link a.facebook,
+    #specialist-content .specialist-link a.copy {
+        width: 19px;
+        height: 17px;
+        background-size: auto 17px;
+        margin: 0;
+    }
+
+    #specialist-content .specialist-link a.heart {
+        height: 16px;
+        background-size: auto 100%;
+    }
+
+    #specialist-content .specialist-description {
+        width: auto;
+        margin-bottom: 9px;
+    }
+
+    #specialist-content .tab-buttons {
+        padding: 15px 0;
+    }
+
+    #specialist-content .tab-buttons span {
+        font-size: 14px;
+        line-height: 28px;
+        margin: 0 40px;
+    }
+
+    #specialist-content .tab-buttons span.active {
+        letter-spacing: 1px;
+    }
+
+    #specialist-content .tab-buttons span:after {
+        bottom: 4px;
+    }
+
+    .tab-achievement {
+        padding: 19px 5px 0;
+    }
+
+    .achievement-slider .slider__item img {
+        width: 575px;
+        margin: 0 auto 50px;
+    }
+
+    .achievement-slider .slider__item h2 {
+        font-size: 22px;
+        line-height: 20px;
+        margin-bottom: 24px;
+    }
+
+    .achievement-slider .slider__item p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 16px;
+        padding: 0 20px;
+    }
+
+    .achievement-slider .slider-manage-block .slider-button-prev,
+    .achievement-slider .slider-manage-block .slider-button-next {
+        top: 30%;
+        height: 30px;
+        width: 30px;
+        background-size: 100%;
+    }
+
+    .achievement-slider .slider-manage-block .slider-button-prev {
+        left: 35px;
+    }
+
+    .achievement-slider .slider-manage-block .slider-button-next {
+        right: 35px;
+    }
+
+    .tab-info {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 22px 40px 0;
+    }
+
+    .tab-info h4 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .tab-info h5 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 16px;
+    }
+
+    .tab-info p:not(:first-of-type) {
+        margin-top: 10px;
+    }
+
+    .tab-calendar {
+        padding: 15px 40px 10px;
+    }
+
+    .tab-calendar .description {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -516,20 +939,20 @@
         padding: 13px 20px 8px;
     }
 
-    .specialist-tile .specialist-image-block {
+    .specialist-image-block {
         width: 100px;
         height: 100px;
         margin: 0 auto 10px;
     }
 
-    .specialist-tile .specialist-image-wrapper:after {
+    .specialist-image-block .specialist-image-wrapper:after {
         top: calc(7px / 2);
         left: calc(7px / 2);
         width: 93px;
         height: 93px;
     }
 
-    .specialist-tile .specialist-image-block .circle {
+    .specialist-image-block .circle {
         top: 15px;
         right: 3px;
         width: 13px;
@@ -574,5 +997,162 @@
         width: 21px;
         height: 21px;
         margin-right: 12px;
+    }
+
+    #specialist-content {
+        padding-bottom: 28px;
+    }
+
+    .specialist-header {
+        padding: 5px 0 24px;
+    }
+
+    .specialist-image-column {
+        float: none;
+        width: 100%;
+    }
+
+    .specialist-info-column {
+        float: none;
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .specialist-image-block {
+        margin: 0 auto 20px;
+    }
+
+    .specialist-type-experience {
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 7px;
+    }
+
+    .specialist-type-experience .dot {
+        font-size: 24px;
+        line-height: 14px;
+    }
+
+    .specialist-type-experience .experience {
+        margin: 0;
+    }
+
+    #specialist-content .specialist-name {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        margin-left: 0;
+        margin-bottom: 12px;
+    }
+
+    #specialist-content .specialist-link {
+        position: static;
+        margin-bottom: 18px;
+    }
+
+    #specialist-content .specialist-description {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 13px;
+    }
+
+    #specialist-content .specialist-direction {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #specialist-content .tab-buttons {
+        padding: 15px 0;
+    }
+
+    #specialist-content .tab-buttons span {
+        font-size: 12px;
+        line-height: 28px;
+        margin: 0 40px;
+    }
+
+    #specialist-content .tab-buttons span.active {
+        letter-spacing: 2px;
+    }
+
+    .tab-info {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 16px 20px 0;
+    }
+
+    .tab-info h4 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .tab-info h5 {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 10px;
+    }
+
+    .tab-info p:not(:first-of-type) {
+        margin-top: 10px;
+    }
+
+    .tab-achievement {
+        padding: 18px 5px 0;
+    }
+
+    .achievement-slider .slider__item img {
+        width: 280px;
+        margin: 0 auto 71px;
+    }
+
+    .achievement-slider .slider-manage-block .dots {
+        text-align: center;
+        width: 100%;
+    }
+
+    .achievement-slider .slider-manage-block .slider-button-prev,
+    .achievement-slider .slider-manage-block .slider-button-next {
+        top: 220px;
+    }
+
+    .achievement-slider .slider-manage-block .slider-button-prev {
+        left: 45px;
+    }
+
+    .achievement-slider .slider-manage-block .slider-button-next {
+        right: 45px;
+    }
+
+    .achievement-slider .slider-manage-block .dots {
+        top: 221px;
+        text-align: center;
+        width: 150px;
+        position: absolute;
+        z-index: 1;
+        left: calc(50% - 75px);
+    }
+
+    .achievement-slider .slider__item h2 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 11px;
+    }
+
+    .achievement-slider .slider__item p {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 0;
+        padding: 0 22px;
+    }
+
+    .tab-calendar {
+        padding: 19px 20px 5px;
+    }
+
+    .tab-calendar .description {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 19px;
     }
 }

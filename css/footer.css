@@ -25,6 +25,7 @@ footer {
     margin-top: 54px;
     margin-left: -12px;
 }
+
 #footer .social_buttons img {
     width: 79%;
 }
@@ -164,56 +165,70 @@ footer {
     .container {
         max-width: 768px;
     }
+
     #footer {
         margin-top: 66px;
     }
+
     .footer_menu .half_first {
         width: 63%;
     }
+
     #footer .social_buttons {
         margin-top: 36px;
         margin-left: 16px;
     }
+
     #footer .social_buttons__link {
         margin-top: 40px;
     }
+
     #footer h3 {
         font-size: 18px;
         line-height: 32px;
         margin-bottom: 16px;
     }
+
     #footer .footer_list {
         margin-top: 43px;
         margin-left: -63px;
     }
+
     #footer .footer_list ul {
         padding-bottom: 5px;
     }
+
     #footer .footer_list li {
         font-size: 16px;
         line-height: 22px;
         margin-bottom: 10px;
     }
+
     #footer .footer_contacts {
         margin-top: 44px;
         margin-left: 51px;
     }
+
     #footer .footer_contacts ul {
         margin-left: 45px;
     }
+
     #footer .footer_contacts h3.contacts {
         margin-bottom: 10px;
     }
+
     #footer .footer_contacts li {
         font-size: 16px;
         line-height: 22px;
         margin-top: 16px;
         margin-bottom: -3px;
     }
+
     #footer .footer_contacts li::before {
         left: -43px;
         line-height: 33px;
     }
+
     #footer p.copyright {
         margin-top: 44px;
     }

@@ -50,6 +50,7 @@ header > div {
 .header_list li a:active {
     color: black;
 }
+
 .account_list {
     list-style: none;
     margin-left: 23px;
@@ -86,6 +87,7 @@ header > div {
         margin-right: 15px;
         margin-left: 20px;
     }
+
     .header_list li {
         margin-right: 30px;
     }
@@ -93,14 +95,16 @@ header > div {
 
 @media (max-width: 1410px) {
     .logo img {
-       margin-top: 12px; 
+        margin-top: 12px;
     }
+
     .header_list li {
         font-size: 15px;
         line-height: 50px;
         margin-top: 14px;
         margin-right: 22px;
     }
+
     .account_list li a {
         font-size: 15px;
         line-height: 20px;
@@ -111,6 +115,7 @@ header > div {
     .container {
         max-width: 768px;
     }
+
     .logo img {
         width: 88%;
         margin: 14px 26px 0 14px;
@@ -212,45 +217,56 @@ header > div {
     .container {
         max-width: 320px;
     }
+
     header {
         height: 55px;
     }
+
     .logo img {
         width: 69%;
         margin: 14px 26px 0 -110px;
     }
+
     .account {
         display: none;
     }
+
     .account_list {
         margin-left: 151px;
         margin-top: 11px;
     }
+
     .header__burger {
         width: 40px;
         margin-top: 10px;
         height: 29px;
         margin-left: -216px;
     }
+
     .header__burger span {
         width: 34px;
         height: 3.16px;
         top: 13px;
     }
-    .header__burger:before, 
+
+    .header__burger:before,
     .header__burger:after {
         width: 34px;
         height: 3.16px;
     }
+
     .header__burger:after {
         top: 6px;
     }
+
     .header__burger:before {
         top: 20px;
     }
+
     .header__burger.active:before {
         top: 7px;
     }
+
     .header__menu {
         width: 50%;
         right: 26%;
