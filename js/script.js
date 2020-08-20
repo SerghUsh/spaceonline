@@ -101,9 +101,9 @@ $(document).ready(function () {
     }).trigger('input');
 
     // Tabs
-    $('.tab-block .tab-buttons > *').on('click', function (e) {
-        $(e.target).parent().find('span').each(function (n, elem) {
-            var activeTabId = $(e.target).attr('data-tab-id');
+    $('*[data-tab-id]').on('click', function (e) {
+        var activeTabId = $(e.target).attr('data-tab-id');
+        $(e.target).closest('.tab-buttons').find('*[data-tab-id]').each(function (n, elem) {
             var tabId = $(elem).attr('data-tab-id');
             if (activeTabId === tabId) {
                 $(elem).addClass('active');
@@ -113,7 +113,10 @@ $(document).ready(function () {
                 $(tabId).removeClass('active');
             }
         });
+        e.preventDefault();
+        return false;
     });
+    $('.active[data-tab-id]').trigger('click');
 
     // Achievement slider
     sliderID = 'achievement-slider';

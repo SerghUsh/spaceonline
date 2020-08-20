@@ -1,0 +1,139 @@
+#account-content {
+    padding: 20px 0;
+}
+
+.account-title-block {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.account-menu-block {
+    float: left;
+    width: 420px;
+    text-align: center;
+}
+
+.account-menu-block .account-info {
+    background: #FAFAFA;
+    border-radius: 10px;
+    padding: 29px 46px 2px;
+}
+
+.account-menu-block .account-info:last-child {
+    margin-top: 30px;
+    padding: 23px 46px;
+}
+
+.account-tabs-block {
+    float: right;
+    width: calc(1630px - 480px);
+}
+
+.account-tabs-block .account-tabs {
+    background: #FAFAFA;
+    border-radius: 10px;
+    padding: 29px 46px;
+}
+
+.account-info .specialist-image-block {
+    margin-bottom: 18px;
+}
+
+.account-name {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.account-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.account-menu li {
+    display: block;
+    font-size: 20px;
+    line-height: 61px;
+    padding-left: 61px;
+    border-top: 1px solid #D5D5D5;
+    text-align: left;
+}
+
+.account-menu a {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+    line-height: 26px;
+}
+
+.account-menu a:after {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: -3px;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: all linear 0.2s;
+}
+
+.account-menu a:hover:after {
+    width: 100%;
+}
+
+.account-menu a.active {
+    font-weight: bold;
+}
+
+.account-registrations {
+    background: url("/css/imgs/account-registrations.svg") no-repeat;
+    background-position: 5px 13px;
+}
+
+.account-calendar {
+    background: url("/css/imgs/account-calendar.svg") no-repeat;
+    background-position: 2px 13px;
+}
+
+.account-favorites {
+    background: url("/css/imgs/account-favorites.svg") no-repeat;
+    background-position: 5px 19px;
+}
+
+.account-profile {
+    background: url("/css/imgs/account-profile.svg") no-repeat;
+    background-position: 4px 17px;
+}
+
+.account-settings {
+    background: url("/css/imgs/account-settings.svg") no-repeat;
+    background-position: 0px 15px;
+}
+
+.account-logout {
+    background: url("/css/imgs/account-logout.svg") no-repeat;
+    background-position: 5px 13px;
+}
+
+.account-info .btn-green {
+    width: 100%;
+}
+
+.account-info .text {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 22px;
+}

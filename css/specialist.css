@@ -223,11 +223,15 @@
     padding: 28px 46px 9px;
 }
 
+#specialist-list-content .specialist-image-block {
+    margin-bottom: 18px;
+}
+
 .specialist-image-block {
     width: 190px;
     height: 190px;
     position: relative;
-    margin: 0 auto 18px;
+    margin: 0 auto;
 }
 
 .specialist-image-block .specialist-image-wrapper {
@@ -510,14 +514,6 @@
 
 #specialist-content .tab-buttons span.active {
     font-weight: bold;
-}
-
-#specialist-content .tab-containers > *:not(.active) {
-    display: none;
-}
-
-.tab {
-    padding: 22px 0 0;
 }
 
 .tab-calendar .description {

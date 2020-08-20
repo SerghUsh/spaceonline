@@ -67,6 +67,37 @@ body {
     padding: 0 45px;
 }
 
+.tab {
+    padding: 22px 0 0;
+}
+
+.tab:not(.active) {
+    display: none;
+}
+
+.btn-green {
+    display: inline-block;
+    padding: 14px 20px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #83C465;
+    border-radius: 4px;
+    height: 46px;
+}
+
+.btn-green:hover {
+    color: #FFFFFF;
+    background: #83C465;
+}
+
 .float-left {
     float: left !important;
 }
