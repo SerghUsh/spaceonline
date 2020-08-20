@@ -145,4 +145,11 @@ $(document).ready(function () {
         dots: true,
         appendDots: $('#' + sliderID + ' .slider-manage-block .dots')
     });
+
+    /* REGISTRATION PAGE */
+
+    // Init select
+    $('#timezone').select2({
+        width: '100%',
+    });
 });

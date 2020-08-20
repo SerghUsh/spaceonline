@@ -10,7 +10,7 @@
     <?php put('header') ?>
 
     <section id="personal_gid">
-        <div class="container-big">
+        <div class="container-lg">
             <div class="main-slider-wrapper">
                 <div class="info">
                     <h1>Твой личный консультант</h1>
@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div class="container-big">
+        <div class="container-lg">
             <div class="about_us__wrapper">
                 <div class="discription">
                     <div><img src="/img/logo_SpOn.png"></div>
@@ -383,7 +383,7 @@
             </div>
         </div>
 
-        <div class="container-big">
+        <div class="container-lg">
             <div class="main_block__item">
                 <div class="discription_text">
                     <p>SPACE Online – это уникальное пространство, первая и единственная

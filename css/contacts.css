@@ -8,13 +8,6 @@
     margin: 0 auto;
 }
 
-#contacts-content .contacts-block:before,
-#contacts-content .contacts-block:after {
-    content: '';
-    clear: both;
-    display: table;
-}
-
 #contacts-content .contacts-info {
     width: 530px;
     height: 100%;

@@ -5,16 +5,18 @@
     <?php put('head') ?>
 </head>
 <body>
-<?php put('header') ?>
 
-<div class="title-block">
-    <div>
-        <h1>Наши контакты</h1>
+<main>
+    <?php put('header') ?>
+
+    <div class="title-block">
+        <div>
+            <h1>Наши контакты</h1>
+        </div>
     </div>
-</div>
 
-<main id="contacts-content">
-        <div class="contacts-block">
+    <div id="contacts-content">
+        <div class="contacts-block clearfix">
             <div class="contacts-info">
                 <div class="contacts-title">Наши контакты</div>
 
@@ -72,9 +74,9 @@
             </div>
         </div>
     </div>
-</main>
 
-<?php put('footer') ?>
+    <?php put('footer') ?>
+</main>
 
 <?php put('scripts') ?>
 </body>
