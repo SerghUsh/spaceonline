@@ -11,7 +11,7 @@
 
     <div id="specialist-content">
         <div class="specialist-header">
-            <div class="specialist-container">
+            <div class="container">
                 <div class="specialist-header-row clearfix">
                     <div class="specialist-image-column">
                         <div class="specialist-image-block">
@@ -70,7 +70,7 @@
             </div>
         </div>
 
-        <div class="specialist-container">
+        <div class="container">
             <div class="tab-containers">
                 <div id="tab-calendar" class="tab tab-calendar">
                     <p class="description">
