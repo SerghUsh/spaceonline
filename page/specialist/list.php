@@ -23,7 +23,7 @@
                 <div class="specialist-filter-group">
                     <label>Сортировать по практикам:</label>
                     <select>
-                        <option value="">Все</option>
+                        <option value="">Не указано</option>
                         <option value="1">Астрология</option>
                         <option value="2">Медитация</option>
                     </select>
