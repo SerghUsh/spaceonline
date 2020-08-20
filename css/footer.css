@@ -232,10 +232,6 @@ footer {
 }
 
 @media (max-width: 767px) {
-<<<<<<< HEAD
-    .container {
-        max-width: 320px;
-    }
     .footer_menu {
         display: block;
         padding: 21px 20px 10px 20px;
@@ -305,7 +301,4 @@ footer {
         font-size: 15px;
         margin-bottom: 10px;
     }
-=======
-
->>>>>>> 5a23c694e0daf1505591e37161f07c745117e4ec
 }
