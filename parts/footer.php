@@ -5,8 +5,8 @@
             <div class="half_first">
                 <div class="footer__item">
                     <div class="social_buttons">
-                        <div>
-                            <img src="/img/logo_SpOn.png" alt="image">
+                        <div class="footer__logo">
+                            <a href="<?php href('home') ?>"><img src="/img/logo_SpOn.svg" alt="logo"></a>
                         </div>
                         <div class="social_buttons__link">
                             <a href="https://www.instagram.com/" target="blank" class="instagram"></a>

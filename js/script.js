@@ -1,16 +1,3 @@
-// searchButton.onclick = function() {
-// 	page.classList.toggle('.display');
-// 	page.classList.toggle('.display-1');
-// };
-
-// $('.variable-width').slick({
-//   dots: true,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 1,
-//   centerMode: true,
-//   variableWidth: true
-// });
 
 $(document).ready(function () {
     /* header menu */
