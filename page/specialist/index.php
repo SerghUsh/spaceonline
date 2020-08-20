@@ -85,6 +85,23 @@
 
                 <div id="tab-group" class="tab tab-group">
                     Групповые занятия
+                    <div class="row">
+                        <div class="col">
+                            // conteiner
+                        </div>
+                        <div class="col">
+                            // conteiner
+                        </div>
+                        <div class="col">
+                            // conteiner
+                        </div>
+                        <div class="col">
+                            // conteiner
+                        </div>
+                        <div class="col">
+                            // conteiner
+                        </div>
+                    </div>
                 </div>
 
                 <div id="tab-info" class="tab tab-info">
@@ -159,6 +176,23 @@
 
                 <div id="tab-event" class="tab tab-event">
                     События
+                    <div class="row">
+                        <div class="col">
+                            // conteiner
+                        </div>
+                        <div class="col">
+                            // conteiner
+                        </div>
+                        <div class="col">
+                            // conteiner
+                        </div>
+                        <div class="col">
+                            // conteiner
+                        </div>
+                        <div class="col">
+                            // conteiner
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
