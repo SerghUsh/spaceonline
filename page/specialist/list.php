@@ -24,6 +24,8 @@
                     <label>Сортировать по практикам:</label>
                     <select>
                         <option value="">Все</option>
+                        <option value="1">Астрология</option>
+                        <option value="2">Медитация</option>
                     </select>
                 </div>
 
@@ -31,27 +33,23 @@
                     <label>Опыт:</label>
                     <div class="range-wrapper">
                         <div class="range-slider">
-                            <span id="rs-bullet" class="rs-label" data-after=" лет">0</span>
-                            <input id="rs-range-line" class="rs-range" type="range" value="5" min="0" max="10">
+                            <span id="rs-title" class="rs-label" data-after=" лет">0</span>
+                            <input
+                                    class="rs-range"
+                                    type="range"
+                                    value="5"
+                                    min="0"
+                                    max="20"
+                                    data-min-id="#rs-min"
+                                    data-max-id="#rs-max"
+                                    data-title-id="#rs-title"
+                            >
                         </div>
 
                         <div class="box-minmax">
-                            <span>0</span>
-                            <span>>10</span>
+                            <span id="rs-min"></span>
+                            <span id="rs-max" data-before=">"></span>
                         </div>
-
-                        <script>
-                            var rangeSlider = document.getElementById("rs-range-line");
-                            var rangeBullet = document.getElementById("rs-bullet");
-                            rangeSlider.addEventListener("input", showSliderValue, false);
-                            showSliderValue();
-                            function showSliderValue() {
-                                rangeBullet.innerHTML = rangeSlider.value;
-                                var bulletPosition = rangeSlider.value / rangeSlider.max;
-                                var rangeSliderWidth = rangeSlider.offsetWidth;
-                                rangeBullet.style.left = (rangeSliderWidth * bulletPosition) + "px";
-                            }
-                        </script>
                     </div>
                 </div>
             </div>
