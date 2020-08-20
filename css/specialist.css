@@ -50,6 +50,11 @@
     text-align: center;
     letter-spacing: 3px;
     color: #333333;
+    -webkit-appearance: none;
+    padding-right: 28px;
+    background: url('/css/imgs/specialist-select-down.svg') no-repeat;
+    background-position-x: calc(100% - 5px);
+    background-position-y: center;
 }
 
 .range-wrapper {
@@ -69,7 +74,7 @@
     border-radius: 5px;
     background: #000;
     position: absolute;
-    top: 14px;
+    top: 15px;
     left: 20px;
     z-index: -1;
     width: 9px;
@@ -82,7 +87,7 @@
     border-radius: 5px;
     background: #000;
     position: absolute;
-    top: 14px;
+    top: 15px;
     right: 40px;
     z-index: -1;
     width: 9px;
@@ -115,6 +120,10 @@
     width: 40px;
     text-align: center;
     line-height: 1;
+}
+
+.box-minmax span:last-child:before {
+    content: attr(data-before);
 }
 
 .rs-range {
@@ -924,7 +933,8 @@
 
     #specialist-list-content .specialist-filter-block select {
         font-size: 12px;
-        margin-left: -3px;
+        background-size: 10px;
+        padding-right: 20px;
     }
 
     .range-wrapper {

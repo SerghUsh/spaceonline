@@ -140,18 +140,6 @@
     padding: 0 10px;
 }
 
-#registration-content .timezone-block:before {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-#registration-content .timezone-block:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 #registration-content .timezone-block div {
     float: left;
     width: 307px;

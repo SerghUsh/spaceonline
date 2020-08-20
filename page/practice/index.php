@@ -5,21 +5,24 @@
     <?php put('head') ?>
 </head>
 <body>
-<?php put('header') ?>
 
-<div class="title-block">
-    <div>
-        <h1>АСТРОЛОГИЯ</h1>
-        <p class="subtitle">
-            Астрология  - это учение, согласно которому события земной жизни
-            можно предсказать по расположению небесных светил.
-        </p>
+<main>
+    <?php put('header') ?>
+
+    <div class="title-block">
+        <div>
+            <h1>АСТРОЛОГИЯ</h1>
+            <p class="subtitle">
+                Астрология  - это учение, согласно которому события земной жизни
+                можно предсказать по расположению небесных светил.
+            </p>
+        </div>
     </div>
-</div>
 
-<!-- here must be your html -->
+    <!-- here must be your html -->
 
-<?php put('footer') ?>
+    <?php put('footer') ?>
+</main>
 
 <?php put('scripts') ?>
 </body>

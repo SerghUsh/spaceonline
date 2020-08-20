@@ -5,33 +5,37 @@
     <?php put('head') ?>
 </head>
 <body>
-<?php put('header') ?>
 
-<div class="title-block">
-    <div>
-        <h1>Наши контакты</h1>
+<main>
+    <?php put('header') ?>
+
+    <div class="title-block">
+        <div>
+            <h1>Наши контакты</h1>
+        </div>
     </div>
-</div>
 
-<main id="contacts-content">
-        <div class="contacts-block">
+    <div id="contacts-content">
+        <div class="contacts-block clearfix">
             <div class="contacts-info">
                 <div class="contacts-title">Наши контакты</div>
 
-                <div class="contacts-group contacts-email">
-                    <a href="mailto: spaceonline@gmail.com">SpaceOnline@gmail.com</a>
-                </div>
+                <div class="contacts-row">
+                    <div class="contacts-group contacts-email">
+                        <a href="mailto: spaceonline@gmail.com">SpaceOnline@gmail.com</a>
+                    </div>
 
-                <div class="contacts-group contacts-phone">
-                    <a href="tel:+380766443274">+38 (076) 644 32 74</a>
-                    <br>
-                    <a href="tel:+380766443274">+38 (076) 644 32 74</a>
-                </div>
+                    <div class="contacts-group contacts-phone">
+                        <a href="tel:+380766443274">+38 (076) 644 32 74</a>
+                        <br>
+                        <a href="tel:+380766443274">+38 (076) 644 32 74</a>
+                    </div>
 
-                <div class="contacts-group contacts-timetable">
-                    График работы:<br>
-                    ПН-ПТ, 10:00 - 19:00<br>
-                    <small>[UTC/GMT+3] Москва</small>
+                    <div class="contacts-group contacts-timetable">
+                        График работы:<br>
+                        ПН-ПТ, 10:00 - 19:00<br>
+                        <small>[UTC/GMT+3] Москва</small>
+                    </div>
                 </div>
             </div>
 
@@ -70,9 +74,9 @@
             </div>
         </div>
     </div>
-</main>
 
-<?php put('footer') ?>
+    <?php put('footer') ?>
+</main>
 
 <?php put('scripts') ?>
 </body>

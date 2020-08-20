@@ -5,34 +5,37 @@
     <?php put('head') ?>
 </head>
 <body>
-<?php put('header') ?>
 
-<div class="title-block title-small">
-    <div>
-        <h1>Восстановление пароля</h1>
+<main>
+    <?php put('header') ?>
+
+    <div class="title-block title-small">
+        <div>
+            <h1>Восстановление пароля</h1>
+        </div>
     </div>
-</div>
 
-<main id="password-content">
-    <div class="container">
-        <form action="" method="post">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" type="text" placeholder="Email">
-            </div>
-
-            <div class="form-group">
-                <button class="btn-submit btn-form-green" type="submit">Отправить</button>
-
-                <div class="action-block">
-                    <p>Вернутся назад на страницу <a class="link-black" href="<?php href('service', 'login') ?>">Входа</a></p>
+    <div id="password-content">
+        <div class="container">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" placeholder="Email">
                 </div>
-            </div>
-        </form>
-    </div>
-</main>
 
-<?php put('footer') ?>
+                <div class="form-group">
+                    <button class="btn-submit btn-form-green" type="submit">Отправить</button>
+
+                    <div class="action-block">
+                        <p>Вернутся назад на страницу <a class="link-black" href="<?php href('service', 'login') ?>">Входа</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <?php put('footer') ?>
+</main>
 
 <?php put('scripts') ?>
 </body>

@@ -1,14 +1,14 @@
 
 $(document).ready(function () {
-    /* header menu */
+    /* HEADER MENU */
     $('.header__burger').click(function (event) {
         $('.header__burger,.header__menu').toggleClass('active');
     });
 
-    /* main page */
+    /* MAIN PAGE */
     var sliderID;
 
-    /* top slider */
+    // top slider
     sliderID = 'personal_gid';
     $('#' + sliderID + ' .slider').slick({
         infinite: true,
@@ -22,6 +22,7 @@ $(document).ready(function () {
         dots: false
     });
 
+    // Choise your practises slider
     sliderID = 'choise_your_practises';
     $('#' + sliderID + ' .slider').slick({
         infinite: false,
@@ -39,6 +40,7 @@ $(document).ready(function () {
         appendDots: $('#' + sliderID + ' .slider-manage-block .dots')
     });
 
+    // Start now slider
     sliderID = 'start_now';
     var slider1 = $('#' + sliderID + ' .slider').slick({
         infinite: false,
@@ -59,6 +61,7 @@ $(document).ready(function () {
         }
     });
 
+    // Future events slider
     sliderID = 'future_events';
     $('#' + sliderID + ' .slider').slick({
         infinite: false,
@@ -76,17 +79,43 @@ $(document).ready(function () {
         appendDots: $('#' + sliderID + ' .slider-manage-block .dots')
     });
 
-    /* specialist page */
-    $('.tab-block .tab-buttons > span').on('click', function (e) {
-        var tabId = $(e.target).data('tab');
-        if (tabId) {
-            $(e.target).closest('.tab-block').find('.tab-buttons .active').removeClass('active');
-            $(e.target).addClass('active');
-            $(e.target).closest('.tab-block').find('.tab-containers .active').removeClass('active');
-            $(e.target).closest('.tab-block').find('.tab-containers ' + tabId).addClass('active');
-        }
+    /* SPECIALIST PAGE */
+
+    // Filter range slider
+    $('.rs-range').on('input', function(e) {
+        var rangeSlider = $(e.target);
+        // write min value to block
+        var rangeMin = $(rangeSlider.data('min-id'));
+        rangeMin.text(rangeSlider.attr('min'));
+        // write max value to block
+        var rangeMax = $(rangeSlider.data('max-id'));
+        rangeMax.text(rangeSlider.attr('max'));
+        // write current value to block
+        var rangeTitle = $(rangeSlider.data('title-id'));
+        rangeTitle.text(rangeSlider.val());
+        // move title with bullet
+        var bulletPosition = rangeSlider.val() / rangeSlider.attr('max');
+        var rangeSliderWidth = rangeSlider.outerWidth();
+        var offset = rangeSliderWidth * bulletPosition;
+        rangeTitle.css('left', offset + 'px');
+    }).trigger('input');
+
+    // Tabs
+    $('.tab-block .tab-buttons > *').on('click', function (e) {
+        $(e.target).parent().find('span').each(function (n, elem) {
+            var activeTabId = $(e.target).attr('data-tab-id');
+            var tabId = $(elem).attr('data-tab-id');
+            if (activeTabId === tabId) {
+                $(elem).addClass('active');
+                $(tabId).addClass('active');
+            } else {
+                $(elem).removeClass('active');
+                $(tabId).removeClass('active');
+            }
+        });
     });
 
+    // Achievement slider
     sliderID = 'achievement-slider';
     $('#' + sliderID + ' .slider').slick({
         infinite: false,
@@ -102,5 +131,12 @@ $(document).ready(function () {
 
         dots: true,
         appendDots: $('#' + sliderID + ' .slider-manage-block .dots')
+    });
+
+    /* REGISTRATION PAGE */
+
+    // Init select
+    $('#timezone').select2({
+        width: '100%',
     });
 });

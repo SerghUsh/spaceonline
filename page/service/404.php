@@ -5,26 +5,29 @@
     <?php put('head') ?>
 </head>
 <body>
-<?php put('header') ?>
 
-<div class="title-block title-big">
-    <div>
-        <h1>404</h1>
-    </div>
-</div>
+<main>
+    <?php put('header') ?>
 
-<main id="error-content">
-    <div class="container">
-        <div class="error-block">
-            <p class="error-text">
-                Извините данной страницы не существует
-            </p>
-            <a class="btn-white" href="<?php href('home') ?>">Перейти на главную</a>
+    <div class="title-block title-big">
+        <div>
+            <h1>404</h1>
         </div>
     </div>
-</main>
 
-<?php put('footer') ?>
+    <div id="error-content">
+        <div class="container">
+            <div class="error-block">
+                <p class="error-text">
+                    Извините данной страницы не существует
+                </p>
+                <a class="btn-white" href="<?php href('home') ?>">Перейти на главную</a>
+            </div>
+        </div>
+    </div>
+
+    <?php put('footer') ?>
+</main>
 
 <?php put('scripts') ?>
 </body>

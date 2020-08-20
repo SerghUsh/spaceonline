@@ -5,67 +5,72 @@
     <?php put('head') ?>
 </head>
 <body>
-<?php put('header') ?>
 
-<main id="specialist-content">
-    <div class="specialist-header">
-        <div class="specialist-header-row clearfix">
-            <div class="specialist-image-column">
-                <div class="specialist-image-block">
-                    <div class="specialist-image-wrapper">
-                        <img src="/img/specialist.jpg" alt="specialist">
+<main>
+    <?php put('header') ?>
+
+    <div id="specialist-content">
+        <div class="specialist-header">
+            <div class="specialist-container">
+                <div class="specialist-header-row clearfix">
+                    <div class="specialist-image-column">
+                        <div class="specialist-image-block">
+                            <div class="specialist-image-wrapper">
+                                <img src="/img/specialist.jpg" alt="specialist">
+                            </div>
+                            <div class="circle"></div>
+                        </div>
                     </div>
-                    <div class="circle"></div>
+
+                    <div class="specialist-info-column">
+                        <div class="specialist-type-experience">
+                            <span class="type">Психолог</span>
+
+                            <span class="dot">•</span>
+
+                            <span class="experience">
+                        4 года
+                    </span>
+                        </div>
+
+                        <div class="specialist-name">
+                            Мария Скрипаль
+                        </div>
+
+                        <div class="specialist-link">
+                            <a href="#" class="heart"></a>
+                            <a href="#" class="instagram"></a>
+                            <a href="#" class="facebook"></a>
+                            <a href="#" class="copy"></a>
+                        </div>
+
+                        <p class="specialist-description">
+                            В работе я занимаюсь проработкой травм,
+                            развитием личности и образованием, в
+                            зависимости от того, что запрашивает
+                            клиент. Другими словами я сопровождаю,
+                            помогаю и обучаю.
+                        </p>
+
+                        <p class="specialist-direction">
+                            <b>Категории:</b> Детская психология, Гештальт-терапия, Позитивная терапия.
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="specialist-info-column">
-                <div class="specialist-type-experience">
-                    <span class="type">Психолог</span>
-
-                    <span class="dot">•</span>
-
-                    <span class="experience">
-                    4 года
-                </span>
-                </div>
-
-                <div class="specialist-name">
-                    Мария Скрипаль
-                </div>
-
-                <div class="specialist-link">
-                    <a href="#" class="heart"></a>
-                    <a href="#" class="instagram"></a>
-                    <a href="#" class="facebook"></a>
-                    <a href="#" class="copy"></a>
-                </div>
-
-                <p class="specialist-description">
-                    В работе я занимаюсь проработкой травм,
-                    развитием личности и образованием, в
-                    зависимости от того, что запрашивает
-                    клиент. Другими словами я сопровождаю,
-                    помогаю и обучаю.
-                </p>
-
-                <p class="specialist-direction">
-                    <b>Категории:</b> Детская психология, Гештальт-терапия, Позитивная терапия.
-                </p>
             </div>
         </div>
-    </div>
 
-    <div class="specialist-container">
         <div class="tab-block">
             <div class="tab-buttons">
-                <span data-tab="#tab-calendar">Календарь</span>
-                <span data-tab="#tab-group">Групповые занятия</span>
-                <span data-tab="#tab-info">Об специалисте</span>
-                <span data-tab="#tab-achievement" class="active">Дипломы и грамоты</span>
-                <span data-tab="#tab-event">События</span>
+                <span data-tab-id="#tab-calendar">Календарь</span>
+                <span data-tab-id="#tab-group">Групповые занятия</span>
+                <span data-tab-id="#tab-info">Об специалисте</span>
+                <span data-tab-id="#tab-achievement" class="active">Дипломы и грамоты</span>
+                <span data-tab-id="#tab-event">События</span>
             </div>
+        </div>
 
+        <div class="specialist-container">
             <div class="tab-containers">
                 <div id="tab-calendar" class="tab tab-calendar">
                     <p class="description">
@@ -158,9 +163,9 @@
             </div>
         </div>
     </div>
-</main>
 
-<?php put('footer') ?>
+    <?php put('footer') ?>
+</main>
 
 <?php put('scripts') ?>
 </body>

@@ -5,17 +5,20 @@
     <?php put('head') ?>
 </head>
 <body>
-<?php put('header') ?>
 
-<div class="title-block">
-    <div>
-        <h1>НАЗВАНИЕ групПового занятия</h1>
+<main>
+    <?php put('header') ?>
+
+    <div class="title-block">
+        <div>
+            <h1>НАЗВАНИЕ групПового занятия</h1>
+        </div>
     </div>
-</div>
 
-<!-- here must be your html -->
+    <!-- here must be your html -->
 
-<?php put('footer') ?>
+    <?php put('footer') ?>
+</main>
 
 <?php put('scripts') ?>
 </body>

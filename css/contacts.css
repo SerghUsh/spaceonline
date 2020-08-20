@@ -8,13 +8,6 @@
     margin: 0 auto;
 }
 
-#contacts-content .contacts-block:before,
-#contacts-content .contacts-block:after {
-    content: '';
-    clear: both;
-    display: table;
-}
-
 #contacts-content .contacts-info {
     width: 530px;
     height: 100%;
@@ -35,6 +28,14 @@
 #contacts-content a {
     color: #fff;
     text-decoration: none;
+}
+
+#contacts-content .contacts-row {
+    display: flex;flex-flow: wrap;
+}
+
+#contacts-content .contacts-row > * {
+    width: 100%;
 }
 
 #contacts-content .contacts-group {
@@ -189,6 +190,10 @@
         margin-bottom: 12px;
     }
 
+    #contacts-content .contacts-row > * {
+        width: 50%;
+    }
+
     #contacts-content .contacts-group {
         font-size: 16px;
         line-height: 22px;
@@ -199,6 +204,7 @@
         background-position: 1px 4px;
         background-size: 36px;
         min-height: 30px;
+        order: 0;
     }
 
     #contacts-content .contacts-phone {
@@ -206,15 +212,14 @@
         background-size: 20px;
         line-height: 36px;
         min-height: 66px;
+        order: 2;
     }
 
     #contacts-content .contacts-timetable {
-        width: 53%;
-        float: right;
         background-position: 13px 3px;
         background-size: 22px;
         line-height: 23px;
-        margin-top: -97px;
+        order: 1;
     }
 
     #contacts-content .contacts-timetable small {
@@ -282,6 +287,10 @@
         margin-bottom: 20px;
     }
 
+    #contacts-content .contacts-row > * {
+        width: 100%;
+    }
+
     #contacts-content .contacts-group {
         font-size: 12px;
         line-height: 20px;
@@ -292,6 +301,7 @@
         background-position: 14px 4px;
         background-size: 24px;
         min-height: 26px;
+        order: 0;
     }
 
     #contacts-content .contacts-phone {
@@ -299,6 +309,7 @@
         background-size: 14px;
         line-height: 30px;
         min-height: 77px;
+        order: 1;
     }
 
     #contacts-content .contacts-timetable {
@@ -309,6 +320,7 @@
         line-height: 18px;
         margin-top: 0;
         min-height: 61px;
+        order: 2;
     }
 
     #contacts-content .contacts-timetable small {
