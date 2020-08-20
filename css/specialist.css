@@ -121,9 +121,11 @@
     text-align: center;
     line-height: 1;
 }
+
 .box-minmax span:last-child:before {
     content: attr(data-before);
 }
+
 .rs-range {
     width: 100%;
     -webkit-appearance: none;
@@ -932,6 +934,8 @@
     #specialist-list-content .specialist-filter-block select {
         font-size: 12px;
         margin-left: -3px;
+        background-size: 10px;
+        padding-right: 20px;
     }
 
     .range-wrapper {
