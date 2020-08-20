@@ -162,10 +162,6 @@ footer {
 /* Media Style Footer */
 
 @media (max-width: 1199px) {
-    .container {
-        max-width: 768px;
-    }
-
     #footer {
         margin-top: 66px;
     }
@@ -236,7 +232,5 @@ footer {
 }
 
 @media (max-width: 767px) {
-    .container {
-        max-width: 320px;
-    }
+
 }

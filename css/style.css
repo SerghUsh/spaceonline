@@ -31,6 +31,12 @@ body {
 }
 
 .container {
+    max-width: 1660px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-big {
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -81,6 +87,10 @@ body {
 }
 
 @media (max-width: 1199px) {
+    .container {
+        max-width: 768px;
+    }
+
     .container-list {
         max-width: 780px;
     }
@@ -97,6 +107,10 @@ body {
 }
 
 @media (max-width: 767px) {
+    .container {
+        max-width: 320px;
+    }
+
     .container-list {
         max-width: 280px;
         padding: 0;

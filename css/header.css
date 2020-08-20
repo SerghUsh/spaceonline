@@ -112,10 +112,6 @@ header > div {
 }
 
 @media (max-width: 1199px) {
-    .container {
-        max-width: 768px;
-    }
-
     .logo img {
         width: 88%;
         margin: 14px 26px 0 14px;
@@ -207,17 +203,9 @@ header > div {
     .header__menu.active .header_list li a {
         color: #FFFFFF;
     }
-
-    #personal_gid {
-        margin-bottom: 48px;
-    }
 }
 
 @media (max-width: 767px) {
-    .container {
-        max-width: 320px;
-    }
-
     header {
         height: 55px;
     }
