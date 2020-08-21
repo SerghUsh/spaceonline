@@ -65,10 +65,22 @@
             </div>
 
             <div class="account-tabs-block">
-                <h4 class="account-title-block">Редактировать профиль</h4>
+                <div id="tab-registrations" class="tab">
 
-                <div class="account-tabs">
-                    <div id="tab-registrations" class="tab">
+                </div>
+
+                <div id="tab-calendar" class="tab">
+                    <h4 class="account-title-block">Мой Календарь</h4>
+
+                    <img src="/img/calendar.png" alt="calendar" style="width: 100%">
+                </div>
+
+                <div id="tab-favorites" class="tab"></div>
+
+                <div id="tab-profile" class="tab">
+                    <h4 class="account-title-block">Редактировать профиль</h4>
+
+                    <div class="tab-block">
                         <form action="" method="post">
                             <div class="form-row">
                                 <div class="form-col">
@@ -153,7 +165,8 @@
                                 <div class="form-col">
                                     <div class="form-group">
                                         <label for="file">Загрузить фото</label>
-                                        <input id="file" type="file" name="file" class="inputfile" data-multiple-caption="{count} файлов было выбрано">
+                                        <input id="file" type="file" name="file" class="inputfile"
+                                               data-multiple-caption="{count} файлов было выбрано">
                                         <label for="file">
                                             <span></span> <b class="btn-file">Загрузить</b>
                                         </label>
@@ -164,10 +177,52 @@
                             <button class="btn-submit-margin btn-form-blue" type="submit">Обновить профиль</button>
                         </form>
                     </div>
-                    <div id="tab-calendar" class="tab"></div>
-                    <div id="tab-favorites" class="tab"></div>
-                    <div id="tab-profile" class="tab"></div>
-                    <div id="tab-settings" class="tab"></div>
+                </div>
+
+                <div id="tab-settings" class="tab">
+                    <h4 class="account-title-block">Настройки пароля</h4>
+
+                    <div class="tab-block">
+                        <form action="" method="post">
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <div class="form-group">
+                                        <label for="name">Новый пароль</label>
+                                        <span class="error-message"></span>
+                                        <input id="name" type="password">
+                                    </div>
+                                </div>
+
+                                <div class="form-col">
+                                    <div class="form-group">
+                                        <label for="surname">Повторите пароль</label>
+                                        <span class="error-message"></span>
+                                        <input id="surname" type="password">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn-submit-margin btn-form-blue" type="submit">Подтвердить</button>
+                        </form>
+                    </div>
+
+                    <h4 class="account-title-block">Удаление профиля</h4>
+
+                    <div class="tab-block">
+                        <form action="" method="post">
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <div class="form-group">
+                                        <label for="name">Введите пароль</label>
+                                        <span class="error-message"></span>
+                                        <input id="name" type="password">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn-submit-margin btn-form-red" type="submit">Удалить профиль</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

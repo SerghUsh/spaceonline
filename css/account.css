@@ -34,10 +34,14 @@
     width: calc(1630px - 480px);
 }
 
-.account-tabs-block .account-tabs {
+.account-tabs-block .tab-block {
     background: #FAFAFA;
     border-radius: 10px;
     padding: 30px 56px;
+}
+
+.tab-block:not(:last-of-type) {
+    margin-bottom: 60px;
 }
 
 .account-info .specialist-image-block {

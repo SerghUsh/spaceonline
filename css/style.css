@@ -67,10 +67,6 @@ body {
     padding: 0 45px;
 }
 
-.tab {
-    padding: 22px 0 0;
-}
-
 .tab:not(.active) {
     display: none;
 }
