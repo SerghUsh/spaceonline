@@ -46,6 +46,12 @@
                         <li class="account-profile">
                             <a href="#" data-tab-id="#tab-profile">Мой профиль</a>
                         </li>
+                        <li class="account-profinfo">
+                            <a href="#" data-tab-id="#tab-profinfo">Проф. инфо</a>
+                        </li>
+                        <li class="account-statistic">
+                            <a href="#" data-tab-id="#tab-statistic">Статистика занятий</a>
+                        </li>
                         <li class="account-settings">
                             <a href="#" data-tab-id="#tab-settings">Настройки</a>
                         </li>
@@ -66,7 +72,226 @@
 
             <div class="account-tabs-block">
                 <div id="tab-registrations" class="tab">
+                    <h4 class="account-title-block">Мой Календарь</h4>
 
+                    <div class="tab-menu tab-buttons">
+                        <a class="active" href="#" data-tab-id="#tab-all-registrations">Все</a>
+                        <a href="#" data-tab-id="#tab-personal-registrations">Личные консультации</a>
+                        <a href="#" data-tab-id="#tab-group-registrations">Груповые занятия</a>
+                        <a href="#" data-tab-id="#tab-event-registrations">События</a>
+                    </div>
+
+                    <div id="tab-all-registrations" class="tab">
+                        <div class="event-block privat">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Личная консультация - Психология</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+
+                        <div class="event-block event">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Занятие - Арт терапия</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+
+                        <div class="event-block event">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Занятие - Арт терапия</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+
+                        <div class="event-block group">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Событие - Название события</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+
+                        <div class="event-block group">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Событие - Название события</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+
+                        <div class="event-block group">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Событие - Название события</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-personal-registrations" class="tab">
+                        <div class="event-block privat">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Личная консультация - Психология</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-group-registrations" class="tab">
+                        <div class="event-block event">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Занятие - Арт терапия</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+
+                        <div class="event-block event">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Занятие - Арт терапия</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-event-registrations" class="tab">
+                        <div class="event-block group">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Событие - Название события</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+
+                        <div class="event-block group">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Событие - Название события</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+
+                        <div class="event-block group">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Событие - Название события</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="tab-calendar" class="tab">
@@ -177,6 +402,14 @@
                             <button class="btn-submit-margin btn-form-blue" type="submit">Обновить профиль</button>
                         </form>
                     </div>
+                </div>
+
+                <div id="tab-profinfo" class="tab">
+
+                </div>
+
+                <div id="tab-statistic" class="tab">
+
                 </div>
 
                 <div id="tab-settings" class="tab">

@@ -94,6 +94,29 @@ body {
     background: #83C465;
 }
 
+.btn-teal {
+    display: inline-block;
+    padding: 14px 20px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #59ADA8;
+    border-radius: 4px;
+    height: 46px;
+}
+
+.btn-teal:hover {
+    color: #FFFFFF;
+    background: #83C465;
+}
+
 .float-left {
     float: left !important;
 }

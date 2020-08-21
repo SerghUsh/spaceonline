@@ -120,6 +120,16 @@
     background-position: 4px 17px;
 }
 
+.account-profinfo {
+    background: url("/css/imgs/account-profinfo.svg") no-repeat;
+    background-position: 0px 15px;
+}
+
+.account-statistic {
+    background: url("/css/imgs/account-statistic.svg") no-repeat;
+    background-position: 0px 15px;
+}
+
 .account-settings {
     background: url("/css/imgs/account-settings.svg") no-repeat;
     background-position: 0px 15px;
@@ -140,4 +150,114 @@
     letter-spacing: 2px;
     display: inline-block;
     margin-bottom: 22px;
+}
+
+.tab-menu {
+    padding: 4px 0;
+    margin-bottom: 52px;
+}
+
+.tab-menu a {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+.tab-menu a:not(:last-child) {
+    margin-right: 56px;
+}
+
+.tab-menu a.active {
+    font-weight: bold;
+}
+
+.tab-menu a:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background: #000;
+    transition: all linear 0.2s;
+}
+
+.tab-menu a:hover:after {
+    width: 100%;
+}
+
+.event-block {
+    background: #FAFAFA;
+    border-radius: 5px;
+    position: relative;
+    padding: 30px 450px 30px 245px;
+    overflow: hidden;
+}
+
+.event-block:not(:last-child) {
+    margin-bottom: 23px;
+}
+
+.event-date-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 204px;
+    height: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+.privat .follow,
+.privat .event-date-block {
+    background: #5985AD;
+}
+.event .follow,
+.event .event-date-block {
+    background: #59ADA8;
+}
+.group .follow,
+.group .event-date-block {
+    background: #59AD6B;
+}
+
+.event-date-block span {
+    display: block;
+    font-size: 24px;
+    line-height: 35px;
+    color: #fff;
+}
+
+.event-info-block {
+}
+
+.event-info-block span {
+    display: block;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.event-actions-block {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    text-align: right;
+    width: 480px;
+    padding: 37px 40px 0 0;
+}
+.event-actions-block a {
+    height: 50px;
+    font-weight: normal;
+    padding-top: 15px;
+    font-size: 24px;
+    text-transform: none;
+}
+.event-actions-block a:not(:last-child) {
+    margin-right: 20px;
 }
