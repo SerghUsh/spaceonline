@@ -21,12 +21,12 @@
                 <div class="form-group">
                     <label for="email">Email</label>
                     <span class="error-message">Некорректные данные!</span>
-                    <input id="email" type="text" placeholder="Email">
+                    <input id="email" class="center" type="text" placeholder="Email">
                 </div>
 
                 <div class="form-group">
                     <label for="password">Пароль</label>
-                    <input id="password" type="password" placeholder="Пароль">
+                    <input id="password" class="center" type="password" placeholder="Пароль">
                 </div>
 
                 <div class="form-group">

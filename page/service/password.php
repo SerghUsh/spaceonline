@@ -20,7 +20,7 @@
             <form action="" method="post">
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" type="text" placeholder="Email">
+                    <input id="email" class="center" type="text" placeholder="Email">
                 </div>
 
                 <div class="form-group">

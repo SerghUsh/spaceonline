@@ -21,28 +21,28 @@
                 <div class="form-group">
                     <label for="name">Имя</label>
                     <span class="error-message">Некорректные данные!</span>
-                    <input id="name" type="text" placeholder="Имя">
+                    <input id="name" class="center" type="text" placeholder="Имя">
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email</label>
                     <span class="error-message">Некорректные данные!</span>
-                    <input id="email" type="text" placeholder="Email">
+                    <input id="email" class="center" type="text" placeholder="Email">
                 </div>
 
                 <div class="form-group">
                     <label for="phone">Телефон</label>
-                    <input id="phone" type="text" placeholder="Телефон">
+                    <input id="phone" class="center" type="text" placeholder="Телефон">
                 </div>
 
                 <div class="form-group">
                     <label for="password">Пароль</label>
-                    <input id="password" type="password" placeholder="Пароль">
+                    <input id="password" class="center" type="password" placeholder="Пароль">
                 </div>
 
                 <div class="form-group">
                     <label for="password_repeat">Подтвердите пароль</label>
-                    <input id="password_repeat" type="password" placeholder="Подтвердите пароль">
+                    <input id="password_repeat" class="center" type="password" placeholder="Подтвердите пароль">
                 </div>
 
                 <div class="form-group">

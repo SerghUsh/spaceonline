@@ -30,3 +30,5 @@
 
 <link rel="stylesheet" type="text/css" href="/select2/css/select2.min.css"/>
 <link rel="stylesheet" type="text/css" href="/css/select2-custom.css"/>
+
+<link rel="stylesheet" type="text/css" href="/bootstrap-datepicker-1.9.0/css/bootstrap-datepicker3.standalone.min.css">

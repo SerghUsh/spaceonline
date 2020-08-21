@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     /* HEADER MENU */
     $('.header__burger').click(function (event) {
@@ -82,7 +81,7 @@ $(document).ready(function () {
     /* SPECIALIST PAGE */
 
     // Filter range slider
-    $('.rs-range').on('input', function(e) {
+    $('.rs-range').on('input', function (e) {
         var rangeSlider = $(e.target);
         // write min value to block
         var rangeMin = $(rangeSlider.data('min-id'));
@@ -142,4 +141,44 @@ $(document).ready(function () {
     $('#timezone').select2({
         width: '100%',
     });
+    // Init date
+    $('#birthday').datepicker({
+        language: "ru",
+        autoclose: true,
+        todayHighlight: true,
+        calendarWeeks: true,
+        clearBtn: true
+    });
 });
+/* input file */
+;(function (document, window, index) {
+    'use strict';
+    var inputs = document.querySelectorAll('.inputfile');
+    Array.prototype.forEach.call(inputs, function (input) {
+        var label = input.nextElementSibling,
+            labelVal = label.innerHTML;
+
+        input.addEventListener('change', function (e) {
+            var fileName = '';
+            if (this.files && this.files.length > 1)
+                fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+            else
+                fileName = e.target.value.split('\\').pop();
+
+            if (fileName) {
+                label.querySelector('span').innerHTML = fileName;
+                label.querySelector('span').title = fileName;
+            } else {
+                label.innerHTML = labelVal;
+            }
+        });
+
+        // Firefox bug fix
+        input.addEventListener('focus', function () {
+            input.classList.add('has-focus');
+        });
+        input.addEventListener('blur', function () {
+            input.classList.remove('has-focus');
+        });
+    });
+}(document, window, 0));
