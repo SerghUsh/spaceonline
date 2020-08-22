@@ -6,7 +6,7 @@
                 <div class="footer__item">
                     <div class="social_buttons">
                         <div class="footer__logo">
-                            <a href="<?php href('home') ?>"><img src="/img/logo_SpOn.svg" alt="logo"></a>
+                            <a href="<?php href('home') ?>"><img src="/css/imgs/logo_SpOn.svg" alt="logo"></a>
                         </div>
                         <div class="social_buttons__link">
                             <a href="https://www.instagram.com/" target="blank" class="instagram"></a>
@@ -19,11 +19,17 @@
                         <h3>Страницы</h3>
                         <nav>
                             <ul>
-                                <li><a href="<?php href('home') ?>">Главная</a></li>
-                                <li><a href="<?php href('practice', 'list') ?>">Практики</a></li>
-                                <li><a href="<?php href('specialist', 'list') ?>">Специалисты</a></li>
-                                <li><a href="<?php href('group_lesson', 'list') ?>">Занятия</a></li>
-                                <li><a href="<?php href('event', 'list') ?>">События</a></li>
+                                <div>
+                                    <li><a href="<?php href('home') ?>">Главная</a></li>
+                                    <li><a href="<?php href('practice', 'list') ?>">Практики</a></li>
+                                    <li><a href="<?php href('specialist', 'list') ?>">Специалисты</a></li>
+                                </div>
+
+                                <div>
+                                     <li><a href="<?php href('group_lesson', 'list') ?>">Занятия</a></li>
+                                    <li><a href="<?php href('event', 'list') ?>">События</a></li>
+                                </div>
+                               
                             </ul>
                         </nav>
                     </div>

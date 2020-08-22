@@ -2,11 +2,16 @@
 <header>
     <div class="container">
         <div class="logo">
-            <a href="<?php href('home') ?>"><img src="/img/logo_SpOn.svg" alt="logo"></a>
+            <a href="<?php href('home') ?>"><img src="/css/imgs/logo_SpOn.svg" alt="logo"></a>
         </div>
 
         <nav class="header__menu">
             <ul class="header_list">
+                <div class="first_item">
+                    <ul class="account_list">
+                        <li><a href="<?php href('service', 'login') ?>">Войти</a></li>
+                    </ul>
+                </div>
                 <li><a href="<?php href('home') ?>">Главная</a></li>
                 <li><a href="<?php href('practice', 'list') ?>">Практики</a></li>
                 <li><a href="<?php href('specialist', 'list') ?>">Специалисты</a></li>

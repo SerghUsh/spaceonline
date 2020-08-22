@@ -20,13 +20,13 @@
 
                 <div class="slider">
                     <div class="slider__item">
-                        <img src="/img/bg_Personal_gid.png">
+                        <img src="/img/bg_personal_gid.jpg">
                     </div>
                     <div class="slider__item">
-                        <img src="/img/bg_Personal_gid.png">
+                        <img src="/img/bg_personal_gid.jpg">
                     </div>
                     <div class="slider__item">
-                        <img src="/img/bg_Personal_gid.png">
+                        <img src="/img/bg_personal_gid.jpg">
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
         <div class="container-lg">
             <div class="about_us__wrapper">
                 <div class="discription">
-                    <div><img src="/img/logo_SpOn.svg"></div>
+                    <div><img src="/css/imgs/logo_SpOn.svg"></div>
 
                     <p class="font-proximanova">SPACE Online – это уникальное пространство, первая и единственная
                         масштабная русскоязычная платформа, которая позволит людям во всем мире найти лучших мастеров во
@@ -73,7 +73,7 @@
             <div class="choise_your_practises__list">
                 <div class="slider">
                     <div class="slider__item">
-                        <img src="/img/astrology.png" class="pract" alt="image">
+                        <img src="/img/astrology.jpg" class="pract" alt="image">
                         <h2>Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
@@ -84,7 +84,7 @@
                     </div>
 
                     <div class="slider__item">
-                        <img src="/img/psychology.png" class="pract" alt="image">
+                        <img src="/img/psychology.jpg" class="pract" alt="image">
                         <h2>Психология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
@@ -95,7 +95,7 @@
                     </div>
 
                     <div class="slider__item">
-                        <img src="/img/coaching.png" class="pract" alt="image">
+                        <img src="/img/coaching.jpg" class="pract" alt="image">
                         <h2>Коучинг</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
@@ -106,7 +106,7 @@
                     </div>
 
                     <div class="slider__item">
-                        <img src="/img/astrology.png" class="pract" alt="image">
+                        <img src="/img/astrology.jpg" class="pract" alt="image">
                         <h2>Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
@@ -117,7 +117,7 @@
                     </div>
 
                     <div class="slider__item">
-                        <img src="/img/psychology.png" class="pract" alt="image">
+                        <img src="/img/psychology.jpg" class="pract" alt="image">
                         <h2>Психология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
@@ -128,7 +128,7 @@
                     </div>
 
                     <div class="slider__item">
-                        <img src="/img/coaching.png" class="pract" alt="image">
+                        <img src="/img/coaching.jpg" class="pract" alt="image">
                         <h2>Коучинг</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
@@ -253,7 +253,7 @@
                 <div class="slider">
                     <div class="slider__item">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.png" alt="image">
+                            <img src="/img/bg_name_event1.jpg" alt="image">
                             <div class="bottom_info">
                                 <span class="free_place">3/20</span>
                                 <span class="date">21/06/2020</span>
@@ -272,7 +272,7 @@
 
                     <div class="slider__item">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event2.png" alt="image">
+                            <img src="/img/bg_name_event2.jpg" alt="image">
                             <div class="bottom_info">
                                 <span class="free_place">3/20</span>
                                 <span class="date">21/06/2020</span>
@@ -290,7 +290,7 @@
 
                     <div class="slider__item">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event3.png" alt="image">
+                            <img src="/img/bg_name_event3.jpg" alt="image">
                             <div class="bottom_info">
                                 <span class="free_place">3/20</span>
                                 <span class="date">21/06/2020</span>
@@ -308,7 +308,7 @@
 
                     <div class="slider__item">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.png" alt="image">
+                            <img src="/img/bg_name_event1.jpg" alt="image">
                             <div class="bottom_info">
                                 <span class="free_place">3/20</span>
                                 <span class="date">21/06/2020</span>
@@ -326,7 +326,7 @@
 
                     <div class="slider__item">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event2.png" alt="image">
+                            <img src="/img/bg_name_event2.jpg" alt="image">
                             <div class="bottom_info">
                                 <span class="free_place">3/20</span>
                                 <span class="date">21/06/2020</span>
@@ -344,7 +344,7 @@
 
                     <div class="slider__item">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event3.png" alt="image">
+                            <img src="/img/bg_name_event3.jpg" alt="image">
                             <div class="bottom_info">
                                 <span class="free_place">3/20</span>
                                 <span class="date">21/06/2020</span>
@@ -381,7 +381,7 @@
             <div class="main_block__item">
                 <div class="discription_text">
                     <p>SPACE Online – это уникальное пространство, первая и единственная масштабная русскоязычная платформа, которая
-                    позволит людям во всем мире найти лучших мастеров во всех направлениях работы с телом, духом и душой на Пути поиска Себя! У нас можно получить консультацию практически любого из возможных специалистов тонких отраслей.
+                    позволит людям во всем мире найти лучших мастеров во всех направлениях работы с телом, духом и душой на Пути поиска Себя! У нас можно получить консультацию практически любого из возможных специалистов тонких отраслей. И все это максимально доступно благодаря специально разработанной, не имеющей аналогов в мире платформе. Это портал для всех, кто хочет быть услышанным и разобраться со своим ценностями, для тех, кто хочет расти и развиваться. 
                     </p>
 
                     <p class="space">Если ты тоже помогаешь людям увеличить их внутреннее пространство, то становись частью нашей команды.

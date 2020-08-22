@@ -17,7 +17,9 @@ header > div {
 .logo img {
     margin: 11px 234px 0 0px;
 }
-
+.first_item {
+    display: none;
+}
 .header_list {
     list-style: none;
     display: flex;
@@ -73,7 +75,7 @@ header > div {
 }
 
 .account_list li::before {
-    content: url(../img/registration.png);
+    content: url(../css/imgs/registration.svg);
     position: absolute;
     left: -33px;
     text-align: center;
@@ -116,10 +118,16 @@ header > div {
         width: 87%;
         margin: 15px 33px 0 -3px;
     }
-
+    .first_item {
+        display: none;
+    }
     .account_list {
         margin-left: 144px;
         margin-top: 10px;
+    }
+    .account_list li::before {
+        left: -33px;
+        top: -3px;
     }
 
     .header__burger {
@@ -212,9 +220,37 @@ header > div {
 
     .logo img {
         width: 50%;
-        margin: 13px 10px 0 5px;
+        margin: 13px 15px 0 0px;
     }
 
+    .first_item {
+        display: block;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+    .first_item .account_list {
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+    .first_item .account_list li {
+        margin: 24px 0 7px 19px;
+    }
+    .first_item .account_list li a {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .first_item .account_list li::before {
+        content: url(../css/imgs/registration_white.svg);
+        position: absolute;
+        left: -33px;
+        text-align: center;
+    }
+
+    
+    .header_list li {
+        font-size: 12px;
+        margin: 10px 0 23px 19px;
+    }
     .account {
         display: none;
     }
@@ -228,7 +264,7 @@ header > div {
         width: 40px;
         margin-top: 10px;
         height: 29px;
-        margin-left: -88px;
+        margin-left: -64px;
     }
 
     .header__burger span {
@@ -256,7 +292,7 @@ header > div {
     }
 
     .header__menu {
-        width: 50%;
-        right: 26%;
+        width: 54%;
+        right: 0%;
     }
 }
