@@ -1,14 +1,16 @@
 /* Find your practise */
-.wrapper {
+/*.wrapper {
     display: flex;
     flex-flow: row wrap;
     width: 1630px;
     margin: 0 auto;
-}
+}*/
+
 .main_block {
     margin-top: 80px;
     margin-bottom: 38px;
 }
+
 .wrapper__item {
     margin-right: 92px;
     margin-bottom: 67px;
@@ -17,7 +19,7 @@
     overflow: hidden;
 }
 
-.wrapper__item h2 {
+.wrapper__item h2.border_bottom {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 22px;
@@ -86,5 +88,27 @@
 }
 
 @media (max-width: 767px) {
-
+    .main_block {
+        margin-top: 21px;
+        margin-bottom: 3px;
+    }
+    .wrapper__item {
+        margin: 0px 2px 20px 5px;
+        width: 280px;
+    }
+    .wrapper__item h2 {
+        font-size: 12px;
+        margin-top: 6px;
+        padding-bottom: 7px;
+    }
+    .wrapper__item p {
+        min-height: 70px;
+        margin-top: 7px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .wrapper__item a {
+        font-size: 9px;
+        left: 100px;
+    }
 }

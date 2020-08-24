@@ -28,7 +28,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -41,7 +41,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/psychology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -54,7 +54,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/coaching.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -67,7 +67,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -80,7 +80,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -93,7 +93,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -106,7 +106,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -119,7 +119,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -132,7 +132,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -145,7 +145,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -158,7 +158,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -171,7 +171,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -184,7 +184,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -197,7 +197,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -210,7 +210,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -223,7 +223,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -236,7 +236,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -249,7 +249,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -262,7 +262,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -275,7 +275,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -288,7 +288,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
@@ -301,7 +301,7 @@
                 <div class="col">
                     <div class="wrapper__item">
                         <img src="/img/astrology.jpg" alt="image">
-                        <h2>Астрология</h2>
+                        <h2 class="border_bottom">Астрология</h2>
                         <p>
                             Улучши свое душевное равновесие. С лучшим специалистом
                             Екатериной. Всего за полтора часа, ты сможешь погрузиться
