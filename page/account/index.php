@@ -33,9 +33,13 @@
                         Ирина Гoгуль
                     </div>
 
+                    <div class="account-type">
+                        Психолог
+                    </div>
+
                     <ul class="account-menu tab-buttons">
                         <li class="account-registrations">
-                            <a class="active" href="#" data-tab-id="#tab-registrations">Мои регистрации</a>
+                            <a href="#" data-tab-id="#tab-registrations">Мои регистрации</a>
                         </li>
                         <li class="account-calendar">
                             <a href="#" data-tab-id="#tab-calendar">Мой календарь</a>
@@ -47,7 +51,7 @@
                             <a href="#" data-tab-id="#tab-profile">Мой профиль</a>
                         </li>
                         <li class="account-profinfo">
-                            <a href="#" data-tab-id="#tab-profinfo">Проф. инфо</a>
+                            <a class="active" href="#" data-tab-id="#tab-profinfo">Проф. инфо</a>
                         </li>
                         <li class="account-statistic">
                             <a href="#" data-tab-id="#tab-statistic">Статистика занятий</a>
@@ -74,14 +78,14 @@
                 <div id="tab-registrations" class="tab">
                     <h4 class="account-title-block">Мой Календарь</h4>
 
-                    <div class="tab-menu tab-buttons">
-                        <a class="active" href="#" data-tab-id="#tab-all-registrations">Все</a>
-                        <a href="#" data-tab-id="#tab-personal-registrations">Личные консультации</a>
-                        <a href="#" data-tab-id="#tab-group-registrations">Груповые занятия</a>
-                        <a href="#" data-tab-id="#tab-event-registrations">События</a>
+                    <div data-container-id="#filter-container-registrations" class="filter-menu tab-buttons">
+                        <a href="#" data-filter="" class="active" >Все</a>
+                        <a href="#" data-filter="privat">Личные консультации</a>
+                        <a href="#" data-filter="group">Груповые занятия</a>
+                        <a href="#" data-filter="event">События</a>
                     </div>
 
-                    <div id="tab-all-registrations" class="tab">
+                    <div id="filter-container-registrations">
                         <div class="event-block privat">
                             <div class="event-date-block">
                                 <span>24/07/2019</span>
@@ -183,112 +187,21 @@
                                 <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="tab-personal-registrations" class="tab">
                         <div class="event-block privat">
-                            <div class="event-date-block">
-                                <span>24/07/2019</span>
-                                <span>09:00 - 10:30</span>
+                            <div class="event-image-block">
+                                <div class="image-wrapper">
+                                    <img src="/img/specialist.jpg" alt="specialist">
+                                </div>
                             </div>
 
                             <div class="event-info-block">
-                                <span>Личная консультация - Психология</span>
-                                <span>Статус: Оплачено</span>
+                                <span><b>Алена струк</b></span>
+                                <span>Психолог</span>
                             </div>
 
                             <div class="event-actions-block">
                                 <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="tab-group-registrations" class="tab">
-                        <div class="event-block event">
-                            <div class="event-date-block">
-                                <span>24/07/2019</span>
-                                <span>09:00 - 10:30</span>
-                            </div>
-
-                            <div class="event-info-block">
-                                <span>Занятие - Арт терапия</span>
-                                <span>Статус: Оплачено</span>
-                            </div>
-
-                            <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
-                            </div>
-                        </div>
-
-                        <div class="event-block event">
-                            <div class="event-date-block">
-                                <span>24/07/2019</span>
-                                <span>09:00 - 10:30</span>
-                            </div>
-
-                            <div class="event-info-block">
-                                <span>Занятие - Арт терапия</span>
-                                <span>Статус: Оплачено</span>
-                            </div>
-
-                            <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="tab-event-registrations" class="tab">
-                        <div class="event-block group">
-                            <div class="event-date-block">
-                                <span>24/07/2019</span>
-                                <span>09:00 - 10:30</span>
-                            </div>
-
-                            <div class="event-info-block">
-                                <span>Событие - Название события</span>
-                                <span>Статус: Оплачено</span>
-                            </div>
-
-                            <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
-                            </div>
-                        </div>
-
-                        <div class="event-block group">
-                            <div class="event-date-block">
-                                <span>24/07/2019</span>
-                                <span>09:00 - 10:30</span>
-                            </div>
-
-                            <div class="event-info-block">
-                                <span>Событие - Название события</span>
-                                <span>Статус: Оплачено</span>
-                            </div>
-
-                            <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
-                            </div>
-                        </div>
-
-                        <div class="event-block group">
-                            <div class="event-date-block">
-                                <span>24/07/2019</span>
-                                <span>09:00 - 10:30</span>
-                            </div>
-
-                            <div class="event-info-block">
-                                <span>Событие - Название события</span>
-                                <span>Статус: Оплачено</span>
-                            </div>
-
-                            <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
                             </div>
                         </div>
                     </div>
@@ -300,7 +213,69 @@
                     <img src="/img/calendar.png" alt="calendar" style="width: 100%">
                 </div>
 
-                <div id="tab-favorites" class="tab"></div>
+                <div id="tab-favorites" class="tab">
+                    <h4 class="account-title-block">Избранные</h4>
+
+                    <div data-container-id="#filter-container-favorites" class="filter-menu tab-buttons">
+                        <a href="#" data-filter="" class="active" >Все</a>
+                        <a href="#" data-filter="privat">Личные консультации</a>
+                        <a href="#" data-filter="group">Груповые занятия</a>
+                        <a href="#" data-filter="event">События</a>
+                    </div>
+
+                    <div id="filter-container-favorites">
+                        <div class="event-block privat">
+                            <div class="event-image-block">
+                                <div class="image-wrapper">
+                                    <img src="/img/specialist.jpg" alt="specialist">
+                                </div>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span><b>Алена струк</b></span>
+                                <span>Психолог</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                            </div>
+                        </div>
+
+                        <div class="event-block event">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Занятие - Арт терапия</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+
+                        <div class="event-block group">
+                            <div class="event-date-block">
+                                <span>24/07/2019</span>
+                                <span>09:00 - 10:30</span>
+                            </div>
+
+                            <div class="event-info-block">
+                                <span>Событие - Название события</span>
+                                <span>Статус: Оплачено</span>
+                            </div>
+
+                            <div class="event-actions-block">
+                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div id="tab-profile" class="tab">
                     <h4 class="account-title-block">Редактировать профиль</h4>
@@ -405,7 +380,132 @@
                 </div>
 
                 <div id="tab-profinfo" class="tab">
+                    <h4 class="account-title-block">Редактировать проф.ИНФО</h4>
 
+                    <div class="tab-block">
+                        <form action="" method="post">
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <div class="form-group">
+                                        <label>Ваши рабочие дни</label>
+
+                                        <div class="days">
+                                            <div class="day-input-block">
+                                                <input id="monday" type="checkbox" name="monday">
+                                                <label for="monday">ПН</label>
+                                            </div>
+
+                                            <div class="day-input-block">
+                                                <input id="tuesday" type="checkbox" name="tuesday">
+                                                <label for="tuesday">ВТ</label>
+                                            </div>
+
+                                            <div class="day-input-block">
+                                                <input id="wednesday" type="checkbox" name="wednesday">
+                                                <label for="wednesday">СР</label>
+                                            </div>
+
+                                            <div class="day-input-block">
+                                                <input id="thursday" type="checkbox" name="thursday">
+                                                <label for="thursday">ЧТ</label>
+                                            </div>
+
+                                            <div class="day-input-block">
+                                                <input id="friday" type="checkbox" name="friday">
+                                                <label for="friday">ПТ</label>
+                                            </div>
+
+                                            <div class="day-input-block">
+                                                <input id="saturday" type="checkbox" name="saturday">
+                                                <label for="saturday">СБ</label>
+                                            </div>
+
+                                            <div class="day-input-block">
+                                                <input id="sunday" type="checkbox" name="sunday">
+                                                <label for="sunday">ВС</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-col">
+                                    <div class="form-group">
+                                        <label>Ваше рабочее время</label>
+
+                                        <div class="form-row">
+                                            <div class="form-col">
+                                                <sub>начало</sub>
+                                                <select id="time-start" name="time-start">
+                                                    <option>8:00</option>
+                                                    <option>8:30</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-col">
+                                                <sub>конец</sub>
+                                                <select id="time-end" name="time-end">
+                                                    <option>18:00</option>
+                                                    <option>18:30</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-col">
+                                    <div class="form-group">
+                                        <label for="specialization">Специализация</label>
+                                        <span class="error-message"></span>
+                                        <input id="specialization" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="form-col">
+                                    <div class="form-group">
+                                        <label for="experience">Лет опыта</label>
+                                        <span class="error-message"></span>
+                                        <div class="quantity-block">
+                                            <button type="button" class="minus"> - </button>
+                                            <input type="number" value="4" id="experience">
+                                            <button type="button" class="plus"> + </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="group-separator"></div>
+
+                                <div class="form-col">
+                                    <div class="form-group">
+                                        <label for="experience">Анкета</label>
+                                        <input id="worksheet" type="file" name="worksheet" class="inputfile"
+                                               data-multiple-caption="{count} файлов было выбрано">
+                                        <label for="worksheet">
+                                            <span></span> <b class="btn-file">Загрузить</b>
+                                        </label>
+
+                                        <label>
+                                            <input type="checkbox" value="1" checked><i></i>
+                                            <span>Требуется предварительная обработка анкеты пользователя</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group"></div>
+
+                            <div class="form-group">
+                                <label for="sub-specialization">Узкие специализации</label>
+                                <select id="sub-specialization" name="sub-specialization[]" multiple="multiple"></select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description">Информация обо мне (562 символа)</label>
+                                <textarea id="description" data-label="Информация обо мне ({count} символа)">Психотерапевт. Специалист в области гештальт-терапии. Специализируется на проблемах межличностного общения и разрешении конфликтов. Сертифицированный коуч. Спортивный коуч. Работает со спортсменами и спортивными командами. Организатор Образовательного проекта для психологов «ПСИКОН». Марие 35 лет, из которых она 12 лет работает психологом и психотерапевтом.</textarea>
+                            </div>
+
+                            <button class="btn-submit-margin btn-form-blue" type="submit">Обновить профиль</button>
+                        </form>
+                    </div>
                 </div>
 
                 <div id="tab-statistic" class="tab">

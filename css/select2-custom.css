@@ -1,3 +1,31 @@
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    display: inline-block;
+    background: #6EA8C6;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+    line-height: 26px;
+    color: #FFFFFF;
+    font-family: ProximaNova;
+    padding: 4px 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+    cursor: default;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    width: auto;
+    float: right;
+    border: none;
+    color: #fff;
+    padding-right: 10px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:focus {
+    background: none;
+    color: #333;
+    outline: none;
+}
 .select2-container .select2-selection--single {
     height: 50px;
     font-family: Proxima Nova, sans-serif;

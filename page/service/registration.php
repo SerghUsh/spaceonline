@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="checkbox-wrapper">
-                    <label>
+                    <label class="small">
                         <input type="checkbox" value="1" checked><i></i> <span>Я согласен с условиями</span>
                     </label>
                 </div>
@@ -72,8 +72,10 @@
                     <button class="btn-submit btn-form-green" type="submit">Регистрация</button>
 
                     <div class="action-block">
-                        <p>Уже есть учетная запись? <a class="link-black"
-                                                       href="<?php href('service', 'login') ?>">Войти</a></p>
+                        <p>
+                            Уже есть учетная запись?
+                            <a class="link-black" href="<?php href('service', 'login') ?>">Войти</a>
+                        </p>
                     </div>
                 </div>
             </form>

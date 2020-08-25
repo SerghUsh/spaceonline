@@ -1,5 +1,5 @@
 #account-content {
-    padding: 20px 0;
+    padding: 37px 0;
 }
 
 .account-title-block {
@@ -55,7 +55,16 @@
     line-height: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 6px;
+}
+
+.account-type {
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
 }
 
 .account-menu {
@@ -67,7 +76,7 @@
 .account-menu li {
     display: block;
     font-size: 20px;
-    line-height: 61px;
+    line-height: 59px;
     padding-left: 61px;
     border-top: 1px solid #D5D5D5;
     text-align: left;
@@ -152,12 +161,11 @@
     margin-bottom: 22px;
 }
 
-.tab-menu {
-    padding: 4px 0;
-    margin-bottom: 52px;
+.filter-menu {
+    margin-bottom: 49px;
 }
 
-.tab-menu a {
+.filter-menu a {
     display: inline-block;
     font-family: Montserrat, sans-serif;
     font-size: 16px;
@@ -169,15 +177,15 @@
     color: #000;
 }
 
-.tab-menu a:not(:last-child) {
-    margin-right: 56px;
+.filter-menu a:not(:last-child) {
+    margin-right: 45px;
 }
 
-.tab-menu a.active {
+.filter-menu a.active {
     font-weight: bold;
 }
 
-.tab-menu a:after {
+.filter-menu a:after {
     content: '';
     display: block;
     height: 1px;
@@ -186,7 +194,7 @@
     transition: all linear 0.2s;
 }
 
-.tab-menu a:hover:after {
+.filter-menu a:hover:after {
     width: 100%;
 }
 
@@ -194,32 +202,52 @@
     background: #FAFAFA;
     border-radius: 5px;
     position: relative;
-    padding: 30px 450px 30px 245px;
+    padding: 22px 450px 24px 221px;
     overflow: hidden;
 }
 
 .event-block:not(:last-child) {
-    margin-bottom: 23px;
+    margin-bottom: 21px;
 }
 
-.event-date-block {
+.event-date-block,
+.event-image-block {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
-    width: 204px;
+    width: 185px;
     height: 100%;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 27px;
 }
+.event-image-block {
+    padding-top: 14px;
+}
+
+.event-image-block .image-wrapper {
+    width: 87px;
+    height: 87px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.event-image-block .image-wrapper img {
+    width: 100%;
+}
+
 .privat .follow,
 .privat .event-date-block {
     background: #5985AD;
 }
+
 .event .follow,
 .event .event-date-block {
     background: #59ADA8;
 }
+
 .group .follow,
 .group .event-date-block {
     background: #59AD6B;
@@ -228,7 +256,7 @@
 .event-date-block span {
     display: block;
     font-size: 24px;
-    line-height: 35px;
+    line-height: 32px;
     color: #fff;
 }
 
@@ -249,15 +277,18 @@
     z-index: 1;
     text-align: right;
     width: 480px;
-    padding: 37px 40px 0 0;
+    padding: 33px 30px 0 0;
 }
+
 .event-actions-block a {
     height: 50px;
     font-weight: normal;
-    padding-top: 15px;
     font-size: 24px;
     text-transform: none;
+    letter-spacing: 0px;
+    padding: 14px 18px;
 }
+
 .event-actions-block a:not(:last-child) {
     margin-right: 20px;
 }

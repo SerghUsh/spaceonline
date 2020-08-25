@@ -52,7 +52,6 @@ $(document).ready(function () {
         dots: false
     });
     $('.next_slide').on('click', function () {
-        console.log($(slider1).slick('slickCurrentSlide'));
         if ($(slider1).slick('slickCurrentSlide') == 5) {
             $(slider1).slick('slickGoTo', 0);
         } else {
@@ -138,7 +137,7 @@ $(document).ready(function () {
     /* REGISTRATION PAGE */
 
     // Init select
-    $('#timezone').select2({
+    $('#timezone, #time-start, #time-end').select2({
         width: '100%',
     });
     // Init date
@@ -149,6 +148,61 @@ $(document).ready(function () {
         calendarWeeks: true,
         clearBtn: true
     });
+
+    /* ACCOUNT PAGE */
+
+    // Init filter
+    $('*[data-filter]').on('click', function (e) {
+        var containerId = $(e.target).parent().attr('data-container-id');
+        var filter = $(e.target).attr('data-filter');
+
+        $(e.target).parent().find('*[data-filter]').removeClass('active');
+        $(e.target).addClass('active');
+
+        if (filter) {
+            $(containerId).find('> *').each(function (n, elem) {
+                if ($(elem).hasClass(filter)) {
+                    $(elem).slideDown(300);
+                } else {
+                    $(elem).slideUp(300);
+                }
+            });
+        } else {
+            $(containerId).find('> *').slideDown(300);
+        }
+        e.preventDefault();
+        return false;
+    });
+    $('.active[data-filter]').trigger('click');
+
+    // Init input type number
+    $('.quantity-block .minus').on('click', function (e) {
+        var val = $(e.target).parent().find('input').val();
+        if (val > 1) {
+            val--;
+        }
+        $(e.target).parent().find('input').val(val);
+    });
+    $('.quantity-block .plus').on('click', function (e) {
+        var val = $(e.target).parent().find('input').val();
+        val++;
+        $(e.target).parent().find('input').val(val);
+    });
+
+    // Init sub-specialization
+    $('#sub-specialization').select2({
+        width: '100%',
+        tags: true
+    });
+
+    // Init text area
+    $('#description').on('keyup', function(e) {
+        var id = $(e.target).attr('id');
+        var count = $(e.target).val().length;
+        var labelText = $(e.target).attr('data-label');
+        labelText = labelText.replace('{count}', count);
+        $('label[for="' + id + '"]').html(labelText);
+    }).trigger('keyup');
 });
 /* input file */
 ;(function (document, window, index) {
