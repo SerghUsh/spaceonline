@@ -1,0 +1,156 @@
+/* Group lessons */
+
+#group_lesson-list-content {
+    padding: 30px 0;
+}
+
+#group_lesson-list-content .group_lesson-filter-wrapper {
+    font-family: Montserrat, sans-serif;
+}
+
+#group_lesson-list-content .group_lesson-filter-wrapper {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+#group_lesson-list-content .group_lesson-filter-group {
+    display: inline-block;
+}
+
+#group_lesson-list-content .group_lesson-filter-group:not(:last-child) {
+    margin-right: 0px;
+}
+
+#group_lesson-list-content .group_lesson-filter-wrapper label {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    margin-right: 18px;
+}
+
+#group_lesson-list-content .group_lesson-filter-wrapper select {
+    background: 0;
+    border-radius: 0;
+    border: none;
+    border: 0;
+    outline: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #333333;
+    -webkit-appearance: none;
+    padding-right: 28px;
+    background: url('/css/imgs/specialist-select-down.svg') no-repeat;
+    background-position-x: calc(100% - 5px);
+    background-position-y: center;
+}
+#group_lesson-list-content .group_lesson-filter-wrapper select.all_practice {
+	background-position-x: calc(35% - 5px);
+}
+
+
+.wrapper__block {
+	margin-right: 92px;
+	margin-bottom: 64px;
+	width: 482px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.wrapper__block h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: -5px;
+}
+
+.wrapper__block .image_size {
+    position: relative;
+}
+
+.wrapper__block .image_size {
+    width: 100%;
+}
+
+.wrapper__block .image_size .bottom_info {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    z-index: 1;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.31);
+    padding: 8px 29px 2px 31px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+}
+
+.wrapper__block .image_size .bottom_info .lesson_name {
+    vertical-align: 2px;
+}
+
+.wrapper__block .lesson_name::after {
+    content: url('../css/imgs/group_lesson_icon.svg');
+    margin-left: 20px;
+    vertical-align: -6px;
+}
+
+.wrapper__block p.duration {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: -16px;
+    margin-left: 25px;
+    padding: 0;
+    position: relative;
+}
+.wrapper__block p.state {
+	font-size: 16px;
+    line-height: 24px;
+}
+
+.wrapper__block p.duration::before {
+    position: absolute;
+    content: url('../css/imgs/stopwatch.svg');
+    text-align: center;
+    left: -25px;
+    top: 5px;
+}
+
+.wrapper__block p.state {
+    min-height: 72px;
+    margin-top: -5px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #323232;
+    overflow: hidden;
+}
+
+.wrapper__block a.small {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    transition: all linear .1s;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #000000;
+    left: 76px;
+}
+
+.wrapper__block a.small:hover {
+    text-shadow: 0px 1px 1px black;
+}

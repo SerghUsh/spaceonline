@@ -114,7 +114,7 @@
     height: auto;
     padding-left: 50.5%;
     background: linear-gradient(270deg, #FFFFFF 8.11%, rgba(255, 255, 255, 0) 30.43%),
-    url(../img/bg_About_us.png) no-repeat;
+    url(../img/bg_about_us.jpg) no-repeat;
     background-position: left top;
 }
 
@@ -285,26 +285,26 @@
 }
 
 .slider-button-prev {
-    background: url('../img/practises__arr_prew.png') no-repeat;
+    background: url('../css/imgs/practises__arr_prew.svg') no-repeat;
     background-position: center;
     background-size: 100%;
 }
 
 .slider-button-next {
-    background: url('../img/practises__arr_next.png') no-repeat;
+    background: url('../css/imgs/practises__arr_next.svg') no-repeat;
     background-position: center;
     background-size: 100%;
     margin-left: 2.5rem;
 }
 
 .slider-button-next:hover {
-    background: url('../img/arr_next_hover.png') no-repeat;
+    background: url('../css/imgs/arr_next_hover.svg') no-repeat;
     background-position: center;
     background-size: 100%;
 }
 
 .slider-button-prev:hover {
-    background: url('../img/arr_prew_hover.png') no-repeat;
+    background: url('../css/imgs/arr_prew_hover.png') no-repeat;
     background-position: center;
     background-size: 100%;
 }
@@ -437,7 +437,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: url('../img/start_now__arrow_next.png') no-repeat;
+    background: url('../css/imgs/start_now__arrow_next.svg') no-repeat;
     background-position: center;
     background-size: 100%;
     cursor: pointer;
@@ -445,7 +445,7 @@
 }
 
 #start_now .slider .flex-item .next_slide:hover {
-    background: url(../img/arr_next_hover.png) no-repeat;
+    background: url(../css/imgs/arr_next_hover.svg) no-repeat;
     background-position: center;
 }
 
@@ -547,7 +547,7 @@
 }
 
 #future_events .slider__item .free_place::before {
-    content: url('../img/vector.png');
+    content: url('../css/imgs/free_place_holder.svg');
     line-height: 23px;
     margin-right: 12px;
     vertical-align: -3px;
@@ -567,7 +567,7 @@
 
 #future_events .slider__item p.duration::before {
     position: absolute;
-    content: url('../img/stopwatch.png');
+    content: url('../css/imgs/stopwatch.svg');
     text-align: center;
     left: -25px;
     top: 5px;
@@ -655,7 +655,7 @@
     width: 100%;
     height: 595px;
     background: linear-gradient(89.9deg, #FFFFFF 4.16%, rgba(255, 255, 255, 0) 52.07%),
-    url(../img/bg_from_organizers.png) no-repeat;
+    url(../img/bg_from_organizers.jpg) no-repeat;
     background-position: right top;
 }
 .main_block__item .discription_text {
@@ -801,19 +801,19 @@ a.write:active {
         height: 386px;
         padding-left: 38.4%;
         background: linear-gradient(270deg, #FFFFFF 19.31%, rgba(255, 255, 255, 0) 38.01%),
-        url(../img/bg_medium_about_us.png) no-repeat;
+        url(../img/bg_medium_about_us.jpg) no-repeat;
         background-position: left top;
     }
 
     .about_us__wrapper .discription img {
-        margin-top: 22px;
+        margin-top: 24px;
         width: 41%;
     }
 
     .about_us__wrapper .discription p.font-proximanova {
         font-size: 14px;
         line-height: 22px;
-        margin-top: 12px;
+        margin-top: 10px;
         margin-bottom: 13px;
         width: 87%;
     }
@@ -1098,7 +1098,7 @@ a.write:active {
     .main_block__item {
         height: 322px;
         background: linear-gradient(89.9deg, #FFFFFF 4.16%, rgba(255, 255, 255, 0) 52.07%),
-        url(../img/bg_from_organizers_Medium.png) no-repeat;
+        url(../img/bg_from_organizers_medium.jpg) no-repeat;
         background-position: right top;
     }
     .main_block__item .discription_text {
@@ -1109,12 +1109,14 @@ a.write:active {
         font-size: 14px;
         line-height: 22px;
         width: 51%;
+        min-height: 154px;
     }
 
     .main_block__item .discription_text p.space {
         margin-bottom: 34px;
         padding-top: 8px;
         width: 52%;
+        min-height: 24px;
     }
 
     a.write {
@@ -1183,7 +1185,7 @@ a.write:active {
         width: 100%;
         height: 529px;
         padding: 161px 20px 25px;
-        background: url(../img/bg_about_us__Small.png) no-repeat;
+        background: url(../img/bg_about_us__small.jpg) no-repeat;
     }
 
     .about_us__wrapper .discription img {
@@ -1210,7 +1212,7 @@ a.write:active {
 
     #choise_your_practises {
         margin-top: 0px;
-        margin-left: 20px;
+        margin-left: 5px;
     }
 
     .title-left {
@@ -1286,22 +1288,22 @@ a.write:active {
     }
 
     .slider-button-next {
-        background: url(../img/practises__arr_next__Small.png) no-repeat;
+        background: url(../css/imgs/practises__arr_next__Small.png) no-repeat;
         background-position: center;
     }
 
     .slider-button-prev {
-        background: url(../img/practises__arr_prew__Small.png) no-repeat;
+        background: url(../css/imgs/practises__arr_prew__Small.png) no-repeat;
         background-position: center;
     }
 
     .slider-button-next:hover {
-        background: url(../img/arr_next_hover__Small.png) no-repeat;
+        background: url(../css/imgs/arr_next_hover__Small.png) no-repeat;
         background-position: center;
     }
 
     .slider-button-prev:hover {
-        background: url(../img/arr_prew_hover__Small.png) no-repeat;
+        background: url(../css/imgs/arr_prew_hover__Small.png) no-repeat;
         background-position: center;
     }
 
@@ -1321,13 +1323,13 @@ a.write:active {
     }
 
     #start_now {
-        margin-left: 20px;
-        margin-bottom: 25px;
+        margin-left: 5px;
+        margin-bottom: 26px;
     }
 
     .title-right {
-        margin-top: 35px;
-        margin-bottom: 18px;
+        margin-top: 37px;
+        margin-bottom: 16px;
     }
 
     .title-right span {
@@ -1338,13 +1340,13 @@ a.write:active {
     }
 
     .title-right span:before {
-        width: 105px;
-        top: 46%;
+        width: 106px;
+        top: 45%;
         right: 171px;
     }
 
     .title-right p {
-        margin: 12px 0 0 125px;
+        margin: 11px 0 0 125px;
         font-size: 12px;
         line-height: 18px;
         text-align: left;
@@ -1379,16 +1381,16 @@ a.write:active {
         margin: 38px 30px 0 41px;
     }
     #start_now .slider .flex-item .next_slide:hover {
-        background: url(../img/arr_next_hover__Small.png) no-repeat;
+        background: url(../css/imgs/arr_next_hover__Small.png) no-repeat;
         background-position: center;
     }
 
     #future_events {
         margin-top: 0px;
-        margin-left: 20px;
+        margin-left: 5px;
     }
     .title__left {
-        width: 95%;
+        width: 98%;
         margin-top: 0px;
         margin-bottom: 20px;
     }
@@ -1403,7 +1405,7 @@ a.write:active {
         left: 156px;
     }
     .title__left p {
-        width: 93%;
+        width: 98%;
         margin-top: 11px;
         font-size: 12px;
         line-height: 18px;
@@ -1429,7 +1431,7 @@ a.write:active {
     #future_events .slider__item p.duration {
         font-size: 12px;
         margin-top: 2px;
-        margin-left: 25px;
+        margin-left: 0px;
         padding: 0;
     }
     #future_events .slider__item p.state {
@@ -1451,31 +1453,35 @@ a.write:active {
         margin-bottom: 0px;
     }
     .title__center {
-        margin-top: 23px;
+        margin-top: 24px;
         margin-bottom: 5px;
-        margin-left: 20px;
+        margin-left: 4px;
     }
     .title__center span {
         font-size: 12px;
         line-height: 18px;
         letter-spacing: 0px;
-        margin-left: -12px;
+        margin-left: 1px;
     }
     .title__center span:before {
-        width: 43px;
+        width: 40px;
         top: 43%;
         right: 182px;
     }
     .title__center span:after {
-        width: 34px;
+        width: 35px;
         top: 43%;
         left: 183px;
     }
     .main_block__item {
         height: auto;
-        padding: 10px 20px 225px 20px;
-        background: url(../img/bg_from_organizers_Small.svg) no-repeat;
+        padding: 8px 18px 225px 18px;
+        background: url(../img/bg_from_organizers_smal.jpg) no-repeat;
         background-position: right bottom;
+    }
+    .main_block__item .discription_text {
+        padding-top: 0px;
+        padding-left: 2px;
     }
     .main_block__item .discription_text p {
         font-size: 12px;
@@ -1485,7 +1491,7 @@ a.write:active {
     }
     .main_block__item .discription_text p.space {
         margin-bottom: 20px;
-        padding-top: 8px;
+        padding-top: 9px;
         width: 95%;
     }
     a.write {
