@@ -114,7 +114,7 @@
     height: auto;
     padding-left: 50.5%;
     background: linear-gradient(270deg, #FFFFFF 8.11%, rgba(255, 255, 255, 0) 30.43%),
-    url(../img/bg_about_us.jpg) no-repeat;
+    url(../css/imgs/bg_about_us.jpg) no-repeat;
     background-position: left top;
 }
 
@@ -127,7 +127,8 @@
     line-height: 37px;
     color: #000000;
     margin-top: 22px;
-    margin-bottom: 36px;
+    margin-bottom: 25px;
+    min-height: 307px;
     width: 85%;
 }
 
@@ -138,6 +139,7 @@
     line-height: 37px;
     letter-spacing: 1px;
     color: #000000;
+    min-height: 65px;
     width: 76%;
     padding-bottom: 70px;
 }
@@ -655,7 +657,7 @@
     width: 100%;
     height: 595px;
     background: linear-gradient(89.9deg, #FFFFFF 4.16%, rgba(255, 255, 255, 0) 52.07%),
-    url(../img/bg_from_organizers.jpg) no-repeat;
+    url(../css/imgs/bg_from_organizers.jpg) no-repeat;
     background-position: right top;
 }
 .main_block__item .discription_text {
@@ -667,12 +669,14 @@
     line-height: 37px;
     color: #000000;
     width: 46%;
+    min-height: 150px;
 }
 
 .main_block__item .discription_text p.space {
     margin-bottom: 51px;
     padding-top: 17px;
     width: 42%;
+    min-height: 60px;
 }
 
 a.write {
@@ -801,7 +805,7 @@ a.write:active {
         height: 386px;
         padding-left: 38.4%;
         background: linear-gradient(270deg, #FFFFFF 19.31%, rgba(255, 255, 255, 0) 38.01%),
-        url(../img/bg_medium_about_us.jpg) no-repeat;
+        url(../css/imgs/bg_medium_about_us.jpg) no-repeat;
         background-position: left top;
     }
 
@@ -816,6 +820,7 @@ a.write:active {
         margin-top: 10px;
         margin-bottom: 13px;
         width: 87%;
+        min-height: 220px;
     }
 
     .about_us__wrapper .discription p.font-montserrat {
@@ -823,6 +828,7 @@ a.write:active {
         line-height: 22px;
         letter-spacing: 1px;
         width: 81%;
+        min-height: 65px;
     }
 
     #choise_your_practises {
@@ -1098,7 +1104,7 @@ a.write:active {
     .main_block__item {
         height: 322px;
         background: linear-gradient(89.9deg, #FFFFFF 4.16%, rgba(255, 255, 255, 0) 52.07%),
-        url(../img/bg_from_organizers_medium.jpg) no-repeat;
+        url(../css/imgs/bg_from_organizers_medium.jpg) no-repeat;
         background-position: right top;
     }
     .main_block__item .discription_text {
@@ -1185,7 +1191,7 @@ a.write:active {
         width: 100%;
         height: 529px;
         padding: 161px 20px 25px;
-        background: url(../img/bg_about_us__small.jpg) no-repeat;
+        background: url(../css/imgs/bg_about_us__small.jpg) no-repeat;
     }
 
     .about_us__wrapper .discription img {
@@ -1476,7 +1482,7 @@ a.write:active {
     .main_block__item {
         height: auto;
         padding: 8px 18px 225px 18px;
-        background: url(../img/bg_from_organizers_smal.jpg) no-repeat;
+        background: url(../css/imgs/bg_from_organizers_smal.jpg) no-repeat;
         background-position: right bottom;
     }
     .main_block__item .discription_text {
