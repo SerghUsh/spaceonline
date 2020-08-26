@@ -512,7 +512,27 @@
                     </div>
 
                     <div class="tab-block">
+                        <div class="diploma-block">
+                            <button type="button" class="delete">×</button>
 
+                            <div class="diploma-title">Грамота/диплом №1</div>
+
+                            <div class="diploma-name">
+                                Название грамоты/диплома: Сертификат “Женская психология”
+                            </div>
+
+                            <div class="diploma-description">
+                                Описание: Спортивный коуч. Работает со спортсменами и спортивными командами.
+                                Организатор Образовательного проекта для психологов «ПСИКОН». Марие 35 лет, из
+                                которых она 12 лет работает психологом и психотерапевтом.
+                            </div>
+
+                            <div class="diploma-image">
+                                1. Диплом ( название ).png
+                            </div>
+
+                            <button class="btn-submit-margin btn-form-white" type="submit">Редактировать</button>
+                        </div>
                     </div>
 
                     <div class="tab-block">

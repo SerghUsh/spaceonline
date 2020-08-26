@@ -148,6 +148,8 @@
 #registration-content .timezone-block button {
     float: right;
     width: 189px;
+    padding: 12px 0;
+    border: 1px solid #000;
 }
 
 #registration-content .checkbox-wrapper {
