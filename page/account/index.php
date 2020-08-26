@@ -391,27 +391,27 @@
 
                                         <div class="days">
                                             <div class="day-input-block">
-                                                <input id="monday" type="checkbox" name="monday">
+                                                <input id="monday" type="checkbox" name="monday" checked>
                                                 <label for="monday">ПН</label>
                                             </div>
 
                                             <div class="day-input-block">
-                                                <input id="tuesday" type="checkbox" name="tuesday">
+                                                <input id="tuesday" type="checkbox" name="tuesday" checked>
                                                 <label for="tuesday">ВТ</label>
                                             </div>
 
                                             <div class="day-input-block">
-                                                <input id="wednesday" type="checkbox" name="wednesday">
+                                                <input id="wednesday" type="checkbox" name="wednesday" checked>
                                                 <label for="wednesday">СР</label>
                                             </div>
 
                                             <div class="day-input-block">
-                                                <input id="thursday" type="checkbox" name="thursday">
+                                                <input id="thursday" type="checkbox" name="thursday" checked>
                                                 <label for="thursday">ЧТ</label>
                                             </div>
 
                                             <div class="day-input-block">
-                                                <input id="friday" type="checkbox" name="friday">
+                                                <input id="friday" type="checkbox" name="friday" checked>
                                                 <label for="friday">ПТ</label>
                                             </div>
 
