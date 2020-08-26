@@ -32,3 +32,8 @@
 <link rel="stylesheet" type="text/css" href="/css/select2-custom.css"/>
 
 <link rel="stylesheet" type="text/css" href="/bootstrap-datepicker-1.9.0/css/bootstrap-datepicker3.standalone.min.css">
+
+<!-- Tui-calendar -->
+<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
+<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css" />
+<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.css" />
