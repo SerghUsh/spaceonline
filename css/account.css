@@ -469,7 +469,12 @@
     .diploma-block {
         padding: 0;
     }
-
+    .diploma-block .delete {
+        top: -3px;
+        right: -3px;
+        font-size: 28px;
+        line-height: 28px;
+    }
     .diploma-block .diploma-title {
         font-size: 16px;
         margin-bottom: 10px;
@@ -485,6 +490,7 @@
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 16px;
+        width: 90%;
     }
 
     .diploma-block .diploma-image {
@@ -495,6 +501,7 @@
     .diploma-block .btn-form-white {
         border: 1px solid #000;
         padding: 6px 15px 7px;
+        width: 154px;
     }
 
     .filter-menu {
@@ -555,5 +562,107 @@
     .event-actions-block span {
         font-size: 16px;
         line-height: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .account-title-block {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .account-menu-block .account-info {
+        padding: 17px 20px 2px;
+    }
+
+    .account-name {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .account-type {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .account-menu .account-menu-col {
+        float: left;
+        width: 100%;
+    }
+
+    .account-menu .account-menu-col:first-child {
+        border-right: none;
+    }
+
+    .account-menu .item {
+        padding-top: 1px;
+        padding-left: 55px;
+        font-size: 14px;
+        line-height: 38px;
+        background-size: auto 50%;
+    }
+
+    .account-registrations {
+        background-position: 18px 8px;
+    }
+
+    .account-calendar {
+        background-position: 18px 10px;
+    }
+
+    .account-favorites {
+        background-position: 18px 12px;
+    }
+
+    .account-profile {
+        background-position: 20px 11px;
+    }
+
+    .account-profinfo {
+        background-position: 20px 11px;
+    }
+
+    .account-statistic {
+        background-position: 20px 11px;
+    }
+
+    .account-settings {
+        background-position: 20px 10px;
+    }
+
+    .account-logout {
+        background-position: 23px 9px;
+    }
+
+    .account-menu-block .account-info:last-child {
+        margin-top: 20px;
+        padding: 17px 46px 14px;
+        margin-bottom: 23px;
+    }
+
+    .account-info .text {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 12px;
+    }
+
+    .account-info .text br {
+        display: inherit;
+    }
+
+    .account-info .btn-green {
+        width: 152px;
+        font-size: 8px;
+        line-height: 12px;
+        display: inline-block;
+        align-items: center;
+        letter-spacing: 1px;
+        padding: 7px 0;
+        height: 25px;
+        text-align: center;
+    }
+
+    .account-tabs-block .tab-block {
+        padding: 12px 16px;
     }
 }

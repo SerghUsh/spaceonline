@@ -87,11 +87,12 @@ body {
     background: #83C465;
     border-radius: 4px;
     height: 46px;
+    transition: all linear .1s;
 }
 
 .btn-green:hover {
     color: #FFFFFF;
-    background: #83C465;
+    background: #000;
 }
 
 .btn-teal {
@@ -110,6 +111,7 @@ body {
     background: #59ADA8;
     border-radius: 4px;
     height: 46px;
+    transition: all linear .1s;
 }
 
 .btn-teal:hover {
