@@ -31,7 +31,7 @@
 
 .account-tabs-block {
     float: right;
-    width: calc(1630px - 480px);
+    width: calc(100% - 480px);
 }
 
 .account-tabs-block .tab-block {
@@ -68,12 +68,9 @@
 }
 
 .account-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
 }
 
-.account-menu li {
+.account-menu .item {
     display: block;
     font-size: 20px;
     line-height: 59px;
@@ -290,6 +287,12 @@
     padding: 14px 18px;
 }
 
+.event-actions-block span {
+    font-size: 24px;
+    line-height: 50px;
+    color: #AAAAAA;
+}
+
 .event-actions-block a:not(:last-child) {
     margin-right: 20px;
 }
@@ -340,4 +343,217 @@
 
 .diploma-block .btn-form-white {
     margin: 0;
+}
+
+@media (max-width: 1199px) {
+    .account-menu-block {
+        width: 100%;
+    }
+
+    .account-tabs-block {
+        width: 100%;
+    }
+
+    .account-title-block {
+        font-size: 16px;
+        line-height: 37px;
+        margin-bottom: 20px;
+    }
+
+    .account-menu-block .account-info {
+        background: #FAFAFA;
+        border-radius: 10px;
+        padding: 10px 54px 2px;
+    }
+
+    .account-info .specialist-image-block {
+        margin-bottom: 11px;
+    }
+
+    .account-name {
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 1px;
+    }
+
+    .account-type {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 12px;
+    }
+
+    .account-menu .account-menu-col {
+        float: left;
+        width: 50%;
+    }
+
+    .account-menu .account-menu-col:first-child {
+        border-right: 1px solid #D5D5D5;
+    }
+
+    .account-menu .item {
+        padding-top: 7px;
+        padding-left: 78px;
+        font-size: 16px;
+        line-height: 52px;
+    }
+
+    .account-registrations {
+        background-position: 25px 15px;
+    }
+
+    .account-calendar {
+        background-position: 21px 17px;
+    }
+
+    .account-favorites {
+        background-position: 25px 19px;
+    }
+
+    .account-profile {
+        background-position: 25px 15px;
+    }
+
+    .account-profinfo {
+        background-position: 25px 19px;
+    }
+
+    .account-statistic {
+        background-position: 21px 13px;
+    }
+
+    .account-settings {
+        background-position: 23px 17px;
+    }
+
+    .account-logout {
+        background-position: 29px 19px;
+    }
+
+    .account-info .text {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .account-info .text br {
+        display: none;
+    }
+
+    .account-menu-block .account-info:last-child {
+        margin-top: 30px;
+        padding: 28px 46px 23px;
+        margin-bottom: 20px;
+    }
+
+    .account-info .btn-green {
+        width: auto;
+        font-size: 12px;
+        line-height: 22px;
+        padding: 9px 24px;
+        height: 35px;
+    }
+
+    .account-title-block {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .tab-block:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
+
+    .diploma-block {
+        padding: 0;
+    }
+
+    .diploma-block .diploma-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .diploma-block .diploma-name {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .diploma-block .diploma-description {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 16px;
+    }
+
+    .diploma-block .diploma-image {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .diploma-block .btn-form-white {
+        border: 1px solid #000;
+        padding: 6px 15px 7px;
+    }
+
+    .filter-menu {
+        margin-bottom: 29px;
+    }
+
+    .filter-menu a {
+        font-size: 14px;
+    }
+
+    .event-block {
+        padding: 15px 200px 15px 149px;
+    }
+
+    .event-date-block, .event-image-block {
+        width: 134px;
+        padding-top: 15px;
+    }
+
+    .event-date-block span {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .event-info-block span {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .event-actions-block {
+        position: static;
+        height: auto;
+        width: auto;
+        text-align: left;
+        padding: 0;
+        margin-top: 3px;
+        min-height: 25px;
+    }
+
+    .event-actions-block a {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        height: 35px;
+        font-size: 18px;
+        line-height: 20px;
+        padding: 8px 0;
+        width: 171px;
+    }
+    .event-actions-block a:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .event-actions-block a:last-child {
+        top: 60px;
+    }
+
+    .event-actions-block span {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }

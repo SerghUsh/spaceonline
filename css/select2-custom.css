@@ -1,3 +1,8 @@
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+    border: 2px solid #CECECE;
+    border-radius: 5px;
+}
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
     display: inline-block;
     background: #6EA8C6;
@@ -75,6 +80,17 @@
 }
 
 @media (max-width: 1199px) {
+    .select2-container--default .select2-selection--multiple .select2-selection__choice {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 4px 0;
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+        padding-top: 6px;
+        line-height: 10px;
+    }
+
     .select2-container .select2-selection--single {
         font-size: 16px;
         line-height: 20px;

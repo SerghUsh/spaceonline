@@ -37,32 +37,37 @@
                         Психолог
                     </div>
 
-                    <ul class="account-menu tab-buttons">
-                        <li class="account-registrations">
-                            <a href="#" data-tab-id="#tab-registrations">Мои регистрации</a>
-                        </li>
-                        <li class="account-calendar">
-                            <a href="#" data-tab-id="#tab-calendar">Мой календарь</a>
-                        </li>
-                        <li class="account-favorites">
-                            <a href="#" data-tab-id="#tab-favorites">Избранные</a>
-                        </li>
-                        <li class="account-profile">
-                            <a href="#" data-tab-id="#tab-profile">Мой профиль</a>
-                        </li>
-                        <li class="account-profinfo">
-                            <a class="active" href="#" data-tab-id="#tab-profinfo">Проф. инфо</a>
-                        </li>
-                        <li class="account-statistic">
-                            <a href="#" data-tab-id="#tab-statistic">Статистика занятий</a>
-                        </li>
-                        <li class="account-settings">
-                            <a href="#" data-tab-id="#tab-settings">Настройки</a>
-                        </li>
-                        <li class="account-logout">
-                            <a href="#">Выйти</a>
-                        </li>
-                    </ul>
+                    <div class="account-menu tab-buttons clearfix">
+                        <div class="account-menu-col">
+                            <div class="item account-registrations">
+                                <a href="#" data-tab-id="#tab-registrations">Мои регистрации</a>
+                            </div>
+                            <div class="item account-calendar">
+                                <a href="#" data-tab-id="#tab-calendar">Мой календарь</a>
+                            </div>
+                            <div class="item account-favorites">
+                                <a href="#" data-tab-id="#tab-favorites">Избранные</a>
+                            </div>
+                            <div class="item account-profile">
+                                <a href="#" data-tab-id="#tab-profile">Мой профиль</a>
+                            </div>
+                        </div>
+
+                        <div class="account-menu-col">
+                            <div class="item account-profinfo">
+                                <a class="active" href="#" data-tab-id="#tab-profinfo">Проф. инфо</a>
+                            </div>
+                            <div class="item account-statistic">
+                                <a href="#" data-tab-id="#tab-statistic">Статистика занятий</a>
+                            </div>
+                            <div class="item account-settings">
+                                <a href="#" data-tab-id="#tab-settings">Настройки</a>
+                            </div>
+                            <div class="item account-logout">
+                                <a href="#">Выйти</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="account-info">
@@ -98,8 +103,7 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                                <span>Подключение за 15 минут до начала</span>
                             </div>
                         </div>
 
@@ -482,7 +486,9 @@
                                         <label for="worksheet">
                                             <span></span> <b class="btn-file">Загрузить</b>
                                         </label>
+                                    </div>
 
+                                    <div class="form-group">
                                         <label>
                                             <input type="checkbox" value="1" checked><i></i>
                                             <span>Требуется предварительная обработка анкеты пользователя</span>
