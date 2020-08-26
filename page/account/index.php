@@ -510,6 +510,42 @@
                             <button class="btn-submit-margin btn-form-blue" type="submit">Обновить профиль</button>
                         </form>
                     </div>
+
+                    <div class="tab-block">
+
+                    </div>
+
+                    <div class="tab-block">
+                        <p class="title-form">Добавить грамоту/диплом</p>
+
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="diploma-name">Название грамоты/диплома</label>
+                                <span class="error-message"></span>
+                                <input id="diploma-name" type="text" name="diploma-name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="diploma-description">Описание</label>
+                                <textarea id="diploma-description" name="diploma-description"></textarea>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <div class="form-group">
+                                        <label for="diploma-image">Загрузить фото</label>
+                                        <input id="diploma-image" type="file" name="diploma-image" class="inputfile"
+                                               data-multiple-caption="{count} файлов было выбрано">
+                                        <label for="diploma-image">
+                                            <span></span> <b class="btn-file">Загрузить</b>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn-submit-margin btn-form-blue" type="submit">Добавить грамоту</button>
+                        </form>
+                    </div>
                 </div>
 
                 <div id="tab-statistic" class="tab">
