@@ -436,16 +436,16 @@
                                             <div class="form-col">
                                                 <sub>начало</sub>
                                                 <select id="time-start" name="time-start">
-                                                    <option>8:00</option>
-                                                    <option>8:30</option>
+                                                    <option value="8:00">8:00</option>
+                                                    <option value="8:30">8:30</option>
                                                 </select>
                                             </div>
 
                                             <div class="form-col">
                                                 <sub>конец</sub>
                                                 <select id="time-end" name="time-end">
-                                                    <option>18:00</option>
-                                                    <option>18:30</option>
+                                                    <option value="18:00">18:00</option>
+                                                    <option value="18:30">18:30</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -495,11 +495,15 @@
 
                             <div class="form-group">
                                 <label for="sub-specialization">Узкие специализации</label>
-                                <select id="sub-specialization" name="sub-specialization[]" multiple="multiple"></select>
+                                <select id="sub-specialization" name="sub-specialization[]" multiple="multiple">
+                                    <option value="1" selected>Детская психология</option>
+                                    <option value="2" selected>Гешталь-терапия</option>
+                                    <option value="3" selected>Позитивная терапия</option>
+                                </select>
                             </div>
 
                             <div class="form-group">
-                                <label for="description">Информация обо мне (562 символа)</label>
+                                <label for="description">Информация обо мне (0 символа)</label>
                                 <textarea id="description" data-label="Информация обо мне ({count} символа)">Психотерапевт. Специалист в области гештальт-терапии. Специализируется на проблемах межличностного общения и разрешении конфликтов. Сертифицированный коуч. Спортивный коуч. Работает со спортсменами и спортивными командами. Организатор Образовательного проекта для психологов «ПСИКОН». Марие 35 лет, из которых она 12 лет работает психологом и психотерапевтом.</textarea>
                             </div>
 
