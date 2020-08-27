@@ -469,12 +469,14 @@
     .diploma-block {
         padding: 0;
     }
+
     .diploma-block .delete {
         top: -3px;
         right: -3px;
         font-size: 28px;
         line-height: 28px;
     }
+
     .diploma-block .diploma-title {
         font-size: 16px;
         margin-bottom: 10px;
@@ -551,6 +553,11 @@
         padding: 8px 0;
         width: 171px;
     }
+
+    .event-actions-block a.btn-white {
+        line-height: 18px;
+    }
+
     .event-actions-block a:not(:last-child) {
         margin-right: 0;
     }
@@ -664,5 +671,114 @@
 
     .account-tabs-block .tab-block {
         padding: 12px 16px;
+    }
+
+    .filter-menu {
+        text-align: center;
+        margin-top: -15px;
+        margin-bottom: 15px;
+        margin-left: calc(-100% + 290px / 2);
+        margin-right: calc(-100% + 290px / 2);
+        border-top: 2px solid #FAFAFA;
+        border-bottom: 2px solid #FAFAFA;
+        padding: 10px 0;
+    }
+
+    .filter-menu a {
+        display: block;
+        font-size: 10px;
+        line-height: 26px;
+    }
+
+    .filter-menu a:after {
+        display: none;
+    }
+
+    .filter-menu a:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .event-block {
+        padding: 0;
+    }
+
+    .event-date-block, .event-image-block {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .event-date-block {
+        padding: 15px 20px 8px;
+        text-align: left;
+    }
+
+    .event-date-block span {
+        display: inline-block;
+    }
+
+    .event-date-block span:last-child {
+        float: right;
+    }
+
+    .event-info-block {
+        padding: 5px 10px 0;
+    }
+
+    .event-info-block span {
+        line-height: 34px;
+    }
+
+    .event-date-block span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .event-actions-block {
+        padding: 0 12px 18px;
+        text-align: center;
+        clear: both;
+    }
+
+    .event-actions-block span {
+        display: block;
+        text-align: left;
+        width: 60%;
+        margin-top: 7px;
+    }
+
+    .event-actions-block a {
+        position: static;
+        width: 152px;
+        height: 25px;
+        margin-top: 14px;
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 9px;
+        letter-spacing: 1px;
+    }
+
+    .event-actions-block a.btn-white {
+        line-height: 8px;
+    }
+
+    .event-actions-block a + a {
+        margin-top: 10px;
+    }
+
+    .event-image-block {
+        float: left;
+        width: 45%;
+    }
+    .event-image-block + .event-info-block {
+        float: left;
+        width: 55%;
+        padding: 30px 48px 0 10px;
+        text-align: center;
+        min-height: 114px;
+    }
+
+    .event-image-block + .event-info-block span {
+        line-height: 26px;
     }
 }

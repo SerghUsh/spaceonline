@@ -87,6 +87,7 @@
     box-sizing: border-box;
     border-radius: 5px;
     padding-left: 20px;
+    padding-right: 20px;
     outline: none;
     transition: all linear .1s;
 }
@@ -219,7 +220,7 @@ input[type=number] {
 
 .btn-form-red:hover {
     text-decoration: none;
-    background: #B6B6B6;
+    background: #222222;
     color: #FFFFFF;
 }
 
@@ -620,12 +621,32 @@ input[type="checkbox"] ~ span {
 }
 
 @media (max-width: 767px) {
-    .form-group:not(:last-child) {
+    .days {
+        margin-top: 10px;
+    }
+
+    .day-input-block {
+        width: 22px;
+        height: 22px;
+        margin-right: 6px;
+    }
+
+    .form-group .day-input-block label {
+        font-size: 10px;
+        line-height: 24px;
+    }
+
+    .form-group:not(:last-of-type) {
         margin-bottom: 14px;
     }
 
     .form-col {
         width: 100%;
+    }
+
+    .form-col .form-col{
+        width: 50%;
+        margin: 0;
     }
 
     .form-group label {
@@ -658,6 +679,22 @@ input[type="checkbox"] ~ span {
         height: 30px;
         font-size: 14px;
         padding: 5px 5px 6px;
+    }
+
+    .btn-form-blue {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 6px 34px 7px;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .btn-form-red {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 6px 34px 7px;
+        width: 100%;
+        margin-top: 15px;
     }
 
     input[type="checkbox"] ~ span {
