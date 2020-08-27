@@ -905,6 +905,10 @@
 }
 
 @media (max-width: 767px) {
+    #specialist-content .tab-buttons span:after {
+        display: none;
+    }
+
     #specialist-list-content {
         padding: 15px 0;
     }

@@ -573,6 +573,10 @@
 }
 
 @media (max-width: 767px) {
+    .account-menu a:after {
+        display: none;
+    }
+
     .account-title-block {
         font-size: 12px;
         line-height: 18px;
