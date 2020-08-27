@@ -2,7 +2,7 @@
     padding: 37px 0;
 }
 
-.account-title-block {
+.account-title {
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 22px;
@@ -345,7 +345,82 @@
     margin: 0;
 }
 
+.account-tabs-block .tab {
+    position: relative;
+}
+
+.btn-meeting {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    z-index: 1;
+    height: 50px;
+    border: 2px solid #000;
+    display: inline-block;
+    padding: 14px 69px;
+    letter-spacing: 3px;
+}
+
+.account-subtitle {
+    font-size: 22px;
+    line-height: 28px;
+    color: #323232;
+    margin-top: -8px;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: 2px;
+    margin-bottom: 7px;
+}
+
+.meeting-wrapper {
+    clear: both;
+    margin-bottom: 36px;
+}
+
+.instruction-block p {
+    font-size: 22px;
+    line-height: 28px;
+    color: #323232;
+}
+
+.instruction-block p:not(:last-child) {
+    margin-bottom: 30px;
+}
+
 @media (max-width: 1199px) {
+    .btn-meeting {
+        position: static;
+        float: right;
+        height: 35px;
+        font-size: 12px;
+        letter-spacing: 0;
+        padding: 6px 35px;
+        margin-bottom: 8px;
+    }
+
+    .account-subtitle {
+        font-size: 16px;
+        line-height: 28px;
+        position: static;
+        margin-bottom: 0;
+        margin-top: 4px;
+    }
+
+    .meeting-wrapper {
+        clear: both;
+        margin-bottom: 16px;
+    }
+
+    .instruction-block p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .instruction-block p:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
     .account-menu-block {
         width: 100%;
     }
@@ -354,10 +429,11 @@
         width: 100%;
     }
 
-    .account-title-block {
+    .account-title {
         font-size: 16px;
         line-height: 37px;
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .account-menu-block .account-info {
@@ -455,11 +531,6 @@
         line-height: 22px;
         padding: 9px 24px;
         height: 35px;
-    }
-
-    .account-title-block {
-        text-align: center;
-        font-size: 16px;
     }
 
     .tab-block:not(:last-of-type) {
@@ -573,11 +644,46 @@
 }
 
 @media (max-width: 767px) {
+    .btn-meeting {
+        float: none;
+        height: 25px;
+        font-size: 8px;
+        letter-spacing: 0;
+        padding: 1px 35px;
+        border: 1px solid;
+        position: relative;
+        top: -8px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 3px;
+        width: 152px;
+    }
+
+    .account-subtitle {
+        display: block;
+        text-align: center;
+        margin-top: 7px;
+        margin-bottom: 10px;
+    }
+
+    .meeting-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .instruction-block p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .instruction-block p:not(:last-child) {
+        margin-bottom: 28px;
+    }
+
     .account-menu a:after {
         display: none;
     }
 
-    .account-title-block {
+    .account-title {
         font-size: 12px;
         line-height: 18px;
     }

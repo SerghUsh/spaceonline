@@ -19,7 +19,7 @@
     <div id="account-content">
         <div class="container clearfix">
             <div class="account-menu-block">
-                <h4 class="account-title-block">Личный кабинет</h4>
+                <h4 class="account-title">Личный кабинет</h4>
 
                 <div class="account-info">
                     <div class="specialist-image-block">
@@ -81,7 +81,7 @@
 
             <div class="account-tabs-block">
                 <div id="tab-registrations" class="tab">
-                    <h4 class="account-title-block">Мои регистрации</h4>
+                    <h4 class="account-title">Мои регистрации</h4>
 
                     <div data-container-id="#filter-container-registrations" class="filter-menu tab-buttons">
                         <a href="#" data-filter="" class="active" >Все</a>
@@ -212,13 +212,13 @@
                 </div>
 
                 <div id="tab-calendar" class="tab">
-                    <h4 class="account-title-block">Мой Календарь</h4>
+                    <h4 class="account-title">Мой Календарь</h4>
 
                     <img src="/img/calendar.png" alt="calendar" style="width: 100%">
                 </div>
 
                 <div id="tab-favorites" class="tab">
-                    <h4 class="account-title-block">Избранные</h4>
+                    <h4 class="account-title">Избранные</h4>
 
                     <div data-container-id="#filter-container-favorites" class="filter-menu tab-buttons">
                         <a href="#" data-filter="" class="active" >Все</a>
@@ -282,7 +282,7 @@
                 </div>
 
                 <div id="tab-profile" class="tab">
-                    <h4 class="account-title-block">Редактировать профиль</h4>
+                    <h4 class="account-title">Редактировать профиль</h4>
 
                     <div class="tab-block">
                         <form action="" method="post">
@@ -384,7 +384,7 @@
                 </div>
 
                 <div id="tab-profinfo" class="tab">
-                    <h4 class="account-title-block">Редактировать проф.ИНФО</h4>
+                    <h4 class="account-title">Редактировать проф.ИНФО</h4>
 
                     <div class="tab-block">
                         <form action="" method="post">
@@ -579,7 +579,7 @@
                 </div>
 
                 <div id="tab-settings" class="tab">
-                    <h4 class="account-title-block">Настройки пароля</h4>
+                    <h4 class="account-title">Настройки пароля</h4>
 
                     <div class="tab-block">
                         <form action="" method="post">
@@ -605,7 +605,7 @@
                         </form>
                     </div>
 
-                    <h4 class="account-title-block">Удаление профиля</h4>
+                    <h4 class="account-title">Удаление профиля</h4>
 
                     <div class="tab-block">
                         <form action="" method="post">
