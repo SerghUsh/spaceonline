@@ -59,22 +59,26 @@
         margin-top: 34px;
         margin-bottom: 38px;
     }
+
     .wrapper__item {
         margin: 0px 2px 45px 18px;
         width: 320px;
     }
+
     .wrapper__item h2 {
         font-size: 14px;
         line-height: 22px;
         margin-top: 7px;
         padding-bottom: 7px;
     }
+
     .wrapper__item p {
         min-height: 80px;
         margin-top: 8px;
         font-size: 14px;
         line-height: 20px;
     }
+
     .wrapper__item a {
         font-size: 10px;
         left: 62px;
@@ -86,21 +90,25 @@
         margin-top: 21px;
         margin-bottom: 3px;
     }
+
     .wrapper__item {
         margin: 0px 2px 20px 5px;
         width: 280px;
     }
+
     .wrapper__item h2 {
         font-size: 12px;
         margin-top: 6px;
         padding-bottom: 7px;
     }
+
     .wrapper__item p {
         min-height: 70px;
         margin-top: 7px;
         font-size: 12px;
         line-height: 18px;
     }
+
     .wrapper__item a {
         font-size: 9px;
         left: 100px;

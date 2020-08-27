@@ -644,7 +644,7 @@ input[type="checkbox"] ~ span {
         width: 100%;
     }
 
-    .form-col .form-col{
+    .form-col .form-col {
         width: 50%;
         margin: 0;
     }

@@ -175,9 +175,11 @@ footer {
         margin-top: 37px;
         margin-left: 25px;
     }
+
     #footer .social_buttons img {
         width: 87%;
     }
+
     #footer .social_buttons__link {
         margin-top: 40px;
     }
@@ -239,21 +241,26 @@ footer {
         display: block;
         padding: 21px 0px 10px 8px;
     }
+
     .footer_menu .half_first {
         width: 100%;
     }
+
     .footer__item {
         display: block;
     }
+
     #footer .social_buttons {
         width: 100%;
         margin-top: 0px;
         margin-left: 0px;
         display: flex;
     }
+
     #footer .social_buttons .footer__logo {
         width: 60%;
     }
+
     #footer .social_buttons__link {
         margin-top: 2px;
         margin-left: 35px;
@@ -265,8 +272,9 @@ footer {
         width: 22px;
         height: 22px;
     }
+
     #footer .social_buttons__link a.instagram {
-    background: url(../css/imgs/inst_small.png) no-repeat;
+        background: url(../css/imgs/inst_small.png) no-repeat;
     }
 
     #footer .social_buttons__link a.instagram:hover {
@@ -283,63 +291,73 @@ footer {
 
     #footer .social_buttons__link a.youtube {
         background: url(../css/imgs/ytb_small.png) no-repeat;
-        margin-right: 
     }
 
     #footer .social_buttons__link a.youtube:hover {
         background: url(../css/imgs/ytb_small_hover.png) no-repeat;
     }
+
     #footer .footer_list {
         width: 75%;
         margin-top: 13px;
         margin-left: 0px;
     }
+
     #footer h3 {
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 11px;
     }
+
     #footer .footer_list ul {
         display: flex;
         justify-content: space-between;
     }
+
     #footer .footer_list li {
         font-size: 14px;
         margin-bottom: 10px;
     }
-    
+
     .footer_menu .half_second {
         width: 100%;
         margin-top: 60px;
     }
+
     #footer .footer_contacts {
         margin-top: -45px;
         margin-left: -1px;
     }
+
     #footer .footer_contacts h3.contacts {
         margin-bottom: 0px;
     }
+
     #footer .footer_contacts ul {
         margin-left: 39px;
     }
+
     #footer .footer_contacts li {
         font-size: 14px;
         margin-top: 11px;
         margin-bottom: -3px;
     }
+
     #footer .footer_contacts li.mail::before {
         content: url(../css/imgs/mail_small.svg);
         top: -4px;
         left: -39px;
     }
+
     #footer .footer_contacts li.phone::before {
         content: url(../css/imgs/phone_small.svg);
         top: -1px;
         left: -28px;
     }
+
     #footer p.copyright {
         font-size: 12px;
         line-height: 18px;
         margin-top: 25px;
-    } 
+    }
 }

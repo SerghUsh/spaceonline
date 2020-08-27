@@ -86,9 +86,11 @@
     height: 100%;
     overflow: hidden;
 }
+
 .top {
     margin-bottom: 22px;
 }
+
 .list__block h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -159,6 +161,7 @@
     padding: 0;
     position: relative;
 }
+
 .list__block p.state {
     font-size: 16px;
     line-height: 24px;
@@ -206,7 +209,7 @@
     #event-content {
         margin-bottom: 32px;
     }
-    
+
     #event-content .tab-buttons_small {
         padding: 13px 0;
     }
@@ -226,7 +229,7 @@
         margin-bottom: 22px;
     }
 
-     .hidden {
+    .hidden {
         display: none;
     }
 

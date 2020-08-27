@@ -770,6 +770,7 @@
         float: left;
         width: 45%;
     }
+
     .event-image-block + .event-info-block {
         float: left;
         width: 55%;
