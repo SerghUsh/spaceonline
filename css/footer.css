@@ -228,6 +228,11 @@ footer {
         line-height: 33px;
     }
 
+    #footer .footer_contacts li.phone::before {
+        top: -1px;
+        left: -34px;
+    }
+
     #footer p.copyright {
         margin-top: 44px;
     }

@@ -1,3 +1,17 @@
+#specialist-content .tab-block:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+
+#specialist-content .wrapper__block {
+    margin-top: 54px;
+    margin-bottom: 17px;
+}
+
+#specialist-content .list__block {
+    margin-top: 54px;
+    margin-bottom: 15px;
+}
+
 #specialist-list-content {
     padding: 66px 0;
 }
@@ -368,7 +382,7 @@
 
 /* Page specialist */
 #specialist-content {
-    padding-bottom: 92px;
+    padding-bottom: 60px;
 }
 
 .specialist-header {
@@ -623,6 +637,11 @@
 @media (max-width: 1199px) {
     #specialist-list-content {
         padding: 36px 0;
+    }
+
+    #specialist-content .list__block {
+        margin-top: 17px;
+        margin-bottom: 15px;
     }
 
     #specialist-list-content .specialist-filter-title {

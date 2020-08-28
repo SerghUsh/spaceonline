@@ -14,8 +14,6 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 3000,
         slidesToShow: 1,
-        /*centerMode: false,
-        variableWidth: false,*/
 
         arrows: false,
         dots: false
@@ -76,6 +74,65 @@ $(document).ready(function () {
         dots: true,
         appendDots: $('#' + sliderID + ' .slider-manage-block .dots')
     });
+
+    /*GROUP LESSON PAGE*/
+
+    // Open group lesson
+    sliderID = 'open-group-lesson';
+    $('#' + sliderID + ' .slider').slick({
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: false,
+        variableWidth: true,
+
+        arrows: true,
+        appendArrows: $('#' + sliderID + ' .slider-manage-block .arrows'),
+        prevArrow: '<div class="slider-button-prev"></div>',
+        nextArrow: '<div class="slider-button-next"></div>',
+
+        dots: true,
+        appendDots: $('#' + sliderID + ' .slider-manage-block .dots')
+    });
+
+     /*OPEN EVENT PAGE*/
+
+    // Open event
+    sliderID = 'open-event';
+    $('#' + sliderID + ' .slider').slick({
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: false,
+        variableWidth: true,
+
+        arrows: true,
+        appendArrows: $('#' + sliderID + ' .slider-manage-block .arrows'),
+        prevArrow: '<div class="slider-button-prev"></div>',
+        nextArrow: '<div class="slider-button-next"></div>',
+
+        dots: true,
+        appendDots: $('#' + sliderID + ' .slider-manage-block .dots')
+    });
+
+     /*OPEN EVENT SPECIALIST SLIDER PAGE*/
+
+    // Open event specialist slider
+      sliderID = 'event-top';
+    $('#' + sliderID + ' .slider').slick({
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+
+        arrows: true,
+        appendArrows: $('#' + sliderID + ' .slider-manage-block .arrows'),
+        prevArrow: '<div class="slider-button-prev"></div>',
+        nextArrow: '<div class="slider-button-next"></div>',
+
+        dots: true,
+        appendDots: $('#' + sliderID + ' .slider-manage-block .dots')
+    });
+    
 
     /* SPECIALIST PAGE */
 

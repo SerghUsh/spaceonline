@@ -77,6 +77,200 @@
     left: 171px;
 }
 
+/* Open Event Index */
+
+#event-top {
+    margin-top: 49px;
+    margin-bottom: 22px;
+}
+
+#event-top .top-block {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #F8F8F8;
+}
+
+#event-top .image_block img {
+    width: calc(100%-356px);
+}
+
+#event-top h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    margin-top: 4px;
+}
+#event-top h3.center {
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 33px;
+}
+
+#event-top .content-block {
+    width: 71%;
+    border-right: 2px solid #F8F8F8;
+}
+
+#event-top .content-block .image_block {
+    position: relative;
+}
+
+#event-top .content-block .right_info {
+    position: absolute;
+    width: 356px;
+    top: -3px;
+    right: 34px;
+    font-size: 22px;
+    line-height: 28px;  
+}
+
+#event-top .content-block .right_info span {
+    display: block;
+    padding-bottom: 8px;
+}
+
+#event-top .content-block-link {
+    position: absolute;
+    z-index: 1;
+    margin-top: 8px;
+}
+#event-top .content-block-link a.hear {
+    background: url(../css/imgs/specialist-heart-link.svg) no-repeat center center;
+    background-size: auto 100%;
+    width: 33px;
+    height: 31px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+#event-top .content-block-link a.hear:hover {
+    background: url(../css/imgs/specialist-heart-link_hover.svg) no-repeat center center;
+    background-size: auto 100%;
+}
+#event-top .content-block-link a.cop {
+    background: url(../css/imgs/specialist-copy-link.svg) no-repeat center center;
+    background-size: auto 100%;
+    width: 33px;
+    height: 31px;
+    display: inline-block;
+}
+
+#event-top .content-block-link a.cop:hover {
+    background: url(../css/imgs/specialist-copy-link_hover.svg) no-repeat center center;
+    background-size: auto 100%;
+}
+
+#event-top a.btn-event {
+    width: 306px;
+    height: 50px;
+    bottom: -105px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all linear .1s;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #000000;
+    padding: 16px 0;
+    position: inherit;
+}
+
+#event-top a.btn-event:hover {
+    text-decoration: none;
+    background: #222222;
+    color: #FFFFFF;
+}
+
+#event-top a.btn-event:active {
+    border: 1px solid #445162;
+}
+
+#event-top p.lesson-info {
+    width: 96%;
+    min-height: 168px;
+    margin-top: 19px;
+    font-size: 22px;
+    line-height: 28px;  
+    padding-bottom: 72px;
+}
+#event-top .specialist-block {
+    width: 27%;
+}
+
+#event-top .specialist-tile {
+    margin: 0 auto 13px;
+
+}
+
+#event-top .slider-manage-block {
+    margin-top: 0px;
+    position: relative;
+}
+
+#event-top .slider-button-next {
+    background: url(../css/imgs/practises__arr_next.svg) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-left: 19.5rem;
+    position: absolute;
+}
+
+#event-top .slider-button-next:hover {
+    background: url(../css/imgs/arr_next_hover.svg) no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#open-event {
+    margin-bottom: 44px;
+}
+
+#open-event .title-left-lesson {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+#open-event .title-left-lesson span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#open-event .list__block .image_size .bottom-info {
+    left: 0;
+    bottom: 0px;
+}
+
+#open-event .list__block {
+    margin-right: 92px;
+    margin-bottom: 10px;
+    width: 482px;
+}
+
+#open-event .list__block h2 {
+    margin-top: 1px;
+}
+
+#open-event .slider-manage-block {
+    display: flex;
+    margin-top: 48px;
+}
+
+
 /* Main content block*/
 
 .list__block {
@@ -86,7 +280,7 @@
     height: 100%;
     overflow: hidden;
 }
-.top {
+.top-block {
     margin-bottom: 22px;
 }
 .list__block h2 {
@@ -110,7 +304,7 @@
 
 .list__block .image_size .icon-video {
     position: absolute;
-    content: url(../css/imgs/event_btn_youtube.svg);
+    content: url(../css/imgs/event_icon_video.svg);
     left: 31px;
     top: 21px;
 }
@@ -222,11 +416,11 @@
         width: 320px;
     }
 
-    .top {
+    .top-block {
         margin-bottom: 22px;
     }
 
-     .hidden {
+    .hidden {
         display: none;
     }
 
@@ -301,8 +495,357 @@
         top: 43%;
         left: 131px;
     }
+
+    /* Open Event Index Media*/
+
+    #event-top {
+        margin-top: 12px;
+        margin-bottom: 22px;
+    }
+
+    #event-top .top-block {
+        padding: 0 25px;
+    }
+
+    #event-top .content-block {
+        width: 51.5%;
+    }
+
+    #event-top h3 {
+        font-size: 16px;
+        line-height: 37px;
+        letter-spacing: 2px;
+        margin-bottom: 0px;
+        margin-top: 4px;
+    }
+
+    #event-top .image_block img {
+        width: 93%;
+    }
+
+    #event-top .content-block .right_info {
+        width: 256px;
+        top: 236px;
+        left: 0px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #event-top .content-block .right_info span {
+        padding-bottom: 4px;
+    }
+
+    #event-top .content-block-link {
+        margin-top: 5px;
+    }
+
+    #event-top .content-block-link a.hear {
+        width: 20px;
+        height: 17px;
+        margin-right: 1px;
+    }
+
+    #event-top .content-block-link a.cop {
+        width: 20px;
+        height: 17px;
+    }
+
+    #event-top a.btn-event {
+        width: 250px;
+        height: 42px;
+        bottom: -105px;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 1.6px;
+        padding: 11px 0;
+    }
+
+    #event-top p.lesson-info {
+        width: 91%;
+        min-height: 320px;
+        margin-top: 199px;
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 35px;
+    }
+
+    #event-top h3.center {
+        margin-top: 5px;
+        margin-bottom: 1px;
+    }
+
+    #event-top .specialist-tile {
+        margin: 0 auto 0px;
+    }
+    #event-top .specialist-block {
+        width: 46%;
+    }
+
+    #event-top .slider-button-next {
+        background: url(../css/imgs/practises__arr_next.svg) no-repeat;
+        background-position: center;
+        background-size: 100%;
+        margin-left: 14rem;
+        position: absolute;
+    }
+
+    #event-top .slider-manage-block .dots .slick-dots {
+        margin-left: 20px;
+    }
+
+    #open-event {
+        margin-bottom: 58px;
+    }
+
+    #open-event .title-left-lesson {
+        margin-top: 32px;
+        margin-bottom: 3px;
+        margin-left: 25px;
+    }
+
+    #open-event .title-left-lesson span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #open-event .list__block {
+        margin-right: 12px;
+        margin-bottom: 10px;
+        margin-left: 25px;
+        width: 320px;
+    }
+
+    #open-event .list__block .bottom-info .free-place::before {
+        line-height: 4px;
+        vertical-align: -3px;
+    }
+
+    #open-event .list__block h2 {
+        margin-top: 10px;
+    }
+
+    #open-event .slider-manage-block {
+        margin-left: 25px;
+        margin-top: 27px;
+    }
 }
 
 @media (max-width: 767px) {
 
+    #event-content {
+        margin-bottom: 18px;
+    }
+
+    #event-content .tab-buttons_small {
+        padding: 13px 0;
+    }
+
+    #event-content .tab-buttons_small span {
+        display: block;
+        text-align: left;
+        padding-bottom: 10px;
+        font-size: 12px;
+        margin: 0 20px;
+    }
+
+    .list__block {
+        margin: 0px 5px 22px 5px;
+        width: 280px;
+    }
+
+    .top-block {
+        margin-bottom: 20px;
+    }
+
+    .bottom {
+        margin-bottom: 12px;
+    }
+
+    .list__block .image_size .icon-video {
+        left: 10px;
+        top: 13px;
+    }
+
+    .list__block .image_size .bottom-info {
+        left: 0;
+        bottom: 5px;
+        padding: 5px 15px 1px 15px;
+        font-size: 10px;
+    }
+
+    .list__block .bottom-info .free-place::before {
+        line-height: 15px;
+        vertical-align: -5px;
+    }
+
+    .list__block h2 {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+    .list__block p.duration {
+        font-size: 12px;
+        margin-top: 4px;
+        margin-left: 27px;
+    }
+
+    .list__block p.state {
+        min-height: 70px;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 6px;
+    }
+
+    .list__block a.small {
+        font-size: 9px;
+        left: 105px;
+    }
+
+    #event-content .title-center {
+        margin-top: 3px;
+        margin-bottom: 21px;
+    }
+
+    #event-content .title-center span {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0px;
+    }
+
+    #event-content .title-center span:before {
+        width: 92px;
+        top: 48%;
+        right: 77px;
+    }
+
+    #event-content .title-center span:after {
+        width: 92px;
+        top: 48%;
+        left: 77px;
+    }
+
+    /* Open Event Index Media*/
+
+    #event-top {
+        margin-top: 8px;
+        margin-bottom: 22px;
+    }
+
+    #event-top .top-block {
+        flex-direction: column;
+        padding: 0 5px;
+        border-bottom: none;
+    }
+    #event-top .content-block {
+        width: 100%;
+        border-right: none;
+    }
+
+    #event-top h3 {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        margin-bottom: 14px;
+        margin-top: 4px;
+    }
+
+    #event-top .image_block img {
+        width: 100%;
+    }
+
+    #event-top .content-block .right_info {
+        width: 200px;
+        top: 200px;
+        left: 0px;
+        font-size: 12px;
+    }
+
+    #event-top .content-block .right_info span {
+        padding-bottom: 0px;
+    }
+
+    #event-top a.btn-event {
+        width: 185px;
+        height: 25px;
+        left: 47px;
+        bottom: -64px;
+        font-size: 8px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        padding: 6px 0;
+    }
+
+    #event-top p.lesson-info {
+        width: 98%;
+        min-height: 252px;
+        margin-top: 224px;
+        font-size: 12px;
+        line-height: 18px;
+        padding-bottom: 14px;
+    }
+
+    #event-top .specialist-block {
+        width: 100%;
+    }
+
+    #event-top h3.center {
+        margin-bottom: 20px;
+    }
+
+    #event-top .slider-button-next {
+        background: url(../css/imgs/practises__arr_next.svg) no-repeat;
+        background-position: center;
+        background-size: 100%;
+        margin-left: 12.7rem;
+        position: absolute;
+    }
+
+    #event-top .slider-button-prev {
+        background: url(../css/imgs/practises__arr_prew__Small.png) no-repeat;
+        background-position: center;
+        margin-left: 3.3rem;
+    }
+
+    #event-top .slider-button-prev:hover {
+        background: url(../css/imgs/arr_prew_hover__Small.png) no-repeat;
+        background-position: center;
+    }
+
+    #event-top  .slick-dotted.slick-slider {
+        margin-bottom: 21px;
+    }
+
+    #event-top .slider-manage-block .dots .slick-dots {
+        margin-left: 25px;
+    }
+
+    #open-event {
+        margin-bottom: 37px;
+    }
+
+    #open-event .title-left-lesson {
+        margin-top: 30px;
+        margin-bottom: 14px;
+        margin-left: 3px;
+    }
+
+    #open-event .title-left-lesson span {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0px;
+    }
+
+    #open-event .list__block {
+        margin-right: 12px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        width: 280px;
+    }
+    #open-event .slick-dotted.slick-slider {
+        margin-bottom: 6px;
+    }
+    #open-event .slider-manage-block {
+        margin-left: 5px;
+        margin-top: 0px;
+    }
 }

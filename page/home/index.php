@@ -363,7 +363,7 @@
             </div>
 
             <div class="slider-manage-block">
-                <a href="#">к списку событий</a>
+                <a href="#">к списку занятий</a>
                 <div class="arrows"></div>
                 <div class="dots"></div>
             </div>

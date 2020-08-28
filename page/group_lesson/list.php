@@ -82,8 +82,8 @@
                         </p>
                     </div>
                 </div>
-
-                 <div class="col">
+ 
+                  <div class="col">
                     <div class="wrapper__block">
                         <div class="image_size">
                             <img src="/img/bg_name_event3.jpg" alt="image">
@@ -104,7 +104,7 @@
                 </div>
 
                  <div class="col">
-                    <div class="wrapper__block">
+                    <div class="wrapper__block bottom">
                         <div class="image_size">
                             <img src="/img/bg_name_event1.jpg" alt="image">
                             <div class="bottom_info">
@@ -122,9 +122,9 @@
                         </p>
                     </div>
                 </div>
-<!-- 
-                <div class="col">
-                    <div class="wrapper__block">
+
+               <div class="col">
+                    <div class="wrapper__block bottom">
                         <div class="image_size">
                             <img src="/img/bg_name_event2.jpg" alt="image">
                             <div class="bottom_info">
@@ -144,7 +144,7 @@
                 </div>
 
                  <div class="col">
-                    <div class="wrapper__block">
+                    <div class="wrapper__block bottom">
                         <div class="image_size">
                             <img src="/img/bg_name_event3.jpg" alt="image">
                             <div class="bottom_info">
@@ -161,7 +161,7 @@
                             <a href="" class="small">Узнать больше</a>
                         </p>
                     </div>
-                </div> -->
+                </div>
 
             </div>
         </div>

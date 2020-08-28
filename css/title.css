@@ -85,6 +85,7 @@
     .title-block .subtitle {
         font-size: 10px;
         line-height: 18px;
+        letter-spacing: 1px;
         max-width: 280px;
     }
 }

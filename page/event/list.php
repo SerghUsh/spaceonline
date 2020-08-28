@@ -21,7 +21,7 @@
             <div class="tab-buttons_small">
                 <span data-tab-id="#tab-all" class="active">Все</span>
                 <span data-tab-id="#tab-new">Новые</span>
-                <span data-tab-id="#tab-video_event">Видеозаписи прошедших событий</span>
+                <span data-tab-id="#tab-video_event"><!-- Видеозаписи  -->прошедших событий</span>
             </div>
         </div>
 
@@ -29,7 +29,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="list__block top">
+                        <div class="list__block top-block">
                             <div class="image_size">
                                 <img src="/img/bg_name_event1.jpg" alt="image">
                                 <span class="icon-video"></span>
@@ -51,7 +51,7 @@
                     </div>
 
                       <div class="col">
-                        <div class="list__block top">
+                        <div class="list__block top-block bottom">
                             <div class="image_size">
                                 <img src="/img/bg_name_event2.jpg" alt="image">
                                 <span class="icon-video"></span>
@@ -73,7 +73,7 @@
                     </div>
 
                       <div class="col">
-                        <div class="list__block top hidden">
+                        <div class="list__block top-block hidden">
                             <div class="image_size">
                                 <img src="/img/bg_name_event3.jpg" alt="image">
                                 <span class="icon-video"></span>
@@ -185,7 +185,7 @@
                         </div>
                     </div>
 
-                  <!--   <div class="col">
+                    <div class="col">
                         <div class="list__block">
                             <div class="image_size">
                                 <img src="/img/bg_name_event1.jpg" alt="image">
@@ -225,7 +225,7 @@
                                 <a href="" class="small">Узнать больше</a>
                             </p>
                         </div>
-                    </div> -->
+                    </div>
 
                 </div>
             </div>

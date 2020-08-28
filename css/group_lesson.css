@@ -53,13 +53,154 @@
 	background-position-x: calc(35% - 5px);
 }
 
+/* Group lessons Index */
+
+#open-group-lesson {
+	margin-top: 49px;
+	margin-bottom: 80px;
+}
+
+#open-group-lesson .top-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+#open-group-lesson .image_block img {
+	width: calc(100%-375px);
+}
+
+#open-group-lesson h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 32px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+    margin-bottom: 17px;
+}
+#open-group-lesson h3.center {
+	text-align: center;
+	margin-top: -5px;
+    margin-bottom: 37px;
+}
+
+#open-group-lesson .content-block {
+	width: 72.2%;
+    border-right: 2px solid #F8F8F8;
+}
+
+#open-group-lesson .content-block .image_block {
+	position: relative;
+}
+
+#open-group-lesson .content-block .right_info {
+	position: absolute;
+	width: 375px;
+	top: 1px;
+    right: 34px;
+	font-size: 22px;
+	line-height: 28px;	
+}
+
+#open-group-lesson .content-block .right_info span {
+	display: block;
+	padding-bottom: 9px;
+}
+
+#open-group-lesson .content-block-link {
+	position: absolute;
+	z-index: 1;
+}
+#open-group-lesson .content-block-link a.hear {
+    background: url(../css/imgs/specialist-heart-link.svg) no-repeat center center;
+    background-size: auto 100%;
+    width: 33px;
+	height: 31px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+#open-group-lesson .content-block-link a.hear:hover {
+    background: url(../css/imgs/specialist-heart-link_hover.svg) no-repeat center center;
+    background-size: auto 100%;
+}
+#open-group-lesson .content-block-link a.cop {
+    background: url(../css/imgs/specialist-copy-link.svg) no-repeat center center;
+    background-size: auto 100%;
+	width: 33px;
+	height: 31px;
+	display: inline-block;
+}
+
+#open-group-lesson .content-block-link a.cop:hover {
+    background: url(../css/imgs/specialist-copy-link_hover.svg) no-repeat center center;
+    background-size: auto 100%;
+}
+
+#open-group-lesson p.lesson-info {
+	width: 96%;
+	margin-top: 17px;
+	font-size: 22px;
+	line-height: 28px;	
+}
+#open-group-lesson .specialist-block {
+	width: 26%;
+}
+
+#open-group-lesson .calendar {
+	margin-top: 46px;
+}
+#open-group-lesson .calendar img {
+	width: 100%;
+}
+
+#open-group-lesson .title-left-lesson {
+	margin-top: 76px;
+	margin-bottom: 40px;
+}
+
+#open-group-lesson .title-left-lesson span {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 32px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+#open-group-lesson .wrapper__block {
+    margin-right: 92px;
+    margin-bottom: 10px;
+}
+
+#open-group-lesson .wrapper__block h2 {
+    margin-top: 0px;
+}
+
+#open-group-lesson .wrapper__block .image_size .bottom_info {
+	bottom: 1px;
+}
+
+#open-group-lesson .slider-manage-block {
+    margin-top: 45px;
+}
+
+/* Main Block */
+
+.main-list_block {
+	margin-bottom: 73px;
+}
 
 .wrapper__block {
 	margin-right: 92px;
-	margin-bottom: 64px;
+	margin-bottom: 69px;
 	width: 482px;
 	height: 100%;
 	overflow: hidden;
+}
+
+.bottom {
+	margin-bottom: -13px;
 }
 
 .wrapper__block h2 {
@@ -160,6 +301,95 @@
 
 @media (max-width: 1199px) {
 
+	#open-group-lesson {
+	    margin-top: 16px;
+	    margin-bottom: 71px;
+	}
+
+	#open-group-lesson .top-block {
+	    padding: 0 25px;
+	}
+
+	#open-group-lesson .content-block {
+	    width: 52%;
+	    border-right: 2px solid #F8F8F8;
+	}
+
+	#open-group-lesson h3 {
+	    font-size: 16px;
+	    line-height: 37px;
+	    letter-spacing: 2px;
+	    margin-bottom: 0px;
+	}
+
+	#open-group-lesson h3.center {
+	    text-align: center;
+	    margin-top: 0px;
+	    margin-bottom: 0px;
+	}
+
+	#open-group-lesson .image_block img {
+	    width: 92%;
+	}
+
+	#open-group-lesson .content-block .right_info {
+	    top: 230px;
+	    left: 0px;
+	    font-size: 16px;
+	    line-height: 22px;
+	}
+
+	#open-group-lesson .content-block .right_info span {
+	    padding-bottom: 5px;
+	}
+
+	#open-group-lesson .content-block-link a.hear {
+	    width: 20px;
+	    height: 17px;
+	    margin-right: 3px;
+	}
+	#open-group-lesson .content-block-link a.cop {
+	    width: 20px;
+	    height: 17px;
+	}
+
+	#open-group-lesson p.lesson-info {
+	    width: 86%;
+	    margin-top: 98px;
+	    font-size: 16px;
+	    line-height: 20px;
+	}
+
+	#open-group-lesson .specialist-block {
+	    width: 45%;
+	}
+
+	#open-group-lesson .title-left-lesson {
+	    margin-top: 76px;
+	    margin-bottom: 40px;
+	    margin-left: 25px;
+	}
+
+	#open-group-lesson .title-left-lesson span {
+	    font-size: 16px;
+	    line-height: 22px;
+	}
+
+	#open-group-lesson .wrapper__block {
+	    margin-right: 20px;
+	    margin-bottom: 1px;
+	}
+
+	#open-group-lesson .wrapper__block h2 {
+	    margin-top: 10px;
+	}
+
+	#open-group-lesson .slider-manage-block {
+	    margin-top: 22px;
+	    margin-left: 25px;
+	}
+
+
 	#group_lesson-list-content {
 	    padding: 7px 20px;
 	    text-align: left;
@@ -228,6 +458,80 @@
 }
 
 @media (max-width: 767px) {
+
+	#open-group-lesson {
+	    margin-top: 13px;
+	    margin-bottom: 38px;
+	}
+
+	#open-group-lesson .top-block {
+	    flex-direction: column;
+	    padding: 0 5px;
+	}
+
+	#open-group-lesson .content-block {
+	    width: 100%;
+	    border-right: none;
+	}
+
+	#open-group-lesson h3 {
+	    font-size: 12px;
+	    line-height: 18px;
+	    margin-bottom: 14px;
+	    text-align: center;
+	}
+
+	#open-group-lesson .image_block img {
+	    width: 100%;
+	}
+
+	#open-group-lesson .content-block .right_info {
+	    top: 207px;
+	    font-size: 12px;
+	}
+
+	#open-group-lesson .content-block .right_info span {
+	    padding-bottom: 0px;
+	}
+
+	#open-group-lesson p.lesson-info {
+	    width: 95%;
+	    min-height: 252px;
+	    margin-top: 95px;
+	    font-size: 12px;
+	    line-height: 18px;
+	}
+
+	#open-group-lesson .specialist-block {
+	    width: 100%;
+	    margin-top: 16px;
+	}
+
+	#open-group-lesson h3.center {
+	    margin-bottom: 19px;
+	}
+
+	#open-group-lesson .title-left-lesson {
+	    width: 84%;
+	    margin-top: 3px;
+	    margin-bottom: 10px;
+	    margin-left: 5px;
+	}
+
+	#open-group-lesson .title-left-lesson span {
+	    font-size: 12px;
+	    line-height: 18px;
+	    letter-spacing: 0px;
+	}
+
+	#open-group-lesson .slick-dotted.slick-slider {
+	    margin-bottom: 10px;
+	}
+
+	#open-group-lesson .slider-manage-block {
+		margin-top: 10px;
+		margin-left: 5px;
+	}
 
 	#group_lesson-list-content {
 	    padding: 0px 20px;
