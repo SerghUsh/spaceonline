@@ -203,6 +203,27 @@ $(document).ready(function () {
         labelText = labelText.replace('{count}', count);
         $('label[for="' + id + '"]').html(labelText);
     }).trigger('keyup');
+
+    /* ACCOUNT PAGE */
+
+    // Init accordion
+    $('.accordion-item:not(.open) .accordion-info').hide();
+    $('.accordion .arrow').on('click', function(e) {
+        var speed = 500;
+        var accordion = $(e.target).closest('.accordion');
+        var currentBlock = $(e.target).closest('.accordion-item');
+
+        if (currentBlock.hasClass('open')) {
+            currentBlock.removeClass('open');
+            currentBlock.find('.accordion-info').slideUp(speed);
+        } else {
+            // accordion.find('.accordion-item').removeClass('open');
+            // accordion.find('.accordion-info').slideUp(speed);
+
+            currentBlock.addClass('open');
+            currentBlock.find('.accordion-info').slideDown(speed);
+        }
+    });
 });
 /* input file */
 ;(function (document, window, index) {
