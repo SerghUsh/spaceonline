@@ -1,3 +1,9 @@
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+    border: 2px solid #CECECE;
+    border-radius: 5px;
+}
+
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
     display: inline-block;
     background: #6EA8C6;
@@ -9,11 +15,13 @@
     font-family: ProximaNova;
     padding: 4px 0;
 }
+
 .select2-container--default .select2-selection--multiple .select2-selection__choice__display {
     cursor: default;
     padding-left: 15px;
     padding-right: 10px;
 }
+
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
     width: auto;
     float: right;
@@ -21,11 +29,13 @@
     color: #fff;
     padding-right: 10px;
 }
+
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover, .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:focus {
     background: none;
     color: #333;
     outline: none;
 }
+
 .select2-container .select2-selection--single {
     height: 50px;
     font-family: ProximaNova, sans-serif;
@@ -33,6 +43,12 @@
     font-weight: 300;
     font-size: 22px;
     line-height: 48px;
+    outline: none;
+    transition: all linear .1s;
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    border: 2px solid #64BCCF;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -75,6 +91,17 @@
 }
 
 @media (max-width: 1199px) {
+    .select2-container--default .select2-selection--multiple .select2-selection__choice {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 4px 0;
+    }
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+        padding-top: 6px;
+        line-height: 10px;
+    }
+
     .select2-container .select2-selection--single {
         font-size: 16px;
         line-height: 20px;

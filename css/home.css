@@ -400,11 +400,13 @@
     width: 431px;
     height: auto;
 }
+
 #start_now .slider__item .number {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 120px;
-    }
+}
+
 #start_now .slider__item h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -660,10 +662,12 @@
     url(../css/imgs/bg_from_organizers.jpg) no-repeat;
     background-position: right top;
 }
+
 .main_block__item .discription_text {
     padding-top: 132px;
     padding-left: 145px;
 }
+
 .main_block__item .discription_text p {
     font-size: 22px;
     line-height: 37px;
@@ -748,9 +752,11 @@ a.write:active {
         line-height: 30px;
         width: 95%;
     }
+
     .main_block__item .discription_text {
         padding-top: 90px;
     }
+
     .main_block__item .discription_text p {
         width: 62%;
     }
@@ -1034,6 +1040,7 @@ a.write:active {
         line-height: 16px;
         letter-spacing: 1px;
     }
+
     #future_events .image_wrapper .bottom_info .date {
         margin-top: 3px;
     }
@@ -1107,10 +1114,12 @@ a.write:active {
         url(../css/imgs/bg_from_organizers_medium.jpg) no-repeat;
         background-position: right top;
     }
+
     .main_block__item .discription_text {
         padding-top: 16px;
         padding-left: 14px;
     }
+
     .main_block__item .discription_text p {
         font-size: 14px;
         line-height: 22px;
@@ -1364,28 +1373,34 @@ a.write:active {
         height: 155px;
         margin-top: 0px;
     }
+
     #start_now .slider__item .number {
         font-size: 35px;
     }
+
     #start_now .slider__item h2 {
         font-size: 12px;
         line-height: 18px;
         margin-top: -2px;
         margin-bottom: 19px;
     }
+
     #start_now .slider__item h2::after {
         bottom: 57%;
     }
+
     #start_now .slider__item p {
         font-size: 12px;
         line-height: 18px;
         width: 78%;
     }
+
     #start_now .slider .flex-item .next_slide {
         width: 25px;
         height: 25px;
         margin: 38px 30px 0 41px;
     }
+
     #start_now .slider .flex-item .next_slide:hover {
         background: url(../css/imgs/arr_next_hover__Small.png) no-repeat;
         background-position: center;
@@ -1395,21 +1410,25 @@ a.write:active {
         margin-top: 0px;
         margin-left: 5px;
     }
+
     .title__left {
         width: 98%;
         margin-top: 0px;
         margin-bottom: 20px;
     }
+
     .title__left span {
         font-size: 12px;
         line-height: 18px;
         letter-spacing: 0px;
     }
+
     .title__left span:after {
         width: 120px;
         top: 41%;
         left: 156px;
     }
+
     .title__left p {
         width: 98%;
         margin-top: 11px;
@@ -1422,34 +1441,41 @@ a.write:active {
         height: 327px;
         margin-right: 30px;
     }
+
     #future_events .image_wrapper .bottom_info {
         padding: 6px 8px 0px 8px;
         font-size: 10px;
     }
+
     #future_events .image_wrapper .bottom_info .date {
         margin-top: 4px;
     }
+
     #future_events .slider__item h2 {
         font-size: 12px;
         line-height: 22px;
         margin-top: 10px;
     }
+
     #future_events .slider__item p.duration {
         font-size: 12px;
         margin-top: 2px;
         margin-left: 0px;
         padding: 0;
     }
+
     #future_events .slider__item p.state {
         min-height: 80px;
         margin-top: 8px;
         font-size: 12px;
         line-height: 18px;
     }
+
     #future_events .slider__item a.small {
         padding: 0px 0px 0px 28px;
         font-size: 9px;
     }
+
     #future_events .slider-manage-block {
         margin-top: -18px;
     }
@@ -1458,48 +1484,57 @@ a.write:active {
         margin-left: 0px;
         margin-bottom: 0px;
     }
+
     .title__center {
         margin-top: 24px;
         margin-bottom: 5px;
         margin-left: 4px;
     }
+
     .title__center span {
         font-size: 12px;
         line-height: 18px;
         letter-spacing: 0px;
         margin-left: 1px;
     }
+
     .title__center span:before {
         width: 40px;
         top: 43%;
         right: 182px;
     }
+
     .title__center span:after {
         width: 35px;
         top: 43%;
         left: 183px;
     }
+
     .main_block__item {
         height: auto;
         padding: 8px 18px 225px 18px;
         background: url(../css/imgs/bg_from_organizers_smal.jpg) no-repeat;
         background-position: right bottom;
     }
+
     .main_block__item .discription_text {
         padding-top: 0px;
         padding-left: 2px;
     }
+
     .main_block__item .discription_text p {
         font-size: 12px;
         line-height: 18px;
         padding-top: 0px;
         width: 100%;
     }
+
     .main_block__item .discription_text p.space {
         margin-bottom: 20px;
         padding-top: 9px;
         width: 95%;
     }
+
     a.write {
         font-size: 8px;
         line-height: 12px;

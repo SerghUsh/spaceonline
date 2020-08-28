@@ -1,5 +1,81 @@
 /* Find your practise */
 
+/* Index Page */
+
+#practise-page {
+    margin-top: 80px;
+}
+
+#practise-page .top-info img {
+    float: left;
+    margin-right: 54px;
+}
+#practise-page h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 19px;
+}
+
+#practise-page .info-text {
+    font-size: 22px;
+    line-height: 28px;
+}
+#practise-page .info-text p {
+    padding-bottom: 18px;
+}
+
+#practise-page .info-text p.top {
+    padding-top: 10px;
+}
+
+#practise-page .calendar-block {
+    margin-top: 32px;
+}
+
+#practise-page .title-left {
+    margin-top: 66px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+#practise-page .title-left span {
+    position: relative;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 3.4px;
+    text-transform: uppercase;
+}
+
+#practise-page .title-left span:after {
+    display: block;
+    width: 1028px;
+    content: '';
+    position: absolute;
+    border: 1px solid #000000;
+    top: 46%;
+    left: 37.5rem;
+}
+
+#practise-page .specialist-tile {
+    text-align: center;
+    background: #FAFAFA;
+    border-radius: 10px;
+    margin: 0 auto 48px;
+    transition: all linear .1s;
+    margin-right: 80px;
+}
+
+#practise-page .slider-manage-block {
+    margin-top: 37px;
+}
+
+/* List Blocks */
+
 .main_block {
     margin-top: 80px;
     margin-bottom: 38px;
@@ -59,22 +135,26 @@
         margin-top: 34px;
         margin-bottom: 38px;
     }
+
     .wrapper__item {
         margin: 0px 2px 45px 18px;
         width: 320px;
     }
+
     .wrapper__item h2 {
         font-size: 14px;
         line-height: 22px;
         margin-top: 7px;
         padding-bottom: 7px;
     }
+
     .wrapper__item p {
         min-height: 80px;
         margin-top: 8px;
         font-size: 14px;
         line-height: 20px;
     }
+
     .wrapper__item a {
         font-size: 10px;
         left: 62px;
@@ -86,21 +166,25 @@
         margin-top: 21px;
         margin-bottom: 3px;
     }
+
     .wrapper__item {
         margin: 0px 2px 20px 5px;
         width: 280px;
     }
+
     .wrapper__item h2 {
         font-size: 12px;
         margin-top: 6px;
         padding-bottom: 7px;
     }
+
     .wrapper__item p {
         min-height: 70px;
         margin-top: 7px;
         font-size: 12px;
         line-height: 18px;
     }
+
     .wrapper__item a {
         font-size: 9px;
         left: 100px;

@@ -2,7 +2,7 @@
     padding: 37px 0;
 }
 
-.account-title-block {
+.account-title {
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 22px;
@@ -31,7 +31,7 @@
 
 .account-tabs-block {
     float: right;
-    width: calc(1630px - 480px);
+    width: calc(100% - 480px);
 }
 
 .account-tabs-block .tab-block {
@@ -68,12 +68,9 @@
 }
 
 .account-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
 }
 
-.account-menu li {
+.account-menu .item {
     display: block;
     font-size: 20px;
     line-height: 59px;
@@ -131,7 +128,7 @@
 
 .account-profinfo {
     background: url("/css/imgs/account-profinfo.svg") no-repeat;
-    background-position: 0px 15px;
+    background-position: 5px 15px;
 }
 
 .account-statistic {
@@ -221,6 +218,7 @@
     text-align: center;
     padding-top: 27px;
 }
+
 .event-image-block {
     padding-top: 14px;
 }
@@ -285,10 +283,613 @@
     font-weight: normal;
     font-size: 24px;
     text-transform: none;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     padding: 14px 18px;
+}
+
+.event-actions-block span {
+    font-size: 24px;
+    line-height: 50px;
+    color: #AAAAAA;
 }
 
 .event-actions-block a:not(:last-child) {
     margin-right: 20px;
+}
+
+.diploma-block {
+    position: relative;
+    padding: 20px 0;
+}
+
+.diploma-block .delete {
+    position: absolute;
+    top: 17px;
+    right: -8px;
+    z-index: 1;
+    background: none;
+    border: none;
+    font-size: 55px;
+    font-weight: 100;
+    outline: none;
+    line-height: 28px;
+}
+
+.diploma-block .diploma-title {
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 26px;
+    font-weight: bold;
+}
+
+.diploma-block .diploma-name {
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.diploma-block .diploma-description {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.diploma-block .diploma-image {
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 22px;
+    color: #464646;
+}
+
+.diploma-block .btn-form-white {
+    margin: 0;
+}
+
+.account-tabs-block .tab {
+    position: relative;
+}
+
+.btn-meeting {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    z-index: 1;
+    height: 50px;
+    border: 2px solid #000;
+    display: inline-block;
+    padding: 14px 69px;
+    letter-spacing: 3px;
+}
+
+.account-subtitle {
+    font-size: 22px;
+    line-height: 28px;
+    color: #323232;
+    margin-top: -8px;
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: 2px;
+    margin-bottom: 7px;
+}
+
+.meeting-wrapper {
+    clear: both;
+    margin-bottom: 36px;
+}
+
+.instruction-block p {
+    font-size: 22px;
+    line-height: 28px;
+    color: #323232;
+}
+
+.instruction-block p:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1199px) {
+    .btn-meeting {
+        position: static;
+        float: right;
+        height: 35px;
+        font-size: 12px;
+        letter-spacing: 0;
+        padding: 6px 35px;
+        margin-bottom: 8px;
+    }
+
+    .account-subtitle {
+        font-size: 16px;
+        line-height: 28px;
+        position: static;
+        margin-bottom: 0;
+        margin-top: 4px;
+    }
+
+    .meeting-wrapper {
+        clear: both;
+        margin-bottom: 16px;
+    }
+
+    .instruction-block p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .instruction-block p:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .account-menu-block {
+        width: 100%;
+    }
+
+    .account-tabs-block {
+        width: 100%;
+    }
+
+    .account-title {
+        font-size: 16px;
+        line-height: 37px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .account-menu-block .account-info {
+        background: #FAFAFA;
+        border-radius: 10px;
+        padding: 10px 54px 2px;
+    }
+
+    .account-info .specialist-image-block {
+        margin-bottom: 11px;
+    }
+
+    .account-name {
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 1px;
+    }
+
+    .account-type {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 12px;
+    }
+
+    .account-menu .account-menu-col {
+        float: left;
+        width: 50%;
+    }
+
+    .account-menu .account-menu-col:first-child {
+        border-right: 1px solid #D5D5D5;
+    }
+
+    .account-menu .item {
+        padding-top: 7px;
+        padding-left: 78px;
+        font-size: 16px;
+        line-height: 52px;
+    }
+
+    .account-registrations {
+        background-position: 25px 15px;
+    }
+
+    .account-calendar {
+        background-position: 21px 17px;
+    }
+
+    .account-favorites {
+        background-position: 25px 19px;
+    }
+
+    .account-profile {
+        background-position: 25px 15px;
+    }
+
+    .account-profinfo {
+        background-position: 25px 19px;
+    }
+
+    .account-statistic {
+        background-position: 21px 13px;
+    }
+
+    .account-settings {
+        background-position: 23px 17px;
+    }
+
+    .account-logout {
+        background-position: 29px 19px;
+    }
+
+    .account-info .text {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .account-info .text br {
+        display: none;
+    }
+
+    .account-menu-block .account-info:last-child {
+        margin-top: 30px;
+        padding: 28px 46px 23px;
+        margin-bottom: 20px;
+    }
+
+    .account-info .btn-green {
+        width: auto;
+        font-size: 12px;
+        line-height: 22px;
+        padding: 9px 24px;
+        height: 35px;
+    }
+
+    .tab-block:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
+
+    .diploma-block {
+        padding: 0;
+    }
+
+    .diploma-block .delete {
+        top: -3px;
+        right: -3px;
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .diploma-block .diploma-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .diploma-block .diploma-name {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .diploma-block .diploma-description {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 16px;
+        width: 90%;
+    }
+
+    .diploma-block .diploma-image {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .diploma-block .btn-form-white {
+        border: 1px solid #000;
+        padding: 6px 15px 7px;
+        width: 154px;
+    }
+
+    .filter-menu {
+        margin-bottom: 29px;
+    }
+
+    .filter-menu a {
+        font-size: 14px;
+    }
+
+    .event-block {
+        padding: 15px 200px 15px 149px;
+    }
+
+    .event-date-block, .event-image-block {
+        width: 134px;
+        padding-top: 15px;
+    }
+
+    .event-date-block span {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .event-info-block span {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .event-actions-block {
+        position: static;
+        height: auto;
+        width: auto;
+        text-align: left;
+        padding: 0;
+        margin-top: 3px;
+        min-height: 25px;
+    }
+
+    .event-actions-block a {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        height: 35px;
+        font-size: 18px;
+        line-height: 20px;
+        padding: 8px 0;
+        width: 171px;
+    }
+
+    .event-actions-block a.btn-white {
+        line-height: 18px;
+    }
+
+    .event-actions-block a:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .event-actions-block a:last-child {
+        top: 60px;
+    }
+
+    .event-actions-block span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .btn-meeting {
+        float: none;
+        height: 25px;
+        font-size: 8px;
+        letter-spacing: 0;
+        padding: 1px 35px;
+        border: 1px solid;
+        position: relative;
+        top: -8px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 3px;
+        width: 152px;
+    }
+
+    .account-subtitle {
+        display: block;
+        text-align: center;
+        margin-top: 7px;
+        margin-bottom: 10px;
+    }
+
+    .meeting-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .instruction-block p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .instruction-block p:not(:last-child) {
+        margin-bottom: 28px;
+    }
+
+    .account-menu a:after {
+        display: none;
+    }
+
+    .account-title {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .account-menu-block .account-info {
+        padding: 17px 20px 2px;
+    }
+
+    .account-name {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .account-type {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .account-menu .account-menu-col {
+        float: left;
+        width: 100%;
+    }
+
+    .account-menu .account-menu-col:first-child {
+        border-right: none;
+    }
+
+    .account-menu .item {
+        padding-top: 1px;
+        padding-left: 55px;
+        font-size: 14px;
+        line-height: 38px;
+        background-size: auto 50%;
+    }
+
+    .account-registrations {
+        background-position: 18px 8px;
+    }
+
+    .account-calendar {
+        background-position: 18px 10px;
+    }
+
+    .account-favorites {
+        background-position: 18px 12px;
+    }
+
+    .account-profile {
+        background-position: 20px 11px;
+    }
+
+    .account-profinfo {
+        background-position: 20px 11px;
+    }
+
+    .account-statistic {
+        background-position: 20px 11px;
+    }
+
+    .account-settings {
+        background-position: 20px 10px;
+    }
+
+    .account-logout {
+        background-position: 23px 9px;
+    }
+
+    .account-menu-block .account-info:last-child {
+        margin-top: 20px;
+        padding: 17px 46px 14px;
+        margin-bottom: 23px;
+    }
+
+    .account-info .text {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 12px;
+    }
+
+    .account-info .text br {
+        display: inherit;
+    }
+
+    .account-info .btn-green {
+        width: 152px;
+        font-size: 8px;
+        line-height: 12px;
+        display: inline-block;
+        align-items: center;
+        letter-spacing: 1px;
+        padding: 7px 0;
+        height: 25px;
+        text-align: center;
+    }
+
+    .account-tabs-block .tab-block {
+        padding: 12px 16px;
+    }
+
+    .filter-menu {
+        text-align: center;
+        margin-top: -15px;
+        margin-bottom: 15px;
+        margin-left: calc(-100% + 290px / 2);
+        margin-right: calc(-100% + 290px / 2);
+        border-top: 2px solid #FAFAFA;
+        border-bottom: 2px solid #FAFAFA;
+        padding: 10px 0;
+    }
+
+    .filter-menu a {
+        display: block;
+        font-size: 10px;
+        line-height: 26px;
+    }
+
+    .filter-menu a:after {
+        display: none;
+    }
+
+    .filter-menu a:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .event-block {
+        padding: 0;
+    }
+
+    .event-date-block, .event-image-block {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .event-date-block {
+        padding: 15px 20px 8px;
+        text-align: left;
+    }
+
+    .event-date-block span {
+        display: inline-block;
+    }
+
+    .event-date-block span:last-child {
+        float: right;
+    }
+
+    .event-info-block {
+        padding: 5px 10px 0;
+    }
+
+    .event-info-block span {
+        line-height: 34px;
+    }
+
+    .event-date-block span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .event-actions-block {
+        padding: 0 12px 18px;
+        text-align: center;
+        clear: both;
+    }
+
+    .event-actions-block span {
+        display: block;
+        text-align: left;
+        width: 60%;
+        margin-top: 7px;
+    }
+
+    .event-actions-block a {
+        position: static;
+        width: 152px;
+        height: 25px;
+        margin-top: 14px;
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 9px;
+        letter-spacing: 1px;
+    }
+
+    .event-actions-block a.btn-white {
+        line-height: 8px;
+    }
+
+    .event-actions-block a + a {
+        margin-top: 10px;
+    }
+
+    .event-image-block {
+        float: left;
+        width: 45%;
+    }
+
+    .event-image-block + .event-info-block {
+        float: left;
+        width: 55%;
+        padding: 30px 48px 0 10px;
+        text-align: center;
+        min-height: 114px;
+    }
+
+    .event-image-block + .event-info-block span {
+        line-height: 26px;
+    }
 }

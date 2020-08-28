@@ -148,6 +148,8 @@
 #registration-content .timezone-block button {
     float: right;
     width: 189px;
+    padding: 12px 0;
+    border: 1px solid #000;
 }
 
 #registration-content .checkbox-wrapper {
@@ -157,6 +159,61 @@
 
 #registration-content .action-block {
     margin-top: 16px;
+}
+
+#policy-content {
+    padding: 86px 0 64px;
+}
+
+.accordion {
+
+}
+
+.accordion-item {
+    margin-bottom: 35px;
+}
+
+.accordion-title {
+    border: 1px solid #DBDBDB;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: bold;
+    padding: 18px 80px 18px 35px;
+    position: relative;
+}
+
+.accordion-item .arrow {
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 31px;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-image: url(/css/imgs/accordion-down-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 95% auto;
+    background-position: center;
+}
+
+.accordion-item.open .arrow {
+    background-image: url(/css/imgs/accordion-up-arrow.svg);
+}
+
+.accordion-item .accordion-info {
+    border: 1px solid #DBDBDB;
+    border-top: none;
+    padding: 34px 35px 34px;
+}
+
+.accordion-item .accordion-info p {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.accordion-item .accordion-info p:not(:last-child) {
+    margin-bottom: 16px;
 }
 
 @media (max-width: 1199px) {
@@ -171,6 +228,39 @@
 
     #registration-content .action-block {
         margin-top: 8px;
+    }
+
+    #policy-content {
+        padding: 36px 0;
+    }
+
+    .accordion-item {
+        margin-bottom: 25px;
+    }
+
+    .accordion-title {
+        font-size: 16px;
+        padding: 4px 55px 4px 19px;
+    }
+
+    .accordion-item .accordion-info {
+        padding: 19px;
+    }
+
+    .accordion-item .arrow {
+        top: calc(50% - 11px);
+        width: 22px;
+        height: 22px;
+        right: 18px;
+    }
+
+    .accordion-item .accordion-info p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .accordion-item .accordion-info p:not(:last-child) {
+        margin-bottom: 20px;
     }
 }
 
@@ -210,5 +300,39 @@
 
     #registration-content .checkbox-wrapper {
         margin: -3px 0 4px;
+    }
+
+    #policy-content {
+        padding: 24px 0 48px;
+    }
+
+    .accordion-item {
+        margin-bottom: 15px;
+    }
+
+    .accordion-title {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 6px 45px 4px 9px;
+    }
+
+    .accordion-item .arrow {
+        top: calc(50% - 8px);
+        width: 16px;
+        height: 16px;
+        right: 17px;
+    }
+
+    .accordion-item .accordion-info {
+        padding: 9px 20px 8px 9px;
+    }
+
+    .accordion-item .accordion-info p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .accordion-item .accordion-info p:not(:last-child) {
+        margin-bottom: 11px;
     }
 }

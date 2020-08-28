@@ -8,4 +8,10 @@
 <script type="text/javascript" src="/bootstrap-datepicker-1.9.0/js/bootstrap-datepicker.min.js"></script>
 <script type="text/javascript" src="/bootstrap-datepicker-1.9.0/locales/bootstrap-datepicker.ru.min.js"></script>
 
+<!-- Tui-calendar -->
+<script src="https://uicdn.toast.com/tui.code-snippet/v1.5.2/tui-code-snippet.min.js"></script>
+<script src="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.min.js"></script>
+<script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.min.js"></script>
+<script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
+
 <script src="/js/script.js"></script>

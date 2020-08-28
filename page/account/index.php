@@ -19,7 +19,7 @@
     <div id="account-content">
         <div class="container clearfix">
             <div class="account-menu-block">
-                <h4 class="account-title-block">Личный кабинет</h4>
+                <h4 class="account-title">Личный кабинет</h4>
 
                 <div class="account-info">
                     <div class="specialist-image-block">
@@ -37,32 +37,37 @@
                         Психолог
                     </div>
 
-                    <ul class="account-menu tab-buttons">
-                        <li class="account-registrations">
-                            <a href="#" data-tab-id="#tab-registrations">Мои регистрации</a>
-                        </li>
-                        <li class="account-calendar">
-                            <a href="#" data-tab-id="#tab-calendar">Мой календарь</a>
-                        </li>
-                        <li class="account-favorites">
-                            <a href="#" data-tab-id="#tab-favorites">Избранные</a>
-                        </li>
-                        <li class="account-profile">
-                            <a href="#" data-tab-id="#tab-profile">Мой профиль</a>
-                        </li>
-                        <li class="account-profinfo">
-                            <a class="active" href="#" data-tab-id="#tab-profinfo">Проф. инфо</a>
-                        </li>
-                        <li class="account-statistic">
-                            <a href="#" data-tab-id="#tab-statistic">Статистика занятий</a>
-                        </li>
-                        <li class="account-settings">
-                            <a href="#" data-tab-id="#tab-settings">Настройки</a>
-                        </li>
-                        <li class="account-logout">
-                            <a href="#">Выйти</a>
-                        </li>
-                    </ul>
+                    <div class="account-menu tab-buttons clearfix">
+                        <div class="account-menu-col">
+                            <div class="item account-registrations">
+                                <a class="active" href="#" data-tab-id="#tab-registrations">Мои регистрации</a>
+                            </div>
+                            <div class="item account-calendar">
+                                <a href="#" data-tab-id="#tab-calendar">Мой календарь</a>
+                            </div>
+                            <div class="item account-favorites">
+                                <a href="#" data-tab-id="#tab-favorites">Избранные</a>
+                            </div>
+                            <div class="item account-profile">
+                                <a href="#" data-tab-id="#tab-profile">Мой профиль</a>
+                            </div>
+                        </div>
+
+                        <div class="account-menu-col">
+                            <div class="item account-profinfo">
+                                <a href="#" data-tab-id="#tab-profinfo">Проф. инфо</a>
+                            </div>
+                            <div class="item account-statistic">
+                                <a href="#" data-tab-id="#tab-statistic">Статистика занятий</a>
+                            </div>
+                            <div class="item account-settings">
+                                <a href="#" data-tab-id="#tab-settings">Настройки</a>
+                            </div>
+                            <div class="item account-logout">
+                                <a href="#">Выйти</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="account-info">
@@ -76,7 +81,7 @@
 
             <div class="account-tabs-block">
                 <div id="tab-registrations" class="tab">
-                    <h4 class="account-title-block">Мой Календарь</h4>
+                    <h4 class="account-title">Мои регистрации</h4>
 
                     <div data-container-id="#filter-container-registrations" class="filter-menu tab-buttons">
                         <a href="#" data-filter="" class="active" >Все</a>
@@ -98,8 +103,7 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                                <span>Подключение за 15 минут до начала</span>
                             </div>
                         </div>
 
@@ -115,8 +119,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green">Подключиться</a>
                             </div>
                         </div>
 
@@ -132,8 +136,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green">Подключиться</a>
                             </div>
                         </div>
 
@@ -149,8 +153,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green">Подключиться</a>
                             </div>
                         </div>
 
@@ -166,8 +170,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green ">Подключиться</a>
                             </div>
                         </div>
 
@@ -183,8 +187,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green ">Подключиться</a>
                             </div>
                         </div>
 
@@ -201,20 +205,20 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-white">Перейти</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div id="tab-calendar" class="tab">
-                    <h4 class="account-title-block">Мой Календарь</h4>
+                    <h4 class="account-title">Мой Календарь</h4>
 
                     <img src="/img/calendar.png" alt="calendar" style="width: 100%">
                 </div>
 
                 <div id="tab-favorites" class="tab">
-                    <h4 class="account-title-block">Избранные</h4>
+                    <h4 class="account-title">Избранные</h4>
 
                     <div data-container-id="#filter-container-favorites" class="filter-menu tab-buttons">
                         <a href="#" data-filter="" class="active" >Все</a>
@@ -237,7 +241,7 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-teal">Перейти</a>
                             </div>
                         </div>
 
@@ -253,8 +257,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green">Подключиться</a>
                             </div>
                         </div>
 
@@ -270,15 +274,15 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn-teal follow">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn-green connect ">Подключиться</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video');?>" class="btn-green">Подключиться</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div id="tab-profile" class="tab">
-                    <h4 class="account-title-block">Редактировать профиль</h4>
+                    <h4 class="account-title">Редактировать профиль</h4>
 
                     <div class="tab-block">
                         <form action="" method="post">
@@ -380,7 +384,7 @@
                 </div>
 
                 <div id="tab-profinfo" class="tab">
-                    <h4 class="account-title-block">Редактировать проф.ИНФО</h4>
+                    <h4 class="account-title">Редактировать проф.ИНФО</h4>
 
                     <div class="tab-block">
                         <form action="" method="post">
@@ -391,27 +395,27 @@
 
                                         <div class="days">
                                             <div class="day-input-block">
-                                                <input id="monday" type="checkbox" name="monday">
+                                                <input id="monday" type="checkbox" name="monday" checked>
                                                 <label for="monday">ПН</label>
                                             </div>
 
                                             <div class="day-input-block">
-                                                <input id="tuesday" type="checkbox" name="tuesday">
+                                                <input id="tuesday" type="checkbox" name="tuesday" checked>
                                                 <label for="tuesday">ВТ</label>
                                             </div>
 
                                             <div class="day-input-block">
-                                                <input id="wednesday" type="checkbox" name="wednesday">
+                                                <input id="wednesday" type="checkbox" name="wednesday" checked>
                                                 <label for="wednesday">СР</label>
                                             </div>
 
                                             <div class="day-input-block">
-                                                <input id="thursday" type="checkbox" name="thursday">
+                                                <input id="thursday" type="checkbox" name="thursday" checked>
                                                 <label for="thursday">ЧТ</label>
                                             </div>
 
                                             <div class="day-input-block">
-                                                <input id="friday" type="checkbox" name="friday">
+                                                <input id="friday" type="checkbox" name="friday" checked>
                                                 <label for="friday">ПТ</label>
                                             </div>
 
@@ -436,16 +440,16 @@
                                             <div class="form-col">
                                                 <sub>начало</sub>
                                                 <select id="time-start" name="time-start">
-                                                    <option>8:00</option>
-                                                    <option>8:30</option>
+                                                    <option value="8:00">8:00</option>
+                                                    <option value="8:30">8:30</option>
                                                 </select>
                                             </div>
 
                                             <div class="form-col">
                                                 <sub>конец</sub>
                                                 <select id="time-end" name="time-end">
-                                                    <option>18:00</option>
-                                                    <option>18:30</option>
+                                                    <option value="18:00">18:00</option>
+                                                    <option value="18:30">18:30</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -482,7 +486,9 @@
                                         <label for="worksheet">
                                             <span></span> <b class="btn-file">Загрузить</b>
                                         </label>
+                                    </div>
 
+                                    <div class="form-group">
                                         <label>
                                             <input type="checkbox" value="1" checked><i></i>
                                             <span>Требуется предварительная обработка анкеты пользователя</span>
@@ -495,15 +501,75 @@
 
                             <div class="form-group">
                                 <label for="sub-specialization">Узкие специализации</label>
-                                <select id="sub-specialization" name="sub-specialization[]" multiple="multiple"></select>
+                                <select id="sub-specialization" name="sub-specialization[]" multiple="multiple">
+                                    <option value="1" selected>Детская психология</option>
+                                    <option value="2" selected>Гешталь-терапия</option>
+                                    <option value="3" selected>Позитивная терапия</option>
+                                </select>
                             </div>
 
                             <div class="form-group">
-                                <label for="description">Информация обо мне (562 символа)</label>
+                                <label for="description">Информация обо мне (0 символа)</label>
                                 <textarea id="description" data-label="Информация обо мне ({count} символа)">Психотерапевт. Специалист в области гештальт-терапии. Специализируется на проблемах межличностного общения и разрешении конфликтов. Сертифицированный коуч. Спортивный коуч. Работает со спортсменами и спортивными командами. Организатор Образовательного проекта для психологов «ПСИКОН». Марие 35 лет, из которых она 12 лет работает психологом и психотерапевтом.</textarea>
                             </div>
 
                             <button class="btn-submit-margin btn-form-blue" type="submit">Обновить профиль</button>
+                        </form>
+                    </div>
+
+                    <div class="tab-block">
+                        <div class="diploma-block">
+                            <button type="button" class="delete">×</button>
+
+                            <div class="diploma-title">Грамота/диплом №1</div>
+
+                            <div class="diploma-name">
+                                Название грамоты/диплома: Сертификат “Женская психология”
+                            </div>
+
+                            <div class="diploma-description">
+                                Описание: Спортивный коуч. Работает со спортсменами и спортивными командами.
+                                Организатор Образовательного проекта для психологов «ПСИКОН». Марие 35 лет, из
+                                которых она 12 лет работает психологом и психотерапевтом.
+                            </div>
+
+                            <div class="diploma-image">
+                                1. Диплом ( название ).png
+                            </div>
+
+                            <button class="btn-submit-margin btn-form-white" type="submit">Редактировать</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-block">
+                        <p class="title-form">Добавить грамоту/диплом</p>
+
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="diploma-name">Название грамоты/диплома</label>
+                                <span class="error-message"></span>
+                                <input id="diploma-name" type="text" name="diploma-name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="diploma-description">Описание</label>
+                                <textarea id="diploma-description" name="diploma-description"></textarea>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <div class="form-group">
+                                        <label for="diploma-image">Загрузить фото</label>
+                                        <input id="diploma-image" type="file" name="diploma-image" class="inputfile"
+                                               data-multiple-caption="{count} файлов было выбрано">
+                                        <label for="diploma-image">
+                                            <span></span> <b class="btn-file">Загрузить</b>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn-submit-margin btn-form-blue" type="submit">Добавить грамоту</button>
                         </form>
                     </div>
                 </div>
@@ -513,7 +579,7 @@
                 </div>
 
                 <div id="tab-settings" class="tab">
-                    <h4 class="account-title-block">Настройки пароля</h4>
+                    <h4 class="account-title">Настройки пароля</h4>
 
                     <div class="tab-block">
                         <form action="" method="post">
@@ -539,7 +605,7 @@
                         </form>
                     </div>
 
-                    <h4 class="account-title-block">Удаление профиля</h4>
+                    <h4 class="account-title">Удаление профиля</h4>
 
                     <div class="tab-block">
                         <form action="" method="post">

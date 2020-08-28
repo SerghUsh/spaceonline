@@ -87,11 +87,12 @@ body {
     background: #83C465;
     border-radius: 4px;
     height: 46px;
+    transition: all linear .1s;
 }
 
 .btn-green:hover {
     color: #FFFFFF;
-    background: #83C465;
+    background: #000;
 }
 
 .btn-teal {
@@ -110,11 +111,37 @@ body {
     background: #59ADA8;
     border-radius: 4px;
     height: 46px;
+    transition: all linear .1s;
 }
 
 .btn-teal:hover {
     color: #FFFFFF;
-    background: #83C465;
+    background: #000;
+}
+
+.btn-white {
+    display: inline-block;
+    padding: 14px 20px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    border-radius: 4px;
+    height: 46px;
+    border: 1px solid #000000;
+    transition: all linear .1s;
+}
+
+.btn-white:hover {
+    color: #FFFFFF;
+    background: #000;
 }
 
 .float-left {
