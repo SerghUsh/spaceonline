@@ -396,8 +396,9 @@ $(document).ready(function () {
                 return '<span class="tui-full-calendar-left-content">ALL DAY</span>';
             },
             time: function(schedule) {
-                return '<strong>' + moment(schedule.start.getTime()).format('HH:mm') + '</strong> ' +
-                    schedule.title +
+                return moment(schedule.start.getTime()).format('HH:mm') + '-' +
+                    moment(schedule.end.getTime()).format('HH:mm') + '<br>' +
+                    schedule.title + '<br>' +
                     '<button type="button" onclick="pay(event, ' + schedule.id + ')">Оплатить</button>';
             },
             goingDuration: function(schedule) {
@@ -592,7 +593,7 @@ $(document).ready(function () {
                 return 'Повторить : ' + schedule.recurrenceRule;
             },
             popupDetailBody: function(schedule) {
-                return 'Тело : ' + schedule.body;
+                return 'Тело : ' + schedule.body + 'test';
             },
             popupEdit: function() {
                 return 'Редактировать';
@@ -718,6 +719,11 @@ $(document).ready(function () {
         var changes = event.changes;
 
         calendarInstance.updateSchedule(schedule.id, schedule.calendarId, changes);
+    });
+
+    calendarInstance.on('beforeDeleteSchedule', function(event) {
+        var schedule = event.schedule;
+        calendarInstance.deleteSchedule(schedule.id, schedule.calendarId);
     });
 
     calendarInstance.on('clickSchedule', function(event) {
