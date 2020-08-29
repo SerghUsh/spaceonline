@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button class="btn-submit btn-form-grey" type="submit">Войти</button>
+                    <button class="btn btn-grey btn-submit" type="submit">Войти</button>
 
                     <div class="action-block">
                         <p>

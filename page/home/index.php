@@ -464,11 +464,10 @@
         </div>
     </section>
 
-
     <?php put('footer') ?>
 </main>
 
-<?php put('scripts') ?>
 <?php put('cookie') ?>
+<?php put('scripts') ?>
 </body>
 </html>

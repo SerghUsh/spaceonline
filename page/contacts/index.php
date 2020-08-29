@@ -69,7 +69,7 @@
 
                     <textarea name="" id="" cols="30" rows="10"></textarea>
 
-                    <button type="submit">Отправить</button>
+                    <button class="btn btn-grey" type="submit">Отправить</button>
                 </form>
             </div>
         </div>
