@@ -185,7 +185,8 @@ body {
 }
 
 @media (max-width: 767px) {
-    .container {
+    .container,
+    .container-lg {
         max-width: 320px;
     }
 

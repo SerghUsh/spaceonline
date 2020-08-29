@@ -188,14 +188,18 @@
 /* Главный блок "Выбери свою практику" */
 #choise_your_practises .slider__item {
     width: 481px;
-    margin-right: 95px;
+    margin-right: 96px;
 }
 
-#choise_your_practises .slider__item img.pract {
+.tile-block .image_wrapper {
+    position: relative;
+}
+
+.tile-block .image_wrapper img {
     width: 100%;
 }
 
-#choise_your_practises .slider__item h2 {
+.tile-block h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 22px;
@@ -203,12 +207,18 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #000000;
+    border-bottom: 1px solid #F1F1F1;
+    margin-bottom: 0; 
     margin-top: 3px;
 }
 
-#choise_your_practises .slider__item p {
+.tile-block h2 + .description-block {
+    margin-top: 15px;
+}
+
+.tile-block .description-block p {
     min-height: 72px;
-    margin-top: 1rem;
+    margin-top: 10px;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
@@ -216,8 +226,14 @@
     overflow: hidden;
 }
 
-#choise_your_practises .slider__item a {
+.tile-block .description-block {
     position: relative;
+}
+
+.tile-block .description-block a {
+    position: absolute;
+    right: 2px;
+    bottom: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 13px;
@@ -226,10 +242,9 @@
     text-decoration-line: underline;
     text-transform: uppercase;
     color: #000000;
-    left: 64px;
 }
 
-#choise_your_practises .slider__item a:hover {
+.tile-block .description-block a:hover {
     text-shadow: 0px 1px 1px black;
 }
 
@@ -510,98 +525,64 @@
     margin-right: 95px;
 }
 
-#future_events .slider__item h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 50px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #000000;
+#future_events .tile-block h2 {
+    border-bottom: none;
 }
 
-#future_events .image_wrapper {
-    position: relative;
-}
-
-#future_events .image_wrapper img {
-    width: 100%;
-}
-
-#future_events .image_wrapper .bottom_info {
+.tile-block .image_wrapper .bottom_info {
     position: absolute;
     left: 0;
     bottom: 0;
     z-index: 1;
     width: 100%;
     background: rgba(0, 0, 0, 0.31);
-    padding: 10px 29px 2px 31px;
+    padding: 8px 29px 2px 31px;
     font-size: 16px;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
 }
 
-#future_events .image_wrapper .bottom_info .free_place {
+.tile-block .image_wrapper .bottom_info .free_place {
     vertical-align: 2px;
 }
 
-#future_events .image_wrapper .bottom_info .date {
-    float: right;
-}
-
-#future_events .slider__item .free_place::before {
+.tile-block .image_wrapper .bottom_info .free_place::before {
     content: url('../css/imgs/free_place_holder.svg');
     line-height: 23px;
     margin-right: 12px;
     vertical-align: -3px;
 }
 
-#future_events .slider__item p.duration {
+.tile-block .image_wrapper .bottom_info .date {
+    float: right;
+}
+
+.tile-block p.duration {
     font-weight: normal;
     font-size: 16px;
-    line-height: 50px;
+    line-height: 21px;
     letter-spacing: 1px;
     color: rgba(0, 0, 0, 0.8);
-    margin-top: -16px;
+    margin-top: 0px;
     margin-left: 25px;
-    padding: 0;
     position: relative;
 }
 
-#future_events .slider__item p.duration::before {
+.tile-block p.duration::before {
     position: absolute;
     content: url('../css/imgs/stopwatch.svg');
     text-align: center;
-    left: -25px;
-    top: 5px;
+    left: -24px;
 }
 
-#future_events .slider__item p.state {
+.tile-block .description-block p {
     min-height: 72px;
-    margin-top: -5px;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #323232;
     overflow: hidden;
-}
-
-#future_events .slider__item a.small {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-    transition: all linear .1s;
-    text-decoration-line: underline;
-    text-transform: uppercase;
-    color: #000000;
-    left: 76px;
-}
-
-#future_events .slider__item a.small:hover {
-    text-shadow: 0px 1px 1px black;
 }
 
 #future_events .slider-manage-block {
@@ -869,28 +850,32 @@ a.write:active {
 
     #choise_your_practises .slider__item {
         width: 320px;
-        height: 346px;
         margin-right: 35px;
     }
 
-    #choise_your_practises .slider__item h2 {
+    .tile-block h2 {
         font-size: 14px;
         line-height: 22px;
         letter-spacing: 2px;
         margin-top: 13px;
+        padding-bottom: 7px;
     }
 
-    #choise_your_practises .slider__item p {
+    .tile-block h2 + .description-block {
+        margin-top: 8px;
+    }
+    .tile-block .description-block p {
         min-height: 80px;
-        margin-top: 1rem;
+        margin-top: 0;
         font-size: 14px;
         line-height: 20px;
     }
 
-    #choise_your_practises .slider__item a {
+    .tile-block .description-block a {
         font-size: 10px;
         line-height: 16px;
-        left: 64px;
+        right: 1px;
+        bottom: 1px;
     }
 
     .slider-manage-block {
@@ -1029,32 +1014,39 @@ a.write:active {
 
     #future_events .slider__item {
         width: 325px;
-        height: 366px;
         margin-right: 30px;
     }
 
-    #future_events .image_wrapper .bottom_info {
+    .tile-block .image_wrapper .bottom_info {
         width: 100%;
-        padding: 8px 24px 0px 15px;
+        padding: 2px 24px 1px 15px;
         font-size: 12px;
         line-height: 16px;
         letter-spacing: 1px;
     }
 
-    #future_events .image_wrapper .bottom_info .date {
-        margin-top: 3px;
+    .tile-block .image_wrapper .bottom_info .free_place::before {
+        line-height: 6px;
+        margin-right: 12px;
+        vertical-align: -3px;
     }
 
-    #future_events .slider__item h2 {
-        font-size: 14px;
-        line-height: 22px;
+    .tile-block .image_wrapper .bottom_info .date {
+        margin-top: 2px;
+    }
+
+    #future_events .tile-block h2 {
         margin-top: 9px;
     }
 
-    #future_events .slider__item p.duration {
+    .tile-block .description-block p {
+        margin-top: 9px;
+    }
+
+    #future_events .tile-block p.duration {
         font-size: 14px;
         line-height: 18px;
-        margin-top: 8px;
+        margin-top: 1px;
         margin-left: 25px;
         padding: 0;
     }
@@ -1062,19 +1054,6 @@ a.write:active {
     #future_events .slider__item p.duration::before {
         left: -25px;
         top: -1px;
-    }
-
-    #future_events .slider__item p.state {
-        min-height: 80px;
-        margin-top: 10px;
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    #future_events .slider__item a.small {
-        padding: 10px 0px 0px 45px;
-        font-size: 10px;
-        line-height: 16px;
     }
 
     #future_events .slider-manage-block {
@@ -1129,7 +1108,7 @@ a.write:active {
 
     .main_block__item .discription_text p.space {
         margin-bottom: 34px;
-        padding-top: 8px;
+        padding-top: 7px;
         width: 52%;
         min-height: 24px;
     }
@@ -1255,39 +1234,35 @@ a.write:active {
     }
 
     #choise_your_practises .slider__item {
-        height: 303px;
-        margin-right: 35px;
+        width: 280px;
     }
 
-    #choise_your_practises .slider__item img.pract {
-        width: 88%;
-    }
-
-    #choise_your_practises .slider__item h2 {
+    .tile-block h2 {
         font-size: 12px;
-        margin-top: 10px;
+        margin-top: 12px;
+        line-height: 18px;
     }
 
-    #choise_your_practises .slider__item p {
+    .tile-block  .description-block p {
         min-height: 70px;
-        width: 90%;
-        margin-top: 13px;
+        margin-top: 7px;
         font-size: 12px;
         line-height: 18px;
     }
 
-    #choise_your_practises .slider__item a {
+    .tile-block .description-block a {
         font-size: 9px;
         line-height: 16px;
-        left: 100px;
+        right: 1px;
+        bottom: 2px;
     }
 
     .slider-manage-block {
-        margin-top: -10px;
+        margin-top: -13px;
     }
 
     .slider-manage-block a {
-        width: 132px;
+        width: 134px;
         height: 25px;
         font-size: 8px;
         line-height: 12px;
@@ -1323,7 +1298,7 @@ a.write:active {
     }
 
     .slider-manage-block .dots .slick-dots {
-        margin-left: 13px;
+        margin-left: 14px;
         margin-top: -3px;
     }
 
@@ -1351,7 +1326,7 @@ a.write:active {
         font-size: 12px;
         line-height: 18px;
         letter-spacing: 0;
-        margin-right: 21px;
+        margin-right: 5px;
     }
 
     .title-right span:before {
@@ -1438,46 +1413,30 @@ a.write:active {
 
     #future_events .slider__item {
         width: 280px;
-        height: 327px;
-        margin-right: 30px;
     }
 
-    #future_events .image_wrapper .bottom_info {
-        padding: 6px 8px 0px 8px;
+    .tile-block .image_wrapper .bottom_info {
+        padding: 0px 8px 0px 8px;
         font-size: 10px;
     }
 
-    #future_events .image_wrapper .bottom_info .date {
+    .tile-block .image_wrapper .bottom_info .date {
         margin-top: 4px;
     }
 
-    #future_events .slider__item h2 {
-        font-size: 12px;
-        line-height: 22px;
+    #future_events .tile-block h2 {
         margin-top: 10px;
     }
 
-    #future_events .slider__item p.duration {
+    #future_events .tile-block p.duration {
         font-size: 12px;
-        margin-top: 2px;
+        margin-top: 0px;
         margin-left: 0px;
         padding: 0;
     }
 
-    #future_events .slider__item p.state {
-        min-height: 80px;
-        margin-top: 8px;
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    #future_events .slider__item a.small {
-        padding: 0px 0px 0px 28px;
-        font-size: 9px;
-    }
-
     #future_events .slider-manage-block {
-        margin-top: -18px;
+        margin-top: -12px;
     }
 
     #from_organizers {

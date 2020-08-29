@@ -40,7 +40,7 @@
 }
 
 #event-content .title-center {
-    margin-top: 7px;
+    margin-top: 25px;
     margin-bottom: 23px;
     overflow: hidden;
     text-align: center;
@@ -273,59 +273,24 @@
 
 /* Main content block*/
 
-.list__block {
-    margin-right: 92px;
-    margin-bottom: 61px;
-    width: 482px;
-    height: 100%;
-    overflow: hidden;
+
+#event-content .tile-block h2 {
+   border-bottom: none;
 }
 
-.top-block {
-    margin-bottom: 22px;
-}
-
-.list__block h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 50px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #000000;
-    margin-top: -3px;
-}
-
-.list__block .image_size {
-    position: relative;
-}
-
-.list__block .image_size img {
-    width: 100%;
-}
-
-.list__block .image_size .icon-video {
+.tile-block .image_wrapper .icon-video {
     position: absolute;
     content: url(../css/imgs/event_icon_video.svg);
     left: 31px;
     top: 21px;
 }
 
-.list__block .image_size .bottom-info {
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    z-index: 1;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.31);
-    padding: 8px 29px 2px 31px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
+#event-content .tile-block .image_wrapper .bottom_info {
+    bottom: 4px;
+    padding: 8px 29px 8px 31px;
 }
 
-.list__block .image_size .bottom-info .last_event {
+.tile-block .image_wrapper .bottom-info .last_event {
     vertical-align: 3px;
 }
 

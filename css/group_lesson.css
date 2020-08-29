@@ -19,7 +19,7 @@
 }
 
 #group_lesson-list-content .group_lesson-filter-group:not(:last-child) {
-    margin-right: 0px;
+    margin-right: 65px;
 }
 
 #group_lesson-list-content .group_lesson-filter-wrapper label {
@@ -50,9 +50,6 @@
     background-position-y: center;
 }
 
-#group_lesson-list-content .group_lesson-filter-wrapper select.all_practice {
-    background-position-x: calc(35% - 5px);
-}
 
 /* Group lessons Index */
 
@@ -67,7 +64,7 @@
 }
 
 #open-group-lesson .image_block img {
-	width: calc(100%-375px);
+    width: calc(100% - 430px);
 }
 
 #open-group-lesson h3 {
@@ -86,8 +83,9 @@
 }
 
 #open-group-lesson .content-block {
-	width: 72.2%;
+	width: calc(100% - 440px);
     border-right: 2px solid #F8F8F8;
+    margin-right: 20px;
 }
 
 #open-group-lesson .content-block .image_block {
@@ -96,7 +94,7 @@
 
 #open-group-lesson .content-block .right_info {
 	position: absolute;
-	width: 375px;
+	width: 430px;
 	top: 1px;
     right: 34px;
 	font-size: 22px;
@@ -144,8 +142,9 @@
 	font-size: 22px;
 	line-height: 28px;	
 }
+
 #open-group-lesson .specialist-block {
-	width: 26%;
+    width: 420px;
 }
 
 #open-group-lesson .calendar {
@@ -188,121 +187,33 @@
 
 /* Main Block */
 
-.main-list_block {
-	margin-bottom: 73px;
+
+#main-list_block .tile-block h2 {
+	border-bottom: none;
 }
 
-.wrapper__block {
-	margin-right: 92px;
-	margin-bottom: 69px;
-	width: 482px;
-	height: 100%;
-	overflow: hidden;
-    margin-right: 92px;
-    margin-bottom: 64px;
-    width: 482px;
-    height: 100%;
-    overflow: hidden;
-}
-
-.bottom {
-	margin-bottom: -13px;
-}
-
-.wrapper__block h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 50px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #000000;
-    margin-top: -5px;
-}
-
-.wrapper__block .image_size {
-    position: relative;
-}
-
-.wrapper__block .image_size img {
-    width: 100%;
-}
-
-.wrapper__block .image_size .bottom_info {
-    position: absolute;
+#main-list_block .tile-block .image_wrapper .bottom_info {
     left: 0;
     bottom: 5px;
-    z-index: 1;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.31);
-    padding: 8px 29px 2px 31px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
+    padding: 6px 29px 3px 31px;
 }
 
-.wrapper__block .image_size .bottom_info .lesson_name {
-    vertical-align: 2px;
-}
-
-.wrapper__block .lesson_name::after {
+.tile-block .lesson_name::after {
     content: url('../css/imgs/group_lesson_icon.svg');
     margin-left: 20px;
-    vertical-align: -6px;
+    vertical-align: -4px;
 }
 
-.wrapper__block p.duration {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 50px;
-    letter-spacing: 1px;
-    color: rgba(0, 0, 0, 0.8);
-    margin-top: -16px;
-    margin-left: 25px;
-    padding: 0;
-    position: relative;
+#main-list_block .tile-block h2 {
+    line-height: 40px;
+    margin-top: 0px;
 }
 
-.wrapper__block p.state {
-    font-size: 16px;
-    line-height: 24px;
+#main-list_block .tile-block p.duration {
+    margin-top: 3px;
 }
 
-.wrapper__block p.duration::before {
-    position: absolute;
-    content: url('../css/imgs/stopwatch.svg');
-    text-align: center;
-    left: -25px;
-    top: 5px;
-}
 
-.wrapper__block p.state {
-    min-height: 72px;
-    margin-top: -5px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #323232;
-    overflow: hidden;
-}
-
-.wrapper__block a.small {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-    transition: all linear .1s;
-    text-decoration-line: underline;
-    text-transform: uppercase;
-    color: #000000;
-    left: 76px;
-}
-
-.wrapper__block a.small:hover {
-    text-shadow: 0px 1px 1px black;
-}
 
 /* Media Style*/
 
@@ -412,125 +323,53 @@
 	    padding-right: 28px;
 	}
 
-	.main-list_block {
-		margin-bottom: 45px;
-	}
-	.wrapper__block {
-		margin: 18px 0px 15px 20px;
-	    width: 320px;
+	#main-list_block {
+  		margin-top: 17px;
 	}
 
-	.wrapper__block .image_size .bottom_info {
+/*	#main-list_block .container {
+        padding: 0 39px;
+    }
+
+    #main-list_block .row {
+        margin-left: -23px;
+        margin-right: -23px;
+    }
+
+    #main-list_block .col {
+        padding: 0 23px;
+    }*/
+
+    #main-list_block .tile-block .image_wrapper .bottom_info {
 	    left: 0;
 	    bottom: 5px;
-	    padding: 8px 29px 2px 31px;
+	    padding: 3px 21px 3px 21px;
 	    font-size: 14px;
-	}
-	.wrapper__block .lesson_name::after {
-	    content: url(../css/imgs/group_lesson_icon_middle.svg);
-	    margin-left: 15px;
-	    vertical-align: -3px;
+		line-height: 18px;
+		letter-spacing: 1px;
 	}
 
-	.wrapper__block h2 {
-	    font-size: 14px;
+	.tile-block .lesson_name::after {
+	    content: url(../css/imgs/group_lesson_icon_middle.svg);
+	    margin-left: 20px;
+	    vertical-align: -2px;
+	}
+
+	#main-list_block .tile-block h2 {
 	    line-height: 22px;
 	    margin-top: 7px;
 	}
 
-	.wrapper__block p.duration {
+	#main-list_block .tile-block p.duration {
+	    margin-top: 0px;
 	    font-size: 14px;
-	    line-height: 18px;
-	    margin-top: 9px;
-	    margin-left: 25px;
-	    padding: 0;
+		line-height: 18px;
+		letter-spacing: 1px;
 	}
 
-	.wrapper__block p.duration::before {
-	    left: -25px;
-	    top: -2px;
+	#main-list_block .tile-block .description-block p {
+	    margin-top: 11px;
 	}
-
-	.wrapper__block p.state {
-	    min-height: 80px;
-	    margin-top: 8px;
-	    font-size: 14px;
-	    line-height: 20px;
-	}
-
-	.wrapper__block a.small {
-	    font-size: 10px;
-	    left: 123px;
-	}
-
-    #group_lesson-list-content {
-        padding: 7px 20px;
-        text-align: left;
-    }
-
-    #group_lesson-list-content .group_lesson-filter-wrapper label {
-        font-size: 16px;
-        margin-right: 18px;
-    }
-
-    #group_lesson-list-content .group_lesson-filter-wrapper select {
-        font-size: 16px;
-        line-height: 37px;
-        padding-right: 28px;
-    }
-
-    .main-list_block {
-        margin-bottom: 45px;
-    }
-
-    .wrapper__block {
-        margin: 18px 0px 15px 20px;
-        width: 320px;
-    }
-
-    .wrapper__block .image_size .bottom_info {
-        left: 0;
-        bottom: 5px;
-        padding: 8px 29px 2px 31px;
-        font-size: 14px;
-    }
-
-    .wrapper__block .lesson_name::after {
-        content: url(../css/imgs/group_lesson_icon_middle.svg);
-        margin-left: 15px;
-        vertical-align: -3px;
-    }
-
-    .wrapper__block h2 {
-        font-size: 14px;
-        line-height: 22px;
-        margin-top: 7px;
-    }
-
-    .wrapper__block p.duration {
-        font-size: 14px;
-        line-height: 18px;
-        margin-top: 9px;
-        margin-left: 25px;
-        padding: 0;
-    }
-
-    .wrapper__block p.duration::before {
-        left: -25px;
-        top: -2px;
-    }
-
-    .wrapper__block p.state {
-        min-height: 80px;
-        margin-top: 8px;
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .wrapper__block a.small {
-        font-size: 10px;
-        left: 123px;
-    }
 
 }
 
