@@ -279,12 +279,15 @@
 }
 
 .event-actions-block a {
-    height: 50px;
     font-weight: normal;
     font-size: 24px;
     text-transform: none;
     letter-spacing: 0;
     padding: 14px 18px;
+    font-family: ProximaNova;
+}
+.event-actions-block a.btn-white {
+    padding-top: 12px;
 }
 
 .event-actions-block span {
@@ -626,7 +629,7 @@
     }
 
     .event-actions-block a.btn-white {
-        line-height: 18px;
+        padding-top: 5px;
     }
 
     .event-actions-block a:not(:last-child) {
@@ -869,7 +872,7 @@
     }
 
     .event-actions-block a.btn-white {
-        line-height: 8px;
+        padding-top: 6px;
     }
 
     .event-actions-block a + a {

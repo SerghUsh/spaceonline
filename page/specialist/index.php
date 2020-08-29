@@ -28,9 +28,7 @@
 
                             <span class="dot">•</span>
 
-                            <span class="experience">
-                        4 года
-                    </span>
+                            <span class="experience">4 года</span>
                         </div>
 
                         <div class="specialist-name">
@@ -79,7 +77,7 @@
                     необходимо заполнить и отправить на наш почтовый адресс.
                 </p>
 
-                <img src="/img/calendar.png" alt="calendar" style="width: 100%">
+                <?php put('calendar') ?>
             </div>
 
             <div id="tab-group" class="tab tab-group">

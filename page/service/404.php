@@ -21,7 +21,7 @@
                 <p class="error-text">
                     Извините данной страницы не существует
                 </p>
-                <a class="btn-white" href="<?php href('home') ?>">Перейти на главную</a>
+                <a class="btn btn-white uppercase" href="<?php href('home') ?>">Перейти на главную</a>
             </div>
         </div>
     </div>

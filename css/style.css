@@ -30,6 +30,14 @@ body {
     font-family: 'ProximaNova', sans-serif;
 }
 
+body.blur {
+    overflow: hidden;
+}
+
+body.blur main {
+    filter: blur(4px);
+}
+
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -45,9 +53,9 @@ body {
 }
 
 .container {
-    max-width: 1660px;
+    max-width: 1720px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 45px;
 }
 
 .container-sm {
@@ -71,47 +79,35 @@ body {
     display: none;
 }
 
-.btn-green {
+.btn {
     display: inline-block;
     padding: 14px 20px;
     font-family: Montserrat, sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 22px;
     text-align: center;
     letter-spacing: 2px;
-    text-transform: uppercase;
     text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    transition: all linear .1s;
+    outline: none;
+}
+
+.btn-green {
     color: #FFFFFF;
     background: #83C465;
-    border-radius: 4px;
-    height: 46px;
-    transition: all linear .1s;
 }
 
 .btn-green:hover {
-    color: #FFFFFF;
     background: #000;
 }
 
 .btn-teal {
-    display: inline-block;
-    padding: 14px 20px;
-    font-family: Montserrat, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
     color: #FFFFFF;
     background: #59ADA8;
-    border-radius: 4px;
-    height: 46px;
-    transition: all linear .1s;
 }
 
 .btn-teal:hover {
@@ -120,28 +116,33 @@ body {
 }
 
 .btn-white {
-    display: inline-block;
-    padding: 14px 20px;
-    font-family: Montserrat, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
+    padding-top: 12px;
     color: #000;
     background: #fff;
-    border-radius: 4px;
-    height: 46px;
-    border: 1px solid #000000;
-    transition: all linear .1s;
+    border: 2px solid #000000;
 }
 
 .btn-white:hover {
     color: #FFFFFF;
     background: #000;
+}
+
+.btn-grey {
+    color: #fff;
+    background: #DCDCDC;
+}
+
+.btn-grey:hover {
+    color: #FFFFFF;
+    background: #83C465;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 .float-left {
@@ -152,19 +153,77 @@ body {
     float: right !important;
 }
 
-.align-left {
-    text-align: left !important;
+#cookie-block {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.25);
+    padding: 44px 0;
+    background: #fff;
 }
 
-.align-center {
-    text-align: center !important;
+#cookie-block p {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    width: calc(100% - 320px);
+    float: left;
 }
 
-.align-right {
-    text-align: right !important;
+#cookie-block p a {
+    color: #8F8F8F;
+    text-decoration: none;
+}
+
+#cookie-block button {
+    float: right;
+    width: 291px;
+    margin-top: 7px;
+}
+
+@media (max-width: 1719px) {
+    #cookie-block p {
+        font-size: 22px;
+        letter-spacing: 0;
+    }
+
+    #cookie-block button {
+        float: right;
+        width: 291px;
+        margin-top: 7px;
+    }
+}
+
+@media (max-width: 1439px) {
+    #cookie-block p {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+
+    #cookie-block button {
+        float: right;
+        width: 291px;
+        margin-top: 7px;
+    }
 }
 
 @media (max-width: 1199px) {
+    #cookie-block {
+        padding: 20px 0;
+    }
+
+    #cookie-block p {
+        font-size: 16px;
+        letter-spacing: 0;
+        width: calc(100% - 200px);
+    }
+
+    #cookie-block button {
+        width: 180px;
+    }
+
     .container {
         max-width: 768px;
     }
@@ -182,9 +241,33 @@ body {
         width: calc(100% / 2);
         padding: 0 10px;
     }
+
+    .btn {
+        font-size: 20px;
+        letter-spacing: 0;
+        padding: 6px 20px;
+        height: 35px;
+    }
+
+    .btn-white {
+        padding: 4px 20px;
+    }
 }
 
 @media (max-width: 767px) {
+    #cookie-block p {
+        float: none;
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #cookie-block button {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
     .container {
         max-width: 320px;
     }
@@ -196,5 +279,16 @@ body {
 
     .col {
         width: 100%;
+    }
+
+    .btn {
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 2px 20px;
+        height: 25px;
+    }
+
+    .btn-white {
+        padding: 0 20px;
     }
 }
