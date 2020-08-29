@@ -58,7 +58,7 @@
                             </select>
                         </div>
 
-                        <button class="btn-form-white" type="button">Определить</button>
+                        <button class="btn btn-white" type="button">Определить</button>
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button class="btn-submit btn-form-green" type="submit">Регистрация</button>
+                    <button class="btn btn-green btn-submit" type="submit">Регистрация</button>
 
                     <div class="action-block">
                         <p>

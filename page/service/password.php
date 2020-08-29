@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button class="btn-submit btn-form-green" type="submit">Отправить</button>
+                    <button class="btn btn-green btn-submit" type="submit">Отправить</button>
 
                     <div class="action-block">
                         <p>Вернутся назад на страницу <a class="link-black" href="<?php href('service', 'login') ?>">Входа</a></p>

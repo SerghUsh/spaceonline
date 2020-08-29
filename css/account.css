@@ -2,6 +2,11 @@
     padding: 37px 0;
 }
 
+#account-content form .btn {
+    font-weight: 400;
+    width: 270px;
+}
+
 .account-title {
     font-family: Montserrat, sans-serif;
     font-weight: bold;
@@ -67,9 +72,6 @@
     margin-bottom: 11px;
 }
 
-.account-menu {
-}
-
 .account-menu .item {
     display: block;
     font-size: 20px;
@@ -77,6 +79,7 @@
     padding-left: 61px;
     border-top: 1px solid #D5D5D5;
     text-align: left;
+    background-repeat: no-repeat;
 }
 
 .account-menu a {
@@ -107,47 +110,49 @@
 }
 
 .account-registrations {
-    background: url("/css/imgs/account-registrations.svg") no-repeat;
+    background-image: url("/css/imgs/account-registrations.svg");
     background-position: 5px 13px;
 }
 
 .account-calendar {
-    background: url("/css/imgs/account-calendar.svg") no-repeat;
+    background-image: url("/css/imgs/account-calendar.svg");
     background-position: 2px 13px;
 }
 
 .account-favorites {
-    background: url("/css/imgs/account-favorites.svg") no-repeat;
+    background-image: url("/css/imgs/account-favorites.svg");
     background-position: 5px 19px;
 }
 
 .account-profile {
-    background: url("/css/imgs/account-profile.svg") no-repeat;
+    background-image: url("/css/imgs/account-profile.svg");
     background-position: 4px 17px;
 }
 
 .account-profinfo {
-    background: url("/css/imgs/account-profinfo.svg") no-repeat;
+    background-image: url("/css/imgs/account-profinfo.svg");
     background-position: 5px 15px;
 }
 
 .account-statistic {
-    background: url("/css/imgs/account-statistic.svg") no-repeat;
+    background-image: url("/css/imgs/account-statistic.svg");
     background-position: 0px 15px;
 }
 
 .account-settings {
-    background: url("/css/imgs/account-settings.svg") no-repeat;
+    background-image: url("/css/imgs/account-settings.svg");
     background-position: 0px 15px;
 }
 
 .account-logout {
-    background: url("/css/imgs/account-logout.svg") no-repeat;
+    background-image: url("/css/imgs/account-logout.svg");
     background-position: 5px 13px;
 }
 
 .account-info .btn-green {
     width: 100%;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .account-info .text {
@@ -286,6 +291,7 @@
     padding: 14px 18px;
     font-family: ProximaNova;
 }
+
 .event-actions-block a.btn-white {
     padding-top: 12px;
 }
@@ -344,7 +350,7 @@
     color: #464646;
 }
 
-.diploma-block .btn-form-white {
+.diploma-block .btn-white {
     margin: 0;
 }
 
@@ -390,8 +396,21 @@
 .instruction-block p:not(:last-child) {
     margin-bottom: 30px;
 }
-
+@media (max-width: 1549px) {
+    .event-block {
+        padding: 22px 22px 24px 221px;
+    }
+    .event-actions-block {
+        position: static;
+        padding: 33px 0 0 0;
+        width: 100%;
+    }
+}
 @media (max-width: 1199px) {
+    #account-content form .btn {
+        width: 226px;
+    }
+
     .btn-meeting {
         position: static;
         float: right;
@@ -532,7 +551,7 @@
         width: auto;
         font-size: 12px;
         line-height: 22px;
-        padding: 9px 24px;
+        padding: 7px 24px;
         height: 35px;
     }
 
@@ -574,7 +593,7 @@
         margin-bottom: 16px;
     }
 
-    .diploma-block .btn-form-white {
+    .diploma-block .btn-white {
         border: 1px solid #000;
         padding: 6px 15px 7px;
         width: 154px;
@@ -586,6 +605,10 @@
 
     .filter-menu a {
         font-size: 14px;
+    }
+
+    .filter-menu a:not(:last-child) {
+        margin-right: 38px;
     }
 
     .event-block {
@@ -647,6 +670,10 @@
 }
 
 @media (max-width: 767px) {
+    #account-content form .btn {
+        width: 100%;
+    }
+
     .btn-meeting {
         float: none;
         height: 25px;

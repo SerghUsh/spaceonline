@@ -378,7 +378,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn-submit-margin btn-form-blue" type="submit">Обновить профиль</button>
+                            <button class="btn btn-blue btn-submit-margin" type="submit">Обновить профиль</button>
                         </form>
                     </div>
                 </div>
@@ -513,7 +513,7 @@
                                 <textarea id="description" data-label="Информация обо мне ({count} символа)">Психотерапевт. Специалист в области гештальт-терапии. Специализируется на проблемах межличностного общения и разрешении конфликтов. Сертифицированный коуч. Спортивный коуч. Работает со спортсменами и спортивными командами. Организатор Образовательного проекта для психологов «ПСИКОН». Марие 35 лет, из которых она 12 лет работает психологом и психотерапевтом.</textarea>
                             </div>
 
-                            <button class="btn-submit-margin btn-form-blue" type="submit">Обновить профиль</button>
+                            <button class="btn btn-blue btn-submit-margin" type="submit">Обновить профиль</button>
                         </form>
                     </div>
 
@@ -537,7 +537,7 @@
                                 1. Диплом ( название ).png
                             </div>
 
-                            <button class="btn-submit-margin btn-form-white" type="submit">Редактировать</button>
+                            <button class="btn btn-white btn-submit-margin" type="submit">Редактировать</button>
                         </div>
                     </div>
 
@@ -569,7 +569,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn-submit-margin btn-form-blue" type="submit">Добавить грамоту</button>
+                            <button class="btn btn-blue btn-submit-margin" type="submit">Добавить грамоту</button>
                         </form>
                     </div>
                 </div>
@@ -601,7 +601,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn-submit-margin btn-form-blue" type="submit">Подтвердить</button>
+                            <button class="btn btn-blue btn-submit-margin" type="submit">Подтвердить</button>
                         </form>
                     </div>
 
@@ -619,7 +619,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn-submit-margin btn-form-red" type="submit">Удалить профиль</button>
+                            <button class="btn btn-red btn-submit-margin" type="submit">Удалить профиль</button>
                         </form>
                     </div>
                 </div>
