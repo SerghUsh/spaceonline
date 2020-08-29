@@ -317,6 +317,8 @@ $(document).ready(function () {
     function _date(date) {
         var dateObj = new Date(date);
         var dateString = dateObj.toISOString();
+        //var dateString = moment(date).format('YYYY.MM.DD hh:mm a')
+        // YYYY.MM.DD hh:mm a
         console.log(date, dateString);
         // Contents of above date object is converted
         // into a string using toISOString() function.
@@ -374,37 +376,7 @@ $(document).ready(function () {
                 borderColor: '#59AD6B'
             },
         ],
-        schedule: [
-            {
-                id: 1, // [ string ] The unique schedule id depends on calendar id
-                calendarId: '1', // string The unique calendar id
-                title: 'Личная консультация', // [ string ] The schedule title
-                body: 'Личная консультация',  // [ string ] The schedule body text which is text/plain
-                start: _date('2020-08-28 14:35:32'),  // [stringTZDate] The start time. It's 'string' for input. It's 'TZDate' for output like event handler.
-                end: _date('2020-08-28 16:35:32'),  // [stringTZDate] The end time. It's 'string' for input. It's 'TZDate' for output like event handler.
-                goingDuration: 0,  // [number] The travel time: Going duration minutes
-                comingDuration: 0,  // [number] The travel time: Coming duration minutes
-                isAllDay: false,  // [boolean] The all day schedule
-                category: 'task',  // [string] The schedule type('milestone', 'task', allday', 'time')
-                dueDateClass: '',  // [string] The task schedule type string (any string value is ok and mandatory if category is 'task')
-                location: '',  // [string] The location
-                attendees: [],  // [Array] The attendees
-                recurrenceRule: '',  // [string] The recurrence rule
-                isPending: false,  // [boolean] The in progress flag to do something like network job(The schedule will be transparent.)
-                isFocused: false,  // [boolean] The focused schedule flag
-                isVisible: true,  // [boolean] The schedule visibility flag
-                isReadOnly: false,  // [boolean] The schedule read-only flag
-                isPrivate: false,  // [boolean] The private schedule
-                color: '',  // [string] The schedule text color
-                bgColor: '',  // [string] The schedule background color
-                dragBgColor: '',  // [string] The schedule background color when dragging it
-                borderColor: '',  // [string] The schedule left border color
-                customStyle: '',  // [string] The schedule's custom css class
-                raw: '',  // [any] The user data
-                state: ''  // [string] The schedule's state ('busy', 'free')
-            }
-        ],
-        /*template: {
+        template: {
             milestone: function(schedule) {
                 return '<span class="calendar-font-icon ic-milestone-b"></span> <span style="background-color: ' + schedule.bgColor + '">' + schedule.title + '</span>';
             },
@@ -424,7 +396,9 @@ $(document).ready(function () {
                 return '<span class="tui-full-calendar-left-content">ALL DAY</span>';
             },
             time: function(schedule) {
-                return '<strong>' + moment(schedule.start.getTime()).format('HH:mm') + '</strong> ' + schedule.title;
+                return '<strong>' + moment(schedule.start.getTime()).format('HH:mm') + '</strong> ' +
+                    schedule.title +
+                    '<button type="button" onclick="pay(event, ' + schedule.id + ')">Оплатить</button>';
             },
             goingDuration: function(schedule) {
                 return '<span class="calendar-icon ic-travel-time"></span>' + schedule.goingDuration + 'min.';
@@ -516,81 +490,84 @@ $(document).ready(function () {
             collapseBtnTitle: function() {
                 return '<span class="tui-full-calendar-icon tui-full-calendar-ic-arrow-solid-top"></span>';
             },
-            timezoneDisplayLabel: function(timezoneOffset, displayLabel) {
-                var gmt, hour, minutes;
-
-                if (!displayLabel) {
-                    gmt = timezoneOffset < 0 ? '-' : '+';
-                    hour = Math.abs(parseInt(timezoneOffset / 60, 10));
-                    minutes = Math.abs(timezoneOffset % 60);
-                    displayLabel = gmt + getPadStart(hour) + ':' + getPadStart(minutes);
-                }
-
-                return displayLabel;
-            },
-            timegridDisplayPrimayTime: function(time) {
-                // will be deprecated. use 'timegridDisplayPrimaryTime'
-                var meridiem = 'am';
-                var hour = time.hour;
-
-                if (time.hour > 12) {
-                    meridiem = 'pm';
-                    hour = time.hour - 12;
-                }
-
-                return hour + ' ' + meridiem;
-            },
             timegridDisplayPrimaryTime: function(time) {
-                var meridiem = 'am';
-                var hour = time.hour;
-
-                if (time.hour > 12) {
-                    meridiem = 'pm';
-                    hour = time.hour - 12;
-                }
-
-                return hour + ' ' + meridiem;
+                return time.hour+':00';
             },
-            timegridDisplayTime: function(time) {
-                return getPadStart(time.hour) + ':' + getPadStart(time.hour);
-            },
-            timegridCurrentTime: function(timezone) {
-                var templates = [];
-
-                if (timezone.dateDifference) {
-                    templates.push('[' + timezone.dateDifferenceSign + timezone.dateDifference + ']<br>');
-                }
-                // DOTO add moment
-                /!*templates.push(moment(timezone.hourmarker).format('HH:mm a'));*!/
-
-                return templates.join('');
-            },
+            //timezoneDisplayLabel: function(timezoneOffset, displayLabel) {
+            //    var gmt, hour, minutes;
+//
+            //    if (!displayLabel) {
+            //        gmt = timezoneOffset < 0 ? '-' : '+';
+            //        hour = Math.abs(parseInt(timezoneOffset / 60, 10));
+            //        minutes = Math.abs(timezoneOffset % 60);
+            //        displayLabel = gmt + getPadStart(hour) + ':' + getPadStart(minutes);
+            //    }
+//
+            //    return displayLabel;
+            //},
+            //timegridDisplayPrimayTime: function(time) {
+            //    // will be deprecated. use 'timegridDisplayPrimaryTime'
+            //    var meridiem = 'am';
+            //    var hour = time.hour;
+//
+            //    if (time.hour > 12) {
+            //        meridiem = 'pm';
+            //        hour = time.hour - 12;
+            //    }
+//
+            //    return hour + ' ' + meridiem;
+            //},
+            //timegridDisplayPrimaryTime: function(time) {
+            //    var meridiem = 'am';
+            //    var hour = time.hour;
+//
+            //    if (time.hour > 12) {
+            //        meridiem = 'pm';
+            //        hour = time.hour - 12;
+            //    }
+//
+            //    return hour + ' ' + meridiem;
+            //},
+            //timegridDisplayTime: function(time) {
+            //    return getPadStart(time.hour) + ':' + getPadStart(time.hour);
+            //},
+            //timegridCurrentTime: function(timezone) {
+            //    var templates = [];
+//
+            //    if (timezone.dateDifference) {
+            //        templates.push('[' + timezone.dateDifferenceSign + timezone.dateDifference + ']<br>');
+            //    }
+            //    // DOTO add moment
+            //    /!*templates.push(moment(timezone.hourmarker).format('HH:mm a'));*!/
+//
+            //    return templates.join('');
+            //},
             popupIsAllDay: function() {
-                return 'All Day';
+                return 'Весь день';
             },
             popupStateFree: function() {
-                return 'Free';
+                return 'Свободно';
             },
             popupStateBusy: function() {
-                return 'Busy';
+                return 'Занято';
             },
             titlePlaceholder: function() {
-                return 'Subject';
+                return 'Тема';
             },
             locationPlaceholder: function() {
-                return 'Location';
+                return 'Локация';
             },
             startDatePlaceholder: function() {
-                return 'Start date';
+                return 'Дата начала';
             },
             endDatePlaceholder: function() {
-                return 'End date';
+                return 'Дата окончания';
             },
             popupSave: function() {
-                return 'Save';
+                return 'Сохранить';
             },
             popupUpdate: function() {
-                return 'Update';
+                return 'Обновить';
             },
             popupDetailDate: function(isAllDay, start, end) {
                 var isSameDate = moment(start).isSame(end);
@@ -603,34 +580,169 @@ $(document).ready(function () {
                 return (moment(start).format('YYYY.MM.DD hh:mm a') + ' - ' + moment(end).format(endFormat));
             },
             popupDetailLocation: function(schedule) {
-                return 'Location : ' + schedule.location;
+                return 'Локация : ' + schedule.location;
             },
             popupDetailUser: function(schedule) {
-                return 'User : ' + (schedule.attendees || []).join(', ');
+                return 'Пользователь : ' + (schedule.attendees || []).join(', ');
             },
             popupDetailState: function(schedule) {
-                return 'State : ' + schedule.state || 'Busy';
+                return 'Состояние : ' + schedule.state || 'Занято';
             },
             popupDetailRepeat: function(schedule) {
-                return 'Repeat : ' + schedule.recurrenceRule;
+                return 'Повторить : ' + schedule.recurrenceRule;
             },
             popupDetailBody: function(schedule) {
-                return 'Body : ' + schedule.body;
+                return 'Тело : ' + schedule.body;
             },
             popupEdit: function() {
-                return 'Edit';
+                return 'Редактировать';
             },
             popupDelete: function() {
-                return 'Delete';
+                return 'Удалить';
             }
-    }*/
+        }
     });
 
     // You can get calendar instance
     var calendarInstance = $calEl.data('tuiCalendar');
 
-    //calendarInstance.createSchedules([...]);
+    /*
+    {
+        id: 1, // [ string ] The unique schedule id depends on calendar id
+        calendarId: '1', // [ string ] The unique calendar id
+        title: 'Личная консультация', // [ string ] The schedule title
+        body: 'Личная консультация',  // [ string ] The schedule body text which is text/plain
+        start: _date('2020-08-30 14:35:32'),  // [stringTZDate] The start time. It's 'string' for input. It's 'TZDate' for output like event handler.
+        end: _date('2020-08-30 16:35:32'),  // [stringTZDate] The end time. It's 'string' for input. It's 'TZDate' for output like event handler.
+        //goingDuration: 0,  // [number] The travel time: Going duration minutes
+        //comingDuration: 0,  // [number] The travel time: Coming duration minutes
+        isAllDay: false,  // [boolean] The all day schedule
+        category: 'time',  // [string] The schedule type('milestone', 'task', allday', 'time')
+        dueDateClass: '',  // [string] The task schedule type string (any string value is ok and mandatory if category is 'task')
+        location: '',  // [string] The location
+        attendees: [],  // [Array] The attendees
+        recurrenceRule: '',  // [string] The recurrence rule
+        isPending: false,  // [boolean] The in progress flag to do something like network job(The schedule will be transparent.)
+        isFocused: false,  // [boolean] The focused schedule flag
+        isVisible: true,  // [boolean] The schedule visibility flag
+        isReadOnly: false,  // [boolean] The schedule read-only flag
+        isPrivate: false,  // [boolean] The private schedule
+        color: '',  // [string] The schedule text color
+        bgColor: '',  // [string] The schedule background color
+        dragBgColor: '',  // [string] The schedule background color when dragging it
+        borderColor: '',  // [string] The schedule left border color
+        customStyle: '',  // [string] The schedule's custom css class
+        raw: '',  // [any] The user data
+        state: 'busy'  // [string] The schedule's state ('busy', 'free')
+    }
+    */
+
+    // https://github.com/nhn/tui.calendar/blob/master/docs/getting-started.md#usage
+    calendarInstance.createSchedules([
+        {
+            id: '1',
+            calendarId: '1',
+            title: 'Личная консультация',
+            category: 'time',
+            dueDateClass: '',
+            start: '2020-08-30T10:30:00+02:00',
+            end: '2020-08-30T12:30:00+02:00'
+        },
+        {
+            id: '2',
+            calendarId: '2',
+            title: 'Групповое занятие',
+            category: 'time',
+            dueDateClass: '',
+            start: '2020-08-30T14:30:00+02:00',
+            end: '2020-08-30T15:00:00+02:00',
+            isReadOnly: true    // schedule is read-only
+        },
+        {
+            id: '3',
+            calendarId: '3',
+            title: 'Событие',
+            category: 'time',
+            dueDateClass: '',
+            start: '2020-08-30T16:00:00+02:00',
+            end: '2020-08-30T18:00:00+02:00',
+            isReadOnly: true    // schedule is read-only
+        }
+    ]);
+
+    /*
+    Update a schedule
+    calendar.updateSchedule(schedule.id, schedule.calendarId, {
+        start: startTime,
+        end: endTime
+    });
+    Delete a schedule
+    calendar.deleteSchedule(schedule.id, schedule.calendarId);
+    */
+
+    $('#calendar-menu .today').on('click', function () {
+        calendarInstance.today();
+    });
+    $('#calendar-menu .prev').on('click', function () {
+        calendarInstance.prev();
+    });
+    $('#calendar-menu .next').on('click', function () {
+        calendarInstance.next();
+    });
+
+    calendarInstance.on('beforeCreateSchedule', function(event) {
+        console.log(event);
+        var triggerEventName = event.triggerEventName;
+
+        /*if (triggerEventName === 'click') {
+            // open writing simple schedule popup
+            schedule = {...};
+        } else if (triggerEventName === 'dblclick') {
+            // open writing detail schedule popup
+            schedule = {...};
+        }*/
+
+        calendarInstance.createSchedules([{
+            id: 10,
+            calendarId: event.calendarId,
+            title: event.title,
+            category: 'time',
+            dueDateClass: '',
+            start: event.start,
+            end: event.end,
+        }]);
+    });
+
+    calendarInstance.on('beforeUpdateSchedule', function(event) {
+        var schedule = event.schedule;
+        var changes = event.changes;
+
+        calendarInstance.updateSchedule(schedule.id, schedule.calendarId, changes);
+    });
+
+    calendarInstance.on('clickSchedule', function(event) {
+        var schedule = event.schedule;
+        console.log('clickSchedule', schedule);
+        lastClickSchedule = schedule;
+        // focus the schedule
+        /* if (lastClickSchedule) {
+             calendarInstance.updateSchedule(lastClickSchedule.id, lastClickSchedule.calendarId, {
+                 isFocused: false
+             });
+         }
+         calendarInstance.updateSchedule(schedule.id, schedule.calendarId, {
+             isFocused: true
+         });*/
+
+
+
+        // open detail view
+    });
 });
+
+function pay(event, id) {
+    console.log(event, id);
+}
 /* input file */
 ;(function (document, window, index) {
     'use strict';
