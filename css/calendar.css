@@ -1,0 +1,154 @@
+.calendar-wrapper {
+    border: 2px solid #E6E6E6;
+}
+
+.calendar-menu {
+    padding: 19px 0 16px 72px;
+}
+
+.calendar-menu > * {
+    vertical-align: top;
+}
+
+.calendar-menu .today {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 31px;
+    width: 138px;
+    height: 32px;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 7px 0;
+    background: #fff;
+    transition: all linear .1s;
+    outline: none;
+    margin-right: 22px;
+}
+
+.calendar-menu .today:hover {
+    color: #fff;
+    background: #000;
+}
+
+.calendar-menu .prev,
+.calendar-menu .next {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all linear .1s;
+}
+
+.calendar-menu .prev {
+    background: url(../css/imgs/calendar-prev-arrow.svg) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 12px;
+}
+
+.calendar-menu .next {
+    background: url(../css/imgs/calendar-next-arrow.svg) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 23px;
+}
+
+.calendar-menu .range {
+    font-size: 22px;
+    line-height: 31px;
+    margin-right: 22px;
+}
+
+.calendar-menu .work-time {
+    font-size: 22px;
+    line-height: 31px;
+}
+
+.calendar {
+}
+
+.tui-full-calendar-timegrid-container {
+    height: auto;
+    overflow-y: hidden;
+}
+
+.tui-full-calendar-dayname-container {
+    overflow-y: hidden;
+}
+
+.tui-full-calendar-dayname-date {
+    font-size: 40px;
+}
+
+.tui-full-calendar-dayname-name {
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/*
+.tui-full-calendar-dayname-container {
+    height: 72px !important;
+    padding-top: 18px !important;
+}*/
+.tui-full-calendar-timegrid-hour span {
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 1569px) {
+    .calendar-menu .work-time {
+        display: block;
+    }
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 767px) {
+    .calendar-menu {
+        padding: 19px;
+    }
+
+    .calendar-menu .today {
+        width: 99px;
+        height: 23px;
+        font-size: 12px;
+        padding: 2px 0;
+        margin-right: 18px;
+    }
+
+    .calendar-menu .prev,
+    .calendar-menu .next {
+        width: 23px;
+        height: 23px;
+    }
+
+    .calendar-menu .next {
+        margin-right: 0;
+    }
+
+    .calendar-menu .range {
+        margin-right: 22px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .calendar-menu .work-time {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+}

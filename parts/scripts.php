@@ -17,4 +17,6 @@
 <script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.min.js"></script>
 <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
 
+<script src="/js/calendar.js"></script>
+
 <script src="/js/script.js"></script>
