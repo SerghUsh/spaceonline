@@ -593,7 +593,7 @@ $(document).ready(function () {
                 return 'Повторить : ' + schedule.recurrenceRule;
             },
             popupDetailBody: function(schedule) {
-                return 'Тело : ' + schedule.body + 'test';
+                return 'Тело : ' + schedule.body;
             },
             popupEdit: function() {
                 return 'Редактировать';
@@ -683,13 +683,33 @@ $(document).ready(function () {
 
     $('#calendar-menu .today').on('click', function () {
         calendarInstance.today();
+        setWeekRange(calendarInstance)
     });
     $('#calendar-menu .prev').on('click', function () {
         calendarInstance.prev();
+        setWeekRange(calendarInstance)
     });
     $('#calendar-menu .next').on('click', function () {
         calendarInstance.next();
+        setWeekRange(calendarInstance)
     });
+
+    function setWeekRange(calendarInstance){
+        var rangeStart = calendarInstance.getDateRangeStart().toDate();
+        var rangeEnd = calendarInstance.getDateRangeEnd().toDate();
+        var periodString = '';
+
+        if (moment(rangeStart).format('YYYY.MM.DD') === moment(rangeEnd).format('YYYY.MM.DD')) {
+            periodString = moment(rangeStart).format('YYYY.MM.DD');
+        } else if (moment(rangeStart).format('YYYY.MM') === moment(rangeEnd).format('YYYY.MM')) {
+            periodString = (moment(rangeStart).format('YYYY.MM.DD') + ' - ' + moment(rangeEnd).format('DD'));
+        } else if (moment(rangeStart).format('YYYY') === moment(rangeEnd).format('YYYY')) {
+            periodString = (moment(rangeStart).format('YYYY.MM.DD') + ' - ' + moment(rangeEnd).format('MM.DD'));
+        }
+        $('#calendar-menu .range').html(periodString);
+    }
+
+    setWeekRange(calendarInstance);
 
     calendarInstance.on('beforeCreateSchedule', function(event) {
         console.log(event);

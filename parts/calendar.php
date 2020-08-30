@@ -5,6 +5,7 @@
         <button class="today" type="button">Today</button>
         <button class="prev" type="button">Prev</button>
         <button class="next" type="button">Next</button>
+        <span class="range"></span>
     </div>
 
     <div id="calendar" style="height: 990px;"></div>
