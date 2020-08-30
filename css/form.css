@@ -207,13 +207,14 @@ input[type="checkbox"] {
 
 .days {
     margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .day-input-block {
     display: inline-block;
     width: 40px;
     height: 40px;
-    margin-right: 12px;
 }
 
 .day-input-block label {
@@ -410,7 +411,6 @@ input[type="checkbox"] ~ span {
     .day-input-block {
         width: 30px;
         height: 30px;
-        margin-right: 8px;
     }
 
     .day-input-block label {
@@ -493,7 +493,6 @@ input[type="checkbox"] ~ span {
     .day-input-block {
         width: 22px;
         height: 22px;
-        margin-right: 6px;
     }
 
     .form-group .day-input-block label {
