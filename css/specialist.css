@@ -1,16 +1,11 @@
 #specialist-content .tab-block:not(:last-of-type) {
-    margin-bottom: 5px;
+    margin-bottom: 54px;
 }
 
-#specialist-content .wrapper__block {
-    margin-top: 54px;
-    margin-bottom: 17px;
+#specialist-content .tile-block h2 {
+    border-bottom: none;
 }
 
-#specialist-content .list__block {
-    margin-top: 54px;
-    margin-bottom: 15px;
-}
 
 #specialist-list-content {
     padding: 66px 0;
@@ -635,13 +630,9 @@
 }
 
 @media (max-width: 1199px) {
-    #specialist-list-content {
-        padding: 36px 0;
-    }
 
-    #specialist-content .list__block {
-        margin-top: 17px;
-        margin-bottom: 15px;
+    #specialist-content .tab-block:not(:last-of-type) {
+        margin-bottom: 30px;
     }
 
     #specialist-list-content .specialist-filter-title {
@@ -926,6 +917,22 @@
 @media (max-width: 767px) {
     #specialist-content .tab-buttons span:after {
         display: none;
+    }
+
+    #specialist-content .container {
+        padding: 0 20px;
+    }
+
+    #specialist-content .tile-block .image_wrapper .bottom_info {
+        padding: 3px 8px 0px 8px;
+    }
+
+    #specialist-content .tile-block .lesson_name::after {
+        vertical-align: -4px;
+    }
+
+    #specialist-content .tile-block p.duration {
+        margin-left: 24px;
     }
 
     #specialist-list-content {

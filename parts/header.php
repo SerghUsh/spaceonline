@@ -1,5 +1,6 @@
 <?php include_once(__DIR__ . '/bootstrap.php'); ?>
-<header>
+
+<header id="header">
     <div class="container">
         <div class="logo">
             <a href="<?php href('home') ?>"><img src="/css/imgs/logo_SpOn.svg" alt="logo"></a>
@@ -32,3 +33,4 @@
         </div>
     </div>
 </header>
+

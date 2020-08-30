@@ -19,7 +19,7 @@
     	<div class="container">
     		<div class="top-block">
     			<div class="content-block">
-	    			<h3>Название групового занятия</h3>
+	    			<h3>Название <!-- групового --> занятия</h3>
 	    			<div class="image_block">
 	                    <img src="/img/bg_open_group_lesson.jpg" alt="image">
 	                    <div class="right_info">
@@ -81,8 +81,8 @@
     		</div>
     		
     		<div class="calendar">
-    			<div><img src="/img/calendar_top_block.jpg"></div>
-    			<div><img src="/img/calendar_block.jpg"></div>
+    			<div><img src="/img/calendar_small.jpg"></div>
+    			<!-- <div><img src="/img/calendar_block.jpg"></div> -->
     		</div>
 
             <div class="title-left-lesson">
@@ -92,123 +92,135 @@
             <div class="open-group-lesson_wrapper">
                 <div class="slider">
                     <div class="slider__item">
-                        <div class="wrapper__block">
-	                        <div class="image_size">
+	                    <div class="tile-block">
+	                        <div class="image_wrapper">
 	                            <img src="/img/bg_name_event1.jpg" alt="image">
 	                            <div class="bottom_info">
 	                                <span class="lesson_name">Медитация</span>
 	                            </div>
 	                        </div>
-
-	                        <h2>Название занятия</h2>
-	                        <p class="duration">Длительность: 1 час 20 минут</p>
-	                        <p class="state">
-	                            Улучши свое душевное равновесие. С лучшим специалисто
-	                            Екатериной. Всего за полтора часа, ты сможешь погрузиться
-	                            внутрь себя и найти в себе гармонию.
-	                            <a href="" class="small">Узнать больше</a>
-	                        </p>
-                    	</div>
+	                        
+	                        <h2>Название занятия</h2> 
+	                        <p class="duration">Длительность: 1 час 20 минут</p>  
+	                        <div class="description-block">
+	                            <p>
+	                                Улучши свое душевное равновесие. С лучшим специалистом
+	                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
+	                                внутрь себя и найти в себе гармонию...
+	                            </p>
+	                            <a href="<?php href('practise') ?>">Узнать больше</a>
+	                        </div>
+	                    </div>
                     </div>
 
                     <div class="slider__item">
-                        <div class="wrapper__block">
-	                        <div class="image_size">
-	                            <img src="/img/bg_name_event2.jpg" alt="image">
+                         <div class="tile-block">
+	                        <div class="image_wrapper">
+	                            <img src="/img/bg_name_event1.jpg" alt="image">
 	                            <div class="bottom_info">
-	                                <span class="lesson_name">Арт терапия</span>
+	                                <span class="lesson_name">Медитация</span>
 	                            </div>
 	                        </div>
-
-	                        <h2>Название занятия</h2>
-	                        <p class="duration">Длительность: 1 час 20 минут</p>
-	                        <p class="state">
-	                            Улучши свое душевное равновесие. С лучшим специалисто
-	                            Екатериной. Всего за полтора часа, ты сможешь погрузиться
-	                            внутрь себя и найти в себе гармонию.
-	                            <a href="" class="small">Узнать больше</a>
-	                        </p>
-                    	</div>
+	                        
+	                        <h2>Название занятия</h2> 
+	                        <p class="duration">Длительность: 1 час 20 минут</p>  
+	                        <div class="description-block">
+	                            <p>
+	                                Улучши свое душевное равновесие. С лучшим специалистом
+	                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
+	                                внутрь себя и найти в себе гармонию...
+	                            </p>
+	                            <a href="<?php href('practise') ?>">Узнать больше</a>
+	                        </div>
+	                    </div>
                     </div>
 
                     <div class="slider__item">
-                        <div class="wrapper__block">
-	                        <div class="image_size">
-	                            <img src="/img/bg_name_event3.jpg" alt="image">
+                         <div class="tile-block">
+	                        <div class="image_wrapper">
+	                            <img src="/img/bg_name_event1.jpg" alt="image">
 	                            <div class="bottom_info">
-	                                <span class="lesson_name">Карты таро</span>
+	                                <span class="lesson_name">Медитация</span>
 	                            </div>
 	                        </div>
-
-	                        <h2>Название занятия</h2>
-	                        <p class="duration">Длительность: 1 час 20 минут</p>
-	                        <p class="state">
-	                            Улучши свое душевное равновесие. С лучшим специалисто
-	                            Екатериной. Всего за полтора часа, ты сможешь погрузиться
-	                            внутрь себя и найти в себе гармонию.
-	                            <a href="" class="small">Узнать больше</a>
-	                        </p>
-                    	</div>
+	                        
+	                        <h2>Название занятия</h2> 
+	                        <p class="duration">Длительность: 1 час 20 минут</p>  
+	                        <div class="description-block">
+	                            <p>
+	                                Улучши свое душевное равновесие. С лучшим специалистом
+	                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
+	                                внутрь себя и найти в себе гармонию...
+	                            </p>
+	                            <a href="<?php href('practise') ?>">Узнать больше</a>
+	                        </div>
+	                    </div>
                     </div>
 
                      <div class="slider__item">
-                        <div class="wrapper__block">
-	                        <div class="image_size">
+                         <div class="tile-block">
+	                        <div class="image_wrapper">
 	                            <img src="/img/bg_name_event1.jpg" alt="image">
 	                            <div class="bottom_info">
 	                                <span class="lesson_name">Медитация</span>
 	                            </div>
 	                        </div>
-
-	                        <h2>Название занятия</h2>
-	                        <p class="duration">Длительность: 1 час 20 минут</p>
-	                        <p class="state">
-	                            Улучши свое душевное равновесие. С лучшим специалисто
-	                            Екатериной. Всего за полтора часа, ты сможешь погрузиться
-	                            внутрь себя и найти в себе гармонию.
-	                            <a href="" class="small">Узнать больше</a>
-	                        </p>
-                    	</div>
+	                        
+	                        <h2>Название занятия</h2> 
+	                        <p class="duration">Длительность: 1 час 20 минут</p>  
+	                        <div class="description-block">
+	                            <p>
+	                                Улучши свое душевное равновесие. С лучшим специалистом
+	                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
+	                                внутрь себя и найти в себе гармонию...
+	                            </p>
+	                            <a href="<?php href('practise') ?>">Узнать больше</a>
+	                        </div>
+	                    </div>
                     </div>
 
                     <div class="slider__item">
-                        <div class="wrapper__block">
-	                        <div class="image_size">
-	                            <img src="/img/bg_name_event2.jpg" alt="image">
+                         <div class="tile-block">
+	                        <div class="image_wrapper">
+	                            <img src="/img/bg_name_event1.jpg" alt="image">
 	                            <div class="bottom_info">
-	                                <span class="lesson_name">Арт терапия</span>
+	                                <span class="lesson_name">Медитация</span>
 	                            </div>
 	                        </div>
-
-	                        <h2>Название занятия</h2>
-	                        <p class="duration">Длительность: 1 час 20 минут</p>
-	                        <p class="state">
-	                            Улучши свое душевное равновесие. С лучшим специалисто
-	                            Екатериной. Всего за полтора часа, ты сможешь погрузиться
-	                            внутрь себя и найти в себе гармонию.
-	                            <a href="" class="small">Узнать больше</a>
-	                        </p>
-                    	</div>
+	                        
+	                        <h2>Название занятия</h2> 
+	                        <p class="duration">Длительность: 1 час 20 минут</p>  
+	                        <div class="description-block">
+	                            <p>
+	                                Улучши свое душевное равновесие. С лучшим специалистом
+	                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
+	                                внутрь себя и найти в себе гармонию...
+	                            </p>
+	                            <a href="<?php href('practise') ?>">Узнать больше</a>
+	                        </div>
+	                    </div>
                     </div>
 
                     <div class="slider__item">
-                        <div class="wrapper__block">
-	                        <div class="image_size">
-	                            <img src="/img/bg_name_event3.jpg" alt="image">
+                        <div class="tile-block">
+	                        <div class="image_wrapper">
+	                            <img src="/img/bg_name_event1.jpg" alt="image">
 	                            <div class="bottom_info">
-	                                <span class="lesson_name">Карты таро</span>
+	                                <span class="lesson_name">Медитация</span>
 	                            </div>
 	                        </div>
-
-	                        <h2>Название занятия</h2>
-	                        <p class="duration">Длительность: 1 час 20 минут</p>
-	                        <p class="state">
-	                            Улучши свое душевное равновесие. С лучшим специалисто
-	                            Екатериной. Всего за полтора часа, ты сможешь погрузиться
-	                            внутрь себя и найти в себе гармонию.
-	                            <a href="" class="small">Узнать больше</a>
-	                        </p>
-                    	</div>
+	                        
+	                        <h2>Название занятия</h2> 
+	                        <p class="duration">Длительность: 1 час 20 минут</p>  
+	                        <div class="description-block">
+	                            <p>
+	                                Улучши свое душевное равновесие. С лучшим специалистом
+	                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
+	                                внутрь себя и найти в себе гармонию...
+	                            </p>
+	                            <a href="<?php href('practise') ?>">Узнать больше</a>
+	                        </div>
+	                    </div>
                     </div>
                 </div>
             </div>

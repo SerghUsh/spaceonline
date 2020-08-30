@@ -191,12 +191,17 @@
     margin-right: 96px;
 }
 
+.row .tile-block {
+    margin-bottom: 66px;
+}
+
 .tile-block .image_wrapper {
     position: relative;
 }
 
 .tile-block .image_wrapper img {
     width: 100%;
+    display: block;
 }
 
 .tile-block h2 {
@@ -744,6 +749,10 @@ a.write:active {
 }
 
 @media (max-width: 1199px) {
+    #page-home .container {
+        padding: 0 20px;
+    }
+
     #personal_gid {
         margin-bottom: 40px;
     }
@@ -820,7 +829,7 @@ a.write:active {
 
     #choise_your_practises {
         margin-top: 21px;
-        margin-left: 25px;
+        margin-left: 20px;
     }
 
     .title-left {
@@ -842,7 +851,7 @@ a.write:active {
     }
 
     .title-left p {
-        width: 96%;
+        width: 97%;
         margin-top: -3px;
         font-size: 16px;
         line-height: 22px;
@@ -851,6 +860,10 @@ a.write:active {
     #choise_your_practises .slider__item {
         width: 320px;
         margin-right: 35px;
+    }
+
+    #choise_your_practises .slick-dotted.slick-slider {
+        margin-bottom: 0px;
     }
 
     .tile-block h2 {
@@ -875,11 +888,11 @@ a.write:active {
         font-size: 10px;
         line-height: 16px;
         right: 1px;
-        bottom: 1px;
+        bottom: 2px;
     }
 
     .slider-manage-block {
-        margin-top: 28px;
+        margin-top: 0px;
     }
 
     .slider-manage-block a {
@@ -917,7 +930,7 @@ a.write:active {
     }
 
     #start_now {
-        margin-left: 25px;
+        margin-left: 20px;
         margin-bottom: 57px;
     }
 
@@ -930,7 +943,7 @@ a.write:active {
         font-size: 22px;
         line-height: 50px;
         letter-spacing: 1.2px;
-        margin-right: 24px;
+        margin-right: 19px;
     }
 
     .title-right span:before {
@@ -986,7 +999,7 @@ a.write:active {
 
     #future_events {
         margin-top: 43px;
-        margin-left: 25px;
+        margin-left: 20px;
     }
 
     .title__left {
@@ -1017,6 +1030,10 @@ a.write:active {
         margin-right: 30px;
     }
 
+    #future_events .slick-dotted.slick-slider {
+        margin-bottom: 0px;
+    }
+
     .tile-block .image_wrapper .bottom_info {
         width: 100%;
         padding: 2px 24px 1px 15px;
@@ -1043,7 +1060,7 @@ a.write:active {
         margin-top: 9px;
     }
 
-    #future_events .tile-block p.duration {
+    .tile-block p.duration {
         font-size: 14px;
         line-height: 18px;
         margin-top: 1px;
@@ -1051,13 +1068,13 @@ a.write:active {
         padding: 0;
     }
 
-    #future_events .slider__item p.duration::before {
+    .slider__item p.duration::before {
         left: -25px;
         top: -1px;
     }
 
     #future_events .slider-manage-block {
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     #from_organizers {
@@ -1107,7 +1124,7 @@ a.write:active {
     }
 
     .main_block__item .discription_text p.space {
-        margin-bottom: 34px;
+        margin-bottom: 35px;
         padding-top: 7px;
         width: 52%;
         min-height: 24px;
@@ -1124,6 +1141,10 @@ a.write:active {
 @media (max-width: 767px) {
     body {
         padding-top: 55px;
+    }
+
+    #page-home .container {
+        padding: 0 15px;
     }
 
     #personal_gid {
@@ -1245,7 +1266,7 @@ a.write:active {
 
     .tile-block  .description-block p {
         min-height: 70px;
-        margin-top: 7px;
+        margin-top: 6px;
         font-size: 12px;
         line-height: 18px;
     }
@@ -1258,7 +1279,7 @@ a.write:active {
     }
 
     .slider-manage-block {
-        margin-top: -13px;
+        margin-top: 0px;
     }
 
     .slider-manage-block a {
@@ -1428,7 +1449,7 @@ a.write:active {
         margin-top: 10px;
     }
 
-    #future_events .tile-block p.duration {
+    .tile-block p.duration {
         font-size: 12px;
         margin-top: 0px;
         margin-left: 0px;
@@ -1436,7 +1457,7 @@ a.write:active {
     }
 
     #future_events .slider-manage-block {
-        margin-top: -12px;
+        margin-top: 0px;
     }
 
     #from_organizers {

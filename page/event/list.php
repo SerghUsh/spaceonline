@@ -29,7 +29,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="tile-block">
+                        <div class="tile-block bottom">
                             <div class="image_wrapper">
                                 <img src="/img/bg_name_event1.jpg" alt="image">
                                 <span class="icon-video"></span>
@@ -53,7 +53,7 @@
                     </div>
 
                     <div class="col">
-                        <div class="tile-block">
+                        <div class="tile-block bottom">
                             <div class="image_wrapper">
                                 <img src="/img/bg_name_event1.jpg" alt="image">
                                 <span class="icon-video"></span>
@@ -77,7 +77,7 @@
                     </div>
 
                     <div class="col">
-                        <div class="tile-block">
+                        <div class="tile-block bottom hidden">
                             <div class="image_wrapper">
                                 <img src="/img/bg_name_event1.jpg" alt="image">
                                 <span class="icon-video"></span>

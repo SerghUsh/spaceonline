@@ -1,3 +1,4 @@
+
 footer {
     background: #FAFAFA;
 }
@@ -166,14 +167,18 @@ footer {
 
 @media (max-width: 1199px) {
 
+    #footer .container {
+        padding: 0 20px;
+    }
+
     .footer_menu .half_first {
         width: 63%;
     }
 
     #footer .social_buttons {
         width: 60%;
-        margin-top: 37px;
-        margin-left: 25px;
+        margin-top: 38px;
+        margin-left: 20px;
     }
 
     #footer .social_buttons img {
@@ -242,6 +247,11 @@ footer {
 }
 
 @media (max-width: 767px) {
+
+     #footer .container {
+        padding: 0 15px;
+    }
+    
     .footer_menu {
         display: block;
         padding: 21px 0px 10px 8px;
