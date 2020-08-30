@@ -1,7 +1,8 @@
 <?php include_once(__DIR__ . '/bootstrap.php'); ?>
 
-<!--<div id="pop-up-delete-account" class="pop-up-cover">
-    <div class="pop-up">
+<div id="pop-up-delete-account" class="pop-up">
+    <div class="cover"></div>
+    <div class="dialog">
         <div class="icon icon-question"></div>
 
         <div class="title">
@@ -24,10 +25,11 @@
             </div>
         </div>
     </div>
-</div>-->
+</div>
 
-<!--<div id="pop-up-cancel" class="pop-up-cover">
-    <div class="pop-up">
+<div id="pop-up-cancel" class="pop-up">
+    <div class="cover"></div>
+    <div class="dialog">
         <div class="icon icon-cancel"></div>
 
         <div class="title">
@@ -39,13 +41,14 @@
         </div>
 
         <div class="action">
-            <a class="btn btn-white" href="<?php /*href('group_lesson', 'list') */?>">Вернуться к групповым занятиям</a>
+            <a class="btn btn-white" href="<?php href('group_lesson', 'list') ?>">Вернуться к групповым занятиям</a>
         </div>
     </div>
-</div>-->
+</div>
 
-<div id="pop-up-success" class="pop-up-cover">
-    <div class="pop-up">
+<div id="pop-up-success" class="pop-up">
+    <div class="cover"></div>
+    <div class="dialog">
         <div class="icon icon-success"></div>
 
         <div class="title">
@@ -69,8 +72,9 @@
     </div>
 </div>
 
-<!--<div id="pop-up-letter" class="pop-up-cover">
-    <div class="pop-up">
+<div id="pop-up-letter" class="pop-up">
+    <div class="cover"></div>
+    <div class="dialog">
         <div class="icon icon-letter"></div>
 
         <div class="title">
@@ -83,7 +87,7 @@
         </div>
 
         <div class="action">
-            <a class="btn btn-white" href="<?php /*href('account') */?>">В личный кабинет</a>
+            <a class="btn btn-white" href="<?php href('account') ?>">В личный кабинет</a>
         </div>
     </div>
-</div>-->
+</div>

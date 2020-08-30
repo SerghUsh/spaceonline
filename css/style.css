@@ -32,11 +32,16 @@ body {
 
 body.blur {
     overflow: hidden;
-    padding: 0;
+    padding-right: 17px;
+    padding-top: 0;
 }
 
 body.blur main {
     filter: blur(4px);
+}
+
+body.blur header {
+    position: static;
 }
 
 .clearfix:before,
@@ -149,6 +154,7 @@ form .btn {
 }
 
 .btn-white:hover {
+    color: #fff;
     background: #000;
 }
 

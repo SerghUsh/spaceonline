@@ -1,4 +1,22 @@
+/* POP-UP */
+function popUpShow(id) {
+    $('body').addClass('blur');
+    $('#' + id).fadeIn(500);
+}
+
+function popUpHide(id) {
+    $('#' + id).fadeOut(500, function () {
+        $('body').removeClass('blur');
+    });
+}
+
 $(document).ready(function () {
+    /* POP-UP */
+    $('.pop-up .cover').on('click', function (e) {
+        let id = $(e.target).closest('.pop-up').attr('id');
+        popUpHide(id);
+    });
+
     /* COOKIE */
     if ($('#cookie-block button').length) {
         $('body').addClass('blur');
