@@ -309,6 +309,10 @@ $(document).ready(function () {
             currentBlock.find('.accordion-info').slideDown(speed);
         }
     });
+
+    $('#action-popup').select2({
+        width: '100%'
+    });
 });
 /* input file */
 ;(function (document, window, index) {

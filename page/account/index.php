@@ -630,6 +630,7 @@
     <?php put('footer') ?>
 </main>
 
+<?php put('pop-ups') ?>
 <?php put('scripts') ?>
 </body>
 </html>

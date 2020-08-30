@@ -1,0 +1,101 @@
+.pop-up-cover {
+    /*display: none;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.pop-up {
+    position: fixed;
+    top: calc(50% - 220px);
+    left: calc(50% - 375px);
+    z-index: 101;
+    background: #fff;
+    text-align: center;
+    width: 750px;
+    padding: 58px 150px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.icon {
+    height: 63px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.icon-question {
+    background-image: url(/css/imgs/popup-question.svg);
+}
+
+.icon-letter {
+    background-image: url(/css/imgs/popup-letter.svg);
+}
+
+.icon-success {
+    background-image: url(/css/imgs/popup-success.svg);
+}
+
+.icon-cancel {
+    background-image: url(/css/imgs/popup-cancel.svg);
+}
+
+.pop-up .title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.pop-up .message {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.pop-up .select {
+    margin-bottom: 30px;
+}
+
+.pop-up .action {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pop-up .action > a,
+.pop-up .action > button {
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 0;
+}
+
+.pop-up .action .action-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.pop-up .action .action-row .action-col {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.pop-up .action .action-row .action-col a,
+.pop-up .action .action-row .action-col button {
+    width: 100%;
+}
+
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
