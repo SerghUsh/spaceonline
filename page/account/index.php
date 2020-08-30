@@ -619,7 +619,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn btn-red btn-submit-margin" type="submit">Удалить профиль</button>
+                            <button class="btn btn-red btn-submit-margin" type="button" onclick="popUpShow('pop-up-delete-account')">Удалить профиль</button>
                         </form>
                     </div>
                 </div>
@@ -630,6 +630,7 @@
     <?php put('footer') ?>
 </main>
 
+<?php put('pop-ups') ?>
 <?php put('scripts') ?>
 </body>
 </html>

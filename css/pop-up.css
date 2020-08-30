@@ -1,0 +1,157 @@
+.pop-up {
+    display: none;
+}
+
+.pop-up .cover {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, .3);
+}
+
+.pop-up .dialog {
+    position: fixed;
+    top: calc(50% - 220px);
+    left: calc(50% - 375px);
+    z-index: 101;
+    background: #fff;
+    text-align: center;
+    width: 750px;
+    padding: 58px 150px 43px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.pop-up .dialog .icon {
+    height: 63px;
+    margin-bottom: 28px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.pop-up .dialog .icon-question {
+    background-image: url(/css/imgs/popup-question.svg);
+}
+
+.pop-up .dialog .icon-letter {
+    background-image: url(/css/imgs/popup-letter.svg);
+}
+
+.pop-up .dialog .icon-success {
+    background-image: url(/css/imgs/popup-success.svg);
+}
+
+.pop-up .dialog .icon-cancel {
+    background-image: url(/css/imgs/popup-cancel.svg);
+}
+
+.pop-up .dialog .title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.pop-up .dialog .message {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.pop-up .dialog .message + .action{
+    margin-top: 36px;
+}
+
+.pop-up .dialog .select {
+    margin-top: 20px;
+}
+
+.pop-up .dialog .action {
+    width: 350px;
+    margin: 22px auto 0;
+    text-align: center;
+}
+
+.pop-up .dialog .action > a,
+.pop-up .dialog .action > button {
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 0;
+    font-size: 16px;
+}
+
+.pop-up .dialog .action .action-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.pop-up .dialog .action .action-row .action-col {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.pop-up .dialog .action .action-row .action-col a,
+.pop-up .dialog .action .action-row .action-col button {
+    width: 100%;
+    font-size: 16px;
+}
+
+
+@media (max-width: 1199px) {
+    .pop-up .dialog {
+        width: 530px;
+        top: calc(50% - 150px);
+        left: calc(50% - 265px);
+        padding: 40px 70px 31px;
+    }
+
+    .pop-up .dialog .icon {
+        height: 44px;
+        margin-bottom: 16px;
+    }
+
+    .pop-up .dialog .title {
+        font-size: 16px;
+        line-height: 12px;
+    }
+
+    .pop-up .dialog .message {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 9px;
+    }
+
+    .pop-up .dialog .message + .action{
+        margin-top: 18px;
+    }
+
+    .pop-up .dialog .select {
+        margin-top: 20px;
+    }
+
+    .pop-up .dialog .action {
+        width: 100%;
+        margin: 22px auto 0;
+    }
+
+    .pop-up .dialog .action .action-row {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .pop-up .dialog {
+        width: 300px;
+        top: calc(50% - 140px);
+        left: calc(50% - 150px);
+        padding: 20px 10px 21px;
+    }
+}
