@@ -213,6 +213,28 @@ form .btn {
     margin-top: 7px;
 }
 
+.clipboard {
+    position: relative;
+}
+
+.clipboard:after {
+    content: attr(data-tooltip-text);
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    z-index: 1;
+    font-size: 16px;
+    color: #000;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all linear .3s;
+    opacity: 0;
+}
+
+.clipboard.tooltip:after {
+    opacity: 1;
+}
+
 @media (max-width: 1719px) {
     #cookie-block p {
         font-size: 22px;
@@ -240,6 +262,14 @@ form .btn {
 }
 
 @media (max-width: 1199px) {
+    .clipboard.tooltip {
+        top: calc(50% - 6px);
+    }
+
+    .clipboard.tooltip:after {
+        font-size: 10px;
+    }
+
     #cookie-block {
         padding: 20px 0;
     }

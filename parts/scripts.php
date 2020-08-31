@@ -8,6 +8,9 @@
 <script type="text/javascript" src="/bootstrap-datepicker-1.9.0/js/bootstrap-datepicker.min.js"></script>
 <script type="text/javascript" src="/bootstrap-datepicker-1.9.0/locales/bootstrap-datepicker.ru.min.js"></script>
 
+<!-- Clipboard -->
+<script src="/js/clipboard.min.js"></script>
+
 <!-- Moment -->
 <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
 

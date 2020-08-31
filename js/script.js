@@ -11,6 +11,17 @@ function popUpHide(id) {
 }
 
 $(document).ready(function () {
+    /* Clipboard */
+    var clipboardTimer;
+    new ClipboardJS('.clipboard');
+    $('.clipboard').on('click', function(e) {
+        clearTimeout(clipboardTimer);
+        $(e.target).addClass('tooltip');
+        clipboardTimer = setTimeout(function () {
+            $(e.target).removeClass('tooltip');
+        }, 1500)
+    });
+
     /* POP-UP */
     $('.pop-up .cover').on('click', function (e) {
         let id = $(e.target).closest('.pop-up').attr('id');
