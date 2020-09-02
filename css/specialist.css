@@ -109,7 +109,6 @@
 }
 
 .box-minmax {
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 37px;
@@ -411,7 +410,6 @@
 
 .specialist-type-experience {
     font-family: Montserrat, sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 21px;
     line-height: 37px;
