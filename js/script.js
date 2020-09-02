@@ -1,4 +1,4 @@
-function capitalize(text){
+function capitalize(text) {
     return text.charAt(0).toUpperCase() + text.slice(1)
 }
 
@@ -18,7 +18,7 @@ $(document).ready(function () {
     /* Clipboard */
     var clipboardTimer;
     new ClipboardJS('.clipboard');
-    $('.clipboard').on('click', function(e) {
+    $('.clipboard').on('click', function (e) {
         clearTimeout(clipboardTimer);
         $(e.target).addClass('tooltip');
         clipboardTimer = setTimeout(function () {
@@ -270,7 +270,7 @@ $(document).ready(function () {
     /* ACCOUNT PAGE */
 
     // Statistic
-    new Chart(document.getElementById("lineChartByWorkTime").getContext("2d"), {
+    var lineChartByWorkTime = new Chart(document.getElementById("lineChartByWorkTime").getContext("2d"), {
         type: 'line',
         data: {
             labels: [
@@ -286,21 +286,25 @@ $(document).ready(function () {
                 {
                     label: "Личные консультации",
                     backgroundColor: 'rgba(89,133,173,0.5)', // #5985AD
-                    borderColor: "rgba(26,179,148,0.7)",
-                    pointBackgroundColor: "rgba(26,179,148,1)",
-                    pointBorderColor: "#fff",
+                    borderColor: "#5985AD",
+                    pointBackgroundColor: "#5985AD",
+                    pointBorderColor: "#000",
                     data: [28, 48, 40, 19, 86, 27, 90]
                 },
                 {
                     label: "Групповые занятия",
                     backgroundColor: 'rgba(89,173,168,0.5)', // #59ADA8
-                    pointBorderColor: "#fff",
+                    borderColor: "#59ADA8",
+                    pointBackgroundColor: "#59ADA8",
+                    pointBorderColor: "#000",
                     data: [65, 59, 80, 81, 56, 55, 40]
                 },
                 {
                     label: "Семинары",
                     backgroundColor: 'rgba(89,173,107,0.5)', // #59AD6B
-                    pointBorderColor: "#fff",
+                    borderColor: "#59AD6B",
+                    pointBackgroundColor: "#59AD6B",
+                    pointBorderColor: "#000",
                     data: [30, 50, 58, 25, 40, 11, 20]
                 }
             ]
@@ -310,11 +314,16 @@ $(document).ready(function () {
             legend: {
                 display: true,
                 position: 'top',
+                labels: {
+                    boxWidth: 15,
+                    fontSize: 22,
+                    fontColor: '#000'
+                }
             }
         }
     });
 
-    new Chart(document.getElementById("doughnutChartByType").getContext("2d"), {
+    var doughnutChartByType = new Chart(document.getElementById("doughnutChartByType").getContext("2d"), {
         type: 'doughnut',
         data: {
             labels: ["Личные консультации", "Групповые занятия", "Семинары"],
@@ -328,11 +337,16 @@ $(document).ready(function () {
             legend: {
                 display: true,
                 position: 'right',
+                labels: {
+                    boxWidth: 15,
+                    fontSize: 22,
+                    fontColor: '#000',
+                }
             }
-        }
+        },
     });
 
-    new Chart(document.getElementById("doughnutChartByCategory").getContext("2d"), {
+    var doughnutChartByCategory = new Chart(document.getElementById("doughnutChartByCategory").getContext("2d"), {
         type: 'doughnut',
         data: {
             labels: ["Психология", "Астрология", "Коучинг"],
@@ -346,9 +360,68 @@ $(document).ready(function () {
             legend: {
                 display: true,
                 position: 'right',
+                labels: {
+                    boxWidth: 15,
+                    fontSize: 22,
+                    fontColor: '#000',
+                }
             }
         }
     });
+
+    $(window).resize(function () {
+        console.log(window.innerWidth);
+        if (window.innerWidth < 768) {
+            lineChartByWorkTime.options.legend.labels.fontSize = 14;
+            lineChartByWorkTime.aspectRatio = 1;
+            lineChartByWorkTime.update();
+
+            doughnutChartByType.options.legend.labels.fontSize = 14;
+            doughnutChartByType.options.legend.position = 'bottom';
+            doughnutChartByType.update();
+
+            doughnutChartByCategory.options.legend.labels.fontSize = 14;
+            doughnutChartByCategory.options.legend.position = 'bottom';
+            doughnutChartByCategory.update();
+        } else if (window.innerWidth < 1200) {
+            lineChartByWorkTime.options.legend.labels.fontSize = 22;
+            lineChartByWorkTime.aspectRatio = 2;
+            lineChartByWorkTime.update();
+
+            doughnutChartByType.options.legend.labels.fontSize = 22;
+            doughnutChartByType.options.legend.position = 'right';
+            doughnutChartByType.update();
+
+            doughnutChartByCategory.options.legend.labels.fontSize = 22;
+            doughnutChartByCategory.options.legend.position = 'right';
+            doughnutChartByCategory.update();
+        } else if (window.innerWidth < 1500) {
+            lineChartByWorkTime.options.legend.labels.fontSize = 22;
+            lineChartByWorkTime.aspectRatio = 2;
+            lineChartByWorkTime.update();
+
+            doughnutChartByType.options.legend.labels.fontSize = 22;
+            doughnutChartByType.options.legend.position = 'bottom';
+            doughnutChartByType.update();
+
+            doughnutChartByCategory.options.legend.labels.fontSize = 22;
+            doughnutChartByCategory.options.legend.position = 'bottom';
+            doughnutChartByCategory.update();
+        } else {
+            lineChartByWorkTime.options.legend.labels.fontSize = 22;
+            lineChartByWorkTime.aspectRatio = 2;
+            lineChartByWorkTime.update();
+
+            doughnutChartByType.options.legend.labels.fontSize = 22;
+            doughnutChartByType.options.legend.position = 'right';
+            doughnutChartByType.update();
+
+            doughnutChartByCategory.options.legend.labels.fontSize = 22;
+            doughnutChartByCategory.options.legend.position = 'right';
+            doughnutChartByCategory.update();
+        }
+    });
+    $(window).resize();
 
     // Init filter
     $('*[data-filter]').on('click', function (e) {

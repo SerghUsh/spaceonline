@@ -575,19 +575,31 @@
                 </div>
 
                 <div id="tab-statistic" class="tab">
+                    <h4 class="account-title">Проведено практик</h4>
+
+                    <div class="statistic-filter">
+                        <span>Показать за</span>
+
+                        <i></i>
+
+                        <select name="filter-range" id="statistic-range">
+                            <option value="">1 Апреля - 9 Апреля 2020</option>
+                        </select>
+                    </div>
+
                     <div class="statistic-line-wrapper">
-                        <canvas id="lineChartByWorkTime" height="140"></canvas>
+                        <canvas id="lineChartByWorkTime" width="300" height="150"></canvas>
                     </div>
 
                     <div class="statistic-doughnut">
                         <div class="statistic-doughnut-wrapper">
-                            <h5>По видам</h5>
-                            <canvas id="doughnutChartByType" height="140"></canvas>
+                            <h3>По видам</h3>
+                            <canvas id="doughnutChartByType" width="100%"></canvas>
                         </div>
 
                         <div class="statistic-doughnut-wrapper">
-                            <h5>По категориям</h5>
-                            <canvas id="doughnutChartByCategory" height="140"></canvas>
+                            <h3>По категориям</h3>
+                            <canvas id="doughnutChartByCategory" width="100%"></canvas>
                         </div>
                     </div>
                 </div>
