@@ -575,7 +575,21 @@
                 </div>
 
                 <div id="tab-statistic" class="tab">
+                    <div class="statistic-line-wrapper">
+                        <canvas id="lineChartByWorkTime" height="140"></canvas>
+                    </div>
 
+                    <div class="statistic-doughnut">
+                        <div class="statistic-doughnut-wrapper">
+                            <h5>По видам</h5>
+                            <canvas id="doughnutChartByType" height="140"></canvas>
+                        </div>
+
+                        <div class="statistic-doughnut-wrapper">
+                            <h5>По категориям</h5>
+                            <canvas id="doughnutChartByCategory" height="140"></canvas>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="tab-settings" class="tab">

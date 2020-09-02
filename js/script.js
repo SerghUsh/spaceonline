@@ -1,3 +1,7 @@
+function capitalize(text){
+    return text.charAt(0).toUpperCase() + text.slice(1)
+}
+
 /* POP-UP */
 function popUpShow(id) {
     $('body').addClass('blur');
@@ -264,6 +268,87 @@ $(document).ready(function () {
     });
 
     /* ACCOUNT PAGE */
+
+    // Statistic
+    new Chart(document.getElementById("lineChartByWorkTime").getContext("2d"), {
+        type: 'line',
+        data: {
+            labels: [
+                capitalize(moment().add(-6, 'days').format('MMM DD')),
+                capitalize(moment().add(-5, 'days').format('MMM DD')),
+                capitalize(moment().add(-4, 'days').format('MMM DD')),
+                capitalize(moment().add(-3, 'days').format('MMM DD')),
+                capitalize(moment().add(-2, 'days').format('MMM DD')),
+                capitalize(moment().add(-1, 'days').format('MMM DD')),
+                capitalize(moment().format('MMM DD')),
+            ],
+            datasets: [
+                {
+                    label: "Личные консультации",
+                    backgroundColor: 'rgba(89,133,173,0.5)', // #5985AD
+                    borderColor: "rgba(26,179,148,0.7)",
+                    pointBackgroundColor: "rgba(26,179,148,1)",
+                    pointBorderColor: "#fff",
+                    data: [28, 48, 40, 19, 86, 27, 90]
+                },
+                {
+                    label: "Групповые занятия",
+                    backgroundColor: 'rgba(89,173,168,0.5)', // #59ADA8
+                    pointBorderColor: "#fff",
+                    data: [65, 59, 80, 81, 56, 55, 40]
+                },
+                {
+                    label: "Семинары",
+                    backgroundColor: 'rgba(89,173,107,0.5)', // #59AD6B
+                    pointBorderColor: "#fff",
+                    data: [30, 50, 58, 25, 40, 11, 20]
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            legend: {
+                display: true,
+                position: 'top',
+            }
+        }
+    });
+
+    new Chart(document.getElementById("doughnutChartByType").getContext("2d"), {
+        type: 'doughnut',
+        data: {
+            labels: ["Личные консультации", "Групповые занятия", "Семинары"],
+            datasets: [{
+                data: [29, 64, 7],
+                backgroundColor: ["#5985AD", "#59ADA8", "#59AD6B"]
+            }]
+        },
+        options: {
+            responsive: true,
+            legend: {
+                display: true,
+                position: 'right',
+            }
+        }
+    });
+
+    new Chart(document.getElementById("doughnutChartByCategory").getContext("2d"), {
+        type: 'doughnut',
+        data: {
+            labels: ["Психология", "Астрология", "Коучинг"],
+            datasets: [{
+                data: [70, 50, 90],
+                backgroundColor: ["#5985AD", "#59ADA8", "#59AD6B"]
+            }]
+        },
+        options: {
+            responsive: true,
+            legend: {
+                display: true,
+                position: 'right',
+            }
+        }
+    });
 
     // Init filter
     $('*[data-filter]').on('click', function (e) {

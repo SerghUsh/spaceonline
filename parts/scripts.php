@@ -12,13 +12,19 @@
 <script src="/js/clipboard.min.js"></script>
 
 <!-- Moment -->
-<script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+<script src="/moment/moment-with-locales.min.js"></script>
+<script>
+    moment.locale('ru');
+</script>
 
 <!-- Tui-calendar -->
 <script src="https://uicdn.toast.com/tui.code-snippet/v1.5.2/tui-code-snippet.min.js"></script>
 <script src="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.min.js"></script>
 <script src="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.min.js"></script>
 <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
+
+<!-- Chart -->
+<script src="/js/Chart.min.js"></script>
 
 <script src="/js/calendar.js"></script>
 

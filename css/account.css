@@ -669,6 +669,29 @@
     }
 }
 
+.statistic-line-wrapper {
+    margin-bottom: 30px;
+}
+
+.statistic-doughnut-block {
+
+}
+.statistic-doughnut {
+    display: flex;
+    justify-content: space-between;
+}
+.statistic-doughnut-wrapper {
+    width: calc(50% - 10px);
+}
+
+.statistic-doughnut-wrapper h5 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 767px) {
     #account-content form .btn {
         width: 100%;
