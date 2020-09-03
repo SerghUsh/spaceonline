@@ -121,7 +121,7 @@
     text-transform: uppercase;
     color: #000000;
     border-bottom: 1px solid #F1F1F1;
-    margin-bottom: 0; 
+    margin-bottom: 0;
     margin-top: 3px;
 }
 
@@ -152,9 +152,29 @@
     font-size: 13px;
     line-height: 16px;
     transition: all linear .1s;
-    text-decoration-line: underline;
     text-transform: uppercase;
     color: #000000;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.tile-block .description-block a:after {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: all linear 0.2s;
+}
+
+.header_list li a:active {
+    color: #303030;
+}
+
+.tile-block .description-block a:hover:after {
+    width: 100%;
 }
 
 .tile-block .description-block a:hover {
@@ -589,6 +609,7 @@
     .tile-block h2 + .description-block {
         margin-top: 8px;
     }
+
     .tile-block .description-block p {
         min-height: 80px;
         margin-top: 0;
@@ -879,7 +900,7 @@
         line-height: 18px;
     }
 
-    .tile-block  .description-block p {
+    .tile-block .description-block p {
         min-height: 70px;
         margin-top: 6px;
         font-size: 12px;
@@ -1086,5 +1107,5 @@
         letter-spacing: 1px;
         margin-left: 50px;
     }
- 
+
 }

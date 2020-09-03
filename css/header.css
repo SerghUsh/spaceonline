@@ -38,26 +38,37 @@ header > div {
 .header_list li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 60px;
     margin-top: 13px;
     margin-right: 48px;
 }
 
 .header_list li a {
+    display: inline-block;
     text-decoration: none;
     color: #000000;
     transition: all linear .1s;
+    position: relative;
 }
 
-.header_list li a:hover {
-    text-decoration: underline;
-    color: #000;
-    transition: .3s;
+.header_list li a:after {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 20px;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: all linear 0.2s;
+}
+
+.header_list li a:hover:after {
+    width: 100%;
 }
 
 .header_list li a:active {
-    color: black;
+    color: #303030;
 }
 
 .account_list {
