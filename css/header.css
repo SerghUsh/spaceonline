@@ -33,7 +33,6 @@ header > div {
 
 .header_list li {
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 17px;
     line-height: 60px;
@@ -69,8 +68,6 @@ header > div {
 
 .account_list li a {
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 23px;
     text-align: center;

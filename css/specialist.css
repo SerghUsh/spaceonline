@@ -104,7 +104,6 @@
 }
 
 .box-minmax {
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 37px;
@@ -386,7 +385,7 @@
 }
 
 .specialist-header-row {
-    width: 1214px;
+    max-width: 1214px;
     margin: 0 auto;
     position: relative;
     padding: 0 10px;
@@ -401,11 +400,11 @@
     float: left;
     width: calc(100% - 190px);
     padding-left: 99px;
+    position: relative;
 }
 
 .specialist-type-experience {
     font-family: Montserrat, sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 21px;
     line-height: 37px;
@@ -801,7 +800,7 @@
     #specialist-content .specialist-link {
         position: absolute;
         top: 1px;
-        right: 155px;
+        right: 0;
         z-index: 1;
     }
 
