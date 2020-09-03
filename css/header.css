@@ -7,6 +7,7 @@ header {
     top: 0;
     left: 0;
     background: #fff;
+    transition: all linear 0.2s;
 }
 
 header.scroll {
