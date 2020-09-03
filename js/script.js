@@ -333,7 +333,8 @@ $(document).ready(function () {
                 display: false,
             },
             tooltips: {
-                titleFontSize: 30,
+                titleFontSize: 18,
+                bodyFontSize: 18,
             }
         }
     });
@@ -353,7 +354,8 @@ $(document).ready(function () {
                 display: false,
             },
             tooltips: {
-                titleFontSize: 30,
+                titleFontSize: 18,
+                bodyFontSize: 18,
             }
         }
     });
@@ -373,7 +375,8 @@ $(document).ready(function () {
                 display: false,
             },
             tooltips: {
-                titleFontSize: 30,
+                titleFontSize: 18,
+                bodyFontSize: 18,
             }
         }
     });
