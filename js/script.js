@@ -164,11 +164,12 @@ $(document).ready(function () {
     /*MAIN PRACTICE SLIDER PAGE*/
 
     // Main practice slider
-    sliderID = 'practise-page';
+    sliderID = 'specialist-slider';
     $('#' + sliderID + ' .slider').slick({
         infinite: false,
         speed: 300,
-        slidesToShow: 3,
+        slidesToShow: 1,
+        variableWidth: true,
 
         arrows: true,
         appendArrows: $('#' + sliderID + ' .slider-manage-block .arrows'),
@@ -177,6 +178,22 @@ $(document).ready(function () {
 
         dots: true,
         appendDots: $('#' + sliderID + ' .slider-manage-block .dots')
+    });
+
+    /*MAIN PRACTICE SLIDER SPECIALIST ROW */
+
+    //Specialist row slider
+    sliderID = 'specialist-row';
+    $('#' + sliderID + ' .slider').slick({
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        variableWidth: true,
+
+        arrows: true,
+        appendArrows: $('#' + sliderID + ' .arrows'),
+        prevArrow: '<div class="specialist-row-prew"></div>',
+        nextArrow: '<div class="specialist-row-next"></div>',
     });
 
 

@@ -6,8 +6,14 @@
     margin-top: 80px;
 }
 
+#practise-page .top-info {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
 #practise-page .top-info img {
     float: left;
+    width: calc(100% - 919px);
     margin-right: 54px;
 }
 #practise-page h3 {
@@ -23,6 +29,7 @@
 #practise-page .info-text {
     font-size: 22px;
     line-height: 28px;
+    width: 100%;
 }
 #practise-page .info-text p {
     padding-bottom: 18px;
@@ -32,46 +39,94 @@
     padding-top: 10px;
 }
 
-#practise-page .calendar-block {
-    margin-top: 32px;
-}
-
-#practise-page .title-left {
-    margin-top: 66px;
-    margin-bottom: 60px;
-    overflow: hidden;
-}
-
-#practise-page .title-left span {
+#specialist-row {
     position: relative;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 3.4px;
-    text-transform: uppercase;
+    width: 100%;
+    padding: 0 41px;
 }
 
-#practise-page .title-left span:after {
-    display: block;
-    width: 1028px;
-    content: '';
+#specialist-row .slider__item {
+    width: 232px;
+    height: 72px;
+    border: 2px solid #000000;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+#specialist-row .slider__item:nth-child(odd) {
+    background: #F6F7F8;
+}
+
+#specialist-row .slider__item span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+#specialist-row .slider__item span:hover {
+    text-decoration: underline;
+}
+
+.specialist-row-prew {
+    border: 2px solid #000000;
     position: absolute;
-    border: 1px solid #000000;
-    top: 46%;
-    left: 37.5rem;
+    top: 0;
+    width: 41px;
+    height: 100%;
+    left: 0;
+    background: url(../css/imgs/specialist-row-prew.svg) no-repeat;
+    background-position: center;
+    background-color: #D9D9D9;
+}
+
+.specialist-row-next {
+    border: 2px solid #000000;
+    position: absolute;
+    top: 0;
+    width: 41px;
+    height: 100%;
+    right: 0;
+    background: url(../css/imgs/specialist-row-next.svg) no-repeat;
+    background-position: center;
+    background-color: #D9D9D9;
+}
+
+#practise-page .calendar {
+    margin-bottom: 108px;
 }
 
 #practise-page .specialist-tile {
     text-align: center;
     background: #FAFAFA;
     border-radius: 10px;
-    margin: 0 auto 48px;
     transition: all linear .1s;
-    margin-right: 80px;
+    margin-bottom: 0;
+}
+
+#specialist-slider .slick-slider .slick-list {
+    padding: 20px;
+    margin: -20px;
 }
 
 #practise-page .slider-manage-block {
-    margin-top: 37px;
+    margin-top: 67px;
+}
+
+#specialist-slider .specialist-image-block {
+    margin-bottom: 18px;
+}
+
+#specialist-slider .slider__item:hover {
+    background: #fff;
+    box-shadow: 0 0 30px 0px rgb(0, 0, 0, .25);
+}
+
+#specialist-slider .slider__item {
+    width: 420px;
+    margin-right: 90px;
 }
 
 /* List Blocks */
@@ -104,6 +159,96 @@
         margin-bottom: 30px;
     }
 
+    /* Index Page*/
+
+    #practise-page {
+        margin-top: 40px;
+    }
+
+    #practise-page .top-info {
+        margin-bottom: 40px;
+    }
+
+    #practise-page h3 {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 9px;
+    }
+
+    #practise-page .top-info img {
+        float: left;
+        width: calc(100% - 326px);
+        margin-right: 31px;
+    }
+
+    #practise-page .info-text {
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    #practise-page .info-text p:first-child {
+        padding-bottom: 65px;
+    }
+
+    #practise-page .info-text p.top {
+        padding-top: 0px;
+    }
+
+    #practise-page .info-text p {
+        padding-bottom: 12px;
+    }
+
+    #specialist-row {
+        padding: 0 28px;
+    }
+
+    #specialist-row .slider__item {
+        width: 180px;
+        height: 56px;
+        padding: 7px 15px;
+    }
+
+    #specialist-row .slider__item span {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .specialist-row-next {
+        width: 28px;
+        background-size: 50%;
+    }
+
+    .specialist-row-prew {
+        width: 28px;
+        background-size: 50%;
+    }
+
+    #specialist-slider .slider__item {
+        width: 329px;
+        margin-right: 30px;
+    }
+
+    #practise-page .slider-manage-block {
+        margin-top: 10px;
+    }
+
+    #practise-page .title-left-two {
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+    #practise-page .title-left-two span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    #practise-page .title-left-two span:after {
+        width: 1028px;
+        top: 46%;
+        left: 27.5rem;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -123,6 +268,85 @@
 
     .row .tile-block {
         margin-bottom: 20px;
+    }
+
+    /* Index Page*/
+
+    #practise-page .container {
+        padding: 0 20px;
+    }
+
+    #practise-page {
+        margin-top: 22px;
+    }
+
+    #practise-page .top-info {
+        margin-bottom: 20px;
+    }
+
+    #practise-page .top-info img {
+        width: 100%;
+        margin-bottom: 9px;
+        margin-right: 0px;
+    }
+
+    #practise-page h3 {
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    #practise-page .info-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #practise-page .info-text p:first-child {
+        padding-bottom: 10px;
+    }
+
+    #practise-page .info-text p {
+        padding-bottom: 10px;
+    }
+
+    #practise-page .title span {
+        letter-spacing: 0.5px;
+    }
+
+    #specialist-row {
+        padding: 0 21px;
+    }
+
+        #specialist-row .slider__item {
+            width: 119px;
+            height: auto;
+            padding: 0px 5px;
+        }
+
+        #specialist-row .slider__item span {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .specialist-row-next {
+            width: 21px;
+            background-size: 50%;
+        }
+
+        .specialist-row-prew {
+            width: 21px;
+            background-size: 50%;
+        }
+
+    #practise-page .calendar {
+        margin-bottom: 90px;
+    }
+
+    #specialist-slider .slider__item {
+        width: 280px;
+        margin-right: 30px;
     }
 
 }

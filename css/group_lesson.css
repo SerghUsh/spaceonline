@@ -315,7 +315,7 @@
 
 	.tile-block .lesson_name::after {
 	    content: url(../css/imgs/group_lesson_icon_middle.svg);
-	    margin-left: 20px;
+	    margin-left: 14px;
 	    vertical-align: -2px;
 	}
 }
@@ -413,6 +413,11 @@
 
 	#main-list_block .container {
 	    padding: 0 20px;
+	}
+
+	#main-list_block .tile-block .image_wrapper .bottom_info {
+	    font-size: 10px;
+	    line-height: 21px;
 	}
 
 	#main-list_block .tile-block p.duration {

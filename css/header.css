@@ -240,7 +240,7 @@ header > div {
         margin: 13px 15px 0 0px;
     }
 
-    .first_item {
+    .active .first_item {
         display: block;
         color: #fff;
         border-bottom: 1px solid #fff;

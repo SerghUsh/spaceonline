@@ -8,7 +8,7 @@
 
         <nav class="header__menu">
             <ul class="header_list">
-                <div class="first_item">
+                <div class="active first_item">
                     <ul class="account_list">
                         <li><a href="<?php href('service', 'login') ?>">Войти</a></li>
                     </ul>

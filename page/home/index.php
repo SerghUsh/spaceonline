@@ -15,7 +15,7 @@
                 <div class="info">
                     <h1>Твой личный консультант</h1>
                     <p>Лучшие специалисты, тренера и консультанты, помогут вам на нашем портале.</p>
-                    <a href="#">Запишись прямо сейчас</a>
+                    <a href="#" class="btn btn-white">Запишись прямо сейчас</a>
                 </div>
 
                 <div class="slider">
@@ -35,14 +35,14 @@
 
     <section id="about_us">
         <div class="container">
-            <div class="title-center">
+            <div class="title title-big title-center">
                 <span>О нас</span>
             </div>
         </div>
 
         <div class="container-lg">
             <div class="about_us__wrapper">
-                <div class="discription">
+                <div class="description">
                     <div><img src="/css/imgs/logo_SpOn.svg"></div>
 
                     <p class="font-proximanova">SPACE Online – это уникальное пространство, первая и единственная
@@ -64,10 +64,11 @@
 
     <section id="choise_your_practises">
         <div class="container">
-            <div class="title-left">
+            <div class="title title-big title-left">
                 <span>Выбери свою практику</span>
-                <p>Испытайте свой дух. Раслабь свой разум. Успокойся. Наша команда специалистов мирового класса даст вам
-                    возможность расти и достигать всех ваших целе в личностном и карьерном и оздоровлении.</p>
+                 <p>Испытайте свой дух. Раслабь свой разум. Успокойся.Наша команда специалистов мирового класса даст вам
+                    возможность расти и достигать всех ваших целе в личностном и карьерном и оздоровлении.
+                </p>
             </div>
 
             <div class="choise_your_practises__list">
@@ -183,7 +184,7 @@
             </div>
 
             <div class="slider-manage-block">
-                <a href="#">к списку практик</a>
+                <a href="#" class="btn-slider btn-white">к списку практик</a>
                 <div class="arrows"></div>
                 <div class="dots"></div>
             </div>
@@ -192,7 +193,7 @@
 
     <section id="start_now">
         <div class="container">
-            <div class="title-right">
+            <div class="title title-big title-right">
                 <span>Начни прямо сейчас</span>
                 <p>Всего несколько шагов и ты уже частичка нас</p>
             </div>
@@ -283,7 +284,7 @@
 
     <section id="future_events">
         <div class="container">
-            <div class="title__left">
+            <div class="title title-big title-left">
                 <span>Будущие события</span>
                 <p>
                     Испытайте свой дух. Раслабь свой разум. Успокойся. Наша команда специалистов мирового класса даст
@@ -434,7 +435,7 @@
             </div>
 
             <div class="slider-manage-block">
-                <a href="#">к списку занятий</a>
+                <a href="#" class="btn-slider btn-white">к списку занятий</a>
                 <div class="arrows"></div>
                 <div class="dots"></div>
             </div>
@@ -443,14 +444,14 @@
 
     <section id="from_organizers">
         <div class="container">
-            <div class="title__center">
+            <div class="title title-big title-center">
                 <span>слово организаторов</span>
             </div>
         </div>
 
         <div class="container-lg">
             <div class="main_block__item">
-                <div class="discription_text">
+                <div class="description_text">
                     <p>SPACE Online – это уникальное пространство, первая и единственная масштабная русскоязычная платформа, которая
                     позволит людям во всем мире найти лучших мастеров во всех направлениях работы с телом, духом и душой на Пути поиска Себя! У нас можно получить консультацию практически любого из возможных специалистов тонких отраслей. <!-- И все это максимально доступно благодаря специально разработанной, не имеющей аналогов в мире платформе. Это портал для всех, кто хочет быть услышанным и разобраться со своим ценностями, для тех, кто хочет расти и развиваться. --> 
                     </p>
@@ -458,7 +459,7 @@
                     <p class="space">Если ты тоже помогаешь людям увеличить их внутреннее пространство, то становись частью нашей команды.
                     </p>
                     
-                    <a href="#" class="write">Запишись прямо сейчас</a>
+                    <a href="#" class="btn btn-white">Запишись прямо сейчас</a>
                 </div>
             </div>
         </div>

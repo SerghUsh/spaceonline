@@ -51,85 +51,85 @@
                     <div class="slider">
                         <div class="slider__item">
                             <div class="specialist-tile">
-                                    <div class="specialist-info">
-                                        <div class="specialist-image-block">
-                                            <div class="specialist-image-wrapper">
-                                                <img src="/img/specialist.jpg" alt="specialist">
-                                            </div>
-                                            <div class="circle"></div>
+                                <div class="specialist-info">
+                                    <div class="specialist-image-block">
+                                        <div class="specialist-image-wrapper">
+                                            <img src="/img/specialist.jpg" alt="specialist">
                                         </div>
-
-                                        <div class="specialist-name">
-                                                        Мария Скрипаль
-                                        </div>
-
-                                        <div class="specialist-type">
-                                            Психолог
-                                        </div>
-
-                                        <p class="specialist-description">
-                                            В работе я занимаюсь проработкой травм,
-                                            развитием личности и образованием, в
-                                            зависимости от того, что запрашивает
-                                            клиент. Другими словами я сопровождаю,
-                                            помогаю и обучаю.
-                                        </p>
-
-                                        <small class="specialist-experience">
-                                            - 4 года
-                                        </small>
-
-                                        <p class="specialist-direction">
-                                            Категории: Детская психология,
-                                            Гештальт-терапия, Позитивная терапия...
-                                        </p>
+                                        <div class="circle"></div>
                                     </div>
 
-                                    <div class="specialist-calendar">
-                                        <a href="<?php href('specialist') ?>">календарь специалиста</a>
+                                    <div class="specialist-name">
+                                                    Мария Скрипаль
                                     </div>
+
+                                    <div class="specialist-type">
+                                        Психолог
+                                    </div>
+
+                                    <p class="specialist-description">
+                                        В работе я занимаюсь проработкой травм,
+                                        развитием личности и образованием, в
+                                        зависимости от того, что запрашивает
+                                        клиент. Другими словами я сопровождаю,
+                                        помогаю и обучаю.
+                                    </p>
+
+                                    <small class="specialist-experience">
+                                        - 4 года
+                                    </small>
+
+                                    <p class="specialist-direction">
+                                        Категории: Детская психология,
+                                        Гештальт-терапия, Позитивная терапия...
+                                    </p>
+                                </div>
+
+                                <div class="specialist-calendar">
+                                    <a href="<?php href('specialist') ?>">календарь специалиста</a>
+                                </div>
                             </div>
                         </div>
 
                         <div class="slider__item">
                             <div class="specialist-tile">
-                                    <div class="specialist-info">
-                                        <div class="specialist-image-block">
-                                            <div class="specialist-image-wrapper">
-                                                <img src="/img/specialist.jpg" alt="specialist">
-                                            </div>
-                                            <div class="circle"></div>
+                                <div class="specialist-info">
+                                    <div class="specialist-image-block">
+                                        <div class="specialist-image-wrapper">
+                                            <img src="/img/specialist.jpg" alt="specialist">
                                         </div>
-
-                                        <div class="specialist-name">
-                                                        Мария Скрипаль
-                                        </div>
-
-                                        <div class="specialist-type">
-                                            Психолог
-                                        </div>
-
-                                        <p class="specialist-description">
-                                            В работе я занимаюсь проработкой травм,
-                                            развитием личности и образованием, в
-                                            зависимости от того, что запрашивает
-                                            клиент. Другими словами я сопровождаю,
-                                            помогаю и обучаю.
-                                        </p>
-
-                                        <small class="specialist-experience">
-                                            - 4 года
-                                        </small>
-
-                                        <p class="specialist-direction">
-                                            Категории: Детская психология,
-                                            Гештальт-терапия, Позитивная терапия...
-                                        </p>
+                                        <div class="circle"></div>
                                     </div>
 
-                                    <div class="specialist-calendar">
-                                        <a href="<?php href('specialist') ?>">календарь специалиста</a>
+                                    <div class="specialist-name">
+                                                    Мария Скрипаль
                                     </div>
+
+                                    <div class="specialist-type">
+                                        Психолог
+                                    </div>
+
+                                    <p class="specialist-description">
+                                        В работе я занимаюсь проработкой травм,
+                                        развитием личности и образованием, в
+                                        зависимости от того, что запрашивает
+                                        клиент. Другими словами я сопровождаю,
+                                        помогаю и обучаю.
+                                    </p>
+
+                                    <small class="specialist-experience">
+                                        - 4 года
+                                    </small>
+
+                                    <p class="specialist-direction">
+                                        Категории: Детская психология,
+                                        Гештальт-терапия, Позитивная терапия...
+                                    </p>
+                                </div>
+
+                                <div class="specialist-calendar">
+                                    <a href="<?php href('specialist') ?>">календарь специалиста</a>
+                                </div>
                             </div>
                         </div>
 

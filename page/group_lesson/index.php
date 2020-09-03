@@ -81,8 +81,7 @@
     		</div>
     		
     		<div class="calendar">
-    			<div><img src="/img/calendar_small.jpg"></div>
-    			<!-- <div><img src="/img/calendar_block.jpg"></div> -->
+    			<?php put('calendar') ?>
     		</div>
 
             <div class="title-left-lesson">

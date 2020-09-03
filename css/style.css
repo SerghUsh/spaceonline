@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'ProximaNova';
     src: url('../fonts/ProximaNova/ProximaNova-Bold.ttf') format("truetype");
     font-weight: 700;
@@ -17,6 +17,27 @@
     src: url('../fonts/ProximaNova/ProximaNova-Light.ttf') format("truetype");
     font-weight: 300;
     font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Bold.ttf') format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Regular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Light.ttf') format("truetype");
+    font-weight: 300;
+    font-style: normal;
 }
 
 * {
@@ -27,7 +48,7 @@
 
 body {
     padding-top: 80px;
-    font-family: 'ProximaNova', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 body.blur {
@@ -85,6 +106,84 @@ body.blur header {
     display: none;
 }
 
+.title {
+    margin-top: 81px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    position: relative;
+}
+.title span {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 3.4px;
+    text-transform: uppercase;
+    display: inline-block;
+    background: #fff;
+}
+.title-big {
+    margin-top: 68px;
+    margin-bottom: 60px;
+}
+.title-big span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 3px;
+}
+
+.title-big p {
+    width: 68%;
+    margin-top: 16px;
+    font-size: 22px;
+    line-height: 37px;
+    color: #323232;
+}
+
+.title:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.title-big:after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.title-left {
+    text-align: left;
+}
+.title-left span {
+    padding-right: 46px;
+}
+.title-center {
+    text-align: center;
+}
+.title-center span {
+    padding-left: 46px;
+    padding-right: 46px;
+}
+.title-right {
+    text-align: right;
+}
+.title-right span {
+    padding-left: 46px;
+}
+
 .btn {
     display: inline-block;
     padding: 14px 20px;
@@ -94,6 +193,25 @@ body.blur header {
     line-height: 22px;
     text-align: center;
     letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    transition: all linear .1s;
+    outline: none;
+}
+
+.btn-slider {
+    display: inline-block;
+    padding: 15px 75px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.6px;
     text-decoration: none;
     border-radius: 5px;
     border: none;
@@ -240,6 +358,54 @@ form .btn {
 }
 
 @media (max-width: 1199px) {
+    .title {
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+    .title span {
+        width: 64%;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 3px;
+    }
+    .title-big {
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+    .title-big span {
+        width: 59%;
+        font-size: 22px;
+        line-height: 50px;
+        letter-spacing: 3px;
+    }
+
+    .title-big p {
+        width: 97%;
+        margin-top: -3px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .title:after {
+        top: 10px;
+    }
+    .title-big:after {
+        top: 24px;
+    }
+
+    .title-left span {
+        padding-right: 25px;
+    }
+
+    .title-center span {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .title-right span {
+        padding-left: 25px;
+    }
+
     #cookie-block {
         padding: 20px 0;
     }
@@ -296,9 +462,64 @@ form .btn {
     .btn-white {
         padding: 4px 20px;
     }
+
+    .btn-slider {
+        padding: 11px 70px;
+        font-size: 14px;
+        line-height: 21px;
+        height: 42px;
+    }
+
 }
 
 @media (max-width: 767px) {
+    .title {
+        margin-top: 42;
+        margin-bottom: 20px;
+    }
+    .title span {
+        width: 93%;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+    }
+    .title-big {
+        margin-top: 42px;
+        margin-bottom: 10px;
+    }
+
+    .title-big span {
+        width: 75%;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+    }
+
+    .title-big p {
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .title:after {
+        top: 9px;
+    }
+
+    .title-big:after {
+        top: 9px;
+    }
+
+    .title-left span {
+        padding-right: 15px;
+    }
+    .title-center span {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .title-right span {
+        padding-left: 15px;
+    }
+
     #cookie-block p {
         float: none;
         font-size: 14px;
@@ -341,5 +562,13 @@ form .btn {
 
     .btn-white {
         padding: 0 20px;
+    }
+
+    .btn-slider {
+        padding: 5px 7px;
+        font-size: 8px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        height: 25px;
     }
 }

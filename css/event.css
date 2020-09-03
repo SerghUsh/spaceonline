@@ -42,40 +42,33 @@
 
 /* Title Event */
 
-#event-content .title-center {
-    margin-top: 30px;
-    margin-bottom: 23px;
+#event-content .title {
+    margin-top: 53px;
+    margin-bottom: 50px;
     overflow: hidden;
-    text-align: center;
+    position: relative;
 }
 
-#event-content .title-center span {
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
+#event-content .title span {
     font-weight: bold;
     font-size: 22px;
     line-height: 50px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #000000;
+    display: inline-block;
+    background: #fff;
 }
 
-#event-content .title-center span:before {
-    width: 704px;
+#event-content .title:after {
     content: '';
     position: absolute;
-    border: 1px solid #000000;
-    top: 43%;
-    right: 172px;
-}
-
-#event-content .title-center span:after {
-    width: 703px;
-    content: '';
-    position: absolute;
-    border: 1px solid #000000;
-    top: 43%;
-    left: 171px;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    z-index: -1;
+    border-radius: 10px;
 }
 
 /* Open Event Index */
@@ -121,10 +114,8 @@
 }
 
 #event-top .content-block .right_info {
-    position: absolute;
-    width: 356px;
-    top: -3px;
-    right: 34px;
+    width: 390px;
+    float: right;
     font-size: 22px;
     line-height: 28px;  
 }
@@ -166,9 +157,9 @@
 }
 
 #event-top a.btn-event {
+    display: block;
     width: 306px;
     height: 50px;
-    bottom: -105px;
     background: #FFFFFF;
     border-radius: 5px;
     border: 1px solid #000000;
@@ -183,7 +174,7 @@
     cursor: pointer;
     color: #000000;
     padding: 16px 0;
-    position: inherit;
+    margin-top: 52px;
 }
 
 #event-top a.btn-event:hover {
@@ -206,6 +197,10 @@
 }
 #event-top .specialist-block {
     width: 420px;
+}
+
+#event-top .specialist-image-block {
+    margin-bottom: 18px;
 }
 
 #event-top .specialist-tile {
@@ -326,29 +321,19 @@
         top: 13px;
     }
 
-    #event-content .title-center {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        overflow: hidden;
-        text-align: center;
+    #event-content .title {
+        margin-top: 51px;
     }
 
-    #event-content .title-center span {
+    #event-content .title span {
+        width: 24%;
         font-size: 16px;
         line-height: 22px;
         letter-spacing: 3px;
     }
 
-    #event-content .title-center span:before {
-        width: 266px;
-        top: 43%;
-        right: 123px;
-    }
-
-    #event-content .title-center span:after {
-        width: 266px;
-        top: 43%;
-        left: 131px;
+    #event-content .title:after {
+        top: 9px;
     }
 
     /* Open Event Index Media*/
@@ -356,10 +341,6 @@
     #event-top {
         margin-top: 12px;
         margin-bottom: 22px;
-    }
-
-    #event-top .top-block {
-        padding: 0 25px;
     }
 
     #event-top .content-block {
@@ -380,10 +361,10 @@
 
     #event-top .content-block .right_info {
         width: 256px;
-        top: 215px;
-        left: 0px;
         font-size: 16px;
         line-height: 22px;
+        float: left;
+        margin-top: 11px;
     }
 
     #event-top .content-block .right_info span {
@@ -408,17 +389,17 @@
     #event-top a.btn-event {
         width: 250px;
         height: 42px;
-        bottom: -83px;
         font-size: 14px;
         line-height: 21px;
         letter-spacing: 1.6px;
         padding: 11px 0;
+        margin-top: 39px;
     }
 
     #event-top p.lesson-info {
         width: 91%;
         min-height: 320px;
-        margin-top: 270px;
+        margin-top: 266px;
         font-size: 16px;
         line-height: 20px;
         padding-bottom: 35px;
@@ -513,34 +494,27 @@
     }
 
     .tile-block .image_wrapper .bottom_info .last_event {
-        vertical-align: -3px;
+        vertical-align: 1px;
     }
 
     #event-content .tile-block p.duration {
         margin-left: 21px;
     }
 
-    #event-content .title-center {
-        margin-top: 0px;
+    #event-content .title {
+        margin-top: 7px;
         margin-bottom: 29px;
     }
 
-    #event-content .title-center span {
+    #event-content .title span {
+        width: 33%;
         font-size: 12px;
         line-height: 18px;
-        letter-spacing: 0px;
+        letter-spacing: 1px;
     }
 
-    #event-content .title-center span:before {
-        width: 92px;
-        top: 48%;
-        right: 77px;
-    }
-
-    #event-content .title-center span:after {
-        width: 92px;
-        top: 48%;
-        left: 77px;
+    #event-content .title:after {
+        top: 9px;
     }
 
     /* Open Event Index Media*/
@@ -578,8 +552,7 @@
 
     #event-top .content-block .right_info {
         width: 200px;
-        top: 200px;
-        left: 0px;
+        margin-top: 7px;
         font-size: 12px;
     }
 
@@ -590,12 +563,11 @@
     #event-top a.btn-event {
         width: 185px;
         height: 25px;
-        left: 47px;
-        bottom: -64px;
         font-size: 8px;
         line-height: 12px;
         letter-spacing: 1px;
         padding: 6px 0;
+        margin-left: 47px;
     }
 
     #event-top p.lesson-info {
