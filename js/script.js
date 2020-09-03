@@ -43,6 +43,15 @@ $(document).ready(function () {
     }
 
     /* HEADER MENU */
+    $(window).scroll(function(e) {
+        var scroll = $(window).scrollTop();
+        if (scroll) {
+            $('header').addClass('scroll');
+        } else {
+            $('header').removeClass('scroll');
+        }
+        console.log(scroll);
+    }).trigger('scroll');
     $('.header__burger').click(function (event) {
         $('.header__burger,.header__menu').toggleClass('active');
     });
@@ -316,26 +325,15 @@ $(document).ready(function () {
                     pointBorderColor: "#000",
                     data: [65, 59, 80, 81, 56, 55, 40]
                 },
-                {
-                    label: "Семинары",
-                    backgroundColor: 'rgba(89,173,107,0.5)', // #59AD6B
-                    borderColor: "#59AD6B",
-                    pointBackgroundColor: "#59AD6B",
-                    pointBorderColor: "#000",
-                    data: [30, 50, 58, 25, 40, 11, 20]
-                }
             ]
         },
         options: {
             responsive: true,
             legend: {
-                display: true,
-                position: 'top',
-                labels: {
-                    boxWidth: 15,
-                    fontSize: 22,
-                    fontColor: '#000'
-                }
+                display: false,
+            },
+            tooltips: {
+                titleFontSize: 30,
             }
         }
     });
@@ -352,15 +350,12 @@ $(document).ready(function () {
         options: {
             responsive: true,
             legend: {
-                display: true,
-                position: 'right',
-                labels: {
-                    boxWidth: 15,
-                    fontSize: 22,
-                    fontColor: '#000',
-                }
+                display: false,
+            },
+            tooltips: {
+                titleFontSize: 30,
             }
-        },
+        }
     });
 
     var doughnutChartByCategory = new Chart(document.getElementById("doughnutChartByCategory").getContext("2d"), {
@@ -375,70 +370,13 @@ $(document).ready(function () {
         options: {
             responsive: true,
             legend: {
-                display: true,
-                position: 'right',
-                labels: {
-                    boxWidth: 15,
-                    fontSize: 22,
-                    fontColor: '#000',
-                }
+                display: false,
+            },
+            tooltips: {
+                titleFontSize: 30,
             }
         }
     });
-
-    $(window).resize(function () {
-        console.log(window.innerWidth);
-        if (window.innerWidth < 768) {
-            lineChartByWorkTime.options.legend.labels.fontSize = 14;
-            lineChartByWorkTime.aspectRatio = 1;
-            lineChartByWorkTime.update();
-
-            doughnutChartByType.options.legend.labels.fontSize = 14;
-            doughnutChartByType.options.legend.position = 'bottom';
-            doughnutChartByType.update();
-
-            doughnutChartByCategory.options.legend.labels.fontSize = 14;
-            doughnutChartByCategory.options.legend.position = 'bottom';
-            doughnutChartByCategory.update();
-        } else if (window.innerWidth < 1200) {
-            lineChartByWorkTime.options.legend.labels.fontSize = 22;
-            lineChartByWorkTime.aspectRatio = 2;
-            lineChartByWorkTime.update();
-
-            doughnutChartByType.options.legend.labels.fontSize = 22;
-            doughnutChartByType.options.legend.position = 'right';
-            doughnutChartByType.update();
-
-            doughnutChartByCategory.options.legend.labels.fontSize = 22;
-            doughnutChartByCategory.options.legend.position = 'right';
-            doughnutChartByCategory.update();
-        } else if (window.innerWidth < 1500) {
-            lineChartByWorkTime.options.legend.labels.fontSize = 22;
-            lineChartByWorkTime.aspectRatio = 2;
-            lineChartByWorkTime.update();
-
-            doughnutChartByType.options.legend.labels.fontSize = 22;
-            doughnutChartByType.options.legend.position = 'bottom';
-            doughnutChartByType.update();
-
-            doughnutChartByCategory.options.legend.labels.fontSize = 22;
-            doughnutChartByCategory.options.legend.position = 'bottom';
-            doughnutChartByCategory.update();
-        } else {
-            lineChartByWorkTime.options.legend.labels.fontSize = 22;
-            lineChartByWorkTime.aspectRatio = 2;
-            lineChartByWorkTime.update();
-
-            doughnutChartByType.options.legend.labels.fontSize = 22;
-            doughnutChartByType.options.legend.position = 'right';
-            doughnutChartByType.update();
-
-            doughnutChartByCategory.options.legend.labels.fontSize = 22;
-            doughnutChartByCategory.options.legend.position = 'right';
-            doughnutChartByCategory.update();
-        }
-    });
-    $(window).resize();
 
     // Init filter
     $('*[data-filter]').on('click', function (e) {

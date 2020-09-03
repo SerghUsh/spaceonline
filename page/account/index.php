@@ -585,6 +585,11 @@
                         <select name="filter-range" id="statistic-range">
                             <option value="">1 Апреля - 9 Апреля 2020</option>
                         </select>
+
+                        <div class="legend-inline">
+                            <span><i style="background:#5985AD"></i> Личн. кон.</span>
+                            <span><i style="background:#59ADA8"></i> Занятия</span>
+                        </div>
                     </div>
 
                     <div class="statistic-line-wrapper">
@@ -594,12 +599,50 @@
                     <div class="statistic-doughnut">
                         <div class="statistic-doughnut-wrapper">
                             <h3>По видам</h3>
-                            <canvas id="doughnutChartByType" width="100%"></canvas>
+
+                            <div class="chart-row">
+                                <div class="chart-col">
+                                    <div class="pie-wrapper">
+                                        <canvas id="doughnutChartByType" height="281px"></canvas>
+                                    </div>
+                                </div>
+
+                                <div class="chart-col">
+                                    <div class="vertical-align-middle">
+                                        <div>
+                                            <ul class="legend">
+                                                <li><i style="background:#5985AD"></i> Личные консультации</li>
+                                                <li><i style="background:#59ADA8"></i> Групповые занятия</li>
+                                                <li><i style="background:#59AD6B"></i> Семинары</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="statistic-doughnut-wrapper">
                             <h3>По категориям</h3>
-                            <canvas id="doughnutChartByCategory" width="100%"></canvas>
+
+                            <div class="chart-row">
+                                <div class="chart-col">
+                                    <div class="pie-wrapper">
+                                        <canvas id="doughnutChartByCategory" height="281px"></canvas>
+                                    </div>
+                                </div>
+
+                                <div class="chart-col">
+                                    <div class="vertical-align-middle">
+                                        <div>
+                                            <ul class="legend">
+                                                <li><i style="background:#5985AD"></i> Психология</li>
+                                                <li><i style="background:#59ADA8"></i> Астрология</li>
+                                                <li><i style="background:#59AD6B"></i> Коучинг</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
