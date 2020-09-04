@@ -19,7 +19,7 @@ $(document).ready(function () {
     $(window).resize(function (){
         let zoom = 1;
         if (window.innerWidth > 1199 && window.innerWidth < 1920) {
-            zoom = 1 - (0.25 / 720 * (1920 - window.innerWidth));
+            zoom = 1 - (0.3 / 720 * (1920 - window.innerWidth));
         }
         $('body').css('zoom', zoom);
     }).trigger('resize');

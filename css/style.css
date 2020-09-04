@@ -80,14 +80,14 @@ body.blur header {
 }
 
 .container {
-    max-width: 1720px;
+    max-width: 1920px;
     margin: 0 auto;
-    padding: 0 45px;
+    padding: 0 145px;
 }
 
 .container-sm {
-    max-width: 1530px;
-    padding: 0 45px;
+    max-width: 1730px;
+    padding: 0 145px;
     margin: 0 auto;
 }
 

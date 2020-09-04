@@ -57,7 +57,7 @@ header > div {
     content: '';
     display: block;
     position: relative;
-    bottom: 20px;
+    bottom: 17px;
     width: 0;
     height: 1px;
     background: #000;
