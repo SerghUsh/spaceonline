@@ -119,8 +119,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn btn-teal">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn btn-green">Подключиться</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-green">Подключиться</a>
                             </div>
                         </div>
 
@@ -136,8 +136,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn btn-teal">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn btn-green">Подключиться</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-green">Подключиться</a>
                             </div>
                         </div>
 
@@ -153,8 +153,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn btn-teal">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn btn-green">Подключиться</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-green">Подключиться</a>
                             </div>
                         </div>
 
@@ -170,8 +170,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn btn-teal">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn btn-green ">Подключиться</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-green ">Подключиться</a>
                             </div>
                         </div>
 
@@ -187,8 +187,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn btn-teal">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn btn-green ">Подключиться</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-green ">Подключиться</a>
                             </div>
                         </div>
 
@@ -205,7 +205,7 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn btn-white">Перейти</a>
+                                <a href="<?php href('specialist') ?>" class="btn btn-white">Перейти</a>
                             </div>
                         </div>
                     </div>
@@ -241,7 +241,7 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-teal">Перейти</a>
                             </div>
                         </div>
 
@@ -257,8 +257,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn btn-teal">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn btn-green">Подключиться</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-green">Подключиться</a>
                             </div>
                         </div>
 
@@ -274,8 +274,8 @@
                             </div>
 
                             <div class="event-actions-block">
-                                <a href="<?php href('account', 'video');?>" class="btn btn-teal">Перейти</a>
-                                <a href="<?php href('account', 'video');?>" class="btn btn-green">Подключиться</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-teal">Перейти</a>
+                                <a href="<?php href('account', 'video') ?>" class="btn btn-green">Подключиться</a>
                             </div>
                         </div>
                     </div>

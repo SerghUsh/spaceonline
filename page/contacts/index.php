@@ -67,7 +67,7 @@
 
                     <p class="label">Ваше сообщение</p>
 
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="comment" id="" cols="30" rows="10"></textarea>
 
                     <button class="btn btn-grey" type="submit">Отправить</button>
                 </form>
