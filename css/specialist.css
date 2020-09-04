@@ -454,26 +454,24 @@
     margin: 0 2px;
     vertical-align: top;
     background-position: center center;
+    background-size: auto 98%;
+    background-repeat: no-repeat;
 }
 
 #specialist-content .specialist-link a.heart {
-    background: url('/css/imgs/specialist-heart-link.svg') no-repeat center center;
-    background-size: auto 100%;
+    background-image: url('/css/imgs/specialist-heart-link.svg');
 }
 
 #specialist-content .specialist-link a.instagram {
-    background: url('/css/imgs/specialist-instagram-link.svg') no-repeat center center;
-    background-size: auto 100%;
+    background-image: url('/css/imgs/specialist-instagram-link.svg');
 }
 
 #specialist-content .specialist-link a.facebook {
-    background: url('/css/imgs/specialist-facebook-link.svg') no-repeat center center;
-    background-size: auto 100%;
+    background-image: url('/css/imgs/specialist-facebook-link.svg');
 }
 
 #specialist-content .specialist-link a.copy {
-    background: url('/css/imgs/specialist-copy-link.svg') no-repeat center center;
-    background-size: auto 100%;
+    background-image: url('/css/imgs/specialist-copy-link.svg');
 }
 
 #specialist-content .specialist-description {
