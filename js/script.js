@@ -15,7 +15,7 @@ function popUpHide(id) {
 }
 
 $(document).ready(function () {
-    // zoom body on desktop
+    /* ZOOM BODY ON DESKTOP */
     $(window).resize(function (){
         let zoom = 1;
         if (window.innerWidth > 1199 && window.innerWidth < 1920) {
@@ -24,7 +24,7 @@ $(document).ready(function () {
         $('body').css('zoom', zoom);
     }).trigger('resize');
 
-    /* Clipboard */
+    /* CLIPBOARD */
     var clipboardTimer;
     new ClipboardJS('.clipboard');
     $('.clipboard').on('click', function (e) {
@@ -59,7 +59,6 @@ $(document).ready(function () {
         } else {
             $('header').removeClass('scroll');
         }
-        console.log(scroll);
     }).trigger('scroll');
     $('.header__burger').click(function (event) {
         $('.header__burger,.header__menu').toggleClass('active');

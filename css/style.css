@@ -112,6 +112,7 @@ body.blur header {
     overflow: hidden;
     position: relative;
 }
+
 .title span {
     font-weight: bold;
     font-size: 24px;
@@ -121,10 +122,12 @@ body.blur header {
     display: inline-block;
     background: #fff;
 }
+
 .title-big {
     margin-top: 68px;
     margin-bottom: 60px;
 }
+
 .title-big span {
     font-family: 'Montserrat', sans-serif;
     font-size: 42px;
@@ -167,19 +170,24 @@ body.blur header {
 .title-left {
     text-align: left;
 }
+
 .title-left span {
     padding-right: 46px;
 }
+
 .title-center {
     text-align: center;
 }
+
 .title-center span {
     padding-left: 46px;
     padding-right: 46px;
 }
+
 .title-right {
     text-align: right;
 }
+
 .title-right span {
     padding-left: 46px;
 }
@@ -348,34 +356,45 @@ form .btn {
     opacity: 0;
 }
 
+.clipboard[data-tooltip-position="left"]:after {
+    top: calc(50% - 14px);
+    left: calc(100% + 5px);
+}
+
 .clipboard.tooltip:after {
     opacity: 1;
 }
+
 @media (max-width: 1920px) {
     body {
         zoom: 0.9;
     }
 }
+
 @media (max-width: 1600px) {
     body {
         zoom: 0.8;
     }
 }
+
 @media (max-width: 1400px) {
     body {
         zoom: 0.7;
     }
 }
+
 @media (max-width: 1300px) {
     body {
         zoom: 0.6;
     }
 }
+
 @media (max-width: 1199px) {
     body {
         zoom: 1;
     }
 }
+
 @media (max-width: 1719px) {
     #cookie-block p {
         font-size: 22px;
@@ -408,16 +427,19 @@ form .btn {
         margin-top: 45px;
         margin-bottom: 30px;
     }
+
     .title span {
         width: 64%;
         font-size: 16px;
         line-height: 22px;
         letter-spacing: 3px;
     }
+
     .title-big {
         margin-top: 40px;
         margin-bottom: 32px;
     }
+
     .title-big span {
         width: 59%;
         font-size: 22px;
@@ -435,6 +457,7 @@ form .btn {
     .title:after {
         top: 10px;
     }
+
     .title-big:after {
         top: 24px;
     }
@@ -532,12 +555,14 @@ form .btn {
         margin-top: 42;
         margin-bottom: 20px;
     }
+
     .title span {
         width: 93%;
         font-size: 12px;
         line-height: 18px;
         letter-spacing: 1px;
     }
+
     .title-big {
         margin-top: 42px;
         margin-bottom: 10px;
@@ -567,10 +592,12 @@ form .btn {
     .title-left span {
         padding-right: 15px;
     }
+
     .title-center span {
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .title-right span {
         padding-left: 15px;
     }

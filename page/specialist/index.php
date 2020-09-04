@@ -39,7 +39,7 @@
                             <a href="#" class="heart"></a>
                             <a href="#" class="instagram"></a>
                             <a href="#" class="facebook"></a>
-                            <a href="javascript:void(0);" class="copy clipboard tooltip" data-clipboard-text="<link>" data-tooltip-text="Ссылка скопированна"></a>
+                            <a href="javascript:void(0);" class="copy clipboard" data-clipboard-text="<link>" data-tooltip-text="Ссылка скопированна"></a>
                         </div>
 
                         <p class="specialist-description">

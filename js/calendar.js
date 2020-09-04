@@ -444,7 +444,6 @@ $(document).ready(function () {
 });
 if (calendarInstance) {
     window.addEventListener('resize', function() {
-        console.log(window.innerWidth);
         if (window.innerWidth < 1200) {
             if (calendarInstance.getViewName() === 'week') {
                 calendarInstance.changeView('day', true);

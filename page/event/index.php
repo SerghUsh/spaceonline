@@ -36,7 +36,7 @@
                             <span class=""><b>Стоимость участия:</b> 500 гривен</span>
                             <div class="content-block-link">
                                 <a href="#" class="hear"></a>
-                                <a href="#" class="cop"></a>
+                                <a href="#" class="cop clipboard" data-clipboard-text="<link>" data-tooltip-position="left" data-tooltip-text="Ссылка скопированна"></a>
                             </div>
                             <a href="#" class="btn-event">Принять участие</a>
                         </div>
