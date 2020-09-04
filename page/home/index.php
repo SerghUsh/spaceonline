@@ -20,13 +20,13 @@
 
                 <div class="slider">
                     <div class="slider__item">
-                        <img src="/img/bg_personal_gid.jpg">
+                        <img src="/img/bg_personal_gid.jpg" alt="image">
                     </div>
                     <div class="slider__item">
-                        <img src="/img/bg_personal_gid.jpg">
+                        <img src="/img/bg_personal_gid.jpg" alt="image">
                     </div>
                     <div class="slider__item">
-                        <img src="/img/bg_personal_gid.jpg">
+                        <img src="/img/bg_personal_gid.jpg" alt="image">
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
         <div class="container-lg">
             <div class="about_us__wrapper">
                 <div class="description">
-                    <div><img src="/css/imgs/logo_SpOn.svg"></div>
+                    <div><img src="/css/imgs/logo_SpOn.svg" alt="image"></div>
 
                     <p class="font-proximanova">SPACE Online – это уникальное пространство, первая и единственная
                         масштабная русскоязычная платформа, которая позволит людям во всем мире найти лучших мастеров во
@@ -66,7 +66,7 @@
         <div class="container">
             <div class="title title-big title-left">
                 <span>Выбери свою практику</span>
-                 <p>Испытайте свой дух. Раслабь свой разум. Успокойся.Наша команда специалистов мирового класса даст вам
+                <p>Испытайте свой дух. Раслабь свой разум. Успокойся.Наша команда специалистов мирового класса даст вам
                     возможность расти и достигать всех ваших целе в личностном и карьерном и оздоровлении.
                 </p>
             </div>
@@ -74,12 +74,11 @@
             <div class="choise_your_practises__list">
                 <div class="slider">
                     <div class="slider__item">
-                       <div class="tile-block">
+                        <div class="tile-block">
                             <div class="image_wrapper">
                                 <img src="/img/bg_name_event1.jpg" alt="image">
                             </div>
-                            
-                            <h2>Астрология</h2>   
+                            <h2>Астрология</h2>
                             <div class="description-block">
                                 <p>
                                     Улучши свое душевное равновесие. С лучшим специалистом
@@ -92,12 +91,11 @@
                     </div>
 
                     <div class="slider__item">
-                       <div class="tile-block">
+                        <div class="tile-block">
                             <div class="image_wrapper">
                                 <img src="/img/bg_name_event1.jpg" alt="image">
                             </div>
-                            
-                            <h2>Астрология</h2>   
+                            <h2>Астрология</h2>
                             <div class="description-block">
                                 <p>
                                     Улучши свое душевное равновесие. С лучшим специалистом
@@ -110,12 +108,11 @@
                     </div>
 
                     <div class="slider__item">
-                       <div class="tile-block">
+                        <div class="tile-block">
                             <div class="image_wrapper">
                                 <img src="/img/bg_name_event1.jpg" alt="image">
                             </div>
-                            
-                            <h2>Астрология</h2>   
+                            <h2>Астрология</h2>
                             <div class="description-block">
                                 <p>
                                     Улучши свое душевное равновесие. С лучшим специалистом
@@ -128,12 +125,11 @@
                     </div>
 
                     <div class="slider__item">
-                       <div class="tile-block">
+                        <div class="tile-block">
                             <div class="image_wrapper">
                                 <img src="/img/bg_name_event1.jpg" alt="image">
                             </div>
-                            
-                            <h2>Астрология</h2>   
+                            <h2>Астрология</h2>
                             <div class="description-block">
                                 <p>
                                     Улучши свое душевное равновесие. С лучшим специалистом
@@ -145,13 +141,12 @@
                         </div>
                     </div>
 
-                   <div class="slider__item">
-                       <div class="tile-block">
+                    <div class="slider__item">
+                        <div class="tile-block">
                             <div class="image_wrapper">
                                 <img src="/img/bg_name_event1.jpg" alt="image">
                             </div>
-                            
-                            <h2>Астрология</h2>   
+                            <h2>Астрология</h2>
                             <div class="description-block">
                                 <p>
                                     Улучши свое душевное равновесие. С лучшим специалистом
@@ -163,13 +158,12 @@
                         </div>
                     </div>
 
-                   <div class="slider__item">
-                       <div class="tile-block">
+                    <div class="slider__item">
+                        <div class="tile-block">
                             <div class="image_wrapper">
                                 <img src="/img/bg_name_event1.jpg" alt="image">
                             </div>
-                            
-                            <h2>Астрология</h2>   
+                            <h2>Астрология</h2>
                             <div class="description-block">
                                 <p>
                                     Улучши свое душевное равновесие. С лучшим специалистом
@@ -197,69 +191,71 @@
                 <span>Начни прямо сейчас</span>
                 <p>Всего несколько шагов и ты уже частичка нас</p>
             </div>
-            
+
             <div class="slider">
                 <div class="flex-item">
                     <div class="slider__item">
-                        <div class="number" alt="">1</div>
+                        <div class="number">1</div>
                         <h2>Выбор категории</h2>
                         <p>
-                        Выбери категорию, которая тебе
-                        подходит. Все категории подобраны
-                        для вас.
+                            Выбери категорию, которая тебе
+                            подходит. Все категории подобраны
+                            для вас.
                         </p>
                     </div>
-                    <div class="next_slide" >
+                    <div class="next_slide">
                         <a href="#"></a>
                     </div>
                 </div>
 
                 <div class="flex-item">
                     <div class="slider__item">
-                        <div class="number" alt="">2</div>
+                        <div class="number">2</div>
                         <h2>Выбор специалиста</h2>
                         <p>
-                        В каждой категории представлены
-                        лучшие специалисты. Каждый
-                        заинтересован помочь вам.
+                            В каждой категории представлены
+                            лучшие специалисты. Каждый
+                            заинтересован помочь вам.
                         </p>
                     </div>
-                    <div class="next_slide" >
+                    <div class="next_slide">
                         <a href="#"></a>
                     </div>
                 </div>
 
                 <div class="flex-item">
                     <div class="slider__item">
-                        <div class="number" alt="">3</div>
+                        <div class="number">3</div>
                         <h2 class="height">Запись на консультацию</h2>
                         <p>
-                        Выберите свободную дату и время
-                        в графике специалиста который
-                        вам подошел.
+                            Выберите свободную дату и время
+                            в графике специалиста который
+                            вам подошел.
                         </p>
                     </div>
-                    <div class="next_slide" >
+                    <div class="next_slide">
                         <a href="#"></a>
                     </div>
                 </div>
 
                 <div class="flex-item">
                     <div class="slider__item">
-                        <div class="number" alt="">4</div>
+                        <div class="number">4</div>
                         <h2>Регистрация</h2>
                         <p>
-                        Зарегистрируй свой личный аккаунт
-                        в Space Online.
+                            Зарегистрируй свой личный аккаунт
+                            в Space Online.
                         </p>
                         <a href="#" class="registration">Регистрация</a>
                     </div>
+                    <div class="next_slide">
+                        <a href="#"></a>
+                    </div>
                 </div>
-
 
                 <div class="flex-item">
                     <div class="slider__item">
-                        <div class="number" alt="">5</div>
+                        <div class="number">5</div>
                         <h2>Оплата</h2>
                         <p>
                             Подключитесь в нужную дату и время
@@ -267,16 +263,24 @@
                             платформу.
                         </p>
                     </div>
+                    <div class="next_slide">
+                        <a href="#"></a>
+                    </div>
                 </div>
 
-                <div class="slider__item">
-                    <div class="number" alt="">6</div>
-                    <h2>Консультация</h2>
-                    <p>
-                        Подключитесь в нужную дату и время
-                        к своему специалисту через нашу
-                        платформу.
-                    </p>
+                <div class="flex-item">
+                    <div class="slider__item">
+                        <div class="number">6</div>
+                        <h2>Консультация</h2>
+                        <p>
+                            Подключитесь в нужную дату и время
+                            к своему специалисту через нашу
+                            платформу.
+                        </p>
+                    </div>
+                    <div class="next_slide">
+                        <a href="#"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -303,55 +307,9 @@
                                     <span class="date">21/06/2020</span>
                                 </div>
                             </div>
-                            
-                            <h2>Название мероприятия</h2> 
-                            <p class="duration">Длительность: 1 час 20 минут</p>  
-                            <div class="description-block">
-                                <p>
-                                    Улучши свое душевное равновесие. С лучшим специалистом
-                                    Екатериной. Всего за полтора часа, ты сможешь погрузиться
-                                    внутрь себя и найти в себе гармонию...
-                                </p>
-                                <a href="<?php href('practise') ?>">Узнать больше</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                     <div class="slider__item">
-                        <div class="tile-block">
-                            <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
-                                <div class="bottom_info">
-                                    <span class="free_place">3/20</span>
-                                    <span class="date">21/06/2020</span>
-                                </div>
-                            </div>
-                            
-                            <h2>Название мероприятия</h2> 
-                            <p class="duration">Длительность: 1 час 20 минут</p>  
-                            <div class="description-block">
-                                <p>
-                                    Улучши свое душевное равновесие. С лучшим специалистом
-                                    Екатериной. Всего за полтора часа, ты сможешь погрузиться
-                                    внутрь себя и найти в себе гармонию...
-                                </p>
-                                <a href="<?php href('practise') ?>">Узнать больше</a>
-                            </div>
-                        </div>
-                    </div>
 
-                   <div class="slider__item">
-                        <div class="tile-block">
-                            <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
-                                <div class="bottom_info">
-                                    <span class="free_place">3/20</span>
-                                    <span class="date">21/06/2020</span>
-                                </div>
-                            </div>
-                            
-                            <h2>Название мероприятия</h2> 
-                            <p class="duration">Длительность: 1 час 20 минут</p>  
+                            <h2>Название мероприятия</h2>
+                            <p class="duration">Длительность: 1 час 20 минут</p>
                             <div class="description-block">
                                 <p>
                                     Улучши свое душевное равновесие. С лучшим специалистом
@@ -372,32 +330,9 @@
                                     <span class="date">21/06/2020</span>
                                 </div>
                             </div>
-                            
-                            <h2>Название мероприятия</h2> 
-                            <p class="duration">Длительность: 1 час 20 минут</p>  
-                            <div class="description-block">
-                                <p>
-                                    Улучши свое душевное равновесие. С лучшим специалистом
-                                    Екатериной. Всего за полтора часа, ты сможешь погрузиться
-                                    внутрь себя и найти в себе гармонию...
-                                </p>
-                                <a href="<?php href('practise') ?>">Узнать больше</a>
-                            </div>
-                        </div>
-                    </div>
 
-                     <div class="slider__item">
-                        <div class="tile-block">
-                            <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
-                                <div class="bottom_info">
-                                    <span class="free_place">3/20</span>
-                                    <span class="date">21/06/2020</span>
-                                </div>
-                            </div>
-                            
-                            <h2>Название мероприятия</h2> 
-                            <p class="duration">Длительность: 1 час 20 минут</p>  
+                            <h2>Название мероприятия</h2>
+                            <p class="duration">Длительность: 1 час 20 минут</p>
                             <div class="description-block">
                                 <p>
                                     Улучши свое душевное равновесие. С лучшим специалистом
@@ -418,9 +353,78 @@
                                     <span class="date">21/06/2020</span>
                                 </div>
                             </div>
-                            
-                            <h2>Название мероприятия</h2> 
-                            <p class="duration">Длительность: 1 час 20 минут</p>  
+
+                            <h2>Название мероприятия</h2>
+                            <p class="duration">Длительность: 1 час 20 минут</p>
+                            <div class="description-block">
+                                <p>
+                                    Улучши свое душевное равновесие. С лучшим специалистом
+                                    Екатериной. Всего за полтора часа, ты сможешь погрузиться
+                                    внутрь себя и найти в себе гармонию...
+                                </p>
+                                <a href="<?php href('practise') ?>">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="tile-block">
+                            <div class="image_wrapper">
+                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <div class="bottom_info">
+                                    <span class="free_place">3/20</span>
+                                    <span class="date">21/06/2020</span>
+                                </div>
+                            </div>
+
+                            <h2>Название мероприятия</h2>
+                            <p class="duration">Длительность: 1 час 20 минут</p>
+                            <div class="description-block">
+                                <p>
+                                    Улучши свое душевное равновесие. С лучшим специалистом
+                                    Екатериной. Всего за полтора часа, ты сможешь погрузиться
+                                    внутрь себя и найти в себе гармонию...
+                                </p>
+                                <a href="<?php href('practise') ?>">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="tile-block">
+                            <div class="image_wrapper">
+                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <div class="bottom_info">
+                                    <span class="free_place">3/20</span>
+                                    <span class="date">21/06/2020</span>
+                                </div>
+                            </div>
+
+                            <h2>Название мероприятия</h2>
+                            <p class="duration">Длительность: 1 час 20 минут</p>
+                            <div class="description-block">
+                                <p>
+                                    Улучши свое душевное равновесие. С лучшим специалистом
+                                    Екатериной. Всего за полтора часа, ты сможешь погрузиться
+                                    внутрь себя и найти в себе гармонию...
+                                </p>
+                                <a href="<?php href('practise') ?>">Узнать больше</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="tile-block">
+                            <div class="image_wrapper">
+                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <div class="bottom_info">
+                                    <span class="free_place">3/20</span>
+                                    <span class="date">21/06/2020</span>
+                                </div>
+                            </div>
+
+                            <h2>Название мероприятия</h2>
+                            <p class="duration">Длительность: 1 час 20 минут</p>
                             <div class="description-block">
                                 <p>
                                     Улучши свое душевное равновесие. С лучшим специалистом
@@ -452,13 +456,19 @@
         <div class="container-lg">
             <div class="main_block__item">
                 <div class="description_text">
-                    <p>SPACE Online – это уникальное пространство, первая и единственная масштабная русскоязычная платформа, которая
-                    позволит людям во всем мире найти лучших мастеров во всех направлениях работы с телом, духом и душой на Пути поиска Себя! У нас можно получить консультацию практически любого из возможных специалистов тонких отраслей. <!-- И все это максимально доступно благодаря специально разработанной, не имеющей аналогов в мире платформе. Это портал для всех, кто хочет быть услышанным и разобраться со своим ценностями, для тех, кто хочет расти и развиваться. --> 
+                    <p>
+                        SPACE Online – это уникальное пространство, первая и единственная масштабная русскоязычная
+                        платформа, которая
+                        позволит людям во всем мире найти лучших мастеров во всех направлениях работы с телом, духом и
+                        душой на Пути поиска Себя! У нас можно получить консультацию практически любого из возможных
+                        специалистов тонких отраслей.
+                        <!-- И все это максимально доступно благодаря специально разработанной, не имеющей аналогов в мире платформе. Это портал для всех, кто хочет быть услышанным и разобраться со своим ценностями, для тех, кто хочет расти и развиваться. -->
                     </p>
 
-                    <p class="space">Если ты тоже помогаешь людям увеличить их внутреннее пространство, то становись частью нашей команды.
+                    <p class="space">Если ты тоже помогаешь людям увеличить их внутреннее пространство, то становись
+                        частью нашей команды.
                     </p>
-                    
+
                     <a href="#" class="btn btn-white">Запишись прямо сейчас</a>
                 </div>
             </div>
