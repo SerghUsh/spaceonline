@@ -582,11 +582,11 @@
 }
 
 .achievement-slider .slider-manage-block .slider-button-prev {
-    left: 121px;
+    left: 10px;
 }
 
 .achievement-slider .slider-manage-block .slider-button-next {
-    right: 121px;
+    right: 10px;
 }
 
 .achievement-slider .slider-manage-block .dots {
@@ -870,14 +870,6 @@
         height: 30px;
         width: 30px;
         background-size: 100%;
-    }
-
-    .achievement-slider .slider-manage-block .slider-button-prev {
-        left: 35px;
-    }
-
-    .achievement-slider .slider-manage-block .slider-button-next {
-        right: 35px;
     }
 
     .tab-info {
