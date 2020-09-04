@@ -225,7 +225,7 @@
             </div>
 
             <div class="slider-manage-block">
-                <a href="#">к списку занятий</a>
+                <a href="#" class="btn-slider btn-white">к списку занятий</a>
                 <div class="arrows"></div>
                 <div class="dots"></div>
             </div>

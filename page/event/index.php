@@ -430,7 +430,7 @@
             </div>
 
             <div class="slider-manage-block">
-                <a href="#">к списку событий</a>
+                <a href="#" class="btn-slider btn-white">к списку событий</a>
                 <div class="arrows"></div>
                 <div class="dots"></div>
             </div>

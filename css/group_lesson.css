@@ -54,7 +54,7 @@
 /* Group lessons Index */
 
 #open-group-lesson {
-	margin-top: 44px;
+	margin-top: 49px;
 	margin-bottom: 80px;
 }
 
@@ -94,11 +94,11 @@
 
 #open-group-lesson .content-block .right_info {
 	position: absolute;
-	width: 376px;
-	top: 1px;
-    right: 34px;
-	font-size: 22px;
-	line-height: 28px;	
+    width: 382px;
+    top: 0px;
+    right: 30px;
+    font-size: 22px;
+    line-height: 28px;	
 }
 
 #open-group-lesson .content-block .right_info span {

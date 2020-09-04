@@ -22,9 +22,11 @@
                     <div class="slider__item">
                         <img src="/img/bg_personal_gid.jpg" alt="image">
                     </div>
+
                     <div class="slider__item">
                         <img src="/img/bg_personal_gid.jpg" alt="image">
                     </div>
+
                     <div class="slider__item">
                         <img src="/img/bg_personal_gid.jpg" alt="image">
                     </div>
@@ -193,94 +195,82 @@
             </div>
 
             <div class="slider">
-                <div class="flex-item">
-                    <div class="slider__item">
-                        <div class="number">1</div>
-                        <h2>Выбор категории</h2>
-                        <p>
-                            Выбери категорию, которая тебе
-                            подходит. Все категории подобраны
-                            для вас.
-                        </p>
-                    </div>
-                    <div class="next_slide">
-                        <a href="#"></a>
-                    </div>
+                <div class="slider__item">
+                    <div class="number">1</div>
+                    <h2>Выбор категории</h2>
+                    <p>
+                    Выбери категорию, которая тебе
+                    подходит. Все категории подобраны
+                    для вас.
+                    </p>
+                </div>
+                <div class="next_slide" >
+                    <a href="#"></a>
                 </div>
 
-                <div class="flex-item">
-                    <div class="slider__item">
-                        <div class="number">2</div>
-                        <h2>Выбор специалиста</h2>
-                        <p>
-                            В каждой категории представлены
-                            лучшие специалисты. Каждый
-                            заинтересован помочь вам.
-                        </p>
-                    </div>
-                    <div class="next_slide">
-                        <a href="#"></a>
-                    </div>
+                <div class="slider__item">
+                    <div class="number">2</div>
+                    <h2>Выбор специалиста</h2>
+                    <p>
+                    В каждой категории представлены
+                    лучшие специалисты. Каждый
+                    заинтересован помочь вам.
+                    </p>
+                </div>
+                <div class="next_slide" >
+                    <a href="#"></a>
+                </div>
+            
+                <div class="slider__item">
+                    <div class="number">3</div>
+                    <h2 class="height">Запись на консультацию</h2>
+                    <p>
+                    Выберите свободную дату и время
+                    в графике специалиста который
+                    вам подошел.
+                    </p>
+                </div>
+                <div class="next_slide" >
+                    <a href="#"></a>
+                </div>
+           
+                <div class="slider__item">
+                    <div class="number">4</div>
+                    <h2>Регистрация</h2>
+                    <p>
+                    Зарегистрируй свой личный аккаунт
+                    в Space Online.
+                    </p>
+                    <a href="#" class="registration">Регистрация</a>
+                </div>
+                <div class="next_slide" >
+                    <a href="#"></a>
                 </div>
 
-                <div class="flex-item">
-                    <div class="slider__item">
-                        <div class="number">3</div>
-                        <h2 class="height">Запись на консультацию</h2>
-                        <p>
-                            Выберите свободную дату и время
-                            в графике специалиста который
-                            вам подошел.
-                        </p>
-                    </div>
-                    <div class="next_slide">
-                        <a href="#"></a>
-                    </div>
+                <div class="slider__item">
+                    <div class="number">5</div>
+                    <h2>Оплата</h2>
+                    <p>
+                        Подключитесь в нужную дату и время
+                        к своему специалисту через нашу
+                        платформу.
+                    </p>
+                </div>
+                <div class="next_slide" >
+                    <a href="#"></a>
                 </div>
 
-                <div class="flex-item">
-                    <div class="slider__item">
-                        <div class="number">4</div>
-                        <h2>Регистрация</h2>
-                        <p>
-                            Зарегистрируй свой личный аккаунт
-                            в Space Online.
-                        </p>
-                        <a href="#" class="registration">Регистрация</a>
-                    </div>
-                    <div class="next_slide">
-                        <a href="#"></a>
-                    </div>
+                <div class="slider__item">
+                    <div class="number">6</div>
+                    <h2>Консультация</h2>
+                    <p>
+                        Подключитесь в нужную дату и время
+                        к своему специалисту через нашу
+                        платформу.
+                    </p>
                 </div>
-
-                <div class="flex-item">
-                    <div class="slider__item">
-                        <div class="number">5</div>
-                        <h2>Оплата</h2>
-                        <p>
-                            Подключитесь в нужную дату и время
-                            к своему специалисту через нашу
-                            платформу.
-                        </p>
-                    </div>
-                    <div class="next_slide">
-                        <a href="#"></a>
-                    </div>
-                </div>
-
-                <div class="flex-item">
-                    <div class="slider__item">
-                        <div class="number">6</div>
-                        <h2>Консультация</h2>
-                        <p>
-                            Подключитесь в нужную дату и время
-                            к своему специалисту через нашу
-                            платформу.
-                        </p>
-                    </div>
-                    <div class="next_slide">
-                        <a href="#"></a>
-                    </div>
+                 <div class="next_slide" >
+                    <a href="#"></a>
                 </div>
             </div>
         </div>
