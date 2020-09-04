@@ -325,7 +325,7 @@
     width: 86%;
 }
 
-#start_now .slider .flex-item .next_slide {
+#start_now .slider .next_slide {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -333,10 +333,11 @@
     background-position: center;
     background-size: 100%;
     cursor: pointer;
+    outline: none;
     margin: 146px 91px 0 3px;
 }
 
-#start_now .slider .flex-item .next_slide:hover {
+#start_now .slider .next_slide:hover {
     background: url(../css/imgs/arr_next_hover.svg) no-repeat;
     background-position: center;
 }
@@ -469,54 +470,6 @@
     letter-spacing: 1.6px;
 }
 
-
-@media (max-width: 1724px) {
-    .about_us__wrapper .description img {
-        margin-top: 45px;
-    }
-
-    .about_us__wrapper .description p.font-proximanova {
-        font-size: 21px;
-        line-height: 33px;
-        margin-top: 15px;
-        margin-bottom: 26px;
-        width: 92%;
-    }
-
-    .about_us__wrapper .description p.font-montserrat {
-        font-size: 22px;
-        line-height: 33px;
-        width: 90%;
-    }
-
-    .main_block__item .description_text p {
-        padding-top: 10px;
-        width: 57%;
-    }
-}
-
-@media (max-width: 1410px) {
-    .about_us__wrapper .description p.font-proximanova {
-        font-size: 21px;
-        line-height: 30px;
-        margin-bottom: 20px;
-        width: 95%;
-    }
-
-    .about_us__wrapper .description p.font-montserrat {
-        font-size: 21px;
-        line-height: 30px;
-        width: 95%;
-    }
-
-    .main_block__item .description_text {
-        padding-top: 90px;
-    }
-
-    .main_block__item .description_text p {
-        width: 62%;
-    }
-}
 
 @media (max-width: 1199px) {
     #page-home .container {
