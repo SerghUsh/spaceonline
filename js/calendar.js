@@ -442,19 +442,21 @@ $(document).ready(function () {
 
     window.dispatchEvent(new Event('resize'));
 });
+if (calendarInstance) {
+    window.addEventListener('resize', function() {
+        console.log(window.innerWidth);
+        if (window.innerWidth < 1200) {
+            if (calendarInstance.getViewName() === 'week') {
+                calendarInstance.changeView('day', true);
+            }
+        } else {
+            if (calendarInstance.getViewName() === 'day') {
+                calendarInstance.changeView('week', true);
+            }
+        }
+    });
+}
 
-window.addEventListener('resize', function() {
-    console.log(window.innerWidth);
-    if (window.innerWidth < 1200) {
-        if (calendarInstance.getViewName() === 'week') {
-            calendarInstance.changeView('day', true);
-        }
-    } else {
-        if (calendarInstance.getViewName() === 'day') {
-            calendarInstance.changeView('week', true);
-        }
-    }
-});
 
 function pay(event, id) {
     console.log(event, id);

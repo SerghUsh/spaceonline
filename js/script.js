@@ -15,6 +15,15 @@ function popUpHide(id) {
 }
 
 $(document).ready(function () {
+    // zoom body on desktop
+    $(window).resize(function (){
+        let zoom = 1;
+        if (window.innerWidth > 1199 && window.innerWidth < 1920) {
+            zoom = 1 - (0.25 / 720 * (1920 - window.innerWidth));
+        }
+        $('body').css('zoom', zoom);
+    }).trigger('resize');
+
     /* Clipboard */
     var clipboardTimer;
     new ClipboardJS('.clipboard');
