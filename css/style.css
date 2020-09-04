@@ -500,10 +500,12 @@ form .btn {
 
     .container {
         max-width: 768px;
+        padding: 0 45px;
     }
 
     .container-sm {
         max-width: 780px;
+        padding: 0 45px;
     }
 
     .row {
