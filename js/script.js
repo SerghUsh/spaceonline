@@ -389,6 +389,30 @@ $(document).ready(function () {
         }
     });
 
+    $(window).resize(function () {
+        if (window.innerWidth < 768) {
+            lineChartByWorkTime.options.legend.labels.fontSize = 14;
+            lineChartByWorkTime.aspectRatio = 1;
+            lineChartByWorkTime.update();
+
+            doughnutChartByType.options.legend.labels.fontSize = 14;
+            doughnutChartByType.update();
+
+            doughnutChartByCategory.options.legend.labels.fontSize = 14;
+            doughnutChartByCategory.update();
+        } else {
+            lineChartByWorkTime.options.legend.labels.fontSize = 22;
+            lineChartByWorkTime.aspectRatio = 2;
+            lineChartByWorkTime.update();
+
+            doughnutChartByType.options.legend.labels.fontSize = 22;
+            doughnutChartByType.update();
+
+            doughnutChartByCategory.options.legend.labels.fontSize = 22;
+            doughnutChartByCategory.update();
+        }
+    }).resize();
+
     // Init filter
     $('*[data-filter]').on('click', function (e) {
         var containerId = $(e.target).parent().attr('data-container-id');
