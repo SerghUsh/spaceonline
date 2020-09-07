@@ -51,7 +51,7 @@
     width: 232px;
     height: 72px;
     text-align: center;
-    padding: 10px 15px;
+    padding: 12px 15px;
 }
 
 #specialist-row .slider__item:nth-child(odd) {
@@ -104,8 +104,8 @@
 }
 
 #specialist-slider .slick-slider .slick-list {
-    padding: 20px;
-    margin: -20px;
+    padding: 30px;
+    margin: -30px;
 }
 
 #practise-page .slider-manage-block {

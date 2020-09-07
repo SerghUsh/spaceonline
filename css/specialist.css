@@ -361,6 +361,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
+    outline: none;
     color: #000000;
 }
 
@@ -472,6 +473,10 @@
 
 #specialist-content .specialist-link a.copy {
     background-image: url('/css/imgs/specialist-copy-link.svg');
+}
+
+#specialist-content .specialist-link a.copy:active {
+    background-image: url('/css/imgs/specialist-copy-link_hover.svg');
 }
 
 #specialist-content .specialist-description {

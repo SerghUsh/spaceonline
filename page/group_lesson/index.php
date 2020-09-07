@@ -26,8 +26,8 @@
 	                        <span class=""><b>Тип мероприятия:</b> Груповое занятие</span>
 	                        <span class=""><b>Стоимость участия:</b> 500 гривен</span>
 	                        <div class="content-block-link">
-	                        	<a href="#" class="hear"></a>
-	                        	<a href="#" class="cop"></a>
+	                        	<a href="#" class="heart"></a>
+	                        	<a href="javascript:void(0);" class="copy clipboard" data-clipboard-text="<link>" data-tooltip-text="Ссылка скопированна"></a>
 	                        </div>
 	                    </div>
 	                </div>

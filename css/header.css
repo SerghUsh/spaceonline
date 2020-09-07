@@ -94,6 +94,7 @@ header > div {
 .account_list li::before {
     content: url(../css/imgs/registration.svg);
     position: absolute;
+    top: -2px;
     left: -33px;
     text-align: center;
 }

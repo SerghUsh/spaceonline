@@ -131,7 +131,7 @@
 
 .account-profinfo {
     background-image: url("/css/imgs/account-profinfo.svg");
-    background-position: 5px 15px;
+    background-position: 6px 16px;
 }
 
 .account-statistic {
@@ -409,7 +409,29 @@
     font-size: 22px;
     line-height: 50px;
     letter-spacing: 1px;
+    padding-right: 13px;
     color: #B1B1BC;
+}
+
+.statistic-filter .legend-inline {
+    float: right;
+    display: flex;
+}
+
+.legend-inline>div {
+    margin-right: 20px;
+    background: #FAFAFA;
+    border-radius: 5px;
+}
+
+.statistic-filter .legend-inline span {
+    color: #000000;
+}
+
+.statistic-filter .legend-inline i {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
 }
 
 .statistic-filter i {
@@ -527,6 +549,12 @@
 }
 
 @media (max-width: 1199px) {
+
+    #account-content {
+        padding-top: 16px;
+        padding-bottom: 54px;
+    }
+
     #account-content form .btn {
         width: 226px;
     }
@@ -582,6 +610,7 @@
         background: #FAFAFA;
         border-radius: 10px;
         padding: 10px 54px 2px;
+        margin-bottom: 30px;
     }
 
     .account-info .specialist-image-block {
@@ -665,6 +694,10 @@
         margin-top: 30px;
         padding: 28px 46px 23px;
         margin-bottom: 20px;
+    }
+
+    .account-menu-block .hidden {
+        display: none;
     }
 
     .account-info .btn-green {
@@ -787,6 +820,13 @@
         line-height: 20px;
     }
 
+    .statistic-filter .legend-inline {
+        float: left;
+        margin-top: 16px;
+        margin-bottom: 50px;
+        
+    }
+
     .statistic-doughnut {
         display: block;
     }
@@ -803,6 +843,16 @@
 }
 
 @media (max-width: 767px) {
+
+    #account-content .container {
+        padding: 0 15px;
+    }
+
+    #account-content {
+        padding-top: 15px;
+        padding-bottom: 44px;
+    }
+
     #account-content form .btn {
         width: 100%;
     }
@@ -849,10 +899,12 @@
     .account-title {
         font-size: 12px;
         line-height: 18px;
+        margin-bottom: 25px;
     }
 
     .account-menu-block .account-info {
         padding: 17px 20px 2px;
+        margin-bottom: 25px;
     }
 
     .account-name {
@@ -944,6 +996,24 @@
 
     .account-tabs-block .tab-block {
         padding: 12px 16px;
+    }
+
+    .vertical-align-middle {
+        margin-top: 25px;
+    }
+
+    .chart-row {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .chart-col {
+        width: 90%;
+    }
+
+    .chart-col + .chart-col {
+        width: 50%;
     }
 
     .filter-menu {
@@ -1064,7 +1134,7 @@
 
     .statistic-filter select {
         font-size: 16px;
-        letter-spacing: 0;
+        letter-spacing: 1px;
     }
 
     .statistic-filter span {
@@ -1073,7 +1143,12 @@
 
     .statistic-doughnut-wrapper h3 {
         font-size: 22px;
-        margin-bottom: 5px;
+        margin-bottom: 25px;
+        margin-top: 35px;
         text-align: center;
+    }
+
+    .statistic-filter .legend-inline {
+        margin-bottom: 35px;
     }
 }

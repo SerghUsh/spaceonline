@@ -35,9 +35,8 @@
                             <span class=""><b>Практика:</b> Арт терапия</span>
                             <span class=""><b>Стоимость участия:</b> 500 гривен</span>
                             <div class="content-block-link">
-                                <a href="#" class="hear"></a>
-                                <a href="#" class="cop clipboard" data-clipboard-text="<link>"
-                                   data-tooltip-position="left" data-tooltip-text="Ссылка скопированна"></a>
+                                <a href="#" class="heart"></a>
+                                <a href="javascript:void(0);" class="copy clipboard" data-clipboard-text="<link>" data-tooltip-text="Ссылка скопированна"></a>
                             </div>
                             <a href="#" class="btn-event">Принять участие</a>
                         </div>

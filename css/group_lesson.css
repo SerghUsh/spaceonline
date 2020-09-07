@@ -109,8 +109,9 @@
 #open-group-lesson .content-block-link {
 	position: absolute;
 	z-index: 1;
+	margin-top: 3px;
 }
-#open-group-lesson .content-block-link a.hear {
+#open-group-lesson .content-block-link a.heart {
     background: url(../css/imgs/specialist-heart-link.svg) no-repeat center center;
     background-size: auto 100%;
     width: 33px;
@@ -119,21 +120,26 @@
 	display: inline-block;
 }
 
-#open-group-lesson .content-block-link a.hear:hover {
+#open-group-lesson .content-block-link a.heart:hover {
     background: url(../css/imgs/specialist-heart-link_hover.svg) no-repeat center center;
     background-size: auto 100%;
 }
-#open-group-lesson .content-block-link a.cop {
+#open-group-lesson .content-block-link a.copy {
     background: url(../css/imgs/specialist-copy-link.svg) no-repeat center center;
     background-size: auto 100%;
 	width: 33px;
-	height: 31px;
+	height: 32px;
 	display: inline-block;
 }
 
-#open-group-lesson .content-block-link a.cop:hover {
+#open-group-lesson .content-block-link a.copy:active {
     background: url(../css/imgs/specialist-copy-link_hover.svg) no-repeat center center;
     background-size: auto 100%;
+}
+
+#open-group-lesson .clipboard:after {
+    top: 2px;
+    left: 50px;
 }
 
 #open-group-lesson p.lesson-info {
@@ -241,14 +247,19 @@
 	    padding-bottom: 7px;
 	}
 
-	#open-group-lesson .content-block-link a.hear {
+	#open-group-lesson .content-block-link a.heart {
 	    width: 20px;
 	    height: 17px;
 	    margin-right: 3px;
 	}
-	#open-group-lesson .content-block-link a.cop {
+	#open-group-lesson .content-block-link a.copy {
 	    width: 20px;
 	    height: 17px;
+	}
+
+	#open-group-lesson .clipboard:after {
+	    top: 0px;
+	    left: 30px;
 	}
 
 	#open-group-lesson p.lesson-info {
@@ -316,7 +327,7 @@
 	.tile-block .lesson_name::after {
 	    content: url(../css/imgs/group_lesson_icon_middle.svg);
 	    margin-left: 14px;
-	    vertical-align: -2px;
+	    vertical-align: -3px;
 	}
 }
 

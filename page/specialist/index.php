@@ -60,10 +60,10 @@
 
         <div class="tab-block">
             <div class="tab-buttons">
-                <span data-tab-id="#tab-calendar">Календарь</span>
+                <span data-tab-id="#tab-calendar" class="active">Календарь</span>
                 <span data-tab-id="#tab-group">Групповые занятия</span>
                 <span data-tab-id="#tab-info">Об специалисте</span>
-                <span data-tab-id="#tab-achievement" class="active">Дипломы и грамоты</span>
+                <span data-tab-id="#tab-achievement">Дипломы и грамоты</span>
                 <span data-tab-id="#tab-event">События</span>
             </div>
         </div>
