@@ -314,60 +314,115 @@ $(document).ready(function () {
     */
 
     // https://github.com/nhn/tui.calendar/blob/master/docs/getting-started.md#usage
-    calendarInstance.createSchedules([
-        {
-            id: '1',
-            calendarId: '1',
-            title: 'Личная консультация',
-            category: 'time',
-            dueDateClass: '',
-            start: '2020-08-30T10:30:00+02:00',
-            end: '2020-08-30T12:30:00+02:00'
-        },
-        {
-            id: '2',
-            calendarId: '2',
-            title: 'Групповое занятие',
-            category: 'time',
-            dueDateClass: '',
-            start: '2020-08-30T14:30:00+02:00',
-            end: '2020-08-30T15:00:00+02:00',
-            isReadOnly: true    // schedule is read-only
-        },
-        {
-            id: '3',
-            calendarId: '3',
-            title: 'Событие',
-            category: 'time',
-            dueDateClass: '',
-            start: '2020-08-30T16:00:00+02:00',
-            end: '2020-08-30T18:00:00+02:00',
-            isReadOnly: true    // schedule is read-only
-        }
-    ]);
+    if (calendarInstance) {
+        calendarInstance.createSchedules([
+            {
+                id: '1',
+                calendarId: '1',
+                title: 'Личная консультация',
+                category: 'time',
+                dueDateClass: '',
+                start: '2020-08-30T10:30:00+02:00',
+                end: '2020-08-30T12:30:00+02:00'
+            },
+            {
+                id: '2',
+                calendarId: '2',
+                title: 'Групповое занятие',
+                category: 'time',
+                dueDateClass: '',
+                start: '2020-08-30T14:30:00+02:00',
+                end: '2020-08-30T15:00:00+02:00',
+                isReadOnly: true    // schedule is read-only
+            },
+            {
+                id: '3',
+                calendarId: '3',
+                title: 'Событие',
+                category: 'time',
+                dueDateClass: '',
+                start: '2020-08-30T16:00:00+02:00',
+                end: '2020-08-30T18:00:00+02:00',
+                isReadOnly: true    // schedule is read-only
+            }
+        ]);
+        /*
+        Update a schedule
+        calendar.updateSchedule(schedule.id, schedule.calendarId, {
+            start: startTime,
+            end: endTime
+        });
+        Delete a schedule
+        calendar.deleteSchedule(schedule.id, schedule.calendarId);
+        */
+        $('#calendar-menu .today').on('click', function () {
+            calendarInstance.today();
+            setWeekRange(calendarInstance)
+        });
+        $('#calendar-menu .prev').on('click', function () {
+            calendarInstance.prev();
+            setWeekRange(calendarInstance)
+        });
+        $('#calendar-menu .next').on('click', function () {
+            calendarInstance.next();
+            setWeekRange(calendarInstance)
+        });
+        setWeekRange(calendarInstance);
 
-    /*
-    Update a schedule
-    calendar.updateSchedule(schedule.id, schedule.calendarId, {
-        start: startTime,
-        end: endTime
-    });
-    Delete a schedule
-    calendar.deleteSchedule(schedule.id, schedule.calendarId);
-    */
+        calendarInstance.on('beforeCreateSchedule', function(event) {
+            console.log(event);
+            var triggerEventName = event.triggerEventName;
 
-    $('#calendar-menu .today').on('click', function () {
-        calendarInstance.today();
-        setWeekRange(calendarInstance)
-    });
-    $('#calendar-menu .prev').on('click', function () {
-        calendarInstance.prev();
-        setWeekRange(calendarInstance)
-    });
-    $('#calendar-menu .next').on('click', function () {
-        calendarInstance.next();
-        setWeekRange(calendarInstance)
-    });
+            /*if (triggerEventName === 'click') {
+                // open writing simple schedule popup
+                schedule = {...};
+            } else if (triggerEventName === 'dblclick') {
+                // open writing detail schedule popup
+                schedule = {...};
+            }*/
+
+            calendarInstance.createSchedules([{
+                id: 10,
+                calendarId: event.calendarId,
+                title: event.title,
+                category: 'time',
+                dueDateClass: '',
+                start: event.start,
+                end: event.end,
+            }]);
+        });
+
+        calendarInstance.on('beforeUpdateSchedule', function(event) {
+            var schedule = event.schedule;
+            var changes = event.changes;
+
+            calendarInstance.updateSchedule(schedule.id, schedule.calendarId, changes);
+        });
+
+        calendarInstance.on('beforeDeleteSchedule', function(event) {
+            var schedule = event.schedule;
+            calendarInstance.deleteSchedule(schedule.id, schedule.calendarId);
+        });
+
+        calendarInstance.on('clickSchedule', function(event) {
+            var schedule = event.schedule;
+            console.log('clickSchedule', schedule);
+            lastClickSchedule = schedule;
+            // focus the schedule
+            /* if (lastClickSchedule) {
+                 calendarInstance.updateSchedule(lastClickSchedule.id, lastClickSchedule.calendarId, {
+                     isFocused: false
+                 });
+             }
+             calendarInstance.updateSchedule(schedule.id, schedule.calendarId, {
+                 isFocused: true
+             });*/
+
+
+
+            // open detail view
+        });
+    }
 
     function setWeekRange(calendarInstance){
         var rangeStart = calendarInstance.getDateRangeStart().toDate();
@@ -383,62 +438,6 @@ $(document).ready(function () {
         }
         $('#calendar-menu .range').html(periodString);
     }
-
-    setWeekRange(calendarInstance);
-
-    calendarInstance.on('beforeCreateSchedule', function(event) {
-        console.log(event);
-        var triggerEventName = event.triggerEventName;
-
-        /*if (triggerEventName === 'click') {
-            // open writing simple schedule popup
-            schedule = {...};
-        } else if (triggerEventName === 'dblclick') {
-            // open writing detail schedule popup
-            schedule = {...};
-        }*/
-
-        calendarInstance.createSchedules([{
-            id: 10,
-            calendarId: event.calendarId,
-            title: event.title,
-            category: 'time',
-            dueDateClass: '',
-            start: event.start,
-            end: event.end,
-        }]);
-    });
-
-    calendarInstance.on('beforeUpdateSchedule', function(event) {
-        var schedule = event.schedule;
-        var changes = event.changes;
-
-        calendarInstance.updateSchedule(schedule.id, schedule.calendarId, changes);
-    });
-
-    calendarInstance.on('beforeDeleteSchedule', function(event) {
-        var schedule = event.schedule;
-        calendarInstance.deleteSchedule(schedule.id, schedule.calendarId);
-    });
-
-    calendarInstance.on('clickSchedule', function(event) {
-        var schedule = event.schedule;
-        console.log('clickSchedule', schedule);
-        lastClickSchedule = schedule;
-        // focus the schedule
-        /* if (lastClickSchedule) {
-             calendarInstance.updateSchedule(lastClickSchedule.id, lastClickSchedule.calendarId, {
-                 isFocused: false
-             });
-         }
-         calendarInstance.updateSchedule(schedule.id, schedule.calendarId, {
-             isFocused: true
-         });*/
-
-
-
-        // open detail view
-    });
 
     window.dispatchEvent(new Event('resize'));
 });
@@ -456,39 +455,6 @@ if (calendarInstance) {
     });
 }
 
-
 function pay(event, id) {
     console.log(event, id);
 }
-/* input file */
-;(function (document, window, index) {
-    'use strict';
-    var inputs = document.querySelectorAll('.inputfile');
-    Array.prototype.forEach.call(inputs, function (input) {
-        var label = input.nextElementSibling,
-            labelVal = label.innerHTML;
-
-        input.addEventListener('change', function (e) {
-            var fileName = '';
-            if (this.files && this.files.length > 1)
-                fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
-            else
-                fileName = e.target.value.split('\\').pop();
-
-            if (fileName) {
-                label.querySelector('span').innerHTML = fileName;
-                label.querySelector('span').title = fileName;
-            } else {
-                label.innerHTML = labelVal;
-            }
-        });
-
-        // Firefox bug fix
-        input.addEventListener('focus', function () {
-            input.classList.add('has-focus');
-        });
-        input.addEventListener('blur', function () {
-            input.classList.remove('has-focus');
-        });
-    });
-}(document, window, 0));

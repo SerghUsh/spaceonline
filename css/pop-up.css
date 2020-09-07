@@ -51,19 +51,19 @@
     background-image: url(/css/imgs/popup-cancel.svg);
 }
 
-.pop-up .dialog .title {
+.pop-up .dialog .pop-up-title {
     font-weight: bold;
     font-size: 24px;
     line-height: 24px;
 }
 
-.pop-up .dialog .message {
+.pop-up .dialog .pop-up-message {
     font-size: 16px;
     line-height: 20px;
     margin-top: 20px;
 }
 
-.pop-up .dialog .message + .action{
+.pop-up .dialog .pop-up-message + .action {
     margin-top: 36px;
 }
 
@@ -116,18 +116,18 @@
         margin-bottom: 16px;
     }
 
-    .pop-up .dialog .title {
+    .pop-up .dialog .pop-up-title {
         font-size: 16px;
         line-height: 12px;
     }
 
-    .pop-up .dialog .message {
+    .pop-up .dialog .pop-up-message {
         font-size: 12px;
         line-height: 20px;
         margin-top: 9px;
     }
 
-    .pop-up .dialog .message + .action{
+    .pop-up .dialog .pop-up-message + .action {
         margin-top: 18px;
     }
 
@@ -144,7 +144,6 @@
         width: 250px;
         margin: 0 auto;
     }
-
 }
 
 @media (max-width: 767px) {

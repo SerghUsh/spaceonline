@@ -106,6 +106,7 @@
 #specialist-slider .slick-slider .slick-list {
     padding: 30px;
     margin: -30px;
+    width: calc(100% + 30px);
 }
 
 #practise-page .slider-manage-block {

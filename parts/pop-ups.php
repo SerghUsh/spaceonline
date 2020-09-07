@@ -5,11 +5,11 @@
     <div class="dialog">
         <div class="icon icon-question"></div>
 
-        <div class="title">
+        <div class="pop-up-title">
             Вы хотите удалить аккаунт?
         </div>
 
-        <div class="message">
+        <div class="pop-up-message">
             Восстановление профиля после удаления не возможно.
         </div>
 
@@ -32,11 +32,11 @@
     <div class="dialog">
         <div class="icon icon-cancel"></div>
 
-        <div class="title">
+        <div class="pop-up-title">
             Ваш платеж не прошел!
         </div>
 
-        <div class="message">
+        <div class="pop-up-message">
             Проверьте введенные данные и повторите попытку
         </div>
 
@@ -51,11 +51,11 @@
     <div class="dialog">
         <div class="icon icon-success"></div>
 
-        <div class="title">
+        <div class="pop-up-title">
             Ваш платеж прошел успешно!
         </div>
 
-        <div class="message">
+        <div class="pop-up-message">
             Занятие было добавлено в ваш календарь.<br>
             Начните новые впечатления вместе со Space Online
         </div>
@@ -77,11 +77,11 @@
     <div class="dialog">
         <div class="icon icon-letter"></div>
 
-        <div class="title">
+        <div class="pop-up-title">
             Ваша заявка успешно отправлена.
         </div>
 
-        <div class="message">
+        <div class="pop-up-message">
             Вы почти часть команды Space Online, мы с вами свяжемся<br>
             в ближайшее время для согласования деталей
         </div>

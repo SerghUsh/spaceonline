@@ -154,13 +154,14 @@ input[type=number] {
     position: absolute;
     top: 50%;
     z-index: 1;
-    width: auto;
     background: none;
     border: none;
     font-size: 24px;
     outline: none;
     line-height: 16px;
-    margin-top: -8px;
+    margin-top: -12px;
+    height: 24px;
+    width: 24px;
 }
 
 .quantity-block .minus {
