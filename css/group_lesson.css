@@ -132,6 +132,7 @@
 	display: inline-block;
 }
 
+#open-group-lesson .content-block-link a.copy.tooltip,
 #open-group-lesson .content-block-link a.copy:active {
     background: url(../css/imgs/specialist-copy-link_hover.svg) no-repeat center center;
     background-size: auto 100%;

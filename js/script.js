@@ -304,114 +304,116 @@ $(document).ready(function () {
     /* ACCOUNT PAGE */
 
     // Statistic
-    var lineChartByWorkTime = new Chart(document.getElementById("lineChartByWorkTime").getContext("2d"), {
-        type: 'line',
-        data: {
-            labels: [
-                capitalize(moment().add(-6, 'days').format('MMM DD')),
-                capitalize(moment().add(-5, 'days').format('MMM DD')),
-                capitalize(moment().add(-4, 'days').format('MMM DD')),
-                capitalize(moment().add(-3, 'days').format('MMM DD')),
-                capitalize(moment().add(-2, 'days').format('MMM DD')),
-                capitalize(moment().add(-1, 'days').format('MMM DD')),
-                capitalize(moment().format('MMM DD')),
-            ],
-            datasets: [
-                {
-                    label: "Личные консультации",
-                    backgroundColor: 'rgba(89,133,173,0.5)', // #5985AD
-                    borderColor: "#5985AD",
-                    pointBackgroundColor: "#5985AD",
-                    pointBorderColor: "#000",
-                    data: [28, 48, 40, 19, 86, 27, 90]
+    if (document.getElementById("lineChartByWorkTime")) {
+        var lineChartByWorkTime = new Chart(document.getElementById("lineChartByWorkTime").getContext("2d"), {
+            type: 'line',
+            data: {
+                labels: [
+                    capitalize(moment().add(-6, 'days').format('MMM DD')),
+                    capitalize(moment().add(-5, 'days').format('MMM DD')),
+                    capitalize(moment().add(-4, 'days').format('MMM DD')),
+                    capitalize(moment().add(-3, 'days').format('MMM DD')),
+                    capitalize(moment().add(-2, 'days').format('MMM DD')),
+                    capitalize(moment().add(-1, 'days').format('MMM DD')),
+                    capitalize(moment().format('MMM DD')),
+                ],
+                datasets: [
+                    {
+                        label: "Личные консультации",
+                        backgroundColor: 'rgba(89,133,173,0.5)', // #5985AD
+                        borderColor: "#5985AD",
+                        pointBackgroundColor: "#5985AD",
+                        pointBorderColor: "#000",
+                        data: [28, 48, 40, 19, 86, 27, 90]
+                    },
+                    {
+                        label: "Групповые занятия",
+                        backgroundColor: 'rgba(89,173,168,0.5)', // #59ADA8
+                        borderColor: "#59ADA8",
+                        pointBackgroundColor: "#59ADA8",
+                        pointBorderColor: "#000",
+                        data: [65, 59, 80, 81, 56, 55, 40]
+                    },
+                ]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    display: false,
                 },
-                {
-                    label: "Групповые занятия",
-                    backgroundColor: 'rgba(89,173,168,0.5)', // #59ADA8
-                    borderColor: "#59ADA8",
-                    pointBackgroundColor: "#59ADA8",
-                    pointBorderColor: "#000",
-                    data: [65, 59, 80, 81, 56, 55, 40]
+                tooltips: {
+                    titleFontSize: 18,
+                    bodyFontSize: 18,
+                }
+            }
+        });
+
+        var doughnutChartByType = new Chart(document.getElementById("doughnutChartByType").getContext("2d"), {
+            type: 'doughnut',
+            data: {
+                labels: ["Личные консультации", "Групповые занятия", "Семинары"],
+                datasets: [{
+                    data: [29, 64, 7],
+                    backgroundColor: ["#5985AD", "#59ADA8", "#59AD6B"]
+                }]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    display: false,
                 },
-            ]
-        },
-        options: {
-            responsive: true,
-            legend: {
-                display: false,
-            },
-            tooltips: {
-                titleFontSize: 18,
-                bodyFontSize: 18,
+                tooltips: {
+                    titleFontSize: 18,
+                    bodyFontSize: 18,
+                }
             }
-        }
-    });
+        });
 
-    var doughnutChartByType = new Chart(document.getElementById("doughnutChartByType").getContext("2d"), {
-        type: 'doughnut',
-        data: {
-            labels: ["Личные консультации", "Групповые занятия", "Семинары"],
-            datasets: [{
-                data: [29, 64, 7],
-                backgroundColor: ["#5985AD", "#59ADA8", "#59AD6B"]
-            }]
-        },
-        options: {
-            responsive: true,
-            legend: {
-                display: false,
+        var doughnutChartByCategory = new Chart(document.getElementById("doughnutChartByCategory").getContext("2d"), {
+            type: 'doughnut',
+            data: {
+                labels: ["Психология", "Астрология", "Коучинг"],
+                datasets: [{
+                    data: [70, 50, 90],
+                    backgroundColor: ["#5985AD", "#59ADA8", "#59AD6B"]
+                }]
             },
-            tooltips: {
-                titleFontSize: 18,
-                bodyFontSize: 18,
+            options: {
+                responsive: true,
+                legend: {
+                    display: false,
+                },
+                tooltips: {
+                    titleFontSize: 18,
+                    bodyFontSize: 18,
+                }
             }
-        }
-    });
+        });
 
-    var doughnutChartByCategory = new Chart(document.getElementById("doughnutChartByCategory").getContext("2d"), {
-        type: 'doughnut',
-        data: {
-            labels: ["Психология", "Астрология", "Коучинг"],
-            datasets: [{
-                data: [70, 50, 90],
-                backgroundColor: ["#5985AD", "#59ADA8", "#59AD6B"]
-            }]
-        },
-        options: {
-            responsive: true,
-            legend: {
-                display: false,
-            },
-            tooltips: {
-                titleFontSize: 18,
-                bodyFontSize: 18,
+        $(window).resize(function () {
+            if (window.innerWidth < 768) {
+                lineChartByWorkTime.options.legend.labels.fontSize = 14;
+                lineChartByWorkTime.aspectRatio = 1;
+                lineChartByWorkTime.update();
+
+                doughnutChartByType.options.legend.labels.fontSize = 14;
+                doughnutChartByType.update();
+
+                doughnutChartByCategory.options.legend.labels.fontSize = 14;
+                doughnutChartByCategory.update();
+            } else {
+                lineChartByWorkTime.options.legend.labels.fontSize = 22;
+                lineChartByWorkTime.aspectRatio = 2;
+                lineChartByWorkTime.update();
+
+                doughnutChartByType.options.legend.labels.fontSize = 22;
+                doughnutChartByType.update();
+
+                doughnutChartByCategory.options.legend.labels.fontSize = 22;
+                doughnutChartByCategory.update();
             }
-        }
-    });
-
-    $(window).resize(function () {
-        if (window.innerWidth < 768) {
-            lineChartByWorkTime.options.legend.labels.fontSize = 14;
-            lineChartByWorkTime.aspectRatio = 1;
-            lineChartByWorkTime.update();
-
-            doughnutChartByType.options.legend.labels.fontSize = 14;
-            doughnutChartByType.update();
-
-            doughnutChartByCategory.options.legend.labels.fontSize = 14;
-            doughnutChartByCategory.update();
-        } else {
-            lineChartByWorkTime.options.legend.labels.fontSize = 22;
-            lineChartByWorkTime.aspectRatio = 2;
-            lineChartByWorkTime.update();
-
-            doughnutChartByType.options.legend.labels.fontSize = 22;
-            doughnutChartByType.update();
-
-            doughnutChartByCategory.options.legend.labels.fontSize = 22;
-            doughnutChartByCategory.update();
-        }
-    }).resize();
+        }).resize();
+    }
 
     // Init filter
     $('*[data-filter]').on('click', function (e) {
