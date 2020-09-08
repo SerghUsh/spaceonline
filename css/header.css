@@ -16,13 +16,15 @@ header.scroll {
 }
 
 header > div {
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .logo img {
-    margin: 11px 234px 0 0px;
+    height: 100%;
+    margin: 0px;
 }
 
 .first_item {
@@ -30,10 +32,10 @@ header > div {
 }
 
 .header_list {
+    height: 100%;
     list-style: none;
     display: flex;
     text-transform: uppercase;
-    padding-left: 0;
 }
 
 .header_list li {
@@ -41,7 +43,6 @@ header > div {
     font-weight: 600;
     font-size: 18px;
     line-height: 60px;
-    margin-top: 13px;
     margin-right: 48px;
 }
 
@@ -74,8 +75,6 @@ header > div {
 
 .account_list {
     list-style: none;
-    margin-left: 118px;
-    margin-top: 13px;
 }
 
 .account_list li {
@@ -97,6 +96,10 @@ header > div {
     top: -2px;
     left: -33px;
     text-align: center;
+}
+
+.header__burger {
+    display: none;
 }
 
 /* Media Style Header */
