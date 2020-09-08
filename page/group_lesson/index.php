@@ -48,7 +48,7 @@
 		                    </div>
 
 		                    <div class="specialist-name">
-		                                    Мария Скрипаль
+		                        Мария Скрипаль
 		                    </div>
 
 		                    <div class="specialist-type">
@@ -93,7 +93,7 @@
                     <div class="slider__item">
 	                    <div class="tile-block">
 	                        <div class="image_wrapper">
-	                            <img src="/img/bg_name_event1.jpg" alt="image">
+	                            <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
 	                            <div class="bottom_info">
 	                                <span class="lesson_name">Медитация</span>
 	                            </div>
@@ -107,7 +107,7 @@
 	                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
 	                                внутрь себя и найти в себе гармонию...
 	                            </p>
-	                            <a href="<?php href('practise') ?>">Узнать больше</a>
+	                            <a href="<?php href('group_lesson') ?>">Узнать больше</a>
 	                        </div>
 	                    </div>
                     </div>
@@ -115,7 +115,7 @@
                     <div class="slider__item">
                          <div class="tile-block">
 	                        <div class="image_wrapper">
-	                            <img src="/img/bg_name_event1.jpg" alt="image">
+	                            <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
 	                            <div class="bottom_info">
 	                                <span class="lesson_name">Медитация</span>
 	                            </div>
@@ -129,7 +129,7 @@
 	                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
 	                                внутрь себя и найти в себе гармонию...
 	                            </p>
-	                            <a href="<?php href('practise') ?>">Узнать больше</a>
+	                            <a href="<?php href('group_lesson') ?>">Узнать больше</a>
 	                        </div>
 	                    </div>
                     </div>
@@ -137,7 +137,7 @@
                     <div class="slider__item">
                          <div class="tile-block">
 	                        <div class="image_wrapper">
-	                            <img src="/img/bg_name_event1.jpg" alt="image">
+	                            <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
 	                            <div class="bottom_info">
 	                                <span class="lesson_name">Медитация</span>
 	                            </div>
@@ -151,7 +151,7 @@
 	                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
 	                                внутрь себя и найти в себе гармонию...
 	                            </p>
-	                            <a href="<?php href('practise') ?>">Узнать больше</a>
+	                            <a href="<?php href('group_lesson') ?>">Узнать больше</a>
 	                        </div>
 	                    </div>
                     </div>
@@ -159,7 +159,7 @@
                      <div class="slider__item">
                          <div class="tile-block">
 	                        <div class="image_wrapper">
-	                            <img src="/img/bg_name_event1.jpg" alt="image">
+	                            <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
 	                            <div class="bottom_info">
 	                                <span class="lesson_name">Медитация</span>
 	                            </div>
@@ -173,7 +173,7 @@
 	                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
 	                                внутрь себя и найти в себе гармонию...
 	                            </p>
-	                            <a href="<?php href('practise') ?>">Узнать больше</a>
+	                            <a href="<?php href('group_lesson') ?>">Узнать больше</a>
 	                        </div>
 	                    </div>
                     </div>
@@ -181,7 +181,7 @@
                     <div class="slider__item">
                          <div class="tile-block">
 	                        <div class="image_wrapper">
-	                            <img src="/img/bg_name_event1.jpg" alt="image">
+	                            <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
 	                            <div class="bottom_info">
 	                                <span class="lesson_name">Медитация</span>
 	                            </div>
@@ -195,7 +195,7 @@
 	                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
 	                                внутрь себя и найти в себе гармонию...
 	                            </p>
-	                            <a href="<?php href('practise') ?>">Узнать больше</a>
+	                            <a href="<?php href('group_lesson') ?>">Узнать больше</a>
 	                        </div>
 	                    </div>
                     </div>
@@ -203,7 +203,7 @@
                     <div class="slider__item">
                         <div class="tile-block">
 	                        <div class="image_wrapper">
-	                            <img src="/img/bg_name_event1.jpg" alt="image">
+	                            <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
 	                            <div class="bottom_info">
 	                                <span class="lesson_name">Медитация</span>
 	                            </div>
@@ -225,7 +225,7 @@
             </div>
 
             <div class="slider-manage-block">
-                <a href="#" class="btn-slider btn-white">к списку занятий</a>
+                <a href="http://spaceonline/page/group_lesson/list.php" class="btn-slider btn-white">к списку занятий</a>
                 <div class="arrows"></div>
                 <div class="dots"></div>
             </div>

@@ -155,7 +155,7 @@
 
 .tile-block .description-block a {
     position: absolute;
-    right: 2px;
+    right: 3px;
     bottom: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -182,10 +182,6 @@
 .tile-block .description-block a:hover:after {
     width: 100%;
     height: 2px;
-}
-
-.tile-block .description-block a:hover {
-    /*font-weight: 600;*/
 }
 
 .slider__item {
@@ -428,10 +424,6 @@
     padding-bottom: 15px;
 }
 
-#future_events .slider-manage-block {
-    display: flex;
-    margin-top: 60px;
-}
 
 /* Блок from_organizers */
 
@@ -502,7 +494,7 @@
         height: 37px;
         text-transform: uppercase;
         font-weight: bold;
-        padding: 5px 26px;
+        padding: 7px 26px;
         font-size: 12px;
     }
 
@@ -661,7 +653,7 @@
         width: 93%;
     }
 
-    #start_now .slider .flex-item .next_slide {
+    #start_now .slider .next_slide {
         width: 42px;
         height: 42px;
         margin: 79px 30px 0 4px;
@@ -798,7 +790,7 @@
         height: 25px;
         text-transform: uppercase;
         font-weight: bold;
-        padding: 5px 25px;
+        padding: 7px 25px;
         font-size: 8px;
         line-height: 12px;
         letter-spacing: 1px;
@@ -843,6 +835,7 @@
         letter-spacing: 1px;
         width: 100%;
         min-height: 55px;
+        padding-bottom: 20px;
     }
 
     #choise_your_practises {
@@ -965,13 +958,13 @@
         width: 78%;
     }
 
-    #start_now .slider .flex-item .next_slide {
+    #start_now .slider .next_slide {
         width: 25px;
         height: 25px;
         margin: 38px 30px 0 41px;
     }
 
-    #start_now .slider .flex-item .next_slide:hover {
+    #start_now .slider .next_slide:hover {
         background: url(../css/imgs/arr_next_hover__Small.png) no-repeat;
         background-position: center;
     }

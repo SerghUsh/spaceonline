@@ -141,7 +141,7 @@ header > div {
         margin: 15px 33px 0 -3px;
     }
 
-    .first_item {
+    #header .first_item {
         display: none;
     }
 
@@ -256,30 +256,28 @@ header > div {
         margin: 13px 15px 0 0px;
     }
 
-    .active .first_item {
+    #header .active .first_item {
         display: block;
         color: #fff;
         border-bottom: 1px solid #fff;
     }
 
-    .first_item .account_list {
-        margin-left: 30px;
-        margin-top: 0px;
+    #header .header_list li.first_item  {
+        margin: 0;
+        padding: 24px 0 7px 46px;
     }
 
-    .first_item .account_list li {
-        margin: 24px 0 7px 19px;
-    }
-
-    .first_item .account_list li a {
+    #header .header_list li.first_item a {
+        font-weight: 400;
         font-size: 14px;
         line-height: 22px;
+        text-decoration: underline;
     }
 
-    .first_item .account_list li::before {
+    #header .header_list li.first_item::before {
         content: url(../css/imgs/registration_white.svg);
         position: absolute;
-        left: -33px;
+        left: 17px;
         text-align: center;
     }
 
@@ -291,11 +289,6 @@ header > div {
 
     .account {
         display: none;
-    }
-
-    .account_list {
-        margin-left: 151px;
-        margin-top: 11px;
     }
 
     .header__burger {

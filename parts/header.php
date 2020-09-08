@@ -8,11 +8,7 @@
 
         <nav class="header__menu">
             <ul class="header_list">
-                <div class="active first_item">
-                    <ul class="account_list">
-                        <li><a href="<?php href('service', 'login') ?>">Войти</a></li>
-                    </ul>
-                </div>
+                <li class="active account_list first_item"><a href="<?php href('service', 'login') ?>">Войти</a></li>
                 <li><a href="<?php href('home') ?>">Главная</a></li>
                 <li><a href="<?php href('practice', 'list') ?>">Практики</a></li>
                 <li><a href="<?php href('specialist', 'list') ?>">Специалисты</a></li>
