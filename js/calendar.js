@@ -2,6 +2,8 @@ var calendarInstance;
 
 $(document).ready(function () {
     var $calEl = $('#calendar').tuiCalendar({
+        disableClick: true,
+        disableDblClick: true,
         defaultView: 'week',
         taskView: false,
         week: {
@@ -53,45 +55,48 @@ $(document).ready(function () {
             },
         ],
         template: {
-            milestone: function(schedule) {
+            milestone: function (schedule) {
                 return '<span class="calendar-font-icon ic-milestone-b"></span> <span style="background-color: ' + schedule.bgColor + '">' + schedule.title + '</span>';
             },
-            milestoneTitle: function() {
+            milestoneTitle: function () {
                 return '<span class="tui-full-calendar-left-content">MILESTONE</span>';
             },
-            task: function(schedule) {
+            task: function (schedule) {
                 return '#' + schedule.title;
             },
-            taskTitle: function() {
+            taskTitle: function () {
                 return '<span class="tui-full-calendar-left-content">TASK</span>';
             },
-            allday: function(schedule) {
+            allday: function (schedule) {
                 return getTimeTemplate(schedule, true);
             },
-            alldayTitle: function() {
+            alldayTitle: function () {
                 return '<span class="tui-full-calendar-left-content">ALL DAY</span>';
             },
-            time: function(schedule) {
+            time: function (schedule) {
                 return moment(schedule.start.getTime()).format('HH:mm') + '-' +
                     moment(schedule.end.getTime()).format('HH:mm') + '<br>' +
-                    schedule.title + '<br>' +
-                    '<button type="button" onclick="pay(event, ' + schedule.id + ')">Оплатить</button>';
+                    '<span class="calendar-title">' + schedule.title + '</span><br>' +
+                    '<div class="actions">' +
+                    '<button type="button" onclick="pay(event, ' + schedule.id + ')">Оплатить</button>' +
+                    '</div>'
+                    ;
             },
-            goingDuration: function(schedule) {
+            goingDuration: function (schedule) {
                 return '<span class="calendar-icon ic-travel-time"></span>' + schedule.goingDuration + 'min.';
             },
-            comingDuration: function(schedule) {
+            comingDuration: function (schedule) {
                 return '<span class="calendar-icon ic-travel-time"></span>' + schedule.comingDuration + 'min.';
             },
-            monthMoreTitleDate: function(date, dayname) {
+            monthMoreTitleDate: function (date, dayname) {
                 var day = date.split('.')[2];
 
                 return '<span class="tui-full-calendar-month-more-title-day">' + day + '</span> <span class="tui-full-calendar-month-more-title-day-label">' + dayname + '</span>';
             },
-            monthMoreClose: function() {
+            monthMoreClose: function () {
                 return '<span class="tui-full-calendar-icon tui-full-calendar-ic-close"></span>';
             },
-            monthGridHeader: function(dayModel) {
+            monthGridHeader: function (dayModel) {
                 var date = parseInt(dayModel.date.split('-')[2], 10);
                 var classNames = ['tui-full-calendar-weekday-grid-date '];
 
@@ -101,25 +106,25 @@ $(document).ready(function () {
 
                 return '<span class="' + classNames.join(' ') + '">' + date + '</span>';
             },
-            monthGridHeaderExceed: function(hiddenSchedules) {
+            monthGridHeaderExceed: function (hiddenSchedules) {
                 return '<span class="weekday-grid-more-schedules">+' + hiddenSchedules + '</span>';
             },
-            monthGridFooter: function() {
+            monthGridFooter: function () {
                 return '';
             },
-            monthGridFooterExceed: function(hiddenSchedules) {
+            monthGridFooterExceed: function (hiddenSchedules) {
                 return '';
             },
-            monthDayname: function(model) {
+            monthDayname: function (model) {
                 return (model.label).toString().toLocaleUpperCase();
             },
-            weekDayname: function(model) {
+            weekDayname: function (model) {
                 return '<span class="tui-full-calendar-dayname-date">' + model.date + '</span>&nbsp;&nbsp;<span class="tui-full-calendar-dayname-name">' + model.dayName + '</span>';
             },
-            weekGridFooterExceed: function(hiddenSchedules) {
+            weekGridFooterExceed: function (hiddenSchedules) {
                 return '+' + hiddenSchedules;
             },
-            dayGridTitle: function(viewName) {
+            dayGridTitle: function (viewName) {
 
                 // use another functions instead of 'dayGridTitle'
                 // milestoneTitle: function() {...}
@@ -127,7 +132,7 @@ $(document).ready(function () {
                 // alldayTitle: function() {...}
 
                 var title = '';
-                switch(viewName) {
+                switch (viewName) {
                     case 'milestone':
                         title = '<span class="tui-full-calendar-left-content">MILESTONE</span>';
                         break;
@@ -141,7 +146,7 @@ $(document).ready(function () {
 
                 return title;
             },
-            schedule: function(schedule) {
+            schedule: function (schedule) {
 
                 // use another functions instead of 'schedule'
                 // milestone: function() {...}
@@ -150,7 +155,7 @@ $(document).ready(function () {
 
                 var tpl;
 
-                switch(category) {
+                switch (category) {
                     case 'milestone':
                         tpl = '<span class="calendar-font-icon ic-milestone-b"></span> <span style="background-color: ' + schedule.bgColor + '">' + schedule.title + '</span>';
                         break;
@@ -164,11 +169,11 @@ $(document).ready(function () {
 
                 return tpl;
             },
-            collapseBtnTitle: function() {
+            collapseBtnTitle: function () {
                 return '<span class="tui-full-calendar-icon tui-full-calendar-ic-arrow-solid-top"></span>';
             },
-            timegridDisplayPrimaryTime: function(time) {
-                return time.hour+':00';
+            timegridDisplayPrimaryTime: function (time) {
+                return time.hour + ':00';
             },
             //timezoneDisplayLabel: function(timezoneOffset, displayLabel) {
             //    var gmt, hour, minutes;
@@ -219,34 +224,34 @@ $(document).ready(function () {
 //
             //    return templates.join('');
             //},
-            popupIsAllDay: function() {
+            popupIsAllDay: function () {
                 return 'Весь день';
             },
-            popupStateFree: function() {
+            popupStateFree: function () {
                 return 'Свободно';
             },
-            popupStateBusy: function() {
+            popupStateBusy: function () {
                 return 'Занято';
             },
-            titlePlaceholder: function() {
-                return 'Тема';
+            titlePlaceholder: function () {
+                return 'Добавить комментарий';
             },
-            locationPlaceholder: function() {
+            locationPlaceholder: function () {
                 return 'Локация';
             },
-            startDatePlaceholder: function() {
+            startDatePlaceholder: function () {
                 return 'Дата начала';
             },
-            endDatePlaceholder: function() {
+            endDatePlaceholder: function () {
                 return 'Дата окончания';
             },
-            popupSave: function() {
+            popupSave: function () {
                 return 'Сохранить';
             },
-            popupUpdate: function() {
+            popupUpdate: function () {
                 return 'Обновить';
             },
-            popupDetailDate: function(isAllDay, start, end) {
+            popupDetailDate: function (isAllDay, start, end) {
                 var isSameDate = moment(start).isSame(end);
                 var endFormat = (isSameDate ? '' : 'YYYY.MM.DD ') + 'hh:mm a';
 
@@ -256,25 +261,25 @@ $(document).ready(function () {
 
                 return (moment(start).format('YYYY.MM.DD hh:mm a') + ' - ' + moment(end).format(endFormat));
             },
-            popupDetailLocation: function(schedule) {
+            popupDetailLocation: function (schedule) {
                 return 'Локация : ' + schedule.location;
             },
-            popupDetailUser: function(schedule) {
+            popupDetailUser: function (schedule) {
                 return 'Пользователь : ' + (schedule.attendees || []).join(', ');
             },
-            popupDetailState: function(schedule) {
+            popupDetailState: function (schedule) {
                 return 'Состояние : ' + schedule.state || 'Занято';
             },
-            popupDetailRepeat: function(schedule) {
+            popupDetailRepeat: function (schedule) {
                 return 'Повторить : ' + schedule.recurrenceRule;
             },
-            popupDetailBody: function(schedule) {
+            popupDetailBody: function (schedule) {
                 return 'Тело : ' + schedule.body;
             },
-            popupEdit: function() {
+            popupEdit: function () {
                 return 'Редактировать';
             },
-            popupDelete: function() {
+            popupDelete: function () {
                 return 'Удалить';
             }
         }
@@ -369,8 +374,8 @@ $(document).ready(function () {
         });
         setWeekRange(calendarInstance);
 
-        calendarInstance.on('beforeCreateSchedule', function(event) {
-            console.log(event);
+        calendarInstance.on('beforeCreateSchedule', function (event) {
+            console.log(event, event.start, event.end);
             var triggerEventName = event.triggerEventName;
 
             /*if (triggerEventName === 'click') {
@@ -392,19 +397,19 @@ $(document).ready(function () {
             }]);
         });
 
-        calendarInstance.on('beforeUpdateSchedule', function(event) {
+        calendarInstance.on('beforeUpdateSchedule', function (event) {
             var schedule = event.schedule;
             var changes = event.changes;
 
             calendarInstance.updateSchedule(schedule.id, schedule.calendarId, changes);
         });
 
-        calendarInstance.on('beforeDeleteSchedule', function(event) {
+        calendarInstance.on('beforeDeleteSchedule', function (event) {
             var schedule = event.schedule;
             calendarInstance.deleteSchedule(schedule.id, schedule.calendarId);
         });
 
-        calendarInstance.on('clickSchedule', function(event) {
+        calendarInstance.on('clickSchedule', function (event) {
             var schedule = event.schedule;
             console.log('clickSchedule', schedule);
             lastClickSchedule = schedule;
@@ -419,12 +424,23 @@ $(document).ready(function () {
              });*/
 
 
-
             // open detail view
+        });
+
+        window.addEventListener('resize', function () {
+            if (window.innerWidth < 1200) {
+                if (calendarInstance.getViewName() === 'week') {
+                    calendarInstance.changeView('day', true);
+                }
+            } else {
+                if (calendarInstance.getViewName() === 'day') {
+                    calendarInstance.changeView('week', true);
+                }
+            }
         });
     }
 
-    function setWeekRange(calendarInstance){
+    function setWeekRange(calendarInstance) {
         var rangeStart = calendarInstance.getDateRangeStart().toDate();
         var rangeEnd = calendarInstance.getDateRangeEnd().toDate();
         var periodString = '';
@@ -441,20 +457,15 @@ $(document).ready(function () {
 
     window.dispatchEvent(new Event('resize'));
 });
-if (calendarInstance) {
-    window.addEventListener('resize', function() {
-        if (window.innerWidth < 1200) {
-            if (calendarInstance.getViewName() === 'week') {
-                calendarInstance.changeView('day', true);
-            }
-        } else {
-            if (calendarInstance.getViewName() === 'day') {
-                calendarInstance.changeView('week', true);
-            }
-        }
-    });
-}
 
 function pay(event, id) {
+    console.log(event, id);
+}
+
+function add(event, id) {
+    console.log(event, id);
+}
+
+function link(event, id) {
     console.log(event, id);
 }
