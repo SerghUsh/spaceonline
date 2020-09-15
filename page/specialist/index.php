@@ -85,7 +85,7 @@
                     <div class="col">
                          <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="lesson_name">Медитация</span>
                                 </div>
@@ -107,7 +107,7 @@
                     <div class="col">
                          <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="lesson_name">Медитация</span>
                                 </div>
@@ -129,7 +129,7 @@
                     <div class="col">
                          <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="lesson_name">Медитация</span>
                                 </div>
@@ -151,7 +151,7 @@
                     <div class="col">
                          <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="lesson_name">Медитация</span>
                                 </div>
@@ -173,7 +173,7 @@
                     <div class="col">
                          <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="lesson_name">Медитация</span>
                                 </div>
@@ -195,7 +195,7 @@
                     <div class="col">
                          <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="lesson_name">Медитация</span>
                                 </div>
@@ -292,7 +292,7 @@
                     <div class="col">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -315,7 +315,7 @@
                     <div class="col">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -338,7 +338,7 @@
                     <div class="col">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -361,7 +361,7 @@
                     <div class="col">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <span class="icon-video"></span>
                                 <div class="bottom_info">
                                     <span class="last_event">Прошедшее мерооприятия</span>
@@ -385,7 +385,7 @@
                     <div class="col">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <span class="icon-video"></span>
                                 <div class="bottom_info">
                                     <span class="last_event">Прошедшее мерооприятия</span>
@@ -409,7 +409,7 @@
                     <div class="col">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <span class="icon-video"></span>
                                 <div class="bottom_info">
                                     <span class="last_event">Прошедшее мерооприятия</span>
@@ -425,7 +425,7 @@
                                     Екатериной. Всего за полтора часа, ты сможешь погрузиться
                                     внутрь себя и найти в себе гармонию...
                                 </p>
-                                <a href="<?php href('practise') ?>">Узнать больше</a>
+                                <a href="<?php href('event') ?>">Узнать больше</a>
                             </div>
                         </div>
                     </div>

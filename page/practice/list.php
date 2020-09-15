@@ -22,7 +22,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -40,7 +40,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -58,7 +58,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -76,7 +76,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -94,7 +94,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -112,7 +112,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -130,7 +130,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -148,25 +148,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
-                        </div>
-                        
-                        <h2>Астрология</h2>   
-                        <div class="description-block">
-                            <p>
-                                Улучши свое душевное равновесие. С лучшим специалистом
-                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
-                                внутрь себя и найти в себе гармонию...
-                            </p>
-                            <a href="<?php href('practice') ?>">Узнать больше</a>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="col">
-                    <div class="tile-block">
-                        <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -184,7 +166,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -202,7 +184,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -220,7 +202,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -238,7 +220,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -256,7 +238,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -274,7 +256,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -292,25 +274,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
-                        </div>
-                        
-                        <h2>Астрология</h2>   
-                        <div class="description-block">
-                            <p>
-                                Улучши свое душевное равновесие. С лучшим специалистом
-                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
-                                внутрь себя и найти в себе гармонию...
-                            </p>
-                            <a href="<?php href('practice') ?>">Узнать больше</a>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="col">
-                    <div class="tile-block">
-                        <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -328,7 +292,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -346,7 +310,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -364,7 +328,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -382,7 +346,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   
@@ -400,7 +364,43 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
+                        </div>
+                        
+                        <h2>Астрология</h2>   
+                        <div class="description-block">
+                            <p>
+                                Улучши свое душевное равновесие. С лучшим специалистом
+                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
+                                внутрь себя и найти в себе гармонию...
+                            </p>
+                            <a href="<?php href('practice') ?>">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="tile-block">
+                        <div class="image_wrapper">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
+                        </div>
+                        
+                        <h2>Астрология</h2>   
+                        <div class="description-block">
+                            <p>
+                                Улучши свое душевное равновесие. С лучшим специалистом
+                                Екатериной. Всего за полтора часа, ты сможешь погрузиться
+                                внутрь себя и найти в себе гармонию...
+                            </p>
+                            <a href="<?php href('practice') ?>">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="tile-block">
+                        <div class="image_wrapper">
+                            <a href="<?php href('practice') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                         </div>
                         
                         <h2>Астрология</h2>   

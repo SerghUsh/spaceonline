@@ -297,7 +297,7 @@
                     <div class="slider__item">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -311,7 +311,7 @@
                                     Екатериной. Всего за полтора часа, ты сможешь погрузиться
                                     внутрь себя и найти в себе гармонию...
                                 </p>
-                                <a href="<?php href('practise') ?>">Узнать больше</a>
+                                <a href="<?php href('event') ?>">Узнать больше</a>
                             </div>
                         </div>
                     </div>
@@ -319,7 +319,7 @@
                     <div class="slider__item">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -333,7 +333,7 @@
                                     Екатериной. Всего за полтора часа, ты сможешь погрузиться
                                     внутрь себя и найти в себе гармонию...
                                 </p>
-                                <a href="<?php href('practise') ?>">Узнать больше</a>
+                                <a href="<?php href('event') ?>">Узнать больше</a>
                             </div>
                         </div>
                     </div>
@@ -341,7 +341,7 @@
                     <div class="slider__item">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -355,7 +355,7 @@
                                     Екатериной. Всего за полтора часа, ты сможешь погрузиться
                                     внутрь себя и найти в себе гармонию...
                                 </p>
-                                <a href="<?php href('practise') ?>">Узнать больше</a>
+                                <a href="<?php href('event') ?>">Узнать больше</a>
                             </div>
                         </div>
                     </div>
@@ -363,7 +363,7 @@
                     <div class="slider__item">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -377,7 +377,7 @@
                                     Екатериной. Всего за полтора часа, ты сможешь погрузиться
                                     внутрь себя и найти в себе гармонию...
                                 </p>
-                                <a href="<?php href('practise') ?>">Узнать больше</a>
+                                <a href="<?php href('event') ?>">Узнать больше</a>
                             </div>
                         </div>
                     </div>
@@ -385,7 +385,7 @@
                     <div class="slider__item">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -399,7 +399,7 @@
                                     Екатериной. Всего за полтора часа, ты сможешь погрузиться
                                     внутрь себя и найти в себе гармонию...
                                 </p>
-                                <a href="<?php href('practise') ?>">Узнать больше</a>
+                                <a href="<?php href('event') ?>">Узнать больше</a>
                             </div>
                         </div>
                     </div>
@@ -407,7 +407,7 @@
                     <div class="slider__item">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -421,7 +421,7 @@
                                     Екатериной. Всего за полтора часа, ты сможешь погрузиться
                                     внутрь себя и найти в себе гармонию...
                                 </p>
-                                <a href="<?php href('practise') ?>">Узнать больше</a>
+                                <a href="<?php href('event') ?>">Узнать больше</a>
                             </div>
                         </div>
                     </div>
@@ -429,7 +429,7 @@
             </div>
 
             <div class="slider-manage-block">
-                <a href="#" class="btn-slider btn-white">к списку событий</a>
+                <a href="http://spaceonline/page/event/list.php" class="btn-slider btn-white" class="btn-slider btn-white">к списку событий</a>
                 <div class="arrows"></div>
                 <div class="dots"></div>
             </div>

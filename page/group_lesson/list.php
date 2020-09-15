@@ -46,7 +46,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                             <div class="bottom_info">
                                 <span class="lesson_name">Медитация</span>
                             </div>
@@ -68,7 +68,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                             <div class="bottom_info">
                                 <span class="lesson_name">Медитация</span>
                             </div>
@@ -90,7 +90,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                             <div class="bottom_info">
                                 <span class="lesson_name">Медитация</span>
                             </div>
@@ -112,7 +112,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                             <div class="bottom_info">
                                 <span class="lesson_name">Медитация</span>
                             </div>
@@ -134,7 +134,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                             <div class="bottom_info">
                                 <span class="lesson_name">Медитация</span>
                             </div>
@@ -156,7 +156,7 @@
                 <div class="col">
                     <div class="tile-block">
                         <div class="image_wrapper">
-                            <img src="/img/bg_name_event1.jpg" alt="image">
+                            <a href="<?php href('group_lesson') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                             <div class="bottom_info">
                                 <span class="lesson_name">Медитация</span>
                             </div>

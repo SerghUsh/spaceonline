@@ -31,7 +31,7 @@
                     <div class="col">
                         <div class="tile-block bottom">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <span class="icon-video"></span>
                                 <div class="bottom_info">
                                     <span class="last_event">Прошедшее мероприятия</span>
@@ -55,7 +55,7 @@
                     <div class="col">
                         <div class="tile-block bottom">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                               <a href="<?php href('event') ?>"><img src="/img/bg_name_event2.jpg" alt="image"></a>
                                 <span class="icon-video"></span>
                                 <div class="bottom_info">
                                     <span class="last_event">Прошедшее мерооприятия</span>
@@ -79,7 +79,7 @@
                     <div class="col">
                         <div class="tile-block bottom hidden">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event3.jpg" alt="image"></a>
                                 <span class="icon-video"></span>
                                 <div class="bottom_info">
                                     <span class="last_event">Прошедшее мерооприятия</span>
@@ -110,7 +110,7 @@
                     <div class="col">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -133,7 +133,7 @@
                     <div class="col">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event2.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -156,7 +156,7 @@
                     <div class="col">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event3.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -179,7 +179,7 @@
                     <div class="col">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event1.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -202,7 +202,7 @@
                     <div class="col">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event2.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>
@@ -225,7 +225,7 @@
                     <div class="col">
                         <div class="tile-block">
                             <div class="image_wrapper">
-                                <img src="/img/bg_name_event1.jpg" alt="image">
+                                <a href="<?php href('event') ?>"><img src="/img/bg_name_event3.jpg" alt="image"></a>
                                 <div class="bottom_info">
                                     <span class="free_place">3/20</span>
                                     <span class="date">21/06/2020</span>

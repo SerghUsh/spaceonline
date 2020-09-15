@@ -588,10 +588,10 @@
 
                         <div class="legend-inline">
                             <div>
-                                <span><i style="background:#B6E6E4;"></i> Личн. кон.</span>
+                                <span><i style="background: #5985AD;"></i> Личн. кон.</span>
                             </div>
                             <div>
-                                <span><i style="background:#A8E5B6;"></i> Занятия</span>
+                                <span><i style="background:#59ADA8;;"></i> Занятия</span>
                             </div>
                         </div>
                     </div>
